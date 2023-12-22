@@ -1,5 +1,5 @@
 # Samadhan – A Local Government Service QueryBot
- Samadhan aims to act as a virtual facilitator, using technology to provide the public with accurate and accessible information about government processes. Activities include a communication network that can provide guidance on steps required, documentation required and estimated timelines for tasks. The scope of the solution extends to a central location for feedback, providing and owning linked relationships as more knowledge has emerged in government agencies and citizens. It is built to accommodate scalability and ensure adaptability to evolving government policies. 🌐🔍💻📄📅📢🔄🏛️🤝📊🌱
+ Samadhan aims to act as a virtual facilitator, using technology to provide the public with accurate and accessible information about government processes. Activities include a communication network that can provide guidance on steps required, documentation required and estimated timelines for tasks. The scope of the solution extends to a central location for feedback, providing and owning linked relationships as more knowledge has emerged in government agencies and citizens. It is built to accommodate scalability and ensure adaptability to evolving government policies. 🌐🔍💻📄📅📢🔄🏛️🤝📊🌱    
 
 ## Authors
 
