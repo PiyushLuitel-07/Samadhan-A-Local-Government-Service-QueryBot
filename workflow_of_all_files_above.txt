@@ -1,0 +1,40 @@
+1.All of these directories and files are created using the command "rasa init --no-prompt"
+2.When you run the rasa init --no-prompt command, it initializes a new Rasa project with default settings, and it skips any interactive prompts for user input.
+3.what this command does and the necessary files it creates is:
+        
+        a.Directory Structure:
+
+        Creates a standard directory structure for your Rasa project. This includes folders such as data (for training data), actions (for custom action code), models (for storing trained models), and others.
+        
+        b.Configuration Files:
+
+        Generates a default config.yml file. This file contains settings for training the NLU (Natural Language Understanding) and Core (Dialogue Management) models. The default settings are used to provide a starting point.
+        
+        c.Domain File:
+
+        Creates a domain.yml file. This file defines the domain of your chatbot, including information about intents, entities, actions, and responses. The default file may contain some example intents and responses.
+        
+        d.Training Data:
+
+        Generates example training data for NLU and Core. This includes data/nlu.yml,data/rules.yml and data/stories.yml. The NLU training data (nlu.yml) contains examples of user inputs and corresponding intents/entities. The Core training data (stories.yml) contains example conversations with corresponding actions and responses.
+        The rules.yml file is used to define conversation rules for the dialogue management part of your chatbot. Rules allow you to explicitly define how the bot should behave in response to certain user inputs or states of the conversation.
+        
+        e.Actions:
+
+        Creates an actions directory for custom action code. This is where you can define Python code for actions your bot should perform, such as interacting with external APIs or databases.
+
+
+#Representation of the typical project structure :
+
+your_project/
+|-- actions/
+|   |-- __init__.py
+|-- data/
+|   |-- nlu.md
+|   |-- stories.md
+|   |-- rules.yml
+|-- models/
+|-- __init__.py
+|-- config.yml
+|-- credentials.yml
+|-- domain.yml
