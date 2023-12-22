@@ -1,1 +1,3 @@
 # dependencies required for this project
+python==3.9.18
+rasa==3.6.15
