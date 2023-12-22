@@ -38,3 +38,7 @@ your_project/
 |-- config.yml
 |-- credentials.yml
 |-- domain.yml
+
+
+Note:
+1. To train the model, enter 'rasa train'
