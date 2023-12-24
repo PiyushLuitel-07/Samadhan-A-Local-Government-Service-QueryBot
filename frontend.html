@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasa Chatbot</title>
+</head>
+<body>
+    <div id="webchat"></div>
+    <script src="https://cdn.jsdelivr.net/npm/rasa-webchat@1.0.0/dist/index.js"></script>
+    <script>
+        WebChat.default.init({
+            selector: "#webchat",
+            initPayload: "/get_started",
+            customData: {"language": "en"},  // Adjust language if needed
+            socketUrl: "http://0.0.0.0:5005",
+            socketPath: "/socket.io/",
+            title: "Samadhan",
+            subtitle: "How can I help you today?",
+        });
+    </script>
+</body>
+</html>
