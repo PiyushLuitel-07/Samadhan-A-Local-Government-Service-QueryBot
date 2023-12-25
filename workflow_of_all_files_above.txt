@@ -40,9 +40,10 @@ your_project/
 |-- domain.yml
 
 
-Note:
+Note:(Some RASA CLIs)
 1. To train the model, enter 'rasa train'
 2. If you want to speak to the assistant, run 'rasa shell' at any time inside the project directory.
 3. 'rasa run'
 4. to connect our model to frontend run this code:
                 rasa run --enable-api --cors "*"
+5. 'rasa visualize'
