@@ -1,0 +1,10 @@
+Word Embedding -->> converting words into vectors(collection of numbers) so that we can apply ML algos on them
+
+WORD2vec -->> 
+A deep learning algorithm
+A word embedding technique
+developed by goggle engineers
+can capture semantic meaning of words
+vectors are of low dimension(reperesents word in 300 dimension) so storage efficent and easy to handle
+it provides dense vectors
+
