@@ -6,5 +6,10 @@ A word embedding technique
 developed by goggle engineers
 can capture semantic meaning of words
 vectors are of low dimension(reperesents word in 300 dimension) so storage efficent and easy to handle
-it provides dense vectors
+it provides dense vectors(vectors that contains non-zero values)
+
+Types of WORD2vec
+1. CBow -->> used for small dataset
+2. Skip-gram -->> used for large dataset
+
 
