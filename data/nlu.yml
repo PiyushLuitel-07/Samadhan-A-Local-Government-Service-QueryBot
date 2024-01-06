@@ -1,9 +1,18 @@
 version: "3.1"
 
 nlu:
+- intent: citizenship
+  examples: |
+    - Explain complete process to obtain a citizenship in Nepal.
+    - Explain complete process to obtain a citizenship.
+    - How to get a citixenship?
+    - Step by step process for getting a citizenship.
+    - 
+    - 
+    - Way to obtain citizenship.
+    - 
 - intent: greet
   examples: |
-    - Hello Samadhan
     - hey
     - hello
     - hi
@@ -17,49 +26,6 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-    - what's up
-    - Hi samadhan
-    - Namaste
-    - Namaskar
-    - subha pravat
-    - subha bihani
-
-- intent: capability
-  examples: |
-    - What can you do?
-    - What is your use?
-    - How can you help me?
-    - your use
-    - your capability
-    - what is your capability for
-    - what is your purpose
-    - your usecase?
-    - How can you help me?
-    - What can you help me in?
-
-- intent: driving_license_bike
-  examples: |
-    - I want to know the process for getting a driving license for bike
-    - process for bike license.
-    - How do I go about obtaining a motorcycle driving license?
-    - Can you guide me through the steps to get a bike license?
-    - What's the procedure for obtaining a motorcycle license?
-    - I'm interested in getting a bike license. What steps do I need to follow?
-    - Could you explain the process of getting a motorcycle driving license?
-    - What are the steps involved in securing a bike license?
-    - I'm curious about the process for acquiring a motorcycle license. Can you help?
-    - What's involved in getting a motorcycle license, and how do I start the process?
-    - What's the step-by-step process for getting a bike license?
-    - What's the process like for obtaining a bike license, and how can I go about it?
-    - Bike license procedure?
-    - Getting bike license how?
-    - Bike license how to?
-    - Steps for bike license how?
-    - How get driving license bike?
-    - Motorcycle license how?
-    - Bike license steps?
-
-
 
 - intent: goodbye
   examples: |

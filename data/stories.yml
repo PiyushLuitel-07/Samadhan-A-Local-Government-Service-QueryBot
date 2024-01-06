@@ -9,17 +9,6 @@ stories:
   - intent: mood_great
   - action: utter_happy
 
-- story: getting_driving_license_bike
-  steps:
-  - intent: driving_license_bike
-  - action: utter_driving_license_bike
-  
-- story: capability_of_chatbot
-  steps:
-  - intent: capability
-  - action: utter_mycapability
-  
-
 - story: sad path 1
   steps:
   - intent: greet

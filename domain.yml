@@ -8,28 +8,10 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - capability
-  - driving_license_bike
 
 responses:
   utter_greet:
   - text: "Hey! How are you?"
-
-  utter_driving_license_bike:
-  - text: "Eligibility: Age at least 16; hold a valid learner's license for a month.
-          Learner's License Application: Visit DTO, submit citizenship certificate, application, and fee receipt.
-          Learner's License Test: Attend written test on traffic rules; receive learner's license upon passing.
-          Practice Period: Practice riding for at least 15 days with the learner's license.
-          Permanent License Application: Apply after completing the practice period.
-          Document Submission: Submit learner's license, citizenship certificate, and application form.
-          Skill Test: Take a practical skill test, demonstrating riding proficiency.
-          Biometric Verification: Undergo biometric verification for identification.
-          Fee Payment: Pay the required fee for the permanent license.
-          License Issuance: Receive the bike driving license upon successful completion of all tests.
-          License Renewal (if applicable): Renew the license after the expiration date."
-
-  utter_mycapability:
-  - text: "I can help you to solve the governmental services query in Ward, Municipality and District Administration Office (DAO).You may ask me anything about it."
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
