@@ -17,6 +17,22 @@ nlu:
     - goodevening
     - good afternoon
 
+- intent: citizenship_query
+  examples: |
+    - hello, nagarikta banauna kk documents chaincha?
+    - nagarikta banauna kk documents chaincha?
+    - nagarikta ko bare ma idea chaiyo
+    - citizenship banaune process k hola?
+    - nagarikta banaune complete process please
+    - hi nagariktaa banaune  
+    - help me , i want complete process to get nagarikta
+    - nagarikta ko lagi kk kagjat chaincha 
+    - Mero babu ko nagarikta banaunu parne cha.Kasari process garne hola?
+    - Citizenship ko process bataunu paryo 
+    - Mero nagarikta harayo. Aba tesko pratilipi kasari banaune? complete process vandinu paryo
+  
+
+
 - intent: goodbye
   examples: |
     - cu
