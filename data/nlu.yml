@@ -1,16 +1,6 @@
 version: "3.1"
 
 nlu:
-- intent: citizenship
-  examples: |
-    - Explain complete process to obtain a citizenship in Nepal.
-    - Explain complete process to obtain a citizenship.
-    - How to get a citixenship?
-    - Step by step process for getting a citizenship.
-    - 
-    - 
-    - Way to obtain citizenship.
-    - 
 - intent: greet
   examples: |
     - hey
