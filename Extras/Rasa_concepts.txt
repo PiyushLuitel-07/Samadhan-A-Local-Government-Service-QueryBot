@@ -1,0 +1,48 @@
+Pipeline--incoming messages are processed through a sequence of many components..this process is pipeline
+
+policies--chatbot uses policies to decide which action to take at each step in a conversation.there are machine learning and rule-based policies that our chatbot can use.Policies determine the behavior of the dialogue management system. They decide how the assistant should respond to a given user input based on the predicted intent, entities, and the conversation history. Rasa supports various policies, including rule-based, machine learning-based, and ensemble policies.
+
+# lets understand pipeline
+language: en
+pipeline:
+  - name: SpacyNLP
+  - name: SpacyTokenizer
+  - name: SpacyFeaturizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: "char_wb"
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier
+    epochs: 100
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
+    epochs: 100
+
+explanation:
+SpacyNLP: This component uses the spaCy natural language processing library to process and understand the input text. It provides tokenization, part-of-speech tagging, named entity recognition, and other language processing capabilities.
+
+SpacyTokenizer: It tokenizes the input text using the spaCy tokenizer. Tokenization involves breaking down the input text into individual words or tokens.
+
+SpacyFeaturizer: This component extracts features from the tokenized text using spaCy. These features are used to train the machine learning models.
+
+RegexFeaturizer: It allows you to define custom regex patterns to extract features from the text. This is useful for capturing specific patterns or entities in the input.
+
+LexicalSyntacticFeaturizer: This featurizer captures both lexical and syntactic features from the input text. It helps in creating a rich representation of the language structure.
+
+CountVectorsFeaturizer: This featurizer converts the tokenized text into numerical features. It represents the frequency of words in a vector format, making it suitable for training machine learning models.
+
+CountVectorsFeaturizer (char_wb): Another instance of CountVectorsFeaturizer with specific settings. It uses character-level n-grams (subsequences of characters) with a minimum and maximum length specified.
+
+DIETClassifier: This is a machine learning-based intent classifier provided by Rasa. It uses a combination of intent and entity recognition in a joint model. The model is trained for 100 epochs.
+
+EntitySynonymMapper: It maps synonymous entities to a common representation. This helps improve entity recognition by treating synonyms as the same entity.
+
+ResponseSelector: This component is used for response selection. It helps in choosing the most appropriate response from a predefined set of responses. The model is trained for 100 epochs.
+
+In summary, this pipeline combines various components to process and understand user input in a conversational AI system, utilizing spaCy for NLP, regex for custom pattern matching, and machine learning-based models for intent and entity recognition. The pipeline is designed to handle a range of natural language understanding tasks in a conversational context.
+
+
+

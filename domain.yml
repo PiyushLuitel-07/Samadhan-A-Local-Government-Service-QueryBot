@@ -11,6 +11,8 @@ intents:
   - citizenship_query
 
 responses:
+  utter_citizenship:
+  - text:""
   utter_greet:
   - text: "Hey! How are you?"
 

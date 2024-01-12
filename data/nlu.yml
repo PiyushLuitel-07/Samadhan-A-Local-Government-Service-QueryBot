@@ -19,17 +19,16 @@ nlu:
 
 - intent: citizenship_query
   examples: |
-    - hello, nagarikta banauna kk documents chaincha?
-    - nagarikta banauna kk documents chaincha?
-    - nagarikta ko bare ma idea chaiyo
-    - citizenship banaune process k hola?
-    - nagarikta banaune complete process please
-    - hi nagariktaa banaune  
-    - help me , i want complete process to get nagarikta
-    - nagarikta ko lagi kk kagjat chaincha 
-    - Mero babu ko nagarikta banaunu parne cha.Kasari process garne hola?
-    - Citizenship ko process bataunu paryo 
-    - Mero nagarikta harayo. Aba tesko pratilipi kasari banaune? complete process vandinu paryo
+    - tell me the complete process to get citizenship
+    - how to obtain a citizenship in nepal 
+    - citizenship?
+    - process to make citizenship?
+    - way to make citizenship?
+    - how to make citizenship?
+    - how to issue citizenship?
+    - What is the process to make a citizenship in Nepal?
+    - What are the documents required along with the ward recommendation to make a citizenship?
+    - 
   
 
 

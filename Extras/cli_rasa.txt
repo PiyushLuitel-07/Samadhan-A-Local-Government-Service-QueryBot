@@ -1,0 +1,11 @@
+rasa init
+rasa train
+rasa train --help
+rasa train --fixed-model-name model1       it creates a model named model1
+rasa interactive
+rasa interactive --help
+rasa shell
+rasa shell --debug
+rasa run actions
+rasa test
+rasa test --help
