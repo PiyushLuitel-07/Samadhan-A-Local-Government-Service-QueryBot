@@ -6,6 +6,7 @@ rasa interactive
 rasa interactive --help
 rasa shell
 rasa shell --debug
+rasa shell nlu
 rasa run actions
 rasa test
 rasa test --help

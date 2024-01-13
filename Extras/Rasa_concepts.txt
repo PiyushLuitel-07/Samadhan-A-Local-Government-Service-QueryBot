@@ -1,6 +1,6 @@
 Pipeline--incoming messages are processed through a sequence of many components..this process is pipeline
 
-policies--chatbot uses policies to decide which action to take at each step in a conversation.there are machine learning and rule-based policies that our chatbot can use.Policies determine the behavior of the dialogue management system. They decide how the assistant should respond to a given user input based on the predicted intent, entities, and the conversation history. Rasa supports various policies, including rule-based, machine learning-based, and ensemble policies.
+policies--chatbot uses policies to decide which action to take at each step in a conversation.there are machine learning and rule-based policies that our chatbot can use.Policies determine the behavior of the dialogue management system. They decide how the assistant should respond to a given user input based on the predicted intent, entities, and the conversation history. Rasa supports various policies, including rule-based, machine learning-based, and ensemble policies.Policies play a crucial role in deciding the next action the chatbot should take.
 
 # lets understand pipeline
 language: en
@@ -43,6 +43,137 @@ EntitySynonymMapper: It maps synonymous entities to a common representation. Thi
 ResponseSelector: This component is used for response selection. It helps in choosing the most appropriate response from a predefined set of responses. The model is trained for 100 epochs.
 
 In summary, this pipeline combines various components to process and understand user input in a conversational AI system, utilizing spaCy for NLP, regex for custom pattern matching, and machine learning-based models for intent and entity recognition. The pipeline is designed to handle a range of natural language understanding tasks in a conversational context.
+
+#lets understand policy
+1.Rule-Based Policies:
+
+Rule policies allow you to define explicit rules that specify how the assistant should behave in certain situations.
+Rules are written in a format like "if X, then do Y."
+Example:
+- rule: Welcome the user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+2.Machine Learning-Based Policies:
+
+Machine learning policies use models trained on data to predict the next action.
+Examples include TEDPolicy (Transformers Embedding Dialogue Policy) and DIETClassifier (Dual Intent Entity Transformer Classifier).
+example
+policies:
+  - name: DIETClassifier
+    epochs: 100
+
+3.Ensemble Policies:
+
+Ensemble policies combine the predictions of multiple individual policies to make a final decision.
+example
+policies:
+  - name: RulePolicy
+  - name: TEDPolicy
+    max_history: 5
+  - name: MappingPolicy
+
+Each policy contributes to the decision-making process, and the order in which they are listed in the configuration matters. The policies are evaluated sequentially, and the first policy that predicts a valid action is used. Ensemble policies combine the predictions of their sub-policies to make a final decision.
+
+
+#Static and dynamic message
+Static message are independent to the user input and doesnt need action server.
+Dynamic message are dependent on user input,it needs action server, and some logic implementation.Example,user ask what are the items present in today's menu?. Now it must search from database.this need to be implemented logically and required action server.
+
+#Intent Classification and Entity Extraction
+This is done by Rasa NLU
+example :: "I want to book a hotel for 3 people"
+output:
+{
+"intent":"booking",
+"entities":{
+"person_count":3
+}
+}
+
+For example, for the sentence "I am looking for Chinese food", the output is:
+
+{
+    "text": "I am looking for Chinese food",
+    "entities": [
+        {
+            "start": 8,
+            "end": 15,
+            "value": "chinese",
+            "entity": "cuisine",
+            "extractor": "DIETClassifier",
+            "confidence": 0.864
+        }
+    ],
+    "intent": {"confidence": 0.6485910906220309, "name": "restaurant_search"},
+    "intent_ranking": [
+        {"confidence": 0.6485910906220309, "name": "restaurant_search"},
+        {"confidence": 0.1416153159565678, "name": "affirm"}
+    ]
+}
+
+
+next things:
+intent:
+	-i want to book a [flight](service) for [3](p_counts) people
+	-book a [flight](service) for [9](p_count) people
+
+now me must add these entities into domain.yml 
+entities:
+	- service
+	- p_count
+
+as we have made changes, we must train the rasa model
+coding:
+1.add intent in nly.yml
+2.add those intents in domain.yml
+3.the specify conversation flow in story file
+
+
+#Slot
+Slot is a chatbot memory.
+Stores useful information from user message and we can access this information later.
+slots are used to store information that can be referenced and updated throughout a conversation.
+They represent pieces of data that the assistant needs to keep track of, such as user preferences, context, or any other relevant information. 
+Slots play a crucial role in maintaining context and ensuring that the assistant understands and responds appropriately to user inputs.
+
+types:
+text slot -string valu e
+boolean slot -true ,false ,0,1
+categorical slot -high,medium,low
+float slot - decimal values
+list slot - more than one type of value
+unfeaturized slot -any time of value ,this is mostly used
+
+We use slot to store single information
+We use forms to store lots of information from the user
+
+#Forms
+One of the most common conversation patterns is to collect a few pieces of information from a user
+
+class structure needed to specify a form:
+class name(FormAction): // this class is inherited from FormAction class
+	def name(self):
+	def required_slots(self):
+	def submit(self):
+
+we generally prefer Forms rather than slots
+
+Domain file should contain:
+intents:
+..........
+entities:
+.........
+slots:
+...........
+actions:
+..........
+forms:
+..........
+responses:
+...........
+
 
 
 

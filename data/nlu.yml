@@ -16,6 +16,16 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - hello samadhan
+    - hi samadhan
+    - samadhan hello
+    - samadhan what's up
+    - Subha Pravat
+    - Subha din
+    - Hellloo samadhan bot
+    - Hello querybot
+    - Hello chatbot
+    - Hello bot
 
 - intent: citizenship_query
   examples: |
@@ -28,7 +38,6 @@ nlu:
     - how to issue citizenship?
     - What is the process to make a citizenship in Nepal?
     - What are the documents required along with the ward recommendation to make a citizenship?
-    - 
   
 
 

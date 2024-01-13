@@ -2,6 +2,13 @@ version: "3.1"
 
 stories:
 
+- story: user asks how to get citizenship
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: citizenship_query
+  - action: utter_citizenship
+
 - story: happy path
   steps:
   - intent: greet
