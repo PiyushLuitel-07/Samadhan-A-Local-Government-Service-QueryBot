@@ -9,30 +9,28 @@ intents:
   - mood_unhappy
   - bot_challenge
   - citizenship_query
+  - new_citizenship
+  - copy_citizenship
+  - adopted_citizenship
+
+entities:
+  - new_citizenship
+  - copy_citizenship
+  - adopted_citizenship
 
 responses:
   utter_citizenship:
-  - text: "Application Process:
+  - text: "What kind of citizenship are you willing to get?\n1.New Citizenship\n2.Copy of Citizenship\n3.Adopted Citizenship"
 
-Age Requirement: Must be over 16 years old.
-Application Submission: Submit application to the Chief District Officer.
-Form: Use the format provided in Schedule-1.
-Required Documents:
 
-Recommendation from Local Body confirming birth and continuous residence in Nepal.
-Land ownership or tenancy right certificate, household certificate, or electoral rolls evidence.
-Application Timing: Must apply before the Constituent Assembly election.
+  utter_greet1:
+  - text: "Hello !! I'm Samadhan."
 
-Special Case Consideration:
+  utter_greet2:
+  - text: "I am a local governmental service querybot." 
 
-Lack of Evidence: In case evidence is not submitted, an on-the-spot public inquiry or identification by local inhabitants may be considered.
-Decision Period: Chief District Officer must decide within one month from application registration.
-
-Eligibility Confirmation: If eligible, the certificate of citizenship of Nepal by birth will be issued.
-
-Public Disclosure: The list of applicants under special consideration must be made public on the same day."
-  utter_greet:
-  - text: "Hello !! I'm Samadhan, your local querybot for government-related questions on citizenship, birth, death, marriage, and taxes. How can I help you "
+  utter_greet3:
+  - text: "You can ask me government-related questions on citizenship, birth, death, marriage, and taxes." 
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -49,6 +47,19 @@ Public Disclosure: The list of applicants under special consideration must be ma
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_new_citizenship:
+  - text: "Application Process:\nAge Requirement: Must be over 16 years old.\n
+Application Submission: Submit application to the Chief District Officer.\n
+Form: Use the format provided in Schedule-1.\n
+Required Documents:\n
+Recommendation from Local Body confirming birth and continuous residence in Nepal.\n
+Land ownership or tenancy right certificate, household certificate, or electoral rolls evidence.\n
+Application Timing: Must apply before the Constituent Assembly election.\n
+Special Case Consideration:\n
+Lack of Evidence: In case evidence is not submitted, an on-the-spot public inquiry or identification by local inhabitants may be considered.\n
+Decision Period: Chief District Officer must decide within one month from application registration.\n
+Eligibility Confirmation: If eligible, the certificate of citizenship of Nepal by birth will be issued."
 
 session_config:
   session_expiration_time: 60

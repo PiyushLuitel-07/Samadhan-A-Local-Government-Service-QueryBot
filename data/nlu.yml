@@ -26,6 +26,7 @@ nlu:
     - Hello querybot
     - Hello chatbot
     - Hello bot
+    - Samadhan 
 
 - intent: citizenship_query
   examples: |
@@ -36,10 +37,36 @@ nlu:
     - way to make citizenship?
     - how to make citizenship?
     - how to issue citizenship?
+    - citizenship
+    - citgensheep
+    - what process make citizenship
     - What is the process to make a citizenship in Nepal?
     - What are the documents required along with the ward recommendation to make a citizenship?
-  
 
+- intent: new_citizenship
+  examples: |
+    - [new](citizenship_type)
+    - [new](citizenship_type) citizenship
+    - i want [new](citizenship_type) citizenship
+    - i need [new](citizenship_type) citizenship
+    - [new](citizenship_type) one
+  
+- intent: copy_citizenship
+  examples: |
+    - [copy](citizenship_type)
+    - [copy](citizenship_type) citizenship
+    - i want [copy](citizenship_type) citizenship
+    - i need [copy](citizenship_type) citizenship
+    - [copy](citizenship_type) one
+  
+- intent: adopted_citizenship
+  examples: |
+    - [adopted](citizenship_type)
+    - [adopted](citizenship_type) citizenship
+    - i want [adopted](citizenship_type) citizenship
+    - i need [adopted](citizenship_type) citizenship
+    - [adopted](citizenship_type) one
+  
 
 - intent: goodbye
   examples: |

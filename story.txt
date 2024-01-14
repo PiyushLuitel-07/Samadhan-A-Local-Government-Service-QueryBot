@@ -1,0 +1,20 @@
+story 1
+user = hello 
+bot = Hello how may i help you
+
+user = how can i get my citizenship 
+bot = what type of citizenship you want to get?
+        option(new,copy,angikrit)
+
+user = I want a new citizenship 
+bot = eligibility criteria are ...
+
+
+bot = here are the documents required:(list)
+bot= these are the steps involved
+
+user = how much does it cost?
+bot = It cost ... 
+
+user = further subqueries on documents
+bot = 

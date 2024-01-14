@@ -174,6 +174,17 @@ forms:
 responses:
 ...........
 
+main difference between a rule and story is that , a story can be seen as an example to learn from, while a rule is a pattern that the assistance must follow.
+
+rules provide a way to describe short pieces of conversations that should always go the same way
+
+when an entity is extracted, the output of the entity extraction is a snippet of JSON which contains entity category,entity value,confidence levels, component that extracted the entity.
+
+
+
+
+
+
 
 
 
