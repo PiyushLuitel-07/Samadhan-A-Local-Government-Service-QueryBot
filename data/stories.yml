@@ -33,7 +33,7 @@ stories:
   - action: utter_adopted_citizenship_steps
 # related to migration 
   - intent: doubts_on_migration_certificate
-  - action: utter_doubts_on_migration_certificate
+  - action: utter_doubts_on_migration_certificate  
 
 
 
