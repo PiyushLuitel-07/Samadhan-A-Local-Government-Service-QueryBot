@@ -14,13 +14,38 @@ intents:
   - adopted_citizenship
 
 entities:
-  - new_citizenship
-  - copy_citizenship
-  - adopted_citizenship
+  - citizenship_type
 
 responses:
   utter_citizenship:
   - text: "What kind of citizenship are you willing to get?\n1.New Citizenship\n2.Copy of Citizenship\n3.Adopted Citizenship"
+
+  utter_new_citizenship_eligibility_Criteria:
+  - text: "Eligibility criteria are .."
+
+  utter_new_citizenship_documents_required:
+  - text: "Documents required are .."
+
+  utter_new_citizenship_steps:
+  - text: "Steps involved are .."
+
+  utter_copy_citizenship_eligibility_Criteria:
+  - text: "Eligibility criteria are .."
+
+  utter_copy_citizenship_documents_required:
+  - text: "Documents required are .."
+
+  utter_copy_citizenship_steps:
+  - text: "Steps involved are .."
+
+  utter_adopted_citizenship_eligibility_Criteria:
+  - text: "Eligibility criteria are .."
+
+  utter_adopted_citizenship_documents_required:
+  - text: "Documents required are .."
+
+  utter_adopted_citizenship_steps:
+  - text: "Steps involved are .."
 
 
   utter_greet1:

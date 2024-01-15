@@ -1,17 +1,18 @@
 body {
   font-family: "Open Sans", sans-serif;
-  background: url("../img/body.png") no-repeat center center fixed;
+  background: url("../img/bg7.png") no-repeat center center fixed;
   background-size: cover;
+  /* background-color: #FDF5E6; */
 }
 
 /* ============= css related to chats =============== */
 
 .widget {
   display: none;
-  width: 350px;
-  right: 15px;
-  height: 500px;
-  bottom: 5%;
+  width: 450px;
+  right: 555px;
+  height: 600px;  
+  bottom: 8%;
   position: fixed;
   background: #fff;
   border-radius: 10px 10px 10px 10px;
@@ -19,8 +20,8 @@ body {
 }
 
 .chat_header {
-  height: 60px;
-  background: #060dcfc7;
+  height: 80px;
+  background: #002244;
   border-radius: 10px 10px 0px 0px;
   padding: 5px;
   font-size: 20px;
@@ -29,10 +30,10 @@ body {
 .chat_header_title {
   color: white;
   float: left;
-  margin-top: 3%;
+  margin-top: 6%;
   margin-left: 35%;
 }
-
+ 
 .chats {
   /* display: none; */
   height: 385px;
@@ -57,7 +58,7 @@ div.chats::-webkit-scrollbar {
 }
 
 .botAvatar {
-  border-radius: 50%;
+  border-radius: 70%;
   width: 1.5em;
   height: 1.5em;
   float: left;
@@ -68,8 +69,8 @@ div.chats::-webkit-scrollbar {
 .botMsg {
   float: left;
   margin-top: 5px;
-  background: #e3e7ee;
-  color: black;
+  background: #002244;
+  color: white;
   /* box-shadow: 2px 3px 9px 0px #9a82842e; */
   margin-left: 0.5em;
   padding: 10px;
@@ -122,7 +123,7 @@ textarea-webkit-scrollbar {
   padding: 10px;
   float: right;
   margin-right: 0.5em;
-  background: #060dcfc7;
+  background: #002244;
   color: white;
   margin-bottom: 0.15em;
   font-size: 13px;
@@ -145,7 +146,7 @@ blockquote {
 .userAvatar {
   animation: animateElement linear 0.3s;
   animation-iteration-count: 1;
-  border-radius: 50%;
+  border-radius: 70%;
   width: 1.5em;
   height: 1.5em;
   float: right;
@@ -185,7 +186,7 @@ blockquote {
   padding: 5px;
   font-size: 20px;
   cursor: pointer;
-  color: #060dcfc7;
+  color: #002244;
 }
 
 .imgProfile {
@@ -222,7 +223,7 @@ blockquote {
 
 .dropdown-content li > a,
 .dropdown-content li > span {
-  color: #060dcfc7;
+  color: #002244;
 }
 
 @keyframes animateElement {
@@ -283,7 +284,7 @@ blockquote {
   width: 80%;
   border-radius: 0.28571429rem;
 }
-
+                                                 
 .votes {
   font-size: 12px;
   color: lightslategray;
@@ -721,7 +722,7 @@ div.content_data::-webkit-scrollbar {
 
 .collapsible-header {
   font-weight: bold;
-  color: #060dcfc7;
+  color: #002244;
 }
 
 ul.collapsible > li:first-child .collapsible-header {
@@ -729,7 +730,7 @@ ul.collapsible > li:first-child .collapsible-header {
 }
 
 ul.collapsible > li:last-child .collapsible-header {
-  color: #060dcfc7;
+  color: #002244;
   border-radius: 0px 0px 20px 20px;
 }
 
@@ -761,7 +762,7 @@ ul.collapsible > li:last-child .collapsible-body {
 .botTyping > div {
   width: 10px;
   height: 10px;
-  background-color: #060dcfc7;
+  background-color: #002244;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;

@@ -14,6 +14,11 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
+- rule: ask what type of citizenship
+  steps:
+  - intent: citizenship_query
+  - action: utter_citizenship
+
 - rule: Say 'I am a bot' anytime the user challenges
   steps:
   - intent: bot_challenge

@@ -4,7 +4,7 @@
 ## Authors
 
 - [Aarogya Bhandari](https://www.github.com/amewzzz)
-- [Aayush Pokhrel](https://github.com/aayushpkrl)
+- [Aayush Pokharel](https://github.com/aayushpkrl)
 - [Piyush Luitel](https://www.github.com/PiyushLuitel-07)
 - [Prashant Bhusal](https://www.github.com/prashant72-git)
 

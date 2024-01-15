@@ -181,6 +181,16 @@ rules provide a way to describe short pieces of conversations that should always
 when an entity is extracted, the output of the entity extraction is a snippet of JSON which contains entity category,entity value,confidence levels, component that extracted the entity.
 
 
+#slots:
+Commonly we fill a slot value with an entity value
+defined in domain.yml
+they can influence the conversation
+
+Rasa Form
+
+ 
+
+
 
 
 

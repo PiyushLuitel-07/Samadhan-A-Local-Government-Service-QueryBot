@@ -49,7 +49,7 @@ nlu:
     - [new](citizenship_type) citizenship
     - i want [new](citizenship_type) citizenship
     - i need [new](citizenship_type) citizenship
-    - [new](citizenship_type) one
+    - [new](citizenship_type) one  
   
 - intent: copy_citizenship
   examples: |

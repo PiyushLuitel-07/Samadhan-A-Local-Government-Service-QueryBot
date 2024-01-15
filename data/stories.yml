@@ -10,6 +10,27 @@ stories:
   - action: utter_greet3
   - intent: citizenship_query
   - action: utter_citizenship
+ # Branch for New Citizenship
   - intent: new_citizenship
-  - action: utter_new_citizenship
+    entities:
+    - citizenship_type: new
+  - action: utter_new_citizenship_eligibility_Criteria
+  - action: utter_new_citizenship_documents_required
+  - action: utter_new_citizenship_steps
+ # Branch for old Citizenship
+  - intent: copy_citizenship
+    entities:
+    - citizenship_type: copy
+  - action: utter_copy_citizenship_eligibility_Criteria
+  - action: utter_copy_citizenship_documents_required
+  - action: utter_copy_citizenship_steps
+ # Branch for adopted Citizenship
+  - intent: adopted_citizenship
+    entities:
+    - citizenship_type: adopted
+  - action: utter_adopted_citizenship_eligibility_Criteria
+  - action: utter_adopted_citizenship_documents_required
+  - action: utter_adopted_citizenship_steps
+
+
 
