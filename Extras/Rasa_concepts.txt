@@ -186,7 +186,10 @@ Commonly we fill a slot value with an entity value
 defined in domain.yml
 they can influence the conversation
 
-Rasa Form
+#Rasa Form
+used to collect information from the user.
+this process is also called slot filling.
+
 
  
 

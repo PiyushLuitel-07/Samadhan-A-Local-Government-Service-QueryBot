@@ -17,7 +17,7 @@ stories:
   - action: utter_new_citizenship_eligibility_Criteria
   - action: utter_new_citizenship_documents_required
   - action: utter_new_citizenship_steps
- # Branch for old Citizenship
+ # Branch for cold Citizenship
   - intent: copy_citizenship
     entities:
     - citizenship_type: copy
@@ -31,6 +31,12 @@ stories:
   - action: utter_adopted_citizenship_eligibility_Criteria
   - action: utter_adopted_citizenship_documents_required
   - action: utter_adopted_citizenship_steps
+# related to migration 
+  - intent: doubts_on_migration_certificate
+  - action: utter_doubts_on_migration_certificate
+
+
+
 
 
 

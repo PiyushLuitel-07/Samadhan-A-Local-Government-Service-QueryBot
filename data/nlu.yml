@@ -30,6 +30,7 @@ nlu:
 
 - intent: citizenship_query
   examples: |
+    - i want to make a citizenship
     - tell me the complete process to get citizenship
     - how to obtain a citizenship in nepal 
     - citizenship?
@@ -39,34 +40,52 @@ nlu:
     - how to issue citizenship?
     - citizenship
     - citgensheep
+    - how to make citizenship
+    - process for making citizenship
+    - citizenship
+    - explain me the complete process to obtain a citizenship
+    - procedure for making citizenship
+    - please cititzenship complete process
     - what process make citizenship
     - What is the process to make a citizenship in Nepal?
     - What are the documents required along with the ward recommendation to make a citizenship?
 
 - intent: new_citizenship
   examples: |
-    - [new](citizenship_type)
-    - [new](citizenship_type) citizenship
-    - i want [new](citizenship_type) citizenship
-    - i need [new](citizenship_type) citizenship
-    - [new](citizenship_type) one  
+    - [new citizenship](citizenship_type)
+    - [new citizenship](citizenship_type) 
+    - i want [new citizenship](citizenship_type) 
+    - i need [new citizenship](citizenship_type) 
+    - 
   
 - intent: copy_citizenship
   examples: |
-    - [copy](citizenship_type)
-    - [copy](citizenship_type) citizenship
-    - i want [copy](citizenship_type) citizenship
-    - i need [copy](citizenship_type) citizenship
-    - [copy](citizenship_type) one
+    - [copy citizenship](citizenship_type)
+    - [copy citizenship](citizenship_type) 
+    - i want [copy citizenship](citizenship_type) 
+    - i need [copy citizenship](citizenship_type) 
+    - [copy citizenship](citizenship_type) one
   
 - intent: adopted_citizenship
   examples: |
-    - [adopted](citizenship_type)
-    - [adopted](citizenship_type) citizenship
-    - i want [adopted](citizenship_type) citizenship
-    - i need [adopted](citizenship_type) citizenship
-    - [adopted](citizenship_type) one
-  
+    - [adopted citizenship](citizenship_type)
+    - [adopted citizenship](citizenship_type) 
+    - i want [adopted citizenship](citizenship_type) 
+    - i need [adopted citizenship](citizenship_type) 
+    - [adopted citizenship](citizenship_type) one
+    - citizenship through migration
+    - cititzenship through adoption
+    - I am a foreigner, I want to make Nepali citizenship, what are the steps
+
+- intent: doubts_on_migration_certificate
+  examples: |
+    - how can i get my migration certificate
+    - i don't have my migration certificate,how to get it?
+    - migration certificate?
+    - process to get migration
+    - migration
+    - certificate of migration
+
 
 - intent: goodbye
   examples: |
