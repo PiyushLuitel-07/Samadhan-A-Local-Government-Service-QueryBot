@@ -143,8 +143,9 @@ text slot -string valu e
 boolean slot -true ,false ,0,1
 categorical slot -high,medium,low
 float slot - decimal values
-list slot - more than one type of value
+list slot - stores a list of values
 unfeaturized slot -any time of value ,this is mostly used
+any slot - 
 
 We use slot to store single information
 We use forms to store lots of information from the user
@@ -182,13 +183,101 @@ when an entity is extracted, the output of the entity extraction is a snippet of
 
 
 #slots:
-Commonly we fill a slot value with an entity value
+slots are long term memory in conversation.
+they are like variable.  
+they store information for later use.
+any information can be stored in slot,even if no entity is detected.
+Commonly we fill a slot value with detected entity value.
 defined in domain.yml
-they can influence the conversation
+they can influence the conversation.
+
+Note that if slot is being filled by entity,slot must have same name of that entity
+
+example:
+entities:
+- app_name
+slots:
+  app_name:
+	type: text
+	influence_conversation: true
+	mappings:
+	- type: from_entity
+	  entity: app_name
+
+Here the moment the entity app_name gets detected,slot gets filled immediately
+
+mappings in slot can be from_entity, from_intent
+
 
 #Rasa Form
 used to collect information from the user.
 this process is also called slot filling.
+
+example:
+
+slots:
+	smoking_history:
+	 	type: text
+	 	influence_conversation: true
+	 	mappings:
+		  -type: from_entity
+		   entity: smoking_history
+	           condition: 
+			- active_loop: lung_cancer_form
+
+forms:
+	lung_cancer_form:
+		required slots:
+		 - smoking_history
+		 - secondhand_smoke
+
+#explanation of above code:
+smoking_history Slot:
+Type: text - It is a text slot, meaning it can store textual information.
+influence_conversation: true - Indicates that changes in this slot value should be considered when determining the next action or predicting user intent.
+Mappings:
+Mapping Type: from_entity - Specifies that the slot value should be filled from an entity recognized in the user's message.
+Entity: smoking_history - Indicates that the entity named "smoking_history" is expected to fill this slot.
+Condition: Specifies that this mapping should only be applied when the conversation is in the "lung_cancer_form" active loop.
+Forms Definition:
+lung_cancer_form Form:
+Specifies the name of the form as "lung_cancer_form."
+Required Slots:
+smoking_history: Indicates that the "smoking_history" slot is required to be filled during the execution of this form.
+secondhand_smoke: Presumably, there is another slot named "secondhand_smoke," and it is also required to be filled during the execution of this form.
+
+in stories,if this is written
+stories:
+- story: path1 
+  steps:
+   - intent: greet
+   - action: utter_greet
+   - intent: utter_continue
+   - action: affirm
+   - intent: utter_start
+   - action: lung_Cancer_form
+   - active_loop: lung_Cancer_form
+
+use of active loop is= the conversation will be in the context of filling out this form until all necessary information is collected ie,until all slots are filled up
+
+the code above ,represents a conversation flow where the user initiates the conversation with a greeting, expresses an intent to continue, indicates a desire to start a specific topic related to lung cancer, and the chatbot responds by initiating a form loop to collect information about lung cancer interactively. The form loop ensures that the chatbot stays in the context of collecting information about lung cancer until the relevant information is gathered from the user.
+
+next example
+in rule.yml :
+-rule: submit form
+ condition:
+ - active_loop: lung_cancer_form
+steps:
+- action: lung_cancer_from
+- active_loop: null
+- slot_was_set:
+	- requested_slot: null
+
+
+
+
+
+
 
 
  

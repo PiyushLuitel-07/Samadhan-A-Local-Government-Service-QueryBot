@@ -2,38 +2,94 @@ version: "3.1"
 
 stories:
 
-- story: user asks how to get citizenship
+# - story: greet
+#   steps:
+#     - intent: greet
+#     - action: utter_greet1
+#     - action: utter_greet2
+#     - action: utter_greet3
+
+# - story: new citizenship
+#   steps:
+#     - intent: citizenship_query
+#       entities:
+#         - citizenship_type: "new citizenship"
+#     # - slot_was_set:
+#     #     - citizenship_type: new citizenship
+#     - action: utter_new_citizenship_eligibility_Criteria
+#     - action: utter_new_citizenship_documents_required
+#     - action: utter_new_citizenship_steps
+
+# - story: copy citizenship
+#   steps:
+#     - intent: citizenship_query
+#       entities:
+#         - citizenship_type: "copy citizenship"
+#     # - slot_was_set:
+#     #     - citizenship_type: copy citizenship
+#     - action: utter_copy_citizenship_eligibility_Criteria
+#     - action: utter_copy_citizenship_documents_required
+#     - action: utter_copy_citizenship_steps
+
+# - story: adopted citizenship
+#   steps:
+#     - intent: citizenship_query
+#       entities:
+#         - citizenship_type: "adopted citizenship"
+#     # - slot_was_set:
+#     #     - citizenship_type: adopted citizenship
+#     - action: utter_adopted_citizenship_eligibility_Criteria
+#     - action: utter_adopted_citizenship_documents_required
+#     - action: utter_adopted_citizenship_steps
+
+# - story: citizenship unspecified
+#   steps:
+#     - intent: citizenship_query
+#     - action: utter_citizenship
+
+
+- story: greet
   steps:
-  - intent: greet
-  - action: utter_greet1
-  - action: utter_greet2
-  - action: utter_greet3
-  - intent: citizenship_query
-  - action: utter_citizenship
- # Branch for New Citizenship
-  - intent: new_citizenship
-    entities:
-    - citizenship_type: new
-  - action: utter_new_citizenship_eligibility_Criteria
-  - action: utter_new_citizenship_documents_required
-  - action: utter_new_citizenship_steps
- # Branch for cold Citizenship
-  - intent: copy_citizenship
-    entities:
-    - citizenship_type: copy
-  - action: utter_copy_citizenship_eligibility_Criteria
-  - action: utter_copy_citizenship_documents_required
-  - action: utter_copy_citizenship_steps
- # Branch for adopted Citizenship
-  - intent: adopted_citizenship
-    entities:
-    - citizenship_type: adopted
-  - action: utter_adopted_citizenship_eligibility_Criteria
-  - action: utter_adopted_citizenship_documents_required
-  - action: utter_adopted_citizenship_steps
-# related to migration 
-  - intent: doubts_on_migration_certificate
-  - action: utter_doubts_on_migration_certificate  
+    - intent: greet
+    - action: utter_greet1
+    - action: utter_greet2
+    - action: utter_greet3
+
+- story: new citizenship
+  steps:
+    - intent: citizenship_query
+      entities:
+      - citizenship_type: new citizenship
+    - action: utter_new_citizenship_eligibility_Criteria
+    - action: utter_new_citizenship_documents_required
+    - action: utter_new_citizenship_steps
+
+- story: copy citizenship
+  steps:
+    - intent: citizenship_query
+      entities:
+      - citizenship_type: copy citizenship
+    - action: utter_copy_citizenship_eligibility_Criteria
+    - action: utter_copy_citizenship_documents_required
+    - action: utter_copy_citizenship_steps
+
+- story: adopted citizenship
+  steps:
+    - intent: citizenship_query
+      entities:
+      - citizenship_type: adopted citizenship
+    - action: utter_adopted_citizenship_eligibility_Criteria
+    - action: utter_adopted_citizenship_documents_required
+    - action: utter_adopted_citizenship_steps
+
+- story: citizenship unspecified
+  steps:
+    - intent: citizenship_query
+    - action: utter_citizenship
+
+
+
+
 
 
 

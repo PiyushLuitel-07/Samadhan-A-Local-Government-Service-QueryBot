@@ -1,0 +1,23 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJytjkEKwzAMBL+iB+QF/koIIjgLFTSyI8sF1+TvNbSH3HLpbYRmpZ37OVHPhhev0SVpoP4F1nVHoN/wlOLQ4dYCGw7UxQUl0BwHvKHlIZm9ZSwTiQ7ZA11XR4W18+ZbdYdxTLnxNbulWPdxsbDhqGLY/tBk+QBLS2Kh": "utter_copy_citizenship_eligibility_Criteria",
+    "eJzFjkEKwzAQA7/iB+QFvvYZISypI1pB4jjrdcEN+XsN7SG3Xgq9SexIq34/OrcnxUPGYFyjd/tbSBwXePcxM7MhNrZkaGMQjUZk7/rQxBMx35nEasLQOcYGm3fn01ag9fjyrZhBJaypyjk7raEsrTGLYitUTP9agpk3XjnTqlyUjeH4gy3DC0N0mZ4=": "utter_copy_citizenship_documents_required",
+    "eJzdkEEKwzAMBL/iB+QFvvYZIYjUWdqFxHFkueCG/L2G9pBbj4XeVuxIK7bfj87tSfGQMRjX6N3+FhLHBd59hpnZEBtbMrQxiEYjsnd9aOKJmO9MYjVh6Bxjg827s7UVaD2+pBUzqIQ1VTnvTmsoS7uYRbEVKqZffYKZN14506pclI3h+FetDC+9tNAE": "utter_copy_citizenship_steps",
+    "eJztkjEKwzAMRa/iA+QEXnuMEITriPZD4jiyXHBD7l5BOmTrUujS7Qs96X+E+m3v3JaFHxSiYknebYegFGb27l1MKMrJ2FpYjOGkUHDxro8mnpzKHZm0ZR46h2SwendurZWl7R/cqioLxSU3Os+OS6yzbSwkvFYIj79KwhNuuGKCNroIjEH4X8V+I5cvmA8vQtkBFg==": "action_listen",
+    "eJytjkEKwzAMBL+iB+QF/koIItgLFTSyI8uF1OTvNbSH3HLpbYRmpZ37OVEvhhev0SVroP4F1nVDoN/wlOrQ4bYKGw7UxQU10BwHvKH1IYX9KFgmEh2yB7qu9gY7zptvzR3Ga8rFkfgaTzm2bRytbNibGNIfyiwfcMtjxw==": "utter_adopted_citizenship_eligibility_Criteria",
+    "eJzFjkEKwzAQA7/iB+QFvvYZISxuLFpB4jjrdSEN+XsN7SG3Xgq9SexIq34/OrdnxUPCaFySd/tbSAozvPuYicWQGlsLtDFIRiOKd/3YxBOp3JnFtoyhc0wNNu/Op7VCt+PLt2oGlRCXbIhyjsdlrHMrLaJYKxXxj2Mw8cYrJ9omF2XDGH4wZ3gB2Dub6g==": "utter_adopted_citizenship_documents_required",
+    "eJzdkEEKwzAMBL/iB+QFvvYZIQg3XtqFxHFkuZCG/L2G9pBbj4XeVuxIK7bfj87tWfGQMBqX5N3+FpLCDO8+w8RiSI2tBdoYJKMRxbt+bOKJVO7MYlvG0DmmBpt3Z2ut0O34klbNoBLikg1RzutxGevcjhZRrJWK+MNnMPHGKyfaJhdlwxj+rZvhBQQ803Y=": "utter_adopted_citizenship_steps",
+    "eJztkjEKwzAMRa/iA+QEXnuMEIRrf1pB4jiyXEhD7l5BOmTrUujS7Qu9ry+E+m3v3FYEDwpRec7ebYegHCZ49y5GropsbKsQY5CVlVG966OJJ3K9cyFdC4bOcTZYvTu3lgZZ9w9pTRVCIc1FkehsT3Nskw2tJFgaC9IPl8HIN77yyLrSRdgwDv/bHHb7k1K/kD+8AER7Ba4=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet1",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfFgpYY4jYgFAHMCNMg=": "utter_greet2",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfFgpYaUG2GE04hYAJkmTgw=": "utter_greet3",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfFgpYaUG2FEuRHGOI2IBQBcmmdR": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohObMksyo1rzgjsyC+sDS1qLK2NhYAVPAgrQ==": "utter_citizenship",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohObMksyo1rzgjsyC+sDS1qLKWgHmlJSWpRfFI2ogyMxYAY2tBeg==": "action_listen",
+    "eJytjkEKwzAMBL+iB+QF/koIIjgLFTSKI8ktqcnfa2gPufXS2wjNSju2c6BWDA+ec8imidoHWOcVib7DXTyg3a0O6w40JASeaMwdXlC/SeE4CqaBRLscia6rvcKO88e3GgFjxZOv0WXLde0HnQ17FcPyhyLTG+RjYjA=": "utter_new_citizenship_eligibility_Criteria",
+    "eJzFjkEKg1AQQ6/yD+AJ/rbHEBmshjago86f32LFu/uhXbjrptBdwrxkUm97FbbZ8JC2c04aw/YWou2IGD5mYHJoYXOCFQbqdCLFUHdFvKDpzll8ndFUgVpgj+F8WjJs3b98y+4wUTzlHO2nLo+lMIlhyTT0fxqCgTdeOdBXuRgLwvYHU5oDARCYvA==": "utter_new_citizenship_documents_required",
+    "eJzdkEEKg1AMRK/yD+AJ/rbHEAlWh3ZAo+bnt1jx7n5oF+66LHQ3YV4yYeptr8I2Gx7Sds5JY9jeQrQdEcNnGJgcWticYIWBOp1IMdRdES9ounMWX2c0VaAW2GM4W0uGrfuXtOwOE8VTzqv91OWxHExiWDIN/Y8ewcAbrxzoq1yMBWH7T500By4TzrE=": "utter_new_citizenship_steps",
+    "eJzlkkEKwkAMRa8yB+gJZusxSglj+9FAm04zGaWW3t2ALrpzI7hw90Ne8j8h7bY3YcuKG6XeeJYYtpcgSRNieBcjF4M4WwvUGYixMUoMbe/iASlXzmRrRtcEFocthmNrqdB1/+BWzaAkuNNxdJj7OvnCQoqlsmL4URCMfOEzj2wrnZQd4fTvN/G/yOUL3t0TCgH/Qw==": "action_listen"
+  }
+}

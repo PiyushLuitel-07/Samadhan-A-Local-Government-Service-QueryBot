@@ -43,7 +43,7 @@ policies:
   - name: UnexpecTEDIntentPolicy
     max_history: 5
     epochs: 100
-  # - name: TEDPolicy
-  #   max_history: 5
-  #   epochs: 100
-    # constrain_similarities: true
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100
+    constrain_similarities: true
