@@ -1,19 +1,27 @@
 version: '3.1'
+slots:
+  citizenship_type:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: citizenship_type
 intents:
-- adopted_citizenship
 - affirm
-- bot_challenge
 - citizenship_query
-- copy_citizenship
 - deny
-- doubts_on_migration_certificate
-- goodbye
-- greet
-- mood_great
-- mood_unhappy
-- new_citizenship
-entities:
-- citizenship_type
+actions:
+- action_handle_citizenship_query
+- utter_new_citizenship_steps
+- utter_new_citizenship_eligibility_criteria
+- utter_new_citizenship_documents_required
+- utter_adopted_citizenship_documents_required
+- utter_adopted_citizenship_steps
+- utter_adopted_citizenship_eligibility_criteria
+- utter_copy_citizenship_documents_required
+- utter_copy_citizenship_eligibility_criteria
+- utter_copy_citizenship_steps
+- utter_citizenship
 responses:
   utter_citizenship:
   - text: |-
@@ -21,7 +29,7 @@ responses:
       1. New Citizenship
       2. Copy of Citizenship
       3. Adopted Citizenship
-  utter_new_citizenship_eligibility_Criteria:
+  utter_new_citizenship_eligibility_criteria:
   - text: |-
       Eligibility criteria are:
       1.Either of the parent must be Nepali.
@@ -30,7 +38,7 @@ responses:
   - text: |-
       Documents required are :
       1.Token number obtained by filling up online form in public.donidcr.gov.np
-       2. Copy of Father's and Mother's Citizenship Certificate
+      2. Copy of Father's and Mother's Citizenship Certificate
       3.Copy of Father's and Mother's Marriage Certificate
       4.If born in hospital,certificate provided by hospital
       5.If born in home,vaccine card or any other document that provides date of birth
@@ -38,44 +46,25 @@ responses:
   utter_new_citizenship_steps:
   - text: |
       Steps involved are :
-  utter_copy_citizenship_eligibility_Criteria:
+  utter_copy_citizenship_eligibility_criteria:
   - text: Eligibility criteria are ..
   utter_copy_citizenship_documents_required:
   - text: Documents required are ..
   utter_copy_citizenship_steps:
   - text: Steps involved are ..
-  utter_adopted_citizenship_eligibility_Criteria:
+  utter_adopted_citizenship_eligibility_criteria:
   - text: Eligibility criteria are ..
   utter_adopted_citizenship_documents_required:
   - text: Documents required are ..
   utter_adopted_citizenship_steps:
   - text: Steps involved are ..
-  utter_doubts_on_migration_certificate:
-  - text: You can get your migration certificate from Ward Office.
-  utter_greet1:
-  - text: Hello !! I'm Samadhan.
-  utter_greet2:
-  - text: I am a local governmental service querybot.
-  utter_greet3:
-  - text: You can ask me government-related questions on citizenship, birth, death, marriage, and taxes.
-  utter_cheer_up:
-  - text: 'Here is something to cheer you up:'
-    image: https://i.imgur.com/nGF1K8f.jpg
-  utter_did_that_help:
-  - text: Did that help you?
-  utter_happy:
-  - text: Great, carry on!
-  utter_goodbye:
-  - text: Bye
-  utter_iamabot:
-  - text: I am a bot, powered by Rasa.
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-actions:
-- utter_new_citizenship_documents_required
-- utter_new_citizenship_steps
-- utter_new_citizenship_eligibility_Criteria
-- utter_greet3
-- utter_greet2
-- utter_greet1
+entities:
+- citizenship_type:
+    values:
+    - new citizenship
+    - copy citizenship
+    - adopted citizenship
+    - unspecified

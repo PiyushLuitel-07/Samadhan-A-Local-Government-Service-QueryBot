@@ -1,134 +1,29 @@
 version: "3.1"
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-    - hello samadhan
-    - hi samadhan
-    - samadhan hello
-    - samadhan what's up
-    - Subha Pravat
-    - Subha din
-    - Hellloo samadhan bot
-    - Hello querybot
-    - Hello chatbot
-    - Hello bot
-    - Samadhan
 - intent: citizenship_query
   examples: |
-    - i want to make a citizenship
-    - tell me the complete process to get citizenship
-    - how to obtain a citizenship in nepal
-    - citizenship?
-    - process to make citizenship?
-    - way to make citizenship?
-    - how to make citizenship?
-    - how to issue citizenship?
-    - citizenship
-    - how to make citizenship
-    - process for making citizenship
-    - explain me the complete process to obtain a citizenship
-    - procedure for making citizenship
-    - please cititzenship complete process
-    - what process make citizenship
-    - What is the process to make a citizenship in Nepal?
-    - What are the documents required along with the ward recommendation to make a citizenship?
-    - [new citizenship](citizenship_type)
+    - I want information about [new citizenship](citizenship_type).
+    - How to apply for [copy citizenship](citizenship_type)?
+    - Tell me about [adopted citizenship](citizenship_type).
+    - What are the requirements for citizenship?
+    - Can you help me with citizenship?
+    - I want information about [new citizenship](citizenship_type)
+    - i want information about [copy citizenship](citizenship_type)
+    - i want information about [adopted citizenship](citizenship_type)
     - i want [new citizenship](citizenship_type)
-    - i need [new citizenship](citizenship_type)
-    - [copy citizenship](citizenship_type)
-    - i want [copy citizenship](citizenship_type)
-    - i need [copy citizenship](citizenship_type)
-    - [copy citizenship](citizenship_type) one
-    - [adopted citizenship](citizenship_type)
-    - i want [adopted citizenship](citizenship_type)
-    - i need [adopted citizenship](citizenship_type)
-    - [adopted citizenship](citizenship_type) one
     - i want [new citizenship](citizenship_type)
-- intent: doubts_on_migration_certificate
-  examples: |
-    - how can i get my migration certificate
-    - i don't have my migration certificate,how to get it?
-    - migration certificate?
-    - process to get migration
-    - migration
-    - certificate of migration
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
 - intent: affirm
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - Yes
+    - Yeah
+    - Sure
+    - Absolutely
+    - I'm interested
+    - Please proceed
 - intent: deny
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - No
+    - No, thanks
+    - Not now
+    - I'm not interested
+    - Stop
