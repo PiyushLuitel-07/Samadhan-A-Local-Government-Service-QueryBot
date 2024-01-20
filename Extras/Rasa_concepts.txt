@@ -274,6 +274,20 @@ steps:
 	- requested_slot: null
 
 
+##buttons::
+
+responses:
+  utter_citizenship:
+  - text: " What kind of citizenship are you willing to get?"
+    buttons:
+    - title: "New Citizenship"
+      payload: /intent_name
+    - title: "Copy of Citizenship"
+      payload: /intent_name
+    - title: "Adopted Citizenship"
+      payload: /intent_name
+     
+
 
 
 

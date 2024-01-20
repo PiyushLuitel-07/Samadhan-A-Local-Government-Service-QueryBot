@@ -2,16 +2,19 @@ version: "3.1"
 nlu:
 - intent: citizenship_query
   examples: |
-    - I want information about [new citizenship](citizenship_type).
-    - How to apply for [copy citizenship](citizenship_type)?
-    - Tell me about [adopted citizenship](citizenship_type).
+    - I want information about [citizenship by descent](citizenship_type).
+    - How to apply for [citizenship by birth](citizenship_type)?
+    - Tell me about [citizenship by naturalization](citizenship_type).
     - What are the requirements for citizenship?
     - Can you help me with citizenship?
-    - I want information about [new citizenship](citizenship_type)
-    - i want information about [copy citizenship](citizenship_type)
-    - i want information about [adopted citizenship](citizenship_type)
-    - i want [new citizenship](citizenship_type)
-    - i want [new citizenship](citizenship_type)
+    - I want information about [citizenship by descent](citizenship_type)
+    - i want information about [citizenship by birth](citizenship_type)
+    - i want information about [citizenship by naturalization](citizenship_type)
+    - i want [citizenship by descent](citizenship_type)
+    - i want [citizenship by descent](citizenship_type)
+    - what is [citizenship by birth](citizenship_type)?
+    - what is [citizenship by descent](citizenship_type)?
+    - what is [citizenship by naturalization](citizenship_type)?
 - intent: affirm
   examples: |
     - Yes
@@ -20,10 +23,15 @@ nlu:
     - Absolutely
     - I'm interested
     - Please proceed
-- intent: deny
+- intent: greet
   examples: |
-    - No
-    - No, thanks
-    - Not now
-    - I'm not interested
-    - Stop
+    - Hello Samadhan
+    - Hi
+    - Help me 
+    - Hello
+    - Namaskar
+    - Namaste
+    - Subha pravat
+    - Help me
+    - hi,help me
+

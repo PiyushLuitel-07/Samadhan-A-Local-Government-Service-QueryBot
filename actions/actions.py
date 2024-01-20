@@ -26,21 +26,21 @@ class ActionHandleCitizenshipQuery(Action):
         if entities:
             entity_values = [entity['value'] for entity in entities]
             
-            if 'new citizenship' in entity_values:
-                citizenship_type = 'new citizenship'
-                dispatcher.utter_message(response="utter_new_citizenship_eligibility_criteria")
-                dispatcher.utter_message(response="utter_new_citizenship_documents_required")
-                dispatcher.utter_message(response="utter_new_citizenship_steps")
-            elif 'copy citizenship' in entity_values:
-                citizenship_type = 'copy citizenship'
-                dispatcher.utter_message(response="utter_copy_citizenship_eligibility_criteria")
-                dispatcher.utter_message(response="utter_copy_citizenship_documents_required")
-                dispatcher.utter_message(response="utter_copy_citizenship_steps")
-            elif 'adopted citizenship' in entity_values:
-                citizenship_type = 'adopted citizenship'
-                dispatcher.utter_message(response="utter_adopted_citizenship_eligibility_criteria")
-                dispatcher.utter_message(response="utter_adopted_citizenship_documents_required")
-                dispatcher.utter_message(response="utter_adopted_citizenship_steps")
+            if 'citizenship by descent' in entity_values:
+                citizenship_type = 'citizenship by descent'
+                dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_criteria")
+                dispatcher.utter_message(response="utter_citizenship_by_descent_documents_required")
+                dispatcher.utter_message(response="utter_citizenship_by_descent_steps")
+            elif 'citizenship by birth' in entity_values:
+                citizenship_type = 'citizenship by birth'
+                dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility_criteria")
+                dispatcher.utter_message(response="utter_citizenship_by_birth_documents_required")
+                dispatcher.utter_message(response="utter_citizenship_by_birth_steps")
+            elif 'acitizenship by naturalization' in entity_values:
+                citizenship_type = 'citizenship by naturalization'
+                dispatcher.utter_message(response="utter_citizenship_by_naturalization_criteria")
+                dispatcher.utter_message(response="utter_citizenship_by_naturalization_required")
+                dispatcher.utter_message(response="utter_citizenship_by_naturalization_steps")
             else:
                 citizenship_type = 'unspecified'
                 dispatcher.utter_message(response="utter_citizenship") 
