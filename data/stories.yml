@@ -1,3 +1,15 @@
 version: "3.1"
 stories:
 
+- story: User inquires about citizenship
+  steps:
+  - intent: citizenship_query
+  - action: action_handle_citizenship_query
+  - slot_was_set:
+    - citizenship_type: unspecified
+  - action: utter_citizenship
+
+
+
+
+

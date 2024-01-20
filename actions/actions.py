@@ -36,15 +36,13 @@ class ActionHandleCitizenshipQuery(Action):
                 dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility_criteria")
                 dispatcher.utter_message(response="utter_citizenship_by_birth_documents_required")
                 dispatcher.utter_message(response="utter_citizenship_by_birth_steps")
-            elif 'acitizenship by naturalization' in entity_values:
+            elif 'citizenship by naturalization' in entity_values:
                 citizenship_type = 'citizenship by naturalization'
                 dispatcher.utter_message(response="utter_citizenship_by_naturalization_criteria")
                 dispatcher.utter_message(response="utter_citizenship_by_naturalization_required")
                 dispatcher.utter_message(response="utter_citizenship_by_naturalization_steps")
             else:
-                citizenship_type = 'unspecified'
-                dispatcher.utter_message(response="utter_citizenship") 
-
+                citizenship_type = 'unspecified' 
         # Set the slot value for 'citizenship_type'
         return [SlotSet("citizenship_type", citizenship_type)]
         

@@ -2,12 +2,10 @@ version: '3.1'
 entities:
 - citizenship_type:
     values:
-    - new citizenship
-    - copy citizenship
-    - adopted citizenship
+    - citizenship by birth
+    - citizenship by descent
+    - citizenship by naturalization
     - unspecified
-
-
 slots:
   citizenship_type:
     type: text
@@ -15,13 +13,11 @@ slots:
     mappings:
     - type: from_entity
       entity: citizenship_type
-
 intents:
 - affirm
 - citizenship_query
 - deny
 - greet
-
 actions:
 - action_handle_citizenship_query
 - utter_citizenship_by_descent_steps
@@ -34,57 +30,58 @@ actions:
 - utter_citizenship_by_birth_eligibility_criteria
 - utter_citizenship_by_birth_steps
 - utter_citizenship
-
 responses:
+  utter_greet1:
+  - text: "Hello !! I'm Samadhan."
+
+  utter_greet2:
+  - text: "I am a local governmental service querybot." 
+  
   utter_citizenship:
   - text: |-
       What kind of citizenship are you willing to get?
       1. citizenship by descent
       2. citizenship by birth
       3. citizenship by naturalization
-  # utter_citizenship_by_descent_defination:
-  # - text: |-
-  #     It is the type of citizenship issued by the Nepal Government if either of applicant's parent is Nepali citizen.
   utter_citizenship_by_descent_eligibility_criteria:
   - text: |-
       Eligibility criteria are:
-      1.Either of the parent must be Nepali.
-      2.Age must be 16 or above. 
+      1. Either of the parent must be Nepali.
+      2. Age must be 16 or above.
   utter_citizenship_by_descent_documents_required:
   - text: |-
-      Documents required are :
+      Documents required are:
       1. Seven photos (passport or auto-sized)
       2. Original citizenship of parents
       3. Ward recommendation letter
       4. School or college's certificate (marksheet/character)
-      5. Migration certificate (if migrated from other place) 
+      5. Migration certificate (if migrated from another place)
   utter_citizenship_by_descent_steps:
   - text: |-
-      Steps involved are :
-      1. Go to ward office to get recommendation letter.
-		  2. Go to District Administration Office along with your parent with required documents.
+      Steps involved are:
+      1. Go to ward office to get a recommendation letter.
+      2. Go to District Administration Office along with your parent with required documents.
   utter_citizenship_by_birth_eligibility_criteria:
   - text: |-
       Eligibility criteria are:
-      1.Either of the parent must be Nepali.
-      2.Age must be 16 or above.
+      1. Either of the parent must be Nepali.
+      2. Age must be 16 or above.
   utter_citizenship_by_birth_documents_required:
-  - text: Documents required are ..
+  - text: Documents required are...
   utter_citizenship_by_birth_steps:
   - text: |-
-      Steps involved are :
-      1. Go to ward office to get recommendation letter.
-		  2. Go to District Administration Office along with your parent with required documents.
+      Steps involved are:
+      1. Go to ward office to get a recommendation letter.
+      2. Go to District Administration Office along with your parent with required documents.
   utter_citizenship_by_naturalization_eligibility_criteria:
   - text: |-
       Eligibility criteria are:
-      1.Either of the parent must be Nepali.
-      2.Age must be 16 or above.
+      1. Either of the parent must be Nepali.
+      2. Age must be 16 or above.
   utter_citizenship_by_naturalization_documents_required:
-  - text: Documents required are ..
+  - text: Documents required are...
   utter_citizenship_by_naturalization_steps:
-  - text: Steps involved are ..
-
+  - text: Steps involved are...
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
