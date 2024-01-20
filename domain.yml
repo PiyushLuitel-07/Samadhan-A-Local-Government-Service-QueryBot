@@ -42,6 +42,9 @@ responses:
       1. citizenship by descent
       2. citizenship by birth
       3. citizenship by naturalization
+  # utter_citizenship_by_descent_defination:
+  # - text: |-
+  #     It is the type of citizenship issued by the Nepal Government if either of applicant's parent is Nepali citizen.
   utter_citizenship_by_descent_eligibility_criteria:
   - text: |-
       Eligibility criteria are:

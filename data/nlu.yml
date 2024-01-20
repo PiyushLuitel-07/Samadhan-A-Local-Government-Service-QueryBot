@@ -13,20 +13,19 @@ nlu:
     - i want [citizenship by descent](citizenship_type)
     - i want [citizenship by descent](citizenship_type)
 
-- intent: defination_about_citizenship
-  examples: |
-    - what is [citizenship by birth](citizenship_type)?
-    - what is [citizenship by descent](citizenship_type)?
-    - what is [citizenship by naturalization](citizenship_type)?
+# - intent: defination_about_citizenship
+#   examples: |
+#     - what is [citizenship by birth](citizenship_type)?
+#     - what is [citizenship by descent](citizenship_type)?
+#     - what is [citizenship by naturalization](citizenship_type)?
+#     - meaning of [citizenship by birth](citizenship_type).
+#     - meaning of [citizenship by descent](citizenship_type).
+#     - meaning of [citizenship by naturalization](citizenship_type).
+#     - define [citizenship by birth](citizenship_type).
+#     - define [citizenship by descent](citizenship_type).
+#     - define [citizenship by naturalization](citizenship_type).
 
-- intent: affirm
-  examples: |
-    - Yes
-    - Yeah
-    - Sure
-    - Absolutely
-    - I'm interested
-    - Please proceed
+    
 - intent: greet
   examples: |
     - Hello Samadhan
