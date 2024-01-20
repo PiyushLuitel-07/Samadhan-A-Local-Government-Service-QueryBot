@@ -5,3 +5,5 @@ rules:
   steps:
     - intent: citizenship_query
     - action: action_handle_citizenship_query
+
+

@@ -48,4 +48,3 @@ class ActionHandleCitizenshipQuery(Action):
         # Set the slot value for 'citizenship_type'
         return [SlotSet("citizenship_type", citizenship_type)]
         
-

@@ -12,9 +12,13 @@ nlu:
     - i want information about [citizenship by naturalization](citizenship_type)
     - i want [citizenship by descent](citizenship_type)
     - i want [citizenship by descent](citizenship_type)
+
+- intent: defination_about_citizenship
+  examples: |
     - what is [citizenship by birth](citizenship_type)?
     - what is [citizenship by descent](citizenship_type)?
     - what is [citizenship by naturalization](citizenship_type)?
+
 - intent: affirm
   examples: |
     - Yes
