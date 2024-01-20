@@ -20,23 +20,13 @@ intents:
 - greet
 actions:
 - action_handle_citizenship_query
-- utter_citizenship_by_descent_steps
-- utter_citizenship_by_descent_eligibility_criteria
-- utter_citizenship_by_descent_documents_required
-- utter_citizenship_by_naturalization_documents_required
-- utter_citizenship_by_naturalization_steps
-- utter_citizenship_by_naturalization_eligibility_criteria
-- utter_citizenship_by_birth_documents_required
-- utter_citizenship_by_birth_eligibility_criteria
-- utter_citizenship_by_birth_steps
-- utter_citizenship
 responses:
   utter_greet1:
   - text: "Hello !! I'm Samadhan."
 
   utter_greet2:
   - text: "I am a local governmental service querybot." 
-  
+
   utter_citizenship:
   - text: |-
       What kind of citizenship are you willing to get?
