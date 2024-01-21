@@ -7,52 +7,21 @@ nlu:
     - Tell me about [citizenship by naturalization](citizenship_type).
     - What are the requirements for citizenship?
     - Can you help me with citizenship?
-    - I want information about [citizenship by descent](citizenship_type)
-    - i want information about [citizenship by birth](citizenship_type)
-    - i want information about [citizenship by naturalization](citizenship_type)
-    - i want [citizenship by descent](citizenship_type)
-    - how can i get my citizenship
-    - i want citizenship
-    - can you help me with [citizenship](citizenship_type)
-    - i want [citizenship by birth](citizenship_type)
-    - what are the eligibility criteria for [citizenship by birth](citizenship_type)
+    - what are the [documents](specification) required to make [citizenship by birth](citizenship_type)?
+    - what are the [steps](specification) required to make [citizenship by descent](citizenship_type)?
+    - what are the [eligibility](specification) required to make [citizenship by naturalization](citizenship_type)?
 
-- intent: birth_certificate_query
+- intent: certificate_query
   examples: |
-    - how to apply for birth certificate?
-    - help me with birth certificate
-    - i want to make birth certificate
-    - process to make birth certificate
-    - how to make birth certificate
+    - how to apply for [birth certificate](certificate_type)?
+    - help me with [death certificate](certificate_type)
+    - i want to make [marriage certificate](certificate_type)
+    - process to make [divorce certificate](certificate_type)
+    - how to make [migration certificate](certificate_type)
+    - what are the [documents](specification) required to make [birth certificate](certificate_type)?
+    - what are the [steps](specification) required to make [death certificate](certificate_type)?
 
-- intent: death_certificate_query
-  examples: |
-    - how to apply for death certificate?
-    - help me with death certificate
-    - i want to make death certificate
-    - process to make death certificate
 
-- intent: marriage_certificate_query
-  examples: |
-    - how to apply for marriage certificate?
-    - help me with marriage certificate
-    - i want to make marriage certificate
-    - process to make marriage certificate
-
-- intent: migration_certificate_query
-  examples: |
-    - how to apply for migration certificate?
-    - help me with migration certificate
-    - i want to make migration certificate
-    - process to make migration certificate
-
-- intent: divorce_certificate_query
-  examples: |
-    - how to apply for divorce certificate?
-    - help me with divorce certificate
-    - i want to make divorce certificate
-    - process to make divorce certificate
-    
 - intent: greet
   examples: |
     - hey

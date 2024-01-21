@@ -5,7 +5,16 @@ entities:
     - citizenship by birth
     - citizenship by descent
     - citizenship by naturalization
-    - unspecified
+    - citizenship
+    
+- certificate_type:
+    values:
+    - birth certificate
+    - death certificate
+    - marriage certificate
+    - migration certificate
+    - divorce certificate
+
 slots:
   citizenship_type:
     type: text
@@ -15,7 +24,7 @@ slots:
       entity: citizenship_type
 intents:
 - affirm
-- birth_certificate_query
+- certificate_query
 - bot_challenge
 - citizenship_query
 - deny

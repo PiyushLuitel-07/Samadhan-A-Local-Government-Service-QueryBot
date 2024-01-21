@@ -64,51 +64,8 @@ stories:
   ################## citizenship stories ends############################
 
 
-###############################################
-- story: interactive_story_4
-  steps:
-  - intent: citizenship_query
-    entities:
-    - citizenship_type: citizenship by birth
-  - slot_was_set:
-    - citizenship_type: citizenship by birth
-  - action: utter_citizenship_by_birth_eligibility_criteria
-
   ###########################################################
 #######################birth certificate############################
-- story: interactive_story_5
-  steps:
-  - intent: birth_certificate_query
-  - action: utter_birth_certificate_documents
-  - action: utter_birth_certificate_steps
-
-#######################death certificate############################
-- story: interactive_story_6
-  steps:
-  - intent: death_certificate_query
-  - action: utter_death_certificate_documents
-  - action: utter_death_certificate_steps
-
-#######################marriage certificate############################
-- story: interactive_story_7
-  steps:
-  - intent: marriage_certificate_query
-  - action: utter_marriage_certificate_documents
-  - action: utter_marriage_certificate_steps
-
-#######################divorce certificate############################
-- story: interactive_story_8
-  steps:
-  - intent: divorce_certificate_query
-  - action: utter_divorce_certificate_documents
-  - action: utter_divorce_certificate_steps
-
-#######################migration certificate############################
-- story: interactive_story_9
-  steps:
-  - intent: migration_certificate_query
-  - action: utter_migration_certificate_documents
-  - action: utter_migration_certificate_steps
 
   ################# Thapum hai ####################################
 
