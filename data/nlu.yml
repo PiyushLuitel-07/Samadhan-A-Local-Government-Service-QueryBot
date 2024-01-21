@@ -12,8 +12,47 @@ nlu:
     - i want information about [citizenship by naturalization](citizenship_type)
     - i want [citizenship by descent](citizenship_type)
     - how can i get my citizenship
-    - i want information about [citizenship by birth](citizenship_type)
     - i want citizenship
+    - can you help me with [citizenship](citizenship_type)
+    - i want [citizenship by birth](citizenship_type)
+    - what are the eligibility criteria for [citizenship by birth](citizenship_type)
+
+- intent: birth_certificate_query
+  examples: |
+    - how to apply for birth certificate?
+    - help me with birth certificate
+    - i want to make birth certificate
+    - process to make birth certificate
+    - how to make birth certificate
+
+- intent: death_certificate_query
+  examples: |
+    - how to apply for death certificate?
+    - help me with death certificate
+    - i want to make death certificate
+    - process to make death certificate
+
+- intent: marriage_certificate_query
+  examples: |
+    - how to apply for marriage certificate?
+    - help me with marriage certificate
+    - i want to make marriage certificate
+    - process to make marriage certificate
+
+- intent: migration_certificate_query
+  examples: |
+    - how to apply for migration certificate?
+    - help me with migration certificate
+    - i want to make migration certificate
+    - process to make migration certificate
+
+- intent: divorce_certificate_query
+  examples: |
+    - how to apply for divorce certificate?
+    - help me with divorce certificate
+    - i want to make divorce certificate
+    - process to make divorce certificate
+    
 - intent: greet
   examples: |
     - hey
@@ -40,7 +79,6 @@ nlu:
     - Hello chatbot
     - Hello bot
     - Samadhan
-
 - intent: goodbye
   examples: |
     - good bye
@@ -51,8 +89,6 @@ nlu:
     - have a nice day
     - see you around
     - bye bye
-    - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -60,50 +96,14 @@ nlu:
     - of course
     - that sounds good
     - correct
-
 - intent: deny
   examples: |
     - no
-    - n
     - never
     - I don't think so
     - don't like that
     - no way
     - not really
-
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so sad
-
 - intent: bot_challenge
   examples: |
     - are you a bot?

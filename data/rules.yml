@@ -1,3 +1,19 @@
 version: "3.1"
 
 rules:
+- rule: User greets
+  steps:
+  - intent: greet
+  - action: utter_greet1
+  - action: utter_greet2
+  - action: utter_greet3
+
+- rule: User says bye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot

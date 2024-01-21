@@ -1,14 +1,25 @@
 digraph  {
 0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
 "-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
-1 [class=active, fontsize=12, label=action_handle_citizenship_query];
-3 [class="intent dashed active", label="  ?  ", shape=rect];
-4 [class="intent active", fillcolor=lightblue, label="/citizenship_query", shape=rect, style=filled];
-5 [class="intent active", fillcolor=lightblue, label="/citizenship_query", shape=rect, style=filled];
+1 [class="", fontsize=12, label=utter_citizenship];
+"-5" [class=ellipsis, label="..."];
+4 [class="", fontsize=12, label=utter_citizenship_by_birth_eligibility_criteria];
+"-6" [class=ellipsis, label="..."];
+5 [class=active, fontsize=12, label=utter_birth_certificate_documents];
+6 [class=active, fontsize=12, label=utter_birth_certificate_steps];
+7 [class="intent dashed active", label="  ?  ", shape=rect];
+8 [class=intent, fillcolor=lightblue, label="/citizenship_query", shape=rect, style=filled];
+9 [class=intent, fillcolor=lightblue, label="/citizenship_query", shape=rect, style=filled];
+10 [class="intent active", fillcolor=lightblue, label="/birth_certificate_query", shape=rect, style=filled];
 0 -> "-1"  [class="", key=NONE, label=""];
-0 -> 4  [class=active, key=0];
-1 -> 3  [class=active, key=NONE, label=""];
-1 -> 5  [class=active, key=0];
-4 -> 1  [class=active, key=0];
-5 -> 1  [class=active, key=0];
+0 -> 8  [class="", key=0];
+0 -> 9  [class="", key=0];
+0 -> 10  [class=active, key=0];
+1 -> "-5"  [class="", key=NONE, label=""];
+4 -> "-6"  [class="", key=NONE, label=""];
+5 -> 6  [class=active, key=NONE, label=""];
+6 -> 7  [class=active, key=NONE, label=""];
+8 -> 1  [class="", key=0];
+9 -> 4  [class="", key=0];
+10 -> 5  [class=active, key=0];
 }
