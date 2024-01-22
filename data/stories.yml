@@ -112,3 +112,123 @@ stories:
     - citizenship_type: marriage certificate
   - action: utter_marriage_certificate_steps
   - action: utter_marriage_certificate_documents
+
+- story: user asks about birth certificate and gets the documents required
+  steps:
+  - intent: certificate_query
+    entities:
+    - specification: documents
+    - citizenship_type: birth certificate
+  - slot_was_set:
+    - citizenship_type: birth certificate
+  - slot_was_set:
+    - specification: documents
+  - action: utter_birth_certificate_documents
+
+- story: user asks about marriage certificate and gets the documents required
+  steps:
+  - intent: certificate_query
+    entities:
+    - specification: documents
+    - citizenship_type: marriage certificate
+  - slot_was_set:
+    - citizenship_type: marriage certificate
+  - slot_was_set:
+    - specification: documents
+  - action: utter_marriage_certificate_documents
+
+- story: user asks about death certificate and gets the documents required
+  steps:
+  - intent: certificate_query
+    entities:
+    - specification: documents
+    - citizenship_type: death certificate
+  - slot_was_set:
+    - citizenship_type: death certificate
+  - slot_was_set:
+    - specification: documents
+  - action: utter_death_certificate_documents
+
+- story: user asks about divorce certificate and gets the documents required
+  steps:
+  - intent: certificate_query
+    entities:
+    - specification: documents
+    - citizenship_type: divorce certificate
+  - slot_was_set:
+    - citizenship_type: divorce certificate
+  - slot_was_set:
+    - specification: documents
+  - action: utter_divorce_certificate_documents
+
+- story: user asks about migration certificate and gets the documents required
+  steps:
+  - intent: certificate_query
+    entities:
+    - specification: documents
+    - citizenship_type: migration certificate
+  - slot_was_set:
+    - citizenship_type: migration certificate
+  - slot_was_set:
+    - specification: documents
+  - action: utter_migration_certificate_documents
+
+- story: user asks about birth certificate and gets the steps required
+  steps:
+  - intent: certificate_query
+    entities:
+    - specification: steps
+    - citizenship_type: birth certificate
+  - slot_was_set:
+    - citizenship_type: birth certificate
+  - slot_was_set:
+    - specification: steps
+  - action: utter_birth_certificate_steps
+
+- story: user asks about marriage certificate and gets the steps required
+  steps:
+  - intent: certificate_query
+    entities:
+    - specification: steps
+    - citizenship_type: marriage certificate
+  - slot_was_set:
+    - citizenship_type: marriage certificate
+  - slot_was_set:
+    - specification: steps
+  - action: utter_marriage_certificate_steps
+
+- story: user asks about death certificate and gets the steps required
+  steps:
+  - intent: certificate_query
+    entities:
+    - specification: steps
+    - citizenship_type: death certificate
+  - slot_was_set:
+    - citizenship_type: death certificate
+  - slot_was_set:
+    - specification: steps
+  - action: utter_death_certificate_steps
+
+- story: user asks about divorce certificate and gets the steps required
+  steps:
+  - intent: certificate_query
+    entities:
+    - specification: steps
+    - citizenship_type: divorce certificate
+  - slot_was_set:
+    - citizenship_type: divorce certificate
+  - slot_was_set:
+    - specification: steps
+  - action: utter_divorce_certificate_steps
+
+- story: user asks about migration certificate and gets the steps required
+  steps:
+  - intent: certificate_query
+    entities:
+    - specification: steps
+    - citizenship_type: migration certificate
+  - slot_was_set:
+    - citizenship_type: migration certificate
+  - slot_was_set:
+    - specification: steps
+  - action: utter_migration_certificate_steps

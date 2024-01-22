@@ -26,6 +26,7 @@ nlu:
     - what are the [steps](specification) required to make [death certificate](certificate_type)?
     - how to apply for [birth certificate](certificate_type)
     - how can i get [birth certificate](citizenship_type) in nepal
+    - what are the required [documents](specification) to get [birth certificate](citizenship_type) in nepal
 - intent: greet
   examples: |
     - hey
