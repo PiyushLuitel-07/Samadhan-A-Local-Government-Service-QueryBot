@@ -15,7 +15,6 @@ nlu:
     - what are the [documents](specification) required to make [citizenship by birth](citizenship_type)?
     - tell [steps](specification) required to make [citizenship by descent](citizenship_type)?
     - [eligibility](specification) to make [citizenship by naturalization](citizenship_type)?
-
 - intent: certificate_query
   examples: |
     - how to apply for [birth certificate](certificate_type)?
@@ -25,8 +24,8 @@ nlu:
     - how to make [migration certificate](certificate_type)
     - what are the [documents](specification) required to make [birth certificate](certificate_type)?
     - what are the [steps](specification) required to make [death certificate](certificate_type)?
-
-
+    - how to apply for [birth certificate](certificate_type)
+    - how can i get [birth certificate](citizenship_type) in nepal
 - intent: greet
   examples: |
     - hey

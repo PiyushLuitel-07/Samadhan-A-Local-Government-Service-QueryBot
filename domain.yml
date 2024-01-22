@@ -6,7 +6,6 @@ entities:
     - citizenship by descent
     - citizenship by naturalization
     - citizenship
-    
 - certificate_type:
     values:
     - birth certificate
@@ -14,13 +13,11 @@ entities:
     - marriage certificate
     - migration certificate
     - divorce certificate
-
 - specification:
     values:
     - documents
     - steps
     - eligibility
-
 slots:
   citizenship_type:
     type: text
@@ -40,25 +37,24 @@ slots:
     mappings:
     - type: from_entity
       entity: specification
-      
 intents:
 - affirm
-- certificate_query
 - bot_challenge
+- certificate_query
 - citizenship_query
 - deny
 - goodbye
 - greet
 actions:
+- utter_birth_certificate_steps
+- utter_birth_certificate_documents
 - utter_citizenship
 - utter_greet1
 - utter_greet3
 - utter_citizenship_by_birth_eligibility_criteria
 - utter_citizenship_by_birth_steps
-- utter_birth_certificate_documents
 - utter_greet2
 - utter_citizenship_by_descent_documents_required
-- utter_birth_certificate_steps
 - utter_citizenship_by_birth_documents_required
 - action_handle_citizenship_query
 - utter_citizenship_by_descent_steps

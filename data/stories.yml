@@ -1,7 +1,6 @@
 version: "3.1"
 stories:
 
-#####################Citizenship Stories#######################################################
 # - story: User inquires about citizenship
 #   steps:
 #   - intent: citizenship_query
@@ -10,6 +9,7 @@ stories:
 #     - citizenship_type: unspecified
 #   - action: utter_citizenship
 
+#####################Citizenship Stories#######################################################
 - story: interactive_story_1
   steps:
   - intent: citizenship_query
@@ -61,6 +61,54 @@ stories:
   - action: utter_citizenship_by_naturalization_documents_required
   - action: utter_citizenship_by_naturalization_steps
 
-  ################## citizenship stories ends############################
 
+#####################Certificate Stories#######################################################
+- story: interactive_story_4
+  steps:
+  - intent: certificate_query
+    entities:
+    - citizenship_type: birth certificate
+  - slot_was_set:
+    - citizenship_type: birth certificate
+  - action: utter_birth_certificate_steps
+  - action: utter_birth_certificate_documents
 
+- story: interactive_story_5
+  steps:
+  - intent: certificate_query
+    entities:
+    - citizenship_type: death certificate
+  - slot_was_set:
+    - citizenship_type: death certificate
+  - action: utter_death_certificate_steps
+  - action: utter_death_certificate_documents
+  
+- story: interactive_story_6
+  steps:
+  - intent: certificate_query
+    entities:
+    - citizenship_type: migration certificate
+  - slot_was_set:
+    - citizenship_type: migration certificate
+  - action: utter_migration_certificate_steps
+  - action: utter_migration_certificate_documents
+
+- story: interactive_story_7
+  steps:
+  - intent: certificate_query
+    entities:
+    - citizenship_type: divorce certificate
+  - slot_was_set:
+    - citizenship_type: divorce certificate
+  - action: utter_divorce_certificate_steps
+  - action: utter_divorce_certificate_documents
+
+- story: interactive_story_8
+  steps:
+  - intent: certificate_query
+    entities:
+    - citizenship_type: marriage certificate
+  - slot_was_set:
+    - citizenship_type: marriage certificate
+  - action: utter_marriage_certificate_steps
+  - action: utter_marriage_certificate_documents
