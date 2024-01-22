@@ -63,7 +63,7 @@ stories:
 
 
 #####################Certificate Stories#######################################################
-- story: interactive_story_4
+- story: user asks about birth certificate and gets the steps and documents required
   steps:
   - intent: certificate_query
     entities:
@@ -73,7 +73,7 @@ stories:
   - action: utter_birth_certificate_steps
   - action: utter_birth_certificate_documents
 
-- story: interactive_story_5
+- story: user asks about birth certificate and gets the steps and documents required
   steps:
   - intent: certificate_query
     entities:
@@ -83,7 +83,7 @@ stories:
   - action: utter_death_certificate_steps
   - action: utter_death_certificate_documents
   
-- story: interactive_story_6
+- story: user asks about migration certificate and gets the steps and documents required
   steps:
   - intent: certificate_query
     entities:
@@ -93,7 +93,7 @@ stories:
   - action: utter_migration_certificate_steps
   - action: utter_migration_certificate_documents
 
-- story: interactive_story_7
+- story: user asks about divorce certificate and gets the steps and documents required
   steps:
   - intent: certificate_query
     entities:
@@ -103,7 +103,7 @@ stories:
   - action: utter_divorce_certificate_steps
   - action: utter_divorce_certificate_documents
 
-- story: interactive_story_8
+- story: user asks about marriage certificate and gets the steps and documents required
   steps:
   - intent: certificate_query
     entities:
