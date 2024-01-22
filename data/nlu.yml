@@ -6,10 +6,14 @@ nlu:
     - How to apply for [citizenship by birth](citizenship_type)?
     - Tell me about [citizenship by naturalization](citizenship_type).
     - What are the requirements for citizenship?
+    - help me with [citizenship by birth](citizenship_type)
     - Can you help me with citizenship?
+    - How to get citizenship?
+    - what is the process to make [citizenship by birth](citizenship_type)?
+    - procedure to make [citizenship by descent](citizenship_type)?
     - what are the [documents](specification) required to make [citizenship by birth](citizenship_type)?
-    - what are the [steps](specification) required to make [citizenship by descent](citizenship_type)?
-    - what are the [eligibility](specification) required to make [citizenship by naturalization](citizenship_type)?
+    - tell [steps](specification) required to make [citizenship by descent](citizenship_type)?
+    - [eligibility](specification) to make [citizenship by naturalization](citizenship_type)?
 
 - intent: certificate_query
   examples: |
@@ -30,7 +34,7 @@ nlu:
     - hello there
     - good morning
     - good evening
-    - moin
+    - what's up
     - hey there
     - let's go
     - hey dude
@@ -43,7 +47,7 @@ nlu:
     - samadhan what's up
     - Subha Pravat
     - Subha din
-    - Hellloo samadhan bot
+    - Helloo samadhan bot
     - Hello querybot
     - Hello chatbot
     - Hello bot

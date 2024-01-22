@@ -15,6 +15,12 @@ entities:
     - migration certificate
     - divorce certificate
 
+- specification:
+    values:
+    - documents
+    - steps
+    - eligibility
+
 slots:
   citizenship_type:
     type: text
@@ -22,6 +28,19 @@ slots:
     mappings:
     - type: from_entity
       entity: citizenship_type
+  certificate_type:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: certificate_type
+  specification:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: specification
+      
 intents:
 - affirm
 - certificate_query
