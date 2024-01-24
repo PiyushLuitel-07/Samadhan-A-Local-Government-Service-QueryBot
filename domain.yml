@@ -18,25 +18,6 @@ entities:
     - marriage certificate
     - migration certificate
     - divorce certificate
-slots:
-  citizenship_type:
-    type: text
-    influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: citizenship_type
-  certificate_type:
-    type: text
-    influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: certificate_type
-  specification:
-    type: text
-    influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: specification
 intents:
 - affirm
 - bot_challenge
@@ -46,22 +27,30 @@ intents:
 - goodbye
 - greet
 actions:
-- utter_birth_certificate_documents
-- utter_birth_certificate_steps
+- action_handle_citizenship_query
 - utter_citizenship
-- utter_greet1
-- utter_greet3
 - utter_citizenship_by_birth_eligibility_criteria
 - utter_citizenship_by_birth_steps
-- utter_greet2
-- utter_citizenship_by_descent_documents_required
 - utter_citizenship_by_birth_documents_required
-- action_handle_citizenship_query
-- utter_citizenship_by_descent_steps
+- utter_greet1
+- utter_greet2
+- utter_greet3
 - utter_citizenship_by_descent_eligibility_criteria
+- utter_citizenship_by_descent_documents_required
+- utter_citizenship_by_descent_steps
+- utter_citizenship_by_naturalization_eligibility_criteria
 - utter_citizenship_by_naturalization_documents_required
 - utter_citizenship_by_naturalization_steps
-- utter_citizenship_by_naturalization_eligibility_criteria
+- utter_birth_certificate_documents
+- utter_birth_certificate_steps
+- utter_death_certificate_documents
+- utter_death_certificate_steps
+- utter_marriage_certificate_documents
+- utter_marriage_certificate_steps
+- utter_divorce_certificate_documents
+- utter_divorce_certificate_steps
+- utter_migration_certificate_documents
+- utter_migration_certificate_steps
 responses:
   utter_greet1:
   - text: Hello !! I'm Samadhan.
@@ -200,6 +189,27 @@ responses:
       1. Submit the transfer form and other required documents at the ward office.
       2. The ward office will verify the submitted documents.
       3. Once verified, collect the migration certificate from the ward office.
+response_selector:
+  retrieve_responses:
+    certificate_query:
+    - utter_birth_certificate_documents
+    - utter_birth_certificate_steps
+    - utter_death_certificate_documents
+    - utter_death_certificate_steps
+    - utter_marriage_certificate_documents
+    - utter_marriage_certificate_steps
+    - utter_divorce_certificate_documents
+    - utter_divorce_certificate_steps
+    - utter_migration_certificate_documents
+    - utter_migration_certificate_steps
+    citizenship_query:
+    - utter_citizenship
+    - utter_citizenship_by_birth_eligibility_criteria
+    - utter_citizenship_by_birth_documents_required
+    - utter_citizenship_by_birth_steps
+    - utter_citizenship_by_descent_eligibility_criteria
+    - utter_citizenship_by_descent_documents_required
+    - utter_citizenship_by_descent_steps
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

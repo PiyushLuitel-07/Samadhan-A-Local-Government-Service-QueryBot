@@ -1,234 +1,82 @@
 version: "3.1"
 stories:
 
-# - story: User inquires about citizenship
-#   steps:
-#   - intent: citizenship_query
-#   - action: action_handle_citizenship_query
-#   - slot_was_set:
-#     - citizenship_type: unspecified
-#   - action: utter_citizenship
+- story: User inquires about citizenship
+  steps:
+  - intent: citizenship_query
+  - action: action_handle_citizenship_query
 
-#####################Citizenship Stories#######################################################
 - story: interactive_story_1
   steps:
   - intent: citizenship_query
     entities:
     - citizenship_type: citizenship
-  - slot_was_set:
-    - citizenship_type: citizenship
-  - action: utter_citizenship
+  - action: action_handle_citizenship_query
   - intent: citizenship_query
     entities:
     - citizenship_type: citizenship by birth
-  - slot_was_set:
+  - action: action_handle_citizenship_query
+  - intent: citizenship_query
+    entities:
+    - specification: steps
     - citizenship_type: citizenship by birth
-  - action: utter_citizenship_by_birth_eligibility_criteria
-  - action: utter_citizenship_by_birth_documents_required
-  - action: utter_citizenship_by_birth_steps
-
-- story: interactive_story_2
-  steps:
-  - intent: citizenship_query
-    entities:
-    - citizenship_type: citizenship
-  - slot_was_set:
-    - citizenship_type: citizenship
-  - action: utter_citizenship
+  - action: action_handle_citizenship_query
   - intent: citizenship_query
     entities:
     - citizenship_type: citizenship by descent
-  - slot_was_set:
-    - citizenship_type: citizenship by descent
-  - action: utter_citizenship_by_descent_eligibility_criteria
-  - action: utter_citizenship_by_descent_documents_required
-  - action: utter_citizenship_by_descent_steps
+  - action: action_handle_citizenship_query
 
-- story: interactive_story_3
-  steps:
-  - intent: citizenship_query
-    entities:
-    - citizenship_type: citizenship
-  - slot_was_set:
-    - citizenship_type: citizenship
-  - action: utter_citizenship
-  - intent: citizenship_query
-    entities:
-    - citizenship_type: citizenship by naturalization
-  - slot_was_set:
-    - citizenship_type: citizenship by naturalization
-  - action: utter_citizenship_by_naturalization_eligibility_criteria
-  - action: utter_citizenship_by_naturalization_documents_required
-  - action: utter_citizenship_by_naturalization_steps
+# #####################Citizenship Stories#######################################################
+# - story: interactive_story_1
+#   steps:
+#   - intent: citizenship_query
+#     entities:
+#     - citizenship_type: citizenship
+#   - action: utter_citizenship
+#   - intent: citizenship_query
+#     entities:
+#     - citizenship_type: citizenship by birth
+#   - action: utter_citizenship_by_birth_eligibility_criteria
+#   - action: utter_citizenship_by_birth_documents_required
+#   - action: utter_citizenship_by_birth_steps
+
+# - story: interactive_story_2
+#   steps:
+#   - intent: citizenship_query
+#     entities:
+#     - citizenship_type: citizenship
+#   - action: utter_citizenship
+#   - intent: citizenship_query
+#     entities:
+#     - citizenship_type: citizenship by descent
+#   - action: utter_citizenship_by_descent_eligibility_criteria
+#   - action: utter_citizenship_by_descent_documents_required
+#   - action: utter_citizenship_by_descent_steps
+
+# - story: interactive_story_3
+#   steps:
+#   - intent: citizenship_query
+#     entities:
+#     - citizenship_type: citizenship
+#   - action: utter_citizenship
+#   - intent: citizenship_query
+#     entities:
+#     - citizenship_type: citizenship by naturalization
+#   - action: utter_citizenship_by_naturalization_eligibility_criteria
+#   - action: utter_citizenship_by_naturalization_documents_required
+#   - action: utter_citizenship_by_naturalization_steps
 
 
-#####################Certificate Stories#######################################################
-- story: user asks about birth certificate and gets the steps and documents required
-  steps:
-  - intent: certificate_query
-    entities:
-    - citizenship_type: birth certificate
-  - slot_was_set:
-    - citizenship_type: birth certificate
-  - action: utter_birth_certificate_steps
-  - action: utter_birth_certificate_documents
+# #####################Certificate Stories#######################################################
+# - story: interactive_story_1
+#   steps:
+#   - intent: citizenship_query
+#     entities:
+#     - citizenship_type: citizenship
+#   - action: utter_citizenship
+#   - intent: citizenship_query
+#     entities:
+#     - citizenship_type: citizenship by birth
+#   - action: action_handle_citizenship_query
 
-- story: user asks about birth certificate and gets the steps and documents required
-  steps:
-  - intent: certificate_query
-    entities:
-    - citizenship_type: death certificate
-  - slot_was_set:
-    - citizenship_type: death certificate
-  - action: utter_death_certificate_steps
-  - action: utter_death_certificate_documents
-  
-- story: user asks about migration certificate and gets the steps and documents required
-  steps:
-  - intent: certificate_query
-    entities:
-    - citizenship_type: migration certificate
-  - slot_was_set:
-    - citizenship_type: migration certificate
-  - action: utter_migration_certificate_steps
-  - action: utter_migration_certificate_documents
 
-- story: user asks about divorce certificate and gets the steps and documents required
-  steps:
-  - intent: certificate_query
-    entities:
-    - citizenship_type: divorce certificate
-  - slot_was_set:
-    - citizenship_type: divorce certificate
-  - action: utter_divorce_certificate_steps
-  - action: utter_divorce_certificate_documents
-
-- story: user asks about marriage certificate and gets the steps and documents required
-  steps:
-  - intent: certificate_query
-    entities:
-    - citizenship_type: marriage certificate
-  - slot_was_set:
-    - citizenship_type: marriage certificate
-  - action: utter_marriage_certificate_steps
-  - action: utter_marriage_certificate_documents
-
-- story: user asks about birth certificate and gets the documents required
-  steps:
-  - intent: certificate_query
-    entities:
-    - specification: documents
-    - citizenship_type: birth certificate
-  - slot_was_set:
-    - citizenship_type: birth certificate
-  - slot_was_set:
-    - specification: documents
-  - action: utter_birth_certificate_documents
-
-- story: user asks about marriage certificate and gets the documents required
-  steps:
-  - intent: certificate_query
-    entities:
-    - specification: documents
-    - citizenship_type: marriage certificate
-  - slot_was_set:
-    - citizenship_type: marriage certificate
-  - slot_was_set:
-    - specification: documents
-  - action: utter_marriage_certificate_documents
-
-- story: user asks about death certificate and gets the documents required
-  steps:
-  - intent: certificate_query
-    entities:
-    - specification: documents
-    - citizenship_type: death certificate
-  - slot_was_set:
-    - citizenship_type: death certificate
-  - slot_was_set:
-    - specification: documents
-  - action: utter_death_certificate_documents
-
-- story: user asks about divorce certificate and gets the documents required
-  steps:
-  - intent: certificate_query
-    entities:
-    - specification: documents
-    - citizenship_type: divorce certificate
-  - slot_was_set:
-    - citizenship_type: divorce certificate
-  - slot_was_set:
-    - specification: documents
-  - action: utter_divorce_certificate_documents
-
-- story: user asks about migration certificate and gets the documents required
-  steps:
-  - intent: certificate_query
-    entities:
-    - specification: documents
-    - citizenship_type: migration certificate
-  - slot_was_set:
-    - citizenship_type: migration certificate
-  - slot_was_set:
-    - specification: documents
-  - action: utter_migration_certificate_documents
-
-- story: user asks about birth certificate and gets the steps required
-  steps:
-  - intent: certificate_query
-    entities:
-    - specification: steps
-    - citizenship_type: birth certificate
-  - slot_was_set:
-    - citizenship_type: birth certificate
-  - slot_was_set:
-    - specification: steps
-  - action: utter_birth_certificate_steps
-
-- story: user asks about marriage certificate and gets the steps required
-  steps:
-  - intent: certificate_query
-    entities:
-    - specification: steps
-    - citizenship_type: marriage certificate
-  - slot_was_set:
-    - citizenship_type: marriage certificate
-  - slot_was_set:
-    - specification: steps
-  - action: utter_marriage_certificate_steps
-
-- story: user asks about death certificate and gets the steps required
-  steps:
-  - intent: certificate_query
-    entities:
-    - specification: steps
-    - citizenship_type: death certificate
-  - slot_was_set:
-    - citizenship_type: death certificate
-  - slot_was_set:
-    - specification: steps
-  - action: utter_death_certificate_steps
-
-- story: user asks about divorce certificate and gets the steps required
-  steps:
-  - intent: certificate_query
-    entities:
-    - specification: steps
-    - citizenship_type: divorce certificate
-  - slot_was_set:
-    - citizenship_type: divorce certificate
-  - slot_was_set:
-    - specification: steps
-  - action: utter_divorce_certificate_steps
-
-- story: user asks about migration certificate and gets the steps required
-  steps:
-  - intent: certificate_query
-    entities:
-    - specification: steps
-    - citizenship_type: migration certificate
-  - slot_was_set:
-    - citizenship_type: migration certificate
-  - slot_was_set:
-    - specification: steps
-  - action: utter_migration_certificate_steps
