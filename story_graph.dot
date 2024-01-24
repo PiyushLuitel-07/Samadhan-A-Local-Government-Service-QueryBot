@@ -2,12 +2,14 @@ digraph  {
 0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
 "-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
 1 [class=active, fontsize=12, label=action_session_start];
-2 [class=active, fontsize=12, label=utter_birth_certificate_documents];
+2 [class=active, fontsize=12, label=utter_citizenship];
 3 [class="dashed active", fontsize=12, label=action_default_fallback];
-4 [class="intent active", fillcolor=lightblue, label="/certificate_query", shape=rect, style=filled];
+4 [class="intent active", fillcolor=lightblue, label="/citizenship_query", shape=rect, style=filled];
+5 [class="intent active", fillcolor=lightblue, label="/citizenship_by_birth_query", shape=rect, style=filled];
 0 -> "-1"  [class="", key=NONE, label=""];
 0 -> 1  [class=active, key=NONE, label=""];
 1 -> 4  [class=active, key=0];
-2 -> 3  [class=active, key=NONE, label=""];
+2 -> 5  [class=active, key=0];
 4 -> 2  [class=active, key=0];
+5 -> 3  [class=active, key=0];
 }

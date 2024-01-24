@@ -2,22 +2,76 @@ version: "3.1"
 nlu:
 - intent: citizenship_query
   examples: |
-    - I want information about [citizenship by descent](citizenship_type).
-    - How to apply for [citizenship by birth](citizenship_type)?
-    - Tell me about [citizenship by naturalization](citizenship_type).
+    - I want information about citizenship.
+    - How to apply for citizenship?
+    - Tell me about citizenship.
     - What are the requirements for citizenship?
-    - help me with [citizenship by birth](citizenship_type)
+    - help me with citizenship
     - Can you help me with citizenship?
     - How to get citizenship?
     - complete process to obtain citizenship?
-    - what is the process to make [citizenship by birth](citizenship_type)?
-    - procedure to make [citizenship by descent](citizenship_type)?
+    - what is the process to make citizenship?
+    - procedure to make citizenship?
+    - can you help me with citizenship
+- intent: citizenship_by_birth_query
+  examples: |
+    - I want information about citizenship by birth.
+    - How to apply for citizenship by birth?
+    - Tell me about citizenship by birth.
+    - What are the requirements for citizenship?
+    - help me with citizenship by birth
+    - Can you help me with citizenship by birth?
+    - How to get citizenship by birth?
+    - complete process to obtain citizenship by birth?
+    - what is the process to make citizenship by birth?
+    - procedure to make citizenship by birth?
+    - how to make citizenship by birth
+- intent: citizenship_by_birth_eligibility_query
+  examples: |
+    - what are the [eligibility](specification) required to make [citizenship by birth](citizenship_type)?
+    - tell [eligibility](specification) required to make [citizenship by birth](citizenship_type)?
+    - [eligibility](specification) to make [citizenship by birth](citizenship_type)?
+- intent: citizenship_by_birth_documents_query
+  examples: |
     - what are the [documents](specification) required to make [citizenship by birth](citizenship_type)?
+    - tell [documents](specification) required to make [citizenship by birth](citizenship_type)?
+    - [documents](specification) to make [citizenship by birth](citizenship_type)?
+- intent: citizenship_by_birth_steps_query
+  examples: |
+    - what are the [steps](specification) required to make [citizenship by birth](citizenship_type)?
+    - tell [steps](specification) required to make [citizenship by birth](citizenship_type)?
+    - [steps](specification) to make [citizenship by birth](citizenship_type)?
+    
+- intent: citizenship_by_descent_query
+  examples: |
+    - I want information about citizenship by descent.
+    - How to apply for citizenship by descent?
+    - Tell me about citizenship by descent.
+    - What are the requirements for citizenship?
+    - help me with citizenship by descent
+    - Can you help me with citizenship by descent?
+    - How to get citizenship by descent?
+    - complete process to obtain citizenship by descent?
+    - what is the process to make citizenship by descent?
+    - procedure to make citizenship by descent?
+- intent: citizenship_by_descent_eligibility_query
+  examples: |
+    - what are the [eligibility](specification) required to make citizenship by descent?
+    - tell [eligibility](specification) required to make [citizenship by descent](citizenship_type)?
+    - [eligibility](specification) to make [citizenship by descent](citizenship_type)?
+- intent: citizenship_by_descent_documents_query
+  examples: |
+    - what are the [documents](specification) required to make [citizenship by descent](citizenship_type)?
+    - tell [documents](specification) required to make [citizenship by descent](citizenship_type)?
+    - [documents](specification) to make [citizenship by descent](citizenship_type)?
+- intent: citizenship_by_descent_steps_query
+  examples: |
+    - what are the [steps](specification) required to make [citizenship by descent](citizenship_type)?
     - tell [steps](specification) required to make [citizenship by descent](citizenship_type)?
-    - [eligibility](specification) to make [citizenship by naturalization](citizenship_type)?
+    - [steps](specification) to make [citizenship by descent](citizenship_type)?
 - intent: certificate_query
   examples: |
-    - how to apply for [birth certificate](certificate_type)?
+    - how to apply for [descent certificate](certificate_type)?
     - help me with [death certificate](certificate_type)
     - i want to make [marriage certificate](certificate_type)
     - process to make [divorce certificate](certificate_type)
