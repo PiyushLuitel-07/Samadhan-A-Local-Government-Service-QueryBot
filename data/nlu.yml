@@ -4,7 +4,7 @@ nlu:
   examples: |
     - I want information about [citizenship by descent](citizenship_type).
     - How to apply for [citizenship by birth](citizenship_type)?
-    - Tell me about [citizenship by descent](citizenship_type).
+    - Tell me about [citizenship by naturalization](citizenship_type).
     - What are the requirements for citizenship?
     - help me with [citizenship by birth](citizenship_type)
     - Can you help me with citizenship?
@@ -14,11 +14,34 @@ nlu:
     - procedure to make [citizenship by descent](citizenship_type)?
     - what are the [documents](specification) required to make [citizenship by birth](citizenship_type)?
     - tell [steps](specification) required to make [citizenship by descent](citizenship_type)?
-    - [eligibility](specification) to make [citizenship by descent](citizenship_type)?
+    - [eligibility](specification) to make [citizenship by naturalization](citizenship_type)?
     - can you help me with [citizenship](citizenship_type)
     - can youhelp me with [citizenship](citizenship_type)
+    - help me with [citizenship by birth](citizenship_type)
     - what are the [steps](specification) for [citizenship by birth](citizenship_type)
     - procedure to make [citizenship by descent](citizenship_type)
+
+- intent: citizenship_query_romanize
+  examples: |
+    - Ma [nagrikta](citizenship_type) ko barema jankari chahanchu.
+    - [Janma](citizenship_type) dwara [nagrikta](citizenship_type) ko lagi kasari apply garna paincha?
+    - [Bamsaj](citizenship_type) dwara [nagrikta](citizenship_type) ko barema malai bhanu.
+    - [Nagrikta](citizenship_type) ko lagi k bhanne avashyak chha?
+    - Mero lagi [janma](citizenship_type) dwara [nagrikta](citizenship_type) ma madad garna.
+    - Maile [nagrikta](citizenship_type) ko lagi madad garnu hola?
+    - [Nagrikta](citizenship_type) kasari paauna?
+    - [Nagrikta](citizenship_type) paauna ko lagi full process k ho?
+    - [Janma](citizenship_type) dwara [nagrikta](citizenship_type) banaune process k ho?
+    - [Bamsaj](citizenship_type) dwara [nagrikta](citizenship_type) banaune vidhi k ho?
+    - [Janma](citizenship_type) dwara [nagrikta](citizenship_type) banaune lagi kin kin [documents](specification) chahincha?
+    - [Bamsaj](citizenship_type) dwara [nagrikta](citizenship_type) banaune lagi kin kin [steps](specification) chahincha?
+    - [Bamsaj](citizenship_type) dwara [nagrikta](citizenship_type) banaune ko lagi [eligibility](specification) k ho?
+    - Malai [nagrikta](citizenship_type) ma madad garna chahan chu.
+    - Ma [nagrikta](citizenship_type) ma madad garna chahanchu.
+    - Mero lagi [janma](citizenship_type) dwara [nagrikta](citizenship_type) ma madad garna.
+    - [Janma](citizenship_type) dwara [nagrikta](citizenship_type) ko lagi kin kin [steps](specification) huncha?
+    - [Bamsaj](citizenship_type) dwara [nagrikta](citizenship_type) banaune vidhi k ho?
+
 - intent: certificate_query
   examples: |
     - how to apply for [birth certificate](certificate_type)?
@@ -31,10 +54,19 @@ nlu:
     - how to apply for [birth certificate](certificate_type)
     - how can i get [birth certificate](citizenship_type) in nepal
     - what are the required [documents](specification) to get [birth certificate](citizenship_type) in nepal
-    - help me with [certificate](certificate_type)
-    - help me with [birth certificate](citizenship_type)
-    - how to get [divorce certificate](certificate_type)
-    - what are the [documents](specification) required for [birth certificate](citizenship_type)
+- intent: certificate_query_romanize
+  examples: |
+    - [Janma darta](certificate_type) ko lagi kaise apply garna paincha?
+    - [Mrityu darta](certificate_type) ma madad garnu hola.
+    - Ma [vivah darta](certificate_type) banau chha chu.
+    - [Bibah batai darta](certificate_type) banau ko lagi k ho process?
+    - [Pravasan darta](certificate_type) kaise banau?
+    - [Janma darta](certificate_type) banaune ko lagi kin kin [documents](specification) chahincha?
+    - [Mrityu darta](certificate_type) banaune ko lagi kin kin [steps](specification) chahincha?
+    - [Janma darta](certificate_type) ko lagi kaise apply garna paincha?
+    - [Janma darta](citizenship_type) kaise paunu?
+    - [Janma darta](citizenship_type) pauna ko lagi kin kin [documents](specification) chahincha?
+
 - intent: greet
   examples: |
     - hey

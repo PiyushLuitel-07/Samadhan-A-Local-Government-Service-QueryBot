@@ -25,6 +25,8 @@ intents:
 - deny
 - goodbye
 - greet
+- certificate_query_romanize
+- citizenship_query_romanize
 actions:
 - action_handle_certificate_query
 - action_handle_citizenship_query
@@ -179,6 +181,138 @@ responses:
       1. Submit the transfer form and other required documents at the ward office.
       2. The ward office will verify the submitted documents.
       3. Once verified, collect the migration certificate from the ward office.
+  utter_greet1:
+  - text: Hello!! Mero naam Samadhan ho.
+  utter_greet2:
+  - text: Ma sthaniya sarkari seva querybot ho.
+  utter_greet3:
+  - text: Tapailai nagarikta, janma, mrityu, bibah sambandhi prashna haru garna saknu hunchha.
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: Ma ek bot ho, Rasa dwara sanchalit.
+  utter_certificate_query:
+  - text: Kripaya darta ko naam nirdesh garnuhos.
+  utter_citizenship:
+  - text: |-
+      Tapailai kun kun prakar ko nagarikta chahiyo?
+      1. Bamsaj bata nagarikta
+      2. Janma bata nagarikta
+  utter_citizenship_by_descent_eligibility_criteria:
+  - text: |-
+      Eligibility criteria:
+      1. Kamtina ek mata-pita Nepali huna parcha.
+      2. Umar 16 vanda muni huna chahiyo.
+  utter_citizenship_by_descent_documents_required:
+  - text: |-
+      Avashyak darta haru:
+      1. Saat tasbir (passport ya auto-size).
+      2. Mata-pita ko asli nagarikta.
+      3. Gaun ko sujhav patra.
+      4. School ya college ko pramanpatra (marksheet/character).
+      5. Pravasan pramanpatra (yadi aru bata pravas gareko cha bhane).
+  utter_citizenship_by_descent_steps:
+  - text: |-
+      Kadam haru:
+      1. Ward office ma gayera sujhav patra lina.
+      2. Mata-pita ra avashyak darta sanga District Administration Office janu.
+  utter_citizenship_by_birth_eligibility_criteria:
+  - text: |-
+      Eligibility criteria:
+      1. Kamtina ek mata-pita Nepali huna parcha.
+      2. Umar 16 vanda muni huna chahiyo.
+  utter_citizenship_by_birth_documents_required:
+  - text: Avashyak darta haru...
+  utter_citizenship_by_birth_steps:
+  - text: |-
+      Kadam haru:
+      1. Ward office ma gayera sujhav patra lina.
+      2. Mata-pita ra avashyak darta sanga District Administration Office janu.
+  utter_birth_certificate_documents:
+  - text: |-
+      Avashyak darta haru:
+      1. Mata-pita ko asli nagarikta (kam batai ek parent sathi upasthita hunu parcha).
+      2. Balak hospital ma janma bhaye, hospital pramanpatra dina.
+      3. Chalani barsa ko karan tax clearance ko receipt ko photocopy.
+      4. Mata-pita ko bibah pramanpatra.
+  utter_birth_certificate_steps:
+  - text: |-
+      Kadam haru:
+      1. Yaha bata upalabdha gareko online form ([yaha](https://public.donidcr.gov.np)) bharera token number linu.
+      2. Ward office ma gayeko token number submit garnu.
+      3. Ward office le diyeko sabai batai vistrut jaankaari pareekshya garna.
+      4. Pareekshya pura vayo bhane, janma darta ward office bata linu.
+  utter_marriage_certificate_documents:
+  - text: |-
+      Avashyak darta haru:
+      1. Bibahit buda bibahit biwaha ko asli nagarikta darta.
+      2. Bibahit buda bibahit biwaha ko mata-pita ko asli nagarikta darta.
+      3. Bibah ko sakshay, jasto swayambar card ya bibah ko tasbir haru.
+      4. Chalani barsa ko karan tax clearance ko receipt ko photocopy.
+  utter_marriage_certificate_steps:
+  - text: |-
+      Kadam haru:
+      1. Bibahit buda ra bibahit biwaha yaha bata online form pura garna ([yaha](https://public.donidcr.gov.np)) tapai afno token number lina.
+      2. Yaha bata linu bhaneko token number ward office ma submit garnu.
+      3. Ward office le diyeko sabai batai vistrut jaankaari pareekshya garna.
+      4. Pareekshya pura vayo bhane, bibah darta ward office bata linu.
+  utter_divorce_certificate_documents:
+  - text: |-
+      Avashyak darta haru:
+      1. Bibahit buda ra bibahit biwaha ko nagarikta darta ko photocopy.
+      2. Nyayik faisala ko photocopy.
+      3. Bibahit buda bibahit biwaha ko pramanpatra ko photocopy.
+      4. Chalani barsa ko karan tax clearance ko receipt ko photocopy.
+  utter_divorce_certificate_steps:
+  - text: |-
+      Prakriya:
+      1. Bibahit buda vaa bibahit biwaha vaa ko bich ek tapai ward office ma upasthita hunu parcha.
+      2. Bibahit buda ra bibahit biwaha yaha bata online form pura garna ([yaha](https://public.donidcr.gov.np)) afno token number lina.
+      3. Yaha bata linu bhaneko duita token number ward office ma submit garnu.
+      4. Ward office le diyeko sabai batai vistrut jaankaari pareekshya garna.
+      5. Pareekshya pura vayo bhane, talak darta ward office bata linu.
+  utter_death_certificate_documents:
+  - text: |-
+      Avashyak darta haru:
+      1. Mareko ko asli nagarikta darta.
+      2. Jaankaari dinuva ko asli nagarikta darta (pati/patni).
+      3. Yadi mrityu hospital ma bhayo bhane, hospital pramanpatra.
+      4. Ghar ma bhayo bhane, chita ghar administration sambandhi darta.
+      5. Chalani barsa ko karan tax clearance ko receipt ko photocopy.
+  utter_death_certificate_steps:
+  - text: |-
+      Anusaran garna ko kadam haru:
+      1. Yaha bata online form bharera ([yaha](https://public.donidcr.gov.np)) token number lina.
+      2. Pariyojita bhayeko token number ward office ma submit garnu.
+      3. Ward office le dinuva ko jaankaari pareekshya garna.
+      4. Pareekshya pura vayo bhane, mrityu darta ward office bata linu.
+  utter_migration_certificate_documents:
+  - text: |-
+      Avashyak darta haru prasthan ko ward office ma:
+      1. Prasthan garna ko lagi sabai vyakti ko asli nagarikta darta, lagayat balak ko janma pramanpatra ko photocopy.
+      2. Prasthan bhayeko sthan ko ghar ownership certificate ko photocopy.
+      3. Chalani barsa ko karan tax clearance ko receipt ko photocopy.
+
+      Aagaman ko ward office ma avashyak darta haru:
+      1. Pichhe ko ward office bata diyeko transfer form.
+      2. Nagarikta darta ra janma pramanpatra ko photocopy (balak ko lagi).
+      3. Chalani barsa ko karan tax clearance ko receipt ko photocopy.
+  utter_migration_certificate_steps:
+  - text: |-
+      Prasthan ko ward office ma anusaran garna ko kadam haru:
+      1. Yaha bata online form pura garna ([yaha](https://public.donidcr.gov.np)) token number lina.
+      2. Pariyojita bhayeko token number ward office ma submit garnu.
+      3. Jaruri cha ki prasthan garna bata kamtina ek vyakti ward office ma upasthita ho.
+      4. Ward office le dinuva ko jaankaari pareekshya garna.
+      5. Pareekshya pura vayo bhane, transfer form ward office bata linu.
+
+      Aagaman ko ward office ma anusaran garna ko kadam haru:
+      1. Transfer form ra aru avashyak darta haru ward office ma submit garnu.
+      2. Ward office le submit gareko darta haru pareekshya garna.
+      3. Pareekshya pura vayo bhane, migration certificate ward office bata linu.
+
+
+
 response_selector:
   retrieve_responses:
     certificate_query:
