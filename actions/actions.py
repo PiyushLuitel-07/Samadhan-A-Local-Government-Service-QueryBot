@@ -45,7 +45,7 @@ class ActionHandleCitizenshipQuery(Action):
                     dispatcher.utter_message(response="utter_citizenship_by_birth_documents_required")
                     dispatcher.utter_message(response="utter_citizenship_by_birth_steps")
             else:
-                dispatcher.utter_message(response="utter_citizenship_query")
+                dispatcher.utter_message(response="utter_citizenship")
         return []
 
 class ActionHandleCitizenshipQuery(Action):
