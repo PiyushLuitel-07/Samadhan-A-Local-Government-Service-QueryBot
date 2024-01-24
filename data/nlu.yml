@@ -15,6 +15,12 @@ nlu:
     - what are the [documents](specification) required to make [citizenship by birth](citizenship_type)?
     - tell [steps](specification) required to make [citizenship by descent](citizenship_type)?
     - [eligibility](specification) to make [citizenship by naturalization](citizenship_type)?
+    - can you help me with [citizenship](citizenship_type)
+    - can youhelp me with [citizenship](citizenship_type)
+    - help me with [citizenship by birth](citizenship_type)
+    - what are the [steps](specification) for [citizenship by birth](citizenship_type)
+    - procedure to make [citizenship by descent](citizenship_type)
+    
 - intent: certificate_query
   examples: |
     - how to apply for [birth certificate](certificate_type)?

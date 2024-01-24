@@ -1,1 +1,220 @@
 version: '3.1'
+entities:
+- specification:
+    values:
+    - documents
+    - steps
+    - eligibility
+- citizenship_type:
+    values:
+    - citizenship by birth
+    - citizenship by descent
+    - citizenship by naturalization
+    - citizenship
+- certificate_type:
+    values:
+    - birth certificate
+    - death certificate
+    - marriage certificate
+    - migration certificate
+    - divorce certificate
+intents:
+- affirm
+- bot_challenge
+- certificate_query
+- citizenship_query
+- deny
+- goodbye
+- greet
+actions:
+- action_handle_certificate_query
+- action_handle_citizenship_query
+- utter_citizenship
+- utter_citizenship_by_birth_eligibility_criteria
+- utter_citizenship_by_birth_steps
+- utter_citizenship_by_birth_documents_required
+- utter_greet1
+- utter_greet2
+- utter_greet3
+- utter_citizenship_by_descent_eligibility_criteria
+- utter_citizenship_by_descent_documents_required
+- utter_citizenship_by_descent_steps
+- utter_citizenship_by_naturalization_eligibility_criteria
+- utter_citizenship_by_naturalization_documents_required
+- utter_citizenship_by_naturalization_steps
+- utter_birth_certificate_documents
+- utter_birth_certificate_steps
+- utter_death_certificate_documents
+- utter_death_certificate_steps
+- utter_marriage_certificate_documents
+- utter_marriage_certificate_steps
+- utter_divorce_certificate_documents
+- utter_divorce_certificate_steps
+- utter_migration_certificate_documents
+- utter_migration_certificate_steps
+- utter_certificate_query
+responses:
+  utter_greet1:
+  - text: Hello !! I'm Samadhan.
+  utter_greet2:
+  - text: I am a local governmental service querybot.
+  utter_greet3:
+  - text: You can ask me government-related questions on citizenship, birth, death, marriage.
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_certificate_query:
+  - text: Please specify the certificate name.
+  utter_citizenship:
+  - text: |-
+      What type of citizenship are you seeking?
+      1. Citizenship by descent
+      2. Citizenship by birth
+      3. Citizenship by naturalization
+  utter_citizenship_by_descent_eligibility_criteria:
+  - text: |-
+      Eligibility criteria:
+      1. At least one parent must be Nepali.
+      2. Age must be 16 or above.
+  utter_citizenship_by_descent_documents_required:
+  - text: |-
+      Required documents:
+      1. Seven photos (passport or auto-sized)
+      2. Original citizenship of parents
+      3. Ward recommendation letter
+      4. School or college's certificate (mark sheet/character)
+      5. Migration certificate (if migrated from another place)
+  utter_citizenship_by_descent_steps:
+  - text: |-
+      Steps:
+      1. Visit the ward office to obtain a recommendation letter.
+      2. Go to the District Administration Office with your parent and required documents.
+  utter_citizenship_by_birth_eligibility_criteria:
+  - text: |-
+      Eligibility criteria:
+      1. At least one parent must be Nepali.
+      2. Age must be 16 or above.
+  utter_citizenship_by_birth_documents_required:
+  - text: Documents required...
+  utter_citizenship_by_birth_steps:
+  - text: |-
+      Steps:
+      1. Visit the ward office to obtain a recommendation letter.
+      2. Go to the District Administration Office with your parent and required documents.
+  utter_citizenship_by_naturalization_eligibility_criteria:
+  - text: |-
+      Eligibility criteria:
+      1. At least one parent must be Nepali.
+      2. Age must be 16 or above.
+  utter_citizenship_by_naturalization_documents_required:
+  - text: Documents required...
+  utter_citizenship_by_naturalization_steps:
+  - text: Steps involved...
+  utter_birth_certificate_documents:
+  - text: |-
+      Required documents:
+      1. Original citizenship of the parents (one parent should be physically present).
+      2. If the child is born in a hospital, provide the hospital certificate.
+      3. Copy of the tax clearance receipt for the current fiscal year.
+      4. Marriage certificates of the parents.
+  utter_birth_certificate_steps:
+  - text: |-
+      Steps:
+      1. Complete the online form available [here](https://public.donidcr.gov.np) to receive a token number.
+      2. Submit the obtained token number at the ward office.
+      3. The ward office will verify all provided details.
+      4. Once verified, the birth certificate can be collected from the ward office.
+  utter_marriage_certificate_documents:
+  - text: |-
+      Necessary documents:
+      1. Original citizenship documents for both the bride and groom.
+      2. Original citizenship documents for the parents of both the bride and groom.
+      3. Evidence of the marriage, such as a swayambar card or marriage photos.
+      4. A copy of the tax clearance receipt for the current fiscal year.
+  utter_marriage_certificate_steps:
+  - text: |-
+      Steps:
+      1. Both the husband and wife should complete the online form [here](https://public.donidcr.gov.np) to obtain separate token numbers.
+      2. Submit the obtained token numbers at the ward office.
+      3. The ward office will verify all provided details.
+      4. Once verified, the marriage certificate can be collected from the ward office.
+  utter_divorce_certificate_documents:
+  - text: |-
+      Necessary documents:
+      1. Copies of the citizenship documents for both the husband and wife.
+      2. A copy of the court decision.
+      3. A copy of the marriage certificate.
+      4. A copy of the tax clearance receipt for the current fiscal year.
+  utter_divorce_certificate_steps:
+  - text: |-
+      Procedure:
+      1. Either the husband or wife must be present at the ward office.
+      2. Both the husband and wife should complete the online form [here](https://public.donidcr.gov.np) to obtain separate token numbers.
+      3. Submit the two obtained token numbers at the ward office.
+      4. The ward office will verify all the provided details.
+      5. Once verified, collect the divorce certificate from the ward office.
+  utter_death_certificate_documents:
+  - text: |-
+      Required documentation:
+      1. Original citizenship document of the deceased.
+      2. Original citizenship document of the person providing information (spouse/children).
+      3. If the death occurred in a hospital, provide the hospital certificate.
+      4. In case of a home death, submit relevant documents related to crematorium administration.
+      5. A copy of the tax clearance receipt for the current fiscal year.
+  utter_death_certificate_steps:
+  - text: |-
+      Steps to follow:
+      1. Fill out the online form [here](https://public.donidcr.gov.np) to obtain a token number.
+      2. Submit the issued token number at the ward office.
+      3. The ward office will verify the provided information.
+      4. Once verified, collect the death certificate from the ward office.
+  utter_migration_certificate_documents:
+  - text: |-
+      Necessary documents at the ward office of departure:
+      1. Original citizenship documents for all individuals migrating, including the birth certificate for minors.
+      2. Copy of the house ownership certificate for the departing location.
+      3. A copy of the tax clearance receipt for the current fiscal year.
+
+      Required documents at the ward office of arrival:
+      1. Transfer form provided by the previous ward office.
+      2. Copies of citizenship documents and birth certificates (for minors).
+      3. A copy of the tax clearance receipt for the current fiscal year.
+  utter_migration_certificate_steps:
+  - text: |-
+      Steps at the ward office of departure:
+      1. Complete the online form [here](https://public.donidcr.gov.np) to receive a token number.
+      2. Submit the issued token number at the ward office.
+      3. Ensure that at least one person from the migrating group is present at the ward office.
+      4. The ward office will verify the provided information.
+      5. Once verified, obtain the transfer form from the ward office.
+
+      Steps at the ward office of arrival:
+      1. Submit the transfer form and other required documents at the ward office.
+      2. The ward office will verify the submitted documents.
+      3. Once verified, collect the migration certificate from the ward office.
+response_selector:
+  retrieve_responses:
+    certificate_query:
+    - utter_certificate_query
+    - utter_birth_certificate_documents
+    - utter_birth_certificate_steps
+    - utter_death_certificate_documents
+    - utter_death_certificate_steps
+    - utter_marriage_certificate_documents
+    - utter_marriage_certificate_steps
+    - utter_divorce_certificate_documents
+    - utter_divorce_certificate_steps
+    - utter_migration_certificate_documents
+    - utter_migration_certificate_steps
+    citizenship_query:
+    - utter_citizenship
+    - utter_citizenship_by_birth_eligibility_criteria
+    - utter_citizenship_by_birth_documents_required
+    - utter_citizenship_by_birth_steps
+    - utter_citizenship_by_descent_eligibility_criteria
+    - utter_citizenship_by_descent_documents_required
+    - utter_citizenship_by_descent_steps
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
