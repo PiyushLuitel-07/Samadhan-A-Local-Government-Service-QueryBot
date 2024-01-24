@@ -27,6 +27,7 @@ intents:
 - goodbye
 - greet
 actions:
+- action_handle_certificate_query
 - action_handle_citizenship_query
 - utter_citizenship
 - utter_citizenship_by_birth_eligibility_criteria
@@ -51,6 +52,7 @@ actions:
 - utter_divorce_certificate_steps
 - utter_migration_certificate_documents
 - utter_migration_certificate_steps
+- utter_certificate_query
 responses:
   utter_greet1:
   - text: Hello !! I'm Samadhan.
@@ -62,6 +64,8 @@ responses:
   - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+  utter_certificate_query:
+  - text: Please specify the certificate name.
   utter_citizenship:
   - text: |-
       What type of citizenship are you seeking?
@@ -192,6 +196,7 @@ responses:
 response_selector:
   retrieve_responses:
     certificate_query:
+    - utter_certificate_query
     - utter_birth_certificate_documents
     - utter_birth_certificate_steps
     - utter_death_certificate_documents
