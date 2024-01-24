@@ -1,15 +1,9 @@
 version: '3.1'
 entities:
-- specification:
-    values:
-    - documents
-    - steps
-    - eligibility
 - citizenship_type:
     values:
     - citizenship by birth
     - citizenship by descent
-    - citizenship by naturalization
     - citizenship
 - certificate_type:
     values:
@@ -18,6 +12,11 @@ entities:
     - marriage certificate
     - migration certificate
     - divorce certificate
+- specification:
+    values:
+    - documents
+    - steps
+    - eligibility
 intents:
 - affirm
 - bot_challenge
@@ -39,9 +38,6 @@ actions:
 - utter_citizenship_by_descent_eligibility_criteria
 - utter_citizenship_by_descent_documents_required
 - utter_citizenship_by_descent_steps
-- utter_citizenship_by_naturalization_eligibility_criteria
-- utter_citizenship_by_naturalization_documents_required
-- utter_citizenship_by_naturalization_steps
 - utter_birth_certificate_documents
 - utter_birth_certificate_steps
 - utter_death_certificate_documents
@@ -71,7 +67,6 @@ responses:
       What type of citizenship are you seeking?
       1. Citizenship by descent
       2. Citizenship by birth
-      3. Citizenship by naturalization
   utter_citizenship_by_descent_eligibility_criteria:
   - text: |-
       Eligibility criteria:
@@ -102,15 +97,6 @@ responses:
       Steps:
       1. Visit the ward office to obtain a recommendation letter.
       2. Go to the District Administration Office with your parent and required documents.
-  utter_citizenship_by_naturalization_eligibility_criteria:
-  - text: |-
-      Eligibility criteria:
-      1. At least one parent must be Nepali.
-      2. Age must be 16 or above.
-  utter_citizenship_by_naturalization_documents_required:
-  - text: Documents required...
-  utter_citizenship_by_naturalization_steps:
-  - text: Steps involved...
   utter_birth_certificate_documents:
   - text: |-
       Required documents:

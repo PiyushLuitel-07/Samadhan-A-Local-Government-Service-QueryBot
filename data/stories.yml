@@ -1,6 +1,8 @@
 version: "3.1"
 stories:
 
+###################################################citizenship stories#####################################################
+
 - story: User inquires about citizenship
   steps:
   - intent: citizenship_query
@@ -26,57 +28,27 @@ stories:
     - citizenship_type: citizenship by descent
   - action: action_handle_citizenship_query
 
-# #####################Citizenship Stories#######################################################
-# - story: interactive_story_1
-#   steps:
-#   - intent: citizenship_query
-#     entities:
-#     - citizenship_type: citizenship
-#   - action: utter_citizenship
-#   - intent: citizenship_query
-#     entities:
-#     - citizenship_type: citizenship by birth
-#   - action: utter_citizenship_by_birth_eligibility_criteria
-#   - action: utter_citizenship_by_birth_documents_required
-#   - action: utter_citizenship_by_birth_steps
+###################################################certificate stories#####################################################
 
-# - story: interactive_story_2
-#   steps:
-#   - intent: citizenship_query
-#     entities:
-#     - citizenship_type: citizenship
-#   - action: utter_citizenship
-#   - intent: citizenship_query
-#     entities:
-#     - citizenship_type: citizenship by descent
-#   - action: utter_citizenship_by_descent_eligibility_criteria
-#   - action: utter_citizenship_by_descent_documents_required
-#   - action: utter_citizenship_by_descent_steps
+- story: interactive_story_2
+  steps:
+  - intent: certificate_query
+    entities:
+    - certificate_type: certificate
+  - action: action_handle_certificate_query
+  - intent: certificate_query
+    entities:
+    - citizenship_type: birth certificate
+  - action: action_handle_certificate_query
+  - intent: certificate_query
+    entities:
+    - certificate_type: divorce certificate
+  - action: action_handle_certificate_query
 
-# - story: interactive_story_3
-#   steps:
-#   - intent: citizenship_query
-#     entities:
-#     - citizenship_type: citizenship
-#   - action: utter_citizenship
-#   - intent: citizenship_query
-#     entities:
-#     - citizenship_type: citizenship by naturalization
-#   - action: utter_citizenship_by_naturalization_eligibility_criteria
-#   - action: utter_citizenship_by_naturalization_documents_required
-#   - action: utter_citizenship_by_naturalization_steps
-
-
-# #####################Certificate Stories#######################################################
-# - story: interactive_story_1
-#   steps:
-#   - intent: citizenship_query
-#     entities:
-#     - citizenship_type: citizenship
-#   - action: utter_citizenship
-#   - intent: citizenship_query
-#     entities:
-#     - citizenship_type: citizenship by birth
-#   - action: action_handle_citizenship_query
-
-
+- story: interactive_story_3
+  steps:
+  - intent: certificate_query
+    entities:
+    - specification: documents
+    - citizenship_type: birth certificate
+  - action: action_handle_certificate_query
