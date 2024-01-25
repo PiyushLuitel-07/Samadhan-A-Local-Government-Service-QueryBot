@@ -8,6 +8,13 @@ rules:
   - action: utter_greet2
   - action: utter_greet3
 
+- rule: User greets in roman
+  steps:
+  - intent: greet_romanized
+  - action: utter_greet1_romanized
+  - action: utter_greet2_romanized
+  - action: utter_greet3_romanized
+
 - rule: User says bye
   steps:
   - intent: goodbye
@@ -27,3 +34,13 @@ rules:
   steps:
   - intent: certificate_query
   - action: action_handle_certificate_query
+
+- rule: User inquires about certificate in roman
+  steps:
+  - intent: certificate_query_romanized
+  - action: action_handle_certificate_query_romanized
+
+- rule: User inquires about citizenship in roman
+  steps:
+  - intent: citizenship_query_romanized
+  - action: action_handle_citizenship_query_romanized

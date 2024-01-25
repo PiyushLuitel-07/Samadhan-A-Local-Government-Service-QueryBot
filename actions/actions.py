@@ -102,3 +102,95 @@ class ActionHandleCitizenshipQuery(Action):
             else:
                 dispatcher.utter_message(response="utter_certificate_query")
         return []
+    
+class ActionHandleCitizenshipQuery(Action):
+    def name(self) -> Text:
+        return "action_handle_citizenship_query_romanized"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # Extract entities from the user's message
+        entities = tracker.latest_message['entities']
+
+        if entities:
+            entity_values = [entity['value'] for entity in entities]
+            
+            if 'Bamsaj' in entity_values:
+                if 'eligibility' or 'yogyata' in entity_values:
+                    dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_criteria_romanized")
+                elif 'documents' or 'kagajaat' in entity_values: 
+                    dispatcher.utter_message(response="utter_citizenship_by_descent_documents_required_romanized")
+                elif 'steps' in entity_values: 
+                    dispatcher.utter_message(response="utter_citizenship_by_descent_steps_romanized")
+                else: 
+                    dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_criteria_romanized")
+                    dispatcher.utter_message(response="utter_citizenship_by_descent_documents_required_romanized")
+                    dispatcher.utter_message(response="utter_citizenship_by_descent_steps_romanized")
+            elif 'janma' in entity_values:
+                if 'eligibility'or 'yogyata' or 'maapdanda' in entity_values:
+                    dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility_criteria_romanized")
+                elif 'documents' or 'kagajaat' in entity_values: 
+                    dispatcher.utter_message(response="utter_citizenship_by_birth_documents_required_romanized")
+                elif 'steps' in entity_values: 
+                    dispatcher.utter_message(response="utter_citizenship_by_birth_steps_romanized")
+                else: 
+                    dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility_criteria_romanized")
+                    dispatcher.utter_message(response="utter_citizenship_by_birth_documents_required_romanized")
+                    dispatcher.utter_message(response="utter_citizenship_by_birth_steps_romanized")
+            else:
+                dispatcher.utter_message(response="utter_citizenship_romanized")
+        return []
+
+class ActionHandleCitizenshipQuery(Action):
+    def name(self) -> Text:
+        return "action_handle_certificate_query_romanized"
+
+    def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # Extract entities from the user's message
+        entities = tracker.latest_message['entities']
+
+        if entities:
+            entity_values = [entity['value'] for entity in entities]
+            
+            if 'Janma darta' or 'birth certificate' in entity_values:
+                if 'documents' or 'kagajaat' in entity_values: 
+                    dispatcher.utter_message(response="utter_birth_certificate_documents_romanized")
+                elif 'steps' in entity_values: 
+                    dispatcher.utter_message(response="utter_birth_certificate_steps_romanized")
+                else: 
+                    dispatcher.utter_message(response="utter_birth_certificate_documents_romanized")
+                    dispatcher.utter_message(response="utter_birth_certificate_steps_romanized")
+            elif 'mrityu darta' in entity_values:
+                if 'documents' or 'kagajaat' in entity_values: 
+                    dispatcher.utter_message(response="utter_death_certificate_documents_romanized")
+                elif 'steps' in entity_values: 
+                    dispatcher.utter_message(response="utter_death_certificate_steps_romanized")
+                else: 
+                    dispatcher.utter_message(response="utter_death_certificate_documents_romanized")
+                    dispatcher.utter_message(response="utter_death_certificate_steps_romanized")
+            elif 'bibah darta' in entity_values:
+                if 'documents' or 'kagajaat' in entity_values: 
+                    dispatcher.utter_message(response="utter_marriage_certificate_documents_romanized")
+                elif 'steps' in entity_values: 
+                    dispatcher.utter_message(response="utter_marriage_certificate_steps_romanized")
+                else: 
+                    dispatcher.utter_message(response="utter_marriage_certificate_documents_romanized")
+                    dispatcher.utter_message(response="utter_marriage_certificate_steps_romanized")
+            elif 'sambandha bichhed' in entity_values:
+                if 'documents' or 'kagajaat' in entity_values: 
+                    dispatcher.utter_message(response="utter_divorce_certificate_documents_romanized")
+                elif 'steps' in entity_values: 
+                    dispatcher.utter_message(response="utter_divorce_certificate_steps_romanized")
+                else: 
+                    dispatcher.utter_message(response="utter_divorce_certificate_documents_romanized")
+                    dispatcher.utter_message(response="utter_divorce_certificate_steps_romanized")
+            elif 'basai sarai' in entity_values:
+                if 'documents' or 'kagajaat' in entity_values: 
+                    dispatcher.utter_message(response="utter_migration_certificate_documents_romanized")
+                elif 'steps' in entity_values: 
+                    dispatcher.utter_message(response="utter_migration_certificate_steps_romanized")
+                else: 
+                    dispatcher.utter_message(response="utter_migration_certificate_documents_romanized")
+                    dispatcher.utter_message(response="utter_migration_certificate_steps_romanized")
+            else:
+                dispatcher.utter_message(response="utter_certificate_query_romanized")
+        return []

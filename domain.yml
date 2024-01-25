@@ -30,12 +30,15 @@ intents:
   - citizenship_query
   - deny
   - goodbye
+  - greet_romanized
   - greet
-  - certificate_query_romanize
-  - citizenship_query_romanize
+  - certificate_query_romanized
+  - citizenship_query_romanized
 actions:
   - action_handle_certificate_query
   - action_handle_citizenship_query
+  - action_handle_citizenship_query_romanized
+  - action_handle_certificate_query_romanized
   - utter_citizenship
   - utter_citizenship_romanized
   - utter_citizenship_by_birth_eligibility_criteria
@@ -45,7 +48,7 @@ actions:
   - utter_citizenship_by_birth_documents_required
   - utter_citizenship_by_birth_documents_required_romanized
   - utter_greet1
-  - utter_greet1_romanzied
+  - utter_greet1_romanized
   - utter_greet2 
   - utter_greet2_romanized
   - utter_greet3
@@ -366,7 +369,7 @@ utter_greet3_romanized:
 utter_goodbye:
   - text: Bye
 utter_iamabot_romanized:
-  - text: Ma ek bot ho, Aarogya, Aayush, Prasant ra Piyush dwara nirmit.
+  - text: Ma ek bot ho, Aarogya, Aayush, Prashant ra Piyush dwara nirmit.
 utter_certificate_query_romanized:
   - text: Tapai lai kun chai ghatna darta garna chahanu hunchha?
 

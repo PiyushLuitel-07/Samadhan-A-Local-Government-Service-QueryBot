@@ -33,13 +33,16 @@ nlu:
     - [Nagrikta](citizenship_type) paauna ko lagi full process k ho?
     - [Janma](citizenship_type) dwara [nagrikta](citizenship_type) banaune process k ho?
     - [Bamsaj](citizenship_type) dwara [nagrikta](citizenship_type) banaune vidhi k ho?
-    - [Janma](citizenship_type) dwara [nagrikta](citizenship_type) banaune lagi kin kin [documents](specification) chahincha?
+    - [Janma](citizenship_type) dwara [nagrikta](citizenship_type) banaune lagi kun kun [documents](specification) chahincha?
+    - [Janma](citizenship_type) dwara [nagrikta](citizenship_type) banaune lagi kun kun [yogyata](specification) chahincha?
+    - [Janma](citizenship_type) dwara [nagrikta](citizenship_type) banaune lagi kun kun [maapdanda](specification) chahincha?
     - [Bamsaj](citizenship_type) dwara [nagrikta](citizenship_type) banaune lagi kin kin [steps](specification) chahincha?
     - [Bamsaj](citizenship_type) dwara [nagrikta](citizenship_type) banaune ko lagi [eligibility](specification) k ho?
     - Malai [nagrikta](citizenship_type) ma madad garna chahan chu.
     - Ma [nagrikta](citizenship_type) ma madad garna chahanchu.
     - Mero lagi [janma](citizenship_type) dwara [nagrikta](citizenship_type) ma madad garna.
-    - [Janma](citizenship_type) dwara [nagrikta](citizenship_type) ko lagi kin kin [steps](specification) huncha?
+    - [Janma](citizenship_type) dwara [nagrikta](citizenship_type) ko lagi kun kun [steps](specification) huncha?
+    - [Janma](citizenship_type) dwara [nagrikta](citizenship_type) ko lagi kun kun [kagajaat](specification) huncha?
     - [Bamsaj](citizenship_type) dwara [nagrikta](citizenship_type) banaune vidhi k ho?
 
 - intent: certificate_query
@@ -62,6 +65,7 @@ nlu:
     - [Bibah darta](certificate_type) banauna ko lagi k ho process?
     - [Sambandha bichhed](certificate_type) kasari banaune?
     - [Janma darta](certificate_type) banauna ko lagi kun kun [documents](specification) chahincha?
+    - [Janma darta](certificate_type) banauna ko lagi kun kun [kagajaat](specification) chahincha?
     - [Mrityu darta](certificate_type) banauna ko lagi kun kun [steps](specification) chahincha?
     - [sambandha bichhed](certificate_type) ko lagi kasari apply kasari garna sakincha?
     - [Basai Sarai](citizenship_type) kasari paune?
@@ -93,6 +97,13 @@ nlu:
     - Hello chatbot
     - Hello bot
     - Samadhan
+
+- intent: greet_romanized
+  examples: |
+    - hello bhai
+    - k cha khabar?
+    - tapai ko ho?
+    
 - intent: goodbye
   examples: |
     - good bye
