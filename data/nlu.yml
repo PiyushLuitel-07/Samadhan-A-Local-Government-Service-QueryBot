@@ -21,7 +21,7 @@ nlu:
     - what are the [steps](specification) for [citizenship by birth](citizenship_type)
     - procedure to make [citizenship by descent](citizenship_type)
 
-- intent: citizenship_query_romanize
+- intent: citizenship_query_romanized
   examples: |
     - Ma [nagrikta](citizenship_type) ko barema jankari chahanchu.
     - [Janma](citizenship_type) dwara [nagrikta](citizenship_type) ko lagi kasari apply garna paincha?
@@ -54,18 +54,18 @@ nlu:
     - how to apply for [birth certificate](certificate_type)
     - how can i get [birth certificate](citizenship_type) in nepal
     - what are the required [documents](specification) to get [birth certificate](citizenship_type) in nepal
-- intent: certificate_query_romanize
+- intent: certificate_query_romanized
   examples: |
-    - [Janma darta](certificate_type) ko lagi kaise apply garna paincha?
+    - [Janma darta](certificate_type) ko lagi kasari apply garna sakincha?
     - [Mrityu darta](certificate_type) ma madad garnu hola.
-    - Ma [vivah darta](certificate_type) banau chha chu.
-    - [Bibah batai darta](certificate_type) banau ko lagi k ho process?
-    - [Pravasan darta](certificate_type) kaise banau?
-    - [Janma darta](certificate_type) banaune ko lagi kin kin [documents](specification) chahincha?
-    - [Mrityu darta](certificate_type) banaune ko lagi kin kin [steps](specification) chahincha?
-    - [Janma darta](certificate_type) ko lagi kaise apply garna paincha?
-    - [Janma darta](citizenship_type) kaise paunu?
-    - [Janma darta](citizenship_type) pauna ko lagi kin kin [documents](specification) chahincha?
+    - Malai [bibah darta](certificate_type) banaunu chha.
+    - [Bibah darta](certificate_type) banauna ko lagi k ho process?
+    - [Sambandha bichhed](certificate_type) kasari banaune?
+    - [Janma darta](certificate_type) banauna ko lagi kun kun [documents](specification) chahincha?
+    - [Mrityu darta](certificate_type) banauna ko lagi kun kun [steps](specification) chahincha?
+    - [sambandha bichhed](certificate_type) ko lagi kasari apply kasari garna sakincha?
+    - [Basai Sarai](citizenship_type) kasari paune?
+    - [Bibah darta](citizenship_type) pauna ko lagi kun kun [documents](specification) chahincha?
 
 - intent: greet
   examples: |
