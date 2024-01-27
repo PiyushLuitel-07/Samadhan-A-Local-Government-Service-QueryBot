@@ -9,7 +9,7 @@ body {
 
 .widget {
   display: none;
-  width: 450px;
+  width: 900px;
   right: 555px;
   height: 600px;  
   bottom: 8%;
@@ -17,22 +17,30 @@ body {
   background: #fff;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 5px 0 #00000096;
+
+  /* Centering */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .chat_header {
-  height: 80px;
+  height: 10%;
   background: #002244;
   border-radius: 10px 10px 0px 0px;
   padding: 5px;
   font-size: 20px;
+
+  top: 50%;
+  left: 50%;
 }
 
 .chat_header_title {
   color: white;
   float: left;
-  margin-top: 6%;
-  margin-left: 35%;
-}
+  margin-top: 1.5%;
+  margin-left: 42%;
+  }
  
 .chats {
   /* display: none; */
@@ -69,8 +77,8 @@ div.chats::-webkit-scrollbar {
 .botMsg {
   float: left;
   margin-top: 5px;
-  background: #002244;
-  color: white;
+  background: #EDEAE0;
+  color: rgb(5, 5, 5);
   /* box-shadow: 2px 3px 9px 0px #9a82842e; */
   margin-left: 0.5em;
   padding: 10px;
@@ -218,7 +226,7 @@ blockquote {
   color: white;
   margin-right: 5px;
   float: right;
-  margin-top: 3%;
+  margin-top: 1.5%;
 }
 
 .dropdown-content li > a,
