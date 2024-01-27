@@ -1,0 +1,46 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "utter_iamabot",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"citizenship_query\"}}]": "action_handle_citizenship_query",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"citizenship_query\"}}, {\"prev_action\": {\"action_name\": \"action_handle_citizenship_query\"}, \"user\": {\"intent\": \"citizenship_query\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"citizenship_query_romanized\"}}]": "action_handle_citizenship_query_romanized",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"citizenship_query_romanized\"}}, {\"prev_action\": {\"action_name\": \"action_handle_citizenship_query_romanized\"}, \"user\": {\"intent\": \"citizenship_query_romanized\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet1",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet1\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet2",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet1\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet2\"}, \"user\": {\"intent\": \"greet\"}}]": "utter_greet3",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet1\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet2\"}, \"user\": {\"intent\": \"greet\"}}, {\"prev_action\": {\"action_name\": \"utter_greet3\"}, \"user\": {\"intent\": \"greet\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"halkhabar\"}}]": "utter_halkhabar",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"halkhabar\"}}, {\"prev_action\": {\"action_name\": \"utter_halkhabar\"}, \"user\": {\"intent\": \"halkhabar\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"certificate_query_romanized\"}}]": "action_handle_certificate_query_romanized",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"certificate_query_romanized\"}}, {\"prev_action\": {\"action_name\": \"action_handle_certificate_query_romanized\"}, \"user\": {\"intent\": \"certificate_query_romanized\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet_romanized\"}}]": "utter_greet1_romanized",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet_romanized\"}}, {\"prev_action\": {\"action_name\": \"utter_greet1_romanized\"}, \"user\": {\"intent\": \"greet_romanized\"}}]": "utter_greet2_romanized",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet_romanized\"}}, {\"prev_action\": {\"action_name\": \"utter_greet1_romanized\"}, \"user\": {\"intent\": \"greet_romanized\"}}, {\"prev_action\": {\"action_name\": \"utter_greet2_romanized\"}, \"user\": {\"intent\": \"greet_romanized\"}}]": "utter_greet3_romanized",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet_romanized\"}}, {\"prev_action\": {\"action_name\": \"utter_greet1_romanized\"}, \"user\": {\"intent\": \"greet_romanized\"}}, {\"prev_action\": {\"action_name\": \"utter_greet2_romanized\"}, \"user\": {\"intent\": \"greet_romanized\"}}, {\"prev_action\": {\"action_name\": \"utter_greet3_romanized\"}, \"user\": {\"intent\": \"greet_romanized\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"certificate_query\"}}]": "action_handle_certificate_query",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"certificate_query\"}}, {\"prev_action\": {\"action_name\": \"action_handle_certificate_query\"}, \"user\": {\"intent\": \"certificate_query\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent back",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"certificate_query_romanized\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"certificate_query_romanized\"}}, {\"prev_action\": {\"action_name\": \"action_handle_certificate_query_romanized\"}, \"user\": {\"intent\": \"certificate_query_romanized\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet_romanized\"}}, {\"prev_action\": {\"action_name\": \"utter_greet1_romanized\"}, \"user\": {\"intent\": \"greet_romanized\"}}, {\"prev_action\": {\"action_name\": \"utter_greet2_romanized\"}, \"user\": {\"intent\": \"greet_romanized\"}}, {\"prev_action\": {\"action_name\": \"utter_greet3_romanized\"}, \"user\": {\"intent\": \"greet_romanized\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet_romanized\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet_romanized\"}}, {\"prev_action\": {\"action_name\": \"utter_greet1_romanized\"}, \"user\": {\"intent\": \"greet_romanized\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greet_romanized\"}}, {\"prev_action\": {\"action_name\": \"utter_greet1_romanized\"}, \"user\": {\"intent\": \"greet_romanized\"}}, {\"prev_action\": {\"action_name\": \"utter_greet2_romanized\"}, \"user\": {\"intent\": \"greet_romanized\"}}]"
+    ]
+  }
+}

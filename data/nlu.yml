@@ -17,10 +17,9 @@ nlu:
     - [eligibility](specification) to make [citizenship by naturalization](citizenship_type)?
     - can you help me with [citizenship](citizenship_type)
     - can youhelp me with [citizenship](citizenship_type)
-    - help me with [citizenship by birth](citizenship_type)
     - what are the [steps](specification) for [citizenship by birth](citizenship_type)
     - procedure to make [citizenship by descent](citizenship_type)
-
+    - give me details regarding [citizenship](citizenship_type)
 - intent: citizenship_query_romanized
   examples: |
     - ma [nagrikta](citizenship_type) ko barema jankari chahanchu.
@@ -40,11 +39,10 @@ nlu:
     - [bamsaj](citizenship_type) dwara [nagrikta](citizenship_type) banaune ko lagi [eligibility](specification) k ho?
     - malai [nagrikta](citizenship_type) ma madad garna chahan chu.
     - ma [nagrikta](citizenship_type) ma madad garna chahanchu.
-    - mero lagi [janma](citizenship_type) dwara [nagrikta](citizenship_type) ma madad garna.
     - [janma](citizenship_type) dwara [nagrikta](citizenship_type) ko lagi kun kun [steps](specification) huncha?
     - [janma](citizenship_type) dwara [nagrikta](citizenship_type) ko lagi kun kun [kagajaat](specification) huncha?
-    - [bamsaj](citizenship_type) dwara [nagrikta](citizenship_type) banaune vidhi k ho?
-
+    - [nagarikta](citizenship_type) lina thiyo, kaso garna parla
+    - [bamsaj](citizenship_type) [nagarikta](citizenship_type) ko barema janakari pau na
 - intent: certificate_query
   examples: |
     - how to apply for [birth certificate](certificate_type)?
@@ -57,7 +55,6 @@ nlu:
     - how to apply for [birth certificate](certificate_type)
     - how can i get [birth certificate](citizenship_type) in nepal
     - what are the required [documents](specification) to get [birth certificate](citizenship_type) in nepal
-    
 - intent: certificate_query_romanized
   examples: |
     - [janma darta](certificate_type) ko lagi kasari apply garna sakincha?
@@ -71,7 +68,6 @@ nlu:
     - [sambandha bichhed](certificate_type) ko lagi kasari apply kasari garna sakincha?
     - [basai sarai](certificate_type) kasari paune?
     - [bibah darta](certificate_type) pauna ko lagi kun kun [documents](specification) chahincha?
-
 - intent: greet
   examples: |
     - hey
@@ -91,7 +87,6 @@ nlu:
     - hi samadhan
     - samadhan hello
     - samadhan what's up
-
 - intent: greet_romanized
   examples: |
     - hello bhai
@@ -120,6 +115,7 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - y
 - intent: deny
   examples: |
     - no
@@ -144,3 +140,4 @@ nlu:
     - samadhan k cha khabar?
     - k chha halkhabar?
     - k cha khabar?
+    - k chha halkhabar

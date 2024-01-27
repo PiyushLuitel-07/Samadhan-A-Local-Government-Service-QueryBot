@@ -21,6 +21,11 @@ function setUserResponse(message) {
   $(".suggestions").remove();
 }
 
+function displayWelcomeMessage() {
+  const welcomeMessage = "Hello! I am your chatbot assistant. How can I help you today?";
+  const BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
+}
+
 /**
  * returns formatted bot response
  * @param {String} text bot message response's text
@@ -37,6 +42,7 @@ function getBotResponse(text) {
  *
  * for more info: `https://rasa.com/docs/rasa/connectors/your-own-website#request-and-response-format`
  */
+
 function setBotResponse(response) {
   // renders bot response after 500 milliseconds
   setTimeout(() => {
@@ -304,6 +310,7 @@ function actionTrigger() {
  */
 // eslint-disable-next-line no-unused-vars
 function customActionTrigger() {
+  displayWelcomeMessage();
   $.ajax({
     url: "http://localhost:5055/webhook/",
     type: "POST",

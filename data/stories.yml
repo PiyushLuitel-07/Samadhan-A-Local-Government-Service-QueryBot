@@ -54,3 +54,29 @@ stories:
   - action: action_handle_certificate_query
 
 ########################################################################################
+- story: interactive_story_4
+  steps:
+  - intent: halkhabar
+  - action: utter_halkhabar
+  - intent: citizenship_query_romanized
+    entities:
+    - citizenship_type: nagarikta
+  - action: action_handle_citizenship_query_romanized
+  - intent: citizenship_query_romanized
+    entities:
+    - citizenship_type: bamsaj
+    - citizenship_type: nagarikta
+  - action: action_handle_citizenship_query_romanized
+  - intent: affirm
+
+- story: interactive_story_5
+  steps:
+  - intent: greet
+  - action: utter_greet1
+  - action: utter_greet2
+  - action: utter_greet3
+  - intent: citizenship_query
+    entities:
+    - citizenship_type: citizenship
+  - action: action_handle_citizenship_query
+  - intent: affirm

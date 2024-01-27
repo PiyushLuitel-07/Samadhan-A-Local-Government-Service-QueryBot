@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   instancesTap.open();
   setTimeout(() => {
     instancesTap.close();
-  }, 4000);
+  }, 55000);
 });
 
 /* import components */
