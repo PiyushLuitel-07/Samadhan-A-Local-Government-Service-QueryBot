@@ -48,7 +48,7 @@ class ActionHandleCitizenshipQuery(Action):
                 dispatcher.utter_message(response="utter_citizenship")
         return []
 
-class ActionHandleCitizenshipQuery(Action):
+class ActionHandleCertificateQuery(Action):
     def name(self) -> Text:
         return "action_handle_certificate_query"
 
@@ -103,7 +103,7 @@ class ActionHandleCitizenshipQuery(Action):
                 dispatcher.utter_message(response="utter_certificate_query")
         return []
     
-class ActionHandleCitizenshipQuery(Action):
+class ActionHandleCitizenshipQueryRomanized(Action):
     def name(self) -> Text:
         return "action_handle_citizenship_query_romanized"
 
@@ -114,7 +114,7 @@ class ActionHandleCitizenshipQuery(Action):
         if entities:
             entity_values = [entity['value'] for entity in entities]
             
-            if 'Bamsaj' in entity_values:
+            if 'bamsaj' in entity_values:
                 if 'eligibility' or 'yogyata' in entity_values:
                     dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_criteria_romanized")
                 elif 'documents' or 'kagajaat' in entity_values: 
@@ -140,7 +140,7 @@ class ActionHandleCitizenshipQuery(Action):
                 dispatcher.utter_message(response="utter_citizenship_romanized")
         return []
 
-class ActionHandleCitizenshipQuery(Action):
+class ActionHandleCertificateQueryRomanized(Action):
     def name(self) -> Text:
         return "action_handle_certificate_query_romanized"
 

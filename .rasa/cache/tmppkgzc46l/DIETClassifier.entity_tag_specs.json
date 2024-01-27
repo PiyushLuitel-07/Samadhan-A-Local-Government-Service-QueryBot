@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-certificate_type",
+      "2": "I-certificate_type",
+      "3": "L-certificate_type",
+      "4": "U-certificate_type",
+      "5": "B-citizenship_type",
+      "6": "I-citizenship_type",
+      "7": "L-citizenship_type",
+      "8": "U-citizenship_type",
+      "9": "B-specification",
+      "10": "I-specification",
+      "11": "L-specification",
+      "12": "U-specification",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-certificate_type": 1,
+      "I-certificate_type": 2,
+      "L-certificate_type": 3,
+      "U-certificate_type": 4,
+      "B-citizenship_type": 5,
+      "I-citizenship_type": 6,
+      "L-citizenship_type": 7,
+      "U-citizenship_type": 8,
+      "B-specification": 9,
+      "I-specification": 10,
+      "L-specification": 11,
+      "U-specification": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

@@ -52,3 +52,5 @@ stories:
     - specification: documents
     - citizenship_type: birth certificate
   - action: action_handle_certificate_query
+
+########################################################################################
