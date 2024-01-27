@@ -43,7 +43,7 @@ function setBotResponse(response) {
     hideBotTyping();
     if (response.length < 1) {
       // if there is no response from Rasa, send  fallback message to the user
-      const fallbackMsg = "I am facing some issues, please try again later!!!";
+      const fallbackMsg = "Tapai le samparka garna khojnu vayeko bot ahile offline xa kripaya kei samaya paxi purna paryas garnu hola, dhanyabad!!!";
 
       const BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${fallbackMsg}</p><div class="clearfix"></div>`;
 
