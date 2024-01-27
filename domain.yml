@@ -39,6 +39,7 @@ intents:
   - greet
   - certificate_query_romanized
   - citizenship_query_romanized
+  - halkhabar
 actions:
   - action_handle_certificate_query
   - action_handle_citizenship_query
@@ -86,6 +87,7 @@ actions:
   - utter_migration_certificate_steps_romanized
   - utter_certificate_query
   - utter_certificate_query_romanized
+  - utter_halkhabar
 responses:
   utter_greet1:
     - text: Hello !! I'm Samadhan.
@@ -372,10 +374,11 @@ responses:
   utter_greet3_romanized:
     - text: Tapailai nagarikta, janma, mrityu, bibah sambandhi prashna haru garna saknu hunchha.
   utter_iamabot_romanized:
-    - text: Ma ek bot ho, Aarogya, Aayush, Prashant ra Piyush dwara nirmit.
+    - text: Ma ek bot ho, PAPA dwara nirmit.
   utter_certificate_query_romanized:
     - text: Tapai lai kun chai ghatna darta garna chahanu hunchha?
-
+  utter_halkhabar:
+    - text: Sab thik chha daju. Tapailai k sahayog garna sakchu?
 response_selector:
   retrieve_responses:
     certificate_query:
@@ -418,6 +421,8 @@ response_selector:
     - utter_citizenship_by_descent_eligibility_criteria_romanized
     - utter_citizenship_by_descent_documents_required_romanized
     - utter_citizenship_by_descent_steps_romanized
+    halkhabar:
+    - utter_halkhabar
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

@@ -26,7 +26,7 @@ body {
 
 .chat_header {
   height: 10%;
-  background: #002244;
+  background: #380654;
   border-radius: 10px 10px 0px 0px;
   padding: 5px;
   font-size: 20px;
@@ -77,7 +77,7 @@ div.chats::-webkit-scrollbar {
 .botMsg {
   float: left;
   margin-top: 5px;
-  background: #EDEAE0;
+  background: #e3e7ee;
   color: rgb(5, 5, 5);
   /* box-shadow: 2px 3px 9px 0px #9a82842e; */
   margin-left: 0.5em;
@@ -131,7 +131,7 @@ textarea-webkit-scrollbar {
   padding: 10px;
   float: right;
   margin-right: 0.5em;
-  background: #002244;
+  background: #380654;
   color: white;
   margin-bottom: 0.15em;
   font-size: 13px;

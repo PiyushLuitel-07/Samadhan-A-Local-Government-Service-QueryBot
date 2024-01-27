@@ -15,6 +15,11 @@ rules:
   - action: utter_greet2_romanized
   - action: utter_greet3_romanized
 
+- rule: User asks halkhabar
+  steps:
+  - intent: halkhabar
+  - action: utter_halkhabar
+
 - rule: User says bye
   steps:
   - intent: goodbye
