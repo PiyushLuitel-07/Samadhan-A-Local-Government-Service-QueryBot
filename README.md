@@ -26,19 +26,19 @@ Install this project (open git bash terminal and type this code)
 ```
 
 ## Using the application
-1.Activate your environment.
+- Activate your environment.
 
-2.Install the required dependencies from requirements.txt
+- Install the required dependencies from requirements.txt
 ```bash
 pip install -r requirements.txt
 ```
 
-3. train the model
+- train the model
 ```bash
 rasa train
 ```
 
-4. After model is trained, run the following code in two different terminals simultaneously
+- After model is trained, run the following code in two different terminals simultaneously
 ```bash
 rasa run actions
 ```
@@ -46,7 +46,7 @@ rasa run actions
 rasa run -m models --enable-api --cors "*" --debug
 ```
 
-5.Open the file Chatbot-Widget-main/index.html to see the actual working of our project.
+- Open the file Chatbot-Widget-main/index.html to see the actual working of our project.
 
 
 
