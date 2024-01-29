@@ -8,6 +8,8 @@
 - [Piyush Luitel](https://www.github.com/PiyushLuitel-07)
 - [Prashant Bhusal](https://www.github.com/prashant72-git)
 
+## Demo
+![Hello Samadhan](https://github.com/PiyushLuitel-07/Samadhan-A-Local-Government-Service-QueryBot/blob/main/Chatbot-Widget-main/Samadhan-A%20Local%20Government%20QueryBOT%20-%20Brave%202024-01-29%2017-03-08.gif)
 
 ## Features
 
