@@ -24,4 +24,25 @@ Install this project (open git bash terminal and type this code)
 ```bash
  git clone https://github.com/PiyushLuitel-07/Samadhan-A-Local-Government-Service-QueryBot
 ```
+
+## Using the application
+
+1.Install the required dependensies from requirements.txt
+```bash
+pip install -r requirements.txt
+```
+2. train the model
+```bash
+rasa train
+```
+3. After model is trained, run the following code in two different terminals simultaneously
+```bash
+rasa run actions
+```
+```bash
+rasa run -m models --enable-api --cors "*" --debug
+```
+
+
+
     
