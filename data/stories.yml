@@ -38,7 +38,7 @@ stories:
   - action: action_handle_certificate_query
   - intent: certificate_query
     entities:
-    - citizenship_type: birth certificate
+    - certificate_type: birth certificate
   - action: action_handle_certificate_query
   - intent: certificate_query
     entities:
@@ -50,7 +50,7 @@ stories:
   - intent: certificate_query
     entities:
     - specification: documents
-    - citizenship_type: birth certificate
+    - certificate_type: birth certificate
   - action: action_handle_certificate_query
 
 ########################################################################################
@@ -58,17 +58,32 @@ stories:
   steps:
   - intent: halkhabar
   - action: utter_halkhabar
-  - intent: citizenship_query_romanized
-    entities:
-    - citizenship_type: nagarikta
-  - action: action_handle_citizenship_query_romanized
-  - intent: citizenship_query_romanized
-    entities:
-    - citizenship_type: bamsaj
-    - citizenship_type: nagarikta
-  - action: action_handle_citizenship_query_romanized
-  - intent: affirm
+######################################################citizenship query roman############
+# - story: interactive_story_40
+#   steps:
+#   - intent: citizenship_query_romanized
+#     entities:
+#     - citizenship_type: nagarikta
+#   - action: utter_citizenship_query_romanized
 
+# - story: interactive_story_41
+#   steps:
+#   - intent: citizenship_query_romanized
+#     entities:
+#     - citizenship_type: bamsaj
+#   - action: utter_citizenship_by_descent_eligibility_criteria_romanized
+#   - action: utter_citizenship_by_descent_documentss_romanized
+#   - action: utter_citizenship_by_descent_steps_romanized
+
+# - story: interactive_story_41
+#   steps:
+#   - intent: citizenship_query_romanized
+#     entities:
+#     - citizenship_type: janma
+#   - action: utter_citizenship_by_birth_eligibility_criteria_romanized
+#   - action: utter_citizenship_by_birth_documentss_romanized
+#   - action: utter_citizenship_by_birth_steps_romanized
+  #####################################################################################
 - story: interactive_story_5
   steps:
   - intent: greet

@@ -11,6 +11,7 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 
+
 class ActionHandleCitizenshipQuery(Action):
     def name(self) -> Text:
         return "action_handle_citizenship_query"
@@ -114,10 +115,10 @@ class ActionHandleCitizenshipQueryRomanized(Action):
         if entities:
             entity_values = [entity['value'] for entity in entities]
             
-            if 'bamsaj' in entity_values:
-                if 'eligibility' or 'yogyata' in entity_values:
+            if 'descent' in entity_values:
+                if 'eligibility' in entity_values:
                     dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_criteria_romanized")
-                elif 'documents' or 'kagajaat' in entity_values: 
+                elif 'documents' in entity_values: 
                     dispatcher.utter_message(response="utter_citizenship_by_descent_documents_required_romanized")
                 elif 'steps' in entity_values: 
                     dispatcher.utter_message(response="utter_citizenship_by_descent_steps_romanized")
@@ -125,10 +126,10 @@ class ActionHandleCitizenshipQueryRomanized(Action):
                     dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_criteria_romanized")
                     dispatcher.utter_message(response="utter_citizenship_by_descent_documents_required_romanized")
                     dispatcher.utter_message(response="utter_citizenship_by_descent_steps_romanized")
-            elif 'janma' in entity_values:
-                if 'eligibility'or 'yogyata' or 'maapdanda' in entity_values:
+            elif 'birth' in entity_values:
+                if 'eligibility' in entity_values:
                     dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility_criteria_romanized")
-                elif 'documents' or 'kagajaat' in entity_values: 
+                elif 'documents' in entity_values: 
                     dispatcher.utter_message(response="utter_citizenship_by_birth_documents_required_romanized")
                 elif 'steps' in entity_values: 
                     dispatcher.utter_message(response="utter_citizenship_by_birth_steps_romanized")
@@ -150,41 +151,40 @@ class ActionHandleCertificateQueryRomanized(Action):
 
         if entities:
             entity_values = [entity['value'] for entity in entities]
-            
-            if 'Janma darta' or 'birth certificate' in entity_values:
-                if 'documents' or 'kagajaat' in entity_values: 
+            if 'birth' in entity_values:
+                if 'documents' in entity_values: 
                     dispatcher.utter_message(response="utter_birth_certificate_documents_romanized")
                 elif 'steps' in entity_values: 
                     dispatcher.utter_message(response="utter_birth_certificate_steps_romanized")
                 else: 
                     dispatcher.utter_message(response="utter_birth_certificate_documents_romanized")
                     dispatcher.utter_message(response="utter_birth_certificate_steps_romanized")
-            elif 'mrityu darta' in entity_values:
-                if 'documents' or 'kagajaat' in entity_values: 
+            elif 'death' in entity_values:
+                if 'documents' in entity_values: 
                     dispatcher.utter_message(response="utter_death_certificate_documents_romanized")
                 elif 'steps' in entity_values: 
                     dispatcher.utter_message(response="utter_death_certificate_steps_romanized")
                 else: 
                     dispatcher.utter_message(response="utter_death_certificate_documents_romanized")
                     dispatcher.utter_message(response="utter_death_certificate_steps_romanized")
-            elif 'bibah darta' in entity_values:
-                if 'documents' or 'kagajaat' in entity_values: 
+            elif 'marriage' in entity_values:
+                if 'documents' in entity_values: 
                     dispatcher.utter_message(response="utter_marriage_certificate_documents_romanized")
                 elif 'steps' in entity_values: 
                     dispatcher.utter_message(response="utter_marriage_certificate_steps_romanized")
                 else: 
                     dispatcher.utter_message(response="utter_marriage_certificate_documents_romanized")
                     dispatcher.utter_message(response="utter_marriage_certificate_steps_romanized")
-            elif 'sambandha bichhed' in entity_values:
-                if 'documents' or 'kagajaat' in entity_values: 
+            elif 'divorce' in entity_values:
+                if 'documents' in entity_values: 
                     dispatcher.utter_message(response="utter_divorce_certificate_documents_romanized")
                 elif 'steps' in entity_values: 
                     dispatcher.utter_message(response="utter_divorce_certificate_steps_romanized")
                 else: 
                     dispatcher.utter_message(response="utter_divorce_certificate_documents_romanized")
                     dispatcher.utter_message(response="utter_divorce_certificate_steps_romanized")
-            elif 'basai sarai' in entity_values:
-                if 'documents' or 'kagajaat' in entity_values: 
+            elif 'migration' in entity_values:
+                if 'documents' in entity_values: 
                     dispatcher.utter_message(response="utter_migration_certificate_documents_romanized")
                 elif 'steps' in entity_values: 
                     dispatcher.utter_message(response="utter_migration_certificate_steps_romanized")
@@ -194,3 +194,4 @@ class ActionHandleCertificateQueryRomanized(Action):
             else:
                 dispatcher.utter_message(response="utter_certificate_query_romanized")
         return []
+    
