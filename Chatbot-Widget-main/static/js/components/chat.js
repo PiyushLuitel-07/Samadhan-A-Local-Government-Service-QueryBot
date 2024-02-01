@@ -21,9 +21,23 @@ function setUserResponse(message) {
   $(".suggestions").remove();
 }
 
-function displayWelcomeMessage() {
-  const welcomeMessage = "Hello! I am your chatbot assistant. How can I help you today?";
-  const BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
+function displayInitialUserMessage() {
+  welcomeMessage = "Hello!! Mero naam Samadhan ho.";
+  BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
+  $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
+  scrollToBottomOfResults();
+  welcomeMessage = "Ma sthaniya sarkari seva sodhpuch bot ho.";
+  BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
+  $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
+  scrollToBottomOfResults();
+  welcomeMessage = "Tapailai nagarikta, janma, mrityu, bibah sambandhi prashna haru garna saknu hunchha.";
+  BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
+  $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
+  scrollToBottomOfResults();
+  welcomeMessage = "Ma ek bot ho, PAPA dwara nirmit.";
+  BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
+  $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
+  scrollToBottomOfResults();
 }
 
 /**
