@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rasa Core Visualisation</title>
+    <script src="https://dagrejs.github.io/project/dagre-d3/latest/dagre-d3.min.js"></script>
+    <script src="https://dagrejs.github.io/project/dagre/latest/dagre.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://dagrejs.github.io/project/graphlib-dot/v0.6.3/graphlib-dot.js"></script>
+</head>
+<body>
+<div id="errormsg" style="color: #b00"></div>
+<svg>
+    <style id="graph-style">
+        .node.invisible > rect {
+            display: none;
+        }
+
+        .node.start > rect {
+            fill: #7f7;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node.end > rect {
+            fill: #f77;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node:not(.active) > rect, .node:not(.active) > .label {
+            opacity: 0.4;
+        }
+
+        .edgePath:not(.active) path {
+            opacity: 0.4;
+        }
+
+        .node.ellipsis > rect {
+            fill: #CCC;
+        }
+
+        .node.intent > rect {
+            fill: #7ff;
+        }
+
+        .node.dashed > rect {
+            stroke-dasharray: 5;
+        }
+
+        text {
+            font-weight: 300;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serf, serif;
+            font-size: 14px;
+            color: #1f1d1d;
+        }
+
+        .node rect {
+            stroke: #444;
+            fill: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .edgePath path {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        svg {
+            position: fixed;
+            top: 10px;
+            left: 0;
+            height: 100%;
+            width: 100%
+        }
+    </style>
+    <g></g>
+</svg>
+<script>
+
+  function serveGraph() {
+    let oldInputGraphValue;
+
+    const url = 'visualization.dot';
+    const refreshInterval = 500;
+
+    // trigger a refresh by fetching an updated graph
+    setInterval(function () {
+      fetch(url).then(r => r.text()).then(dot => {
+        document.getElementById('errormsg').innerHTML = '';
+        if (oldInputGraphValue === dot) return;
+
+        oldInputGraphValue = dot;
+        drawGraph(dot);
+      }).catch(err => {
+        document.getElementById('errormsg').innerHTML =
+          'Failed to update plot. (' + err.message + ')';
+      });
+    }, refreshInterval);
+  }
+
+  function drawGraph(graph) {
+    let g = graphlibDot.read(graph);
+    // Set margins, if not present
+    if (!g.graph().hasOwnProperty("marginx") &&
+      !g.graph().hasOwnProperty("marginy")) {
+      g.graph().marginx = 20;
+      g.graph().marginy = 20;
+    }
+    g.graph().transition = function (selection) {
+      return selection.transition().duration(300);
+    };
+    // Render the graph into svg g
+    d3.select("svg g").call(render, g);
+  }
+  // Set up zoom support
+  const svg = d3.select("svg"),
+    inner = d3.select("svg g"),
+    zoom = d3.zoom().on("zoom", function () {
+      inner.attr("transform", d3.event.transform);
+    });
+  svg.call(zoom);
+
+  // Create and configure the renderer
+  const render = dagreD3.render();
+
+  let isClient = false;
+  isClient = true;
+
+  if (isClient) {
+    // Mark all nodes and their edges as active
+    cssRules = document.getElementById('graph-style').sheet.cssRules;
+    cssRules[3].style.opacity = 1;
+    cssRules[4].style.opacity = 1;
+
+    let graph;
+    graph = `digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+"-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
+1 [class="", fontsize=12, label=utter_birth_certificate_documents_romanized];
+2 [class="", fontsize=12, label=utter_birth_certificate_steps_romanized];
+3 [class="", fontsize=12, label=utter_death_certificate_documents_romanized];
+4 [class="", fontsize=12, label=utter_death_certificate_steps_romanized];
+5 [class="", fontsize=12, label=utter_death_certificate_documents_romanized];
+7 [class="", fontsize=12, label=utter_marriage_certificate_documents_romanized];
+8 [class="", fontsize=12, label=utter_marriage_certificate_steps_romanized];
+9 [class="", fontsize=12, label=utter_marriage_certificate_documents_romanized];
+11 [class="", fontsize=12, label=utter_divorce_certificate_documents_romanized];
+12 [class="", fontsize=12, label=utter_divorce_certificate_steps_romanized];
+13 [class="", fontsize=12, label=utter_divorce_certificate_documents_romanized];
+15 [class="", fontsize=12, label=utter_migration_certificate_documents_romanized];
+16 [class="", fontsize=12, label=utter_migration_certificate_steps_romanized];
+17 [class="", fontsize=12, label=utter_migration_certificate_documents_romanized];
+19 [class="", fontsize=12, label=utter_birth_certificate_documents_romanized];
+21 [class="", fontsize=12, label="..."];
+22 [class="", fontsize=12, label=utter_greet1];
+23 [class="", fontsize=12, label=utter_greet2];
+24 [class="", fontsize=12, label=utter_greet3];
+26 [class="", fontsize=12, label=utter_greet1_romanized];
+27 [class="", fontsize=12, label=utter_greet2_romanized];
+28 [class="", fontsize=12, label=utter_greet3_romanized];
+30 [class="", fontsize=12, label=utter_halkhabar];
+32 [class="", fontsize=12, label=utter_goodbye];
+34 [class="", fontsize=12, label=utter_iamabot];
+36 [class="", fontsize=12, label=action_handle_citizenship_query];
+38 [class="", fontsize=12, label=action_handle_certificate_query];
+40 [class="", fontsize=12, label=action_handle_citizenship_query_romanized];
+41 [class=intent, fillcolor=lightblue, label="/certificate_query_romanized{\\"certificate_type\\":\\"birth\\",\\"specification\\":\\"documents\\"}", shape=rect, style=filled];
+42 [class=intent, fillcolor=lightblue, label="/certificate_query_romanized{\\"certificate_type\\":\\"birth\\",\\"specification\\":\\"steps\\"}", shape=rect, style=filled];
+43 [class=intent, fillcolor=lightblue, label="/certificate_query_romanized{\\"certificate_type\\":\\"death\\"}", shape=rect, style=filled];
+44 [class=intent, fillcolor=lightblue, label="/certificate_query_romanized{\\"certificate_type\\":\\"death\\",\\"specification\\":\\"documents\\"}", shape=rect, style=filled];
+45 [class=intent, fillcolor=lightblue, label="/certificate_query_romanized{\\"certificate_type\\":\\"marriage\\"}", shape=rect, style=filled];
+46 [class=intent, fillcolor=lightblue, label="/certificate_query_romanized{\\"certificate_type\\":\\"marriage\\",\\"specification\\":\\"documents\\"}", shape=rect, style=filled];
+47 [class=intent, fillcolor=lightblue, label="/certificate_query_romanized{\\"certificate_type\\":\\"divorce\\"}", shape=rect, style=filled];
+48 [class=intent, fillcolor=lightblue, label="/certificate_query_romanized{\\"certificate_type\\":\\"divorce\\",\\"specification\\":\\"documents\\"}", shape=rect, style=filled];
+49 [class=intent, fillcolor=lightblue, label="/certificate_query_romanized{\\"certificate_type\\":\\"migration\\"}", shape=rect, style=filled];
+50 [class=intent, fillcolor=lightblue, label="/certificate_query_romanized{\\"certificate_type\\":\\"migration\\",\\"specification\\":\\"documents\\"}", shape=rect, style=filled];
+51 [class=intent, fillcolor=lightblue, label="/certificate_query_romanized{\\"certificate_type\\":\\"birth\\"}", shape=rect, style=filled];
+52 [class=intent, fillcolor=lightblue, label="/certificate_query_romanized{\\"certificate_type\\":\\"death\\",\\"specification\\":\\"steps\\"}", shape=rect, style=filled];
+53 [class=intent, fillcolor=lightblue, label="/certificate_query_romanized{\\"certificate_type\\":\\"marriage\\",\\"specification\\":\\"steps\\"}", shape=rect, style=filled];
+54 [class=intent, fillcolor=lightblue, label="/certificate_query_romanized{\\"certificate_type\\":\\"divorce\\",\\"specification\\":\\"steps\\"}", shape=rect, style=filled];
+55 [class=intent, fillcolor=lightblue, label="/certificate_query_romanized{\\"certificate_type\\":\\"migration\\",\\"specification\\":\\"steps\\"}", shape=rect, style=filled];
+56 [class=intent, fillcolor=lightblue, label=goodmorning, shape=rect, style=filled];
+57 [class=intent, fillcolor=lightblue, label="Helloo samadhan bot", shape=rect, style=filled];
+58 [class=intent, fillcolor=lightblue, label="khabar k cha", shape=rect, style=filled];
+59 [class=intent, fillcolor=lightblue, label="good bye", shape=rect, style=filled];
+60 [class=intent, fillcolor=lightblue, label="am I talking to a human?", shape=rect, style=filled];
+61 [class=intent, fillcolor=lightblue, label="what are the documents required to make citizenship by birth?", shape=rect, style=filled];
+62 [class=intent, fillcolor=lightblue, label="i want to make marriage certificate", shape=rect, style=filled];
+63 [class=intent, fillcolor=lightblue, label="malai nagrikta ma madad garna chahan chu.", shape=rect, style=filled];
+0 -> 21  [class="", key=NONE, label=""];
+0 -> 41  [class="", key=0];
+0 -> 42  [class="", key=0];
+0 -> 43  [class="", key=0];
+0 -> 44  [class="", key=0];
+0 -> 45  [class="", key=0];
+0 -> 46  [class="", key=0];
+0 -> 47  [class="", key=0];
+0 -> 48  [class="", key=0];
+0 -> 49  [class="", key=0];
+0 -> 50  [class="", key=0];
+0 -> 51  [class="", key=0];
+0 -> 52  [class="", key=0];
+0 -> 53  [class="", key=0];
+0 -> 54  [class="", key=0];
+0 -> 55  [class="", key=0];
+1 -> "-1"  [class="", key=NONE, label=""];
+2 -> "-1"  [class="", key=NONE, label=""];
+3 -> 4  [class="", key=NONE, label=""];
+4 -> "-1"  [class="", key=NONE, label=""];
+5 -> "-1"  [class="", key=NONE, label=""];
+7 -> 8  [class="", key=NONE, label=""];
+8 -> "-1"  [class="", key=NONE, label=""];
+9 -> "-1"  [class="", key=NONE, label=""];
+11 -> 12  [class="", key=NONE, label=""];
+12 -> "-1"  [class="", key=NONE, label=""];
+13 -> "-1"  [class="", key=NONE, label=""];
+15 -> 16  [class="", key=NONE, label=""];
+16 -> "-1"  [class="", key=NONE, label=""];
+17 -> "-1"  [class="", key=NONE, label=""];
+19 -> 2  [class="", key=NONE, label=""];
+21 -> 56  [class="", key=0];
+21 -> 57  [class="", key=0];
+21 -> 58  [class="", key=0];
+21 -> 59  [class="", key=0];
+21 -> 60  [class="", key=0];
+21 -> 61  [class="", key=0];
+21 -> 62  [class="", key=0];
+21 -> 63  [class="", key=0];
+22 -> 23  [class="", key=NONE, label=""];
+23 -> 24  [class="", key=NONE, label=""];
+24 -> "-1"  [class="", key=NONE, label=""];
+26 -> 27  [class="", key=NONE, label=""];
+27 -> 28  [class="", key=NONE, label=""];
+28 -> "-1"  [class="", key=NONE, label=""];
+30 -> "-1"  [class="", key=NONE, label=""];
+32 -> "-1"  [class="", key=NONE, label=""];
+34 -> "-1"  [class="", key=NONE, label=""];
+36 -> "-1"  [class="", key=NONE, label=""];
+38 -> "-1"  [class="", key=NONE, label=""];
+40 -> "-1"  [class="", key=NONE, label=""];
+41 -> 1  [class="", key=0];
+42 -> 2  [class="", key=0];
+43 -> 3  [class="", key=0];
+44 -> 5  [class="", key=0];
+45 -> 7  [class="", key=0];
+46 -> 9  [class="", key=0];
+47 -> 11  [class="", key=0];
+48 -> 13  [class="", key=0];
+49 -> 15  [class="", key=0];
+50 -> 17  [class="", key=0];
+51 -> 19  [class="", key=0];
+52 -> 4  [class="", key=0];
+53 -> 8  [class="", key=0];
+54 -> 12  [class="", key=0];
+55 -> 16  [class="", key=0];
+56 -> 22  [class="", key=0];
+57 -> 26  [class="", key=0];
+58 -> 30  [class="", key=0];
+59 -> 32  [class="", key=0];
+60 -> 34  [class="", key=0];
+61 -> 36  [class="", key=0];
+62 -> 38  [class="", key=0];
+63 -> 40  [class="", key=0];
+}
+`;
+    drawGraph(graph);
+  } else {
+    serveGraph();
+  }
+
+
+</script>
+</body>
+</html>

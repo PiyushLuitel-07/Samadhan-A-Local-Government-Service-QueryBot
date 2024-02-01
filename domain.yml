@@ -43,6 +43,21 @@ intents:
 - greet
 - greet_romanized
 - halkhabar
+- certificate_query_romanized{"certificate_type":"birth"}
+- certificate_query_romanized{"certificate_type":"birth","specification":"documents"}
+- certificate_query_romanized{"certificate_type":"birth","specification":"steps"}
+- certificate_query_romanized{"certificate_type":"death"}
+- certificate_query_romanized{"certificate_type":"death","specification":"documents"}
+- certificate_query_romanized{"certificate_type":"death","specification":"steps"}
+- certificate_query_romanized{"certificate_type":"marriage"}
+- certificate_query_romanized{"certificate_type":"marriage","specification":"documents"}
+- certificate_query_romanized{"certificate_type":"marriage","specification":"steps"}
+- certificate_query_romanized{"certificate_type":"divorce"}
+- certificate_query_romanized{"certificate_type":"divorce","specification":"documents"}
+- certificate_query_romanized{"certificate_type":"divorce","specification":"steps"}
+- certificate_query_romanized{"certificate_type":"migration"}
+- certificate_query_romanized{"certificate_type":"migration","specification":"documents"}
+- certificate_query_romanized{"certificate_type":"migration","specification":"steps"}
 actions:
 - action_handle_citizenship_query_romanized
 - utter_greet3
@@ -357,50 +372,50 @@ responses:
   - text: Tapai lai kun chai ghatna darta garna chahanu hunchha?
   utter_halkhabar:
   - text: Sab thik chha daju. Tapailai k sahayog garna sakchu?
-# response_selector:
-#   retrieve_responses:
-#     certificate_query:
-#     - utter_certificate_query
-#     - utter_birth_certificate_documents
-#     - utter_birth_certificate_steps
-#     - utter_death_certificate_documents
-#     - utter_death_certificate_steps
-#     - utter_marriage_certificate_documents
-#     - utter_marriage_certificate_steps
-#     - utter_divorce_certificate_documents
-#     - utter_divorce_certificate_steps
-#     - utter_migration_certificate_documents
-#     - utter_migration_certificate_steps
-#     citizenship_query:
-#     - utter_citizenship
-#     - utter_citizenship_by_birth_eligibility_criteria
-#     - utter_citizenship_by_birth_documents_required
-#     - utter_citizenship_by_birth_steps
-#     - utter_citizenship_by_descent_eligibility_criteria
-#     - utter_citizenship_by_descent_documents_required
-#     - utter_citizenship_by_descent_steps
-#     certificate_query_romanized:
-#     - utter_certificate_query_romanized
-#     - utter_birth_certificate_documents_romanized
-#     - utter_birth_certificate_steps_romanized
-#     - utter_death_certificate_documents_romanized
-#     - utter_death_certificate_steps_romanized
-#     - utter_marriage_certificate_documents_romanized
-#     - utter_marriage_certificate_steps_romanized
-#     - utter_divorce_certificate_documents_romanized
-#     - utter_divorce_certificate_steps_romanized
-#     - utter_migration_certificate_documents_romanized
-#     - utter_migration_certificate_steps_romanized
-#     citizenship_query_romanized:
-#     - utter_citizenship_romanized
-#     - utter_citizenship_by_birth_eligibility_criteria_romanized
-#     - utter_citizenship_by_birth_documents_required_romanized
-#     - utter_citizenship_by_birth_steps_romanized
-#     - utter_citizenship_by_descent_eligibility_criteria_romanized
-#     - utter_citizenship_by_descent_documents_required_romanized
-#     - utter_citizenship_by_descent_steps_romanized
-#     halkhabar:
-#     - utter_halkhabar
+response_selector:
+  retrieve_responses:
+    certificate_query:
+    - utter_certificate_query
+    - utter_birth_certificate_documents
+    - utter_birth_certificate_steps
+    - utter_death_certificate_documents
+    - utter_death_certificate_steps
+    - utter_marriage_certificate_documents
+    - utter_marriage_certificate_steps
+    - utter_divorce_certificate_documents
+    - utter_divorce_certificate_steps
+    - utter_migration_certificate_documents
+    - utter_migration_certificate_steps
+    citizenship_query:
+    - utter_citizenship
+    - utter_citizenship_by_birth_eligibility_criteria
+    - utter_citizenship_by_birth_documents_required
+    - utter_citizenship_by_birth_steps
+    - utter_citizenship_by_descent_eligibility_criteria
+    - utter_citizenship_by_descent_documents_required
+    - utter_citizenship_by_descent_steps
+    certificate_query_romanized:
+    - utter_certificate_query_romanized
+    - utter_birth_certificate_documents_romanized
+    - utter_birth_certificate_steps_romanized
+    - utter_death_certificate_documents_romanized
+    - utter_death_certificate_steps_romanized
+    - utter_marriage_certificate_documents_romanized
+    - utter_marriage_certificate_steps_romanized
+    - utter_divorce_certificate_documents_romanized
+    - utter_divorce_certificate_steps_romanized
+    - utter_migration_certificate_documents_romanized
+    - utter_migration_certificate_steps_romanized
+    citizenship_query_romanized:
+    - utter_citizenship_romanized
+    - utter_citizenship_by_birth_eligibility_criteria_romanized
+    - utter_citizenship_by_birth_documents_required_romanized
+    - utter_citizenship_by_birth_steps_romanized
+    - utter_citizenship_by_descent_eligibility_criteria_romanized
+    - utter_citizenship_by_descent_documents_required_romanized
+    - utter_citizenship_by_descent_steps_romanized
+    halkhabar:
+    - utter_halkhabar
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

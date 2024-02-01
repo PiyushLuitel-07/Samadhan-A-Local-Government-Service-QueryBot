@@ -1,0 +1,292 @@
+[
+  {
+    "text": "What are the requirements for citizenship?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "citizenship_type",
+        "start": 30,
+        "end": 41,
+        "confidence_entity": 0.49257317185401917,
+        "value": "citizenship",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Can you help me with citizenship?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "citizenship_type",
+        "start": 21,
+        "end": 32,
+        "confidence_entity": 0.5694009065628052,
+        "value": "citizenship",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "How to get citizenship?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "citizenship_type",
+        "start": 11,
+        "end": 22,
+        "confidence_entity": 0.4757480323314667,
+        "value": "citizenship",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "how can i get birth certificate in nepal",
+    "entities": [
+      {
+        "start": 14,
+        "end": 31,
+        "value": "birth certificate",
+        "entity": "citizenship_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "certificate_type",
+        "start": 14,
+        "end": 31,
+        "confidence_entity": 0.47451305389404297,
+        "value": "birth certificate",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "what are the required documents to get birth certificate in nepal",
+    "entities": [
+      {
+        "start": 22,
+        "end": 31,
+        "value": "documents",
+        "entity": "specification"
+      },
+      {
+        "start": 39,
+        "end": 56,
+        "value": "birth certificate",
+        "entity": "citizenship_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "specification",
+        "start": 22,
+        "end": 31,
+        "confidence_entity": 0.999518871307373,
+        "value": "documents",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "certificate_type",
+        "start": 39,
+        "end": 56,
+        "confidence_entity": 0.508367121219635,
+        "value": "birth certificate",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "janma darta ko lagi kasari apply garna sakincha?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "janma",
+        "entity": "certificate_type"
+      },
+      {
+        "start": 6,
+        "end": 11,
+        "value": "darta",
+        "entity": "certificate_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "citizenship_type",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.887628436088562,
+        "value": "birth",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "malai bibahdarta banaunu chha.",
+    "entities": [
+      {
+        "start": 6,
+        "end": 11,
+        "value": "bibah",
+        "entity": "certificate_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "bibahdarta banauna ko lagi k ho process?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "bibah",
+        "entity": "certificate_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "janmadarta banauna ko lagi kun kun documents chahincha?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "janma",
+        "entity": "certificate_type"
+      },
+      {
+        "start": 35,
+        "end": 44,
+        "value": "documents",
+        "entity": "specification"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "specification",
+        "start": 35,
+        "end": 44,
+        "confidence_entity": 0.999529242515564,
+        "value": "documents",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "janmadarta banauna ko lagi kun kun kagajaat chahincha?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "janma",
+        "entity": "certificate_type"
+      },
+      {
+        "start": 35,
+        "end": 43,
+        "value": "kagajaat",
+        "entity": "specification"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "specification",
+        "start": 35,
+        "end": 43,
+        "confidence_entity": 0.999248206615448,
+        "value": "documents",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "mrityudarta banauna ko lagi kun kun steps chahincha?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "mrityu",
+        "entity": "certificate_type"
+      },
+      {
+        "start": 36,
+        "end": 41,
+        "value": "steps",
+        "entity": "specification"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "specification",
+        "start": 36,
+        "end": 41,
+        "confidence_entity": 0.9994762539863586,
+        "value": "steps",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "bibahdarta pauna ko lagi kun kun documents chahincha?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "bibah",
+        "entity": "certificate_type"
+      },
+      {
+        "start": 33,
+        "end": 42,
+        "value": "documents",
+        "entity": "specification"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "specification",
+        "start": 33,
+        "end": 42,
+        "confidence_entity": 0.9995267391204834,
+        "value": "documents",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,157 @@
+version: "3.1"
+nlu:
+- intent: bot_challenge
+  examples: |
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you a bot?
+- intent: affirm
+  examples: |
+    - y
+    - that sounds good
+    - indeed
+    - yes
+    - of course
+- intent: deny
+  examples: |
+    - don't like that
+    - not really
+    - never
+    - no way
+- intent: goodbye
+  examples: |
+    - goodbye
+    - good bye
+    - have a nice day
+    - bye bye
+    - good night
+    - see you around
+    - bye
+- intent: greet_romanized
+  examples: |
+    - hello bhai
+    - Hello chatbot
+    - tapai ko ho?
+    - Helloo samadhan bot
+    - Hello bot
+    - samadhan bhai
+    - subha Pravat
+- intent: halkhabar
+  examples: |
+    - k cha khabar?
+    - samadhan k cha khabar?
+    - k chha halkhabar
+    - halkhabar
+    - k chha halkhabar?
+    - khabar
+    - khabar cha
+- intent: certificate_query
+  examples: |
+    - how to apply for [birth certificate](certificate_type)?
+    - i want to make [marriage certificate](certificate_type)
+    - how to make [migration certificate](certificate_type)
+    - how to apply for [birth certificate](certificate_type)
+    - what are the required [documents](specification) to get [birth certificate](citizenship_type) in nepal
+    - what are the [steps](specification) required to make [death certificate](certificate_type)?
+    - how can i get [birth certificate](citizenship_type) in nepal
+    - what are the [documents](specification) required to make [birth certificate](certificate_type)?
+- intent: certificate_query_romanized
+  examples: |
+    - [janma](certificate_type) [darta](certificate_type) ko lagi kasari apply garna sakincha?
+    - [mrityu](certificate_type)darta banauna ko lagi kun kun [steps](specification) chahincha?
+    - [sambandha bichhed](certificate_type) kasari banaune?
+    - [sambandha bichhed](certificate_type) ko lagi kasari apply kasari garna sakincha?
+    - [bibah](certificate_type)darta pauna ko lagi kun kun [documents](specification) chahincha?
+    - [basai sarai](certificate_type) kasari paune?
+    - [janma](certificate_type)darta banauna ko lagi kun kun [kagajaat](specification) chahincha?
+    - [mrityu](certificate_type) darta ma madad garnu hola.
+    - [janma](certificate_type)darta banauna ko lagi kun kun [documents](specification) chahincha?
+- intent: greet
+  examples: |
+    - what's up
+    - good evening
+    - hey there
+    - let's go
+    - samadhan hello
+    - hey
+    - hey dude
+    - goodevening
+    - hello
+    - good morning
+    - good afternoon
+    - hi samadhan
+    - hi
+    - goodmorning
+- intent: citizenship_query
+  examples: |
+    - give me details regarding [citizenship](citizenship_type)
+    - complete process to obtain citizenship?
+    - what are the [steps](specification) for [citizenship by birth](citizenship_type)
+    - can you help me with [citizenship](citizenship_type)
+    - procedure to make [citizenship by descent](citizenship_type)?
+    - What are the requirements for citizenship?
+    - I want information about [citizenship by descent](citizenship_type).
+    - How to apply for [citizenship by birth](citizenship_type)?
+    - How to get citizenship?
+    - procedure to make [citizenship by descent](citizenship_type)
+    - help me with [citizenship by birth](citizenship_type)
+    - Can you help me with citizenship?
+    - [eligibility](specification) to make [citizenship by naturalization](citizenship_type)?
+    - Tell me about [citizenship by naturalization](citizenship_type).
+- intent: citizenship_query_romanized
+  examples: |
+    - [nagarikta](citizenship_type) lina thiyo, kaso garna parla
+    - ma [nagrikta](citizenship_type) ma madad garna chahanchu.
+    - [nagrikta](citizenship_type) kasari paauna?
+    - [bamsaj](citizenship_type) dwara [nagrikta](citizenship_type) banaune ko lagi [eligibility](specification) k ho?
+    - [nagrikta](citizenship_type) ko lagi k bhanne avashyak chha?
+    - [bamsaj](citizenship_type) dwara [nagrikta](citizenship_type) banaune vidhi k ho?
+    - [bamsaj](citizenship_type) [nagarikta](citizenship_type) ko barema janakari pau na
+    - [janma](citizenship_type) dwara [nagrikta](citizenship_type) ko lagi kasari apply garna paincha?
+    - [janma](citizenship_type) dwara [nagrikta](citizenship_type) banaune lagi kun kun [yogyata](specification) chahincha?
+    - maile [nagrikta](citizenship_type) ko lagi madad garnu hola?
+    - [janma](citizenship_type) dwara [nagrikta](citizenship_type) ko lagi kun kun [kagajaat](specification) huncha?
+    - [bamsaj](citizenship_type) dwara [nagrikta](citizenship_type) ko barema malai bhanu.
+    - ma [nagrikta](citizenship_type) ko barema jankari chahanchu.
+    - mero lagi [janma](citizenship_type) dwara [nagrikta](citizenship_type) ma madad garna.
+    - [janma](citizenship_type) dwara [nagrikta](citizenship_type) banaune process k ho?
+    - [bamsaj](citizenship_type) dwara [nagrikta](citizenship_type) banaune lagi kin kin [steps](specification) chahincha?
+    - [nagrikta](citizenship_type) paauna ko lagi full process k ho?
+- synonym: descent
+  examples: |
+    - bamsaj
+- synonym: birth
+  examples: |
+    - janma
+- synonym: documents
+  examples: |
+    - kagajaat
+    - kagajpatra
+    - kagaj
+- synonym: eligibility
+  examples: |
+    - yogyata
+    - mapdanda
+- synonym: steps
+  examples: |
+    - charand
+    - garnu parne bidhi
+    - bidhi
+- synonym: death
+  examples: |
+    - mrityu
+- synonym: migration
+  examples: |
+    - basai sarai
+- synonym: divorce
+  examples: |
+    - samandha biched
+    - sambandha bichhed
+- synonym: marriage
+  examples: |
+    - bibah
+- synonym: certificate
+  examples: |
+    - pramand patra
+    - pramand
+    - darta

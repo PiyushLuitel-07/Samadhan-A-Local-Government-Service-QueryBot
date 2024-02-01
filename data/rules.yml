@@ -40,12 +40,84 @@ rules:
   - intent: certificate_query
   - action: action_handle_certificate_query
 
-- rule: User inquires about certificate in roman
-  steps:
-  - intent: certificate_query_romanized
-  - action: action_handle_certificate_query_romanized
+# - rule: User inquires about certificate in roman
+#   steps:
+#   - intent: certificate_query_romanized
+#   - action: action_handle_certificate_query_romanized
 
 - rule: User inquires about citizenship in roman
   steps:
   - intent: citizenship_query_romanized
   - action: action_handle_citizenship_query_romanized
+
+#########################################birth 
+# - rule: birth certificate rule
+#   steps:
+#   - intent: certificate_query_romanized{"certificate_type":"birth"}
+#   - action: utter_birth_certificate_documents_romanized
+#   - action: utter_birth_certificate_steps_romanized
+# - rule: birth certificate documents rule
+#   steps: 
+#   - intent: certificate_query_romanized{"certificate_type":"birth","specification":"documents"}
+#   - action: utter_birth_certificate_documents_romanized
+# - rule: birth certificate steps rule
+#   steps:
+#   - intent: certificate_query_romanized{"certificate_type":"birth","specification":"steps"} 
+#   - action: utter_birth_certificate_steps_romanized
+# ############################death ######################
+# - rule: death certificate rule
+#   steps:
+#   - intent: certificate_query_romanized{"certificate_type":"death"}
+#   - action: utter_death_certificate_documents_romanized
+#   - action: utter_death_certificate_steps_romanized
+# - rule: death certificate documents rule
+#   steps: 
+#   - intent: certificate_query_romanized{"certificate_type":"death","specification":"documents"}
+#   - action: utter_death_certificate_documents_romanized
+# - rule: death certificate steps rule
+#   steps:
+#   - intent: certificate_query_romanized{"certificate_type":"death","specification":"steps"} 
+#   - action: utter_death_certificate_steps_romanized
+#   ######################### marriage##############
+# - rule: marriage certificate rule
+#   steps:
+#   - intent: certificate_query_romanized{"certificate_type":"marriage"}
+#   - action: utter_marriage_certificate_documents_romanized
+#   - action: utter_marriage_certificate_steps_romanized
+# - rule: marriage certificate documents rule
+#   steps: 
+#   - intent: certificate_query_romanized{"certificate_type":"marriage","specification":"documents"}
+#   - action: utter_marriage_certificate_documents_romanized
+# - rule: marriage certificate steps rule
+#   steps:
+#   - intent: certificate_query_romanized{"certificate_type":"marriage","specification":"steps"} 
+#   - action: utter_marriage_certificate_steps_romanized
+# ################################divorce
+# - rule: divorce certificate rule
+#   steps:
+#   - intent: certificate_query_romanized{"certificate_type":"divorce"}
+#   - action: utter_divorce_certificate_documents_romanized
+#   - action: utter_divorce_certificate_steps_romanized
+# - rule: divorce certificate documents rule
+#   steps: 
+#   - intent: certificate_query_romanized{"certificate_type":"divorce","specification":"documents"}
+#   - action: utter_divorce_certificate_documents_romanized
+# - rule: divorce certificate steps rule
+#   steps:
+#   - intent: certificate_query_romanized{"certificate_type":"divorce","specification":"steps"} 
+#   - action: utter_divorce_certificate_steps_romanized
+#   ############################ migration
+# - rule: migration certificate rule
+#   steps:
+#   - intent: certificate_query_romanized{"certificate_type":"migration"}
+#   - action: utter_migration_certificate_documents_romanized
+#   - action: utter_migration_certificate_steps_romanized
+# - rule: migration certificate documents rule
+#   steps: 
+#   - intent: certificate_query_romanized{"certificate_type":"migration","specification":"documents"}
+#   - action: utter_migration_certificate_documents_romanized
+# - rule: migration certificate steps rule
+#   steps:
+#   - intent: certificate_query_romanized{"certificate_type":"migration","specification":"steps"} 
+#   - action: utter_migration_certificate_steps_romanized
+# #   #######################################
