@@ -146,52 +146,25 @@ class ActionHandleCertificateQueryRomanized(Action):
         return "action_handle_certificate_query_romanized"
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        # Extract entities from the user's message
-        entities = tracker.latest_message['entities']
-
-        if entities:
-            entity_values = [entity['value'] for entity in entities]
-            if 'birth' in entity_values:
-                if 'documents' in entity_values: 
-                    dispatcher.utter_message(response="utter_birth_certificate_documents_romanized")
-                elif 'steps' in entity_values: 
-                    dispatcher.utter_message(response="utter_birth_certificate_steps_romanized")
-                else: 
-                    dispatcher.utter_message(response="utter_birth_certificate_documents_romanized")
-                    dispatcher.utter_message(response="utter_birth_certificate_steps_romanized")
-            elif 'death' in entity_values:
-                if 'documents' in entity_values: 
-                    dispatcher.utter_message(response="utter_death_certificate_documents_romanized")
-                elif 'steps' in entity_values: 
-                    dispatcher.utter_message(response="utter_death_certificate_steps_romanized")
-                else: 
-                    dispatcher.utter_message(response="utter_death_certificate_documents_romanized")
-                    dispatcher.utter_message(response="utter_death_certificate_steps_romanized")
-            elif 'marriage' in entity_values:
-                if 'documents' in entity_values: 
-                    dispatcher.utter_message(response="utter_marriage_certificate_documents_romanized")
-                elif 'steps' in entity_values: 
-                    dispatcher.utter_message(response="utter_marriage_certificate_steps_romanized")
-                else: 
-                    dispatcher.utter_message(response="utter_marriage_certificate_documents_romanized")
-                    dispatcher.utter_message(response="utter_marriage_certificate_steps_romanized")
-            elif 'divorce' in entity_values:
-                if 'documents' in entity_values: 
-                    dispatcher.utter_message(response="utter_divorce_certificate_documents_romanized")
-                elif 'steps' in entity_values: 
-                    dispatcher.utter_message(response="utter_divorce_certificate_steps_romanized")
-                else: 
-                    dispatcher.utter_message(response="utter_divorce_certificate_documents_romanized")
-                    dispatcher.utter_message(response="utter_divorce_certificate_steps_romanized")
-            elif 'migration' in entity_values:
-                if 'documents' in entity_values: 
-                    dispatcher.utter_message(response="utter_migration_certificate_documents_romanized")
-                elif 'steps' in entity_values: 
-                    dispatcher.utter_message(response="utter_migration_certificate_steps_romanized")
-                else: 
-                    dispatcher.utter_message(response="utter_migration_certificate_documents_romanized")
-                    dispatcher.utter_message(response="utter_migration_certificate_steps_romanized")
-            else:
-                dispatcher.utter_message(response="utter_certificate_query_romanized")
+        # Extract type of certificate 
+        entity_values = next(tracker.get_latest_entity_values('type'),None)
+      
+        if 'birth' == entity_values:
+            dispatcher.utter_message(response="utter_birth_certificate_documents_romanized")
+            dispatcher.utter_message(response="utter_birth_certificate_steps_romanized")
+        elif 'death' == entity_values:
+            dispatcher.utter_message(response="utter_death_certificate_documents_romanized")
+            dispatcher.utter_message(response="utter_death_certificate_steps_romanized")
+        elif 'marriage' == entity_values:
+            dispatcher.utter_message(response="utter_marriage_certificate_documents_romanized")
+            dispatcher.utter_message(response="utter_marriage_certificate_steps_romanized")
+        elif 'divorce' == entity_values:
+            dispatcher.utter_message(response="utter_divorce_certificate_documents_romanized")
+            dispatcher.utter_message(response="utter_divorce_certificate_steps_romanized")
+        elif 'migration' == entity_values:
+            dispatcher.utter_message(response="utter_migration_certificate_documents_romanized")
+            dispatcher.utter_message(response="utter_migration_certificate_steps_romanized")
+        else:
+            dispatcher.utter_message(text="maff garnu hola yo service ahile upalabdha chaina")
         return []
     

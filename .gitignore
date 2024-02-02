@@ -1,2 +1,5 @@
 models/
 .rasa/
+tests/
+train_test_split/
+results/

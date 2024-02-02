@@ -1,41 +1,27 @@
 version: '3.1'
 entities:
-  - citizenship_type
-  - certificate_type
-  - specification
-
-# - citizenship_type:
-#     values:
-#     - citizenship by birth
-#     - citizenship by descent
-#     - citizenship
-#     - bamsaj nagrikta
-#     - nagarikta
-# - certificate_type:
-#     values:
-#     - birth certificate
-#     - death certificate
-#     - marriage certificate
-#     - migration certificate
-#     - divorce certificate
-#     - janma darta
-#     - mrityu darta
-#     - bibah darta
-#     - basai sarai
-#     - sambandha bichhed
-# - specification:
-#     values:
-#     - documents
-#     - steps
-#     - eligibility
-#     - kagajaat
-#     - maapdanda
-#     - yogyata
+- type
+- specification
 intents:
 - affirm
 - bot_challenge
 - certificate_query
 - certificate_query_romanized
+- certificate_query_romanized{"type":"birth","specification":"documents"}
+- certificate_query_romanized{"type":"birth","specification":"steps"}
+- certificate_query_romanized{"type":"birth"}
+- certificate_query_romanized{"type":"death","specification":"documents"}
+- certificate_query_romanized{"type":"death","specification":"steps"}
+- certificate_query_romanized{"type":"death"}
+- certificate_query_romanized{"type":"divorce","specification":"documents"}
+- certificate_query_romanized{"type":"divorce","specification":"steps"}
+- certificate_query_romanized{"type":"divorce"}
+- certificate_query_romanized{"type":"marriage","specification":"documents"}
+- certificate_query_romanized{"type":"marriage","specification":"steps"}
+- certificate_query_romanized{"type":"marriage"}
+- certificate_query_romanized{"type":"migration","specification":"documents"}
+- certificate_query_romanized{"type":"migration","specification":"steps"}
+- certificate_query_romanized{"type":"migration"}
 - citizenship_query
 - citizenship_query_romanized
 - deny
@@ -43,22 +29,13 @@ intents:
 - greet
 - greet_romanized
 - halkhabar
-- certificate_query_romanized{"certificate_type":"birth"}
-- certificate_query_romanized{"certificate_type":"birth","specification":"documents"}
-- certificate_query_romanized{"certificate_type":"birth","specification":"steps"}
-- certificate_query_romanized{"certificate_type":"death"}
-- certificate_query_romanized{"certificate_type":"death","specification":"documents"}
-- certificate_query_romanized{"certificate_type":"death","specification":"steps"}
-- certificate_query_romanized{"certificate_type":"marriage"}
-- certificate_query_romanized{"certificate_type":"marriage","specification":"documents"}
-- certificate_query_romanized{"certificate_type":"marriage","specification":"steps"}
-- certificate_query_romanized{"certificate_type":"divorce"}
-- certificate_query_romanized{"certificate_type":"divorce","specification":"documents"}
-- certificate_query_romanized{"certificate_type":"divorce","specification":"steps"}
-- certificate_query_romanized{"certificate_type":"migration"}
-- certificate_query_romanized{"certificate_type":"migration","specification":"documents"}
-- certificate_query_romanized{"certificate_type":"migration","specification":"steps"}
+- provide_type
+- certificate_query_romanized{"type":"","specification":""}
 actions:
+- utter_certificate_query_romanized
+- action_handle_certificate_query_romanized
+- utter_divorce_certificate_documents
+- utter_migration_certificate_documents_romanized
 - action_handle_citizenship_query_romanized
 - utter_greet3
 - utter_halkhabar
@@ -66,13 +43,12 @@ actions:
 - action_handle_citizenship_query
 - utter_greet2
 - action_handle_certificate_query
-- action_handle_certificate_query_romanized
 - utter_citizenship
 - utter_citizenship_romanized
 - utter_citizenship_by_birth_eligibility_criteria
 - utter_citizenship_by_birth_eligibility_criteria_romanized
 - utter_citizenship_by_birth_steps
-- utter_citizenship_by_birth_steps_romanzied
+- utter_citizenship_by_birth_steps_romanized
 - utter_citizenship_by_birth_documents_required
 - utter_citizenship_by_birth_documents_required_romanized
 - utter_greet1_romanized
@@ -96,18 +72,14 @@ actions:
 - utter_marriage_certificate_documents_romanized
 - utter_marriage_certificate_steps
 - utter_marriage_certificate_steps_romanized
-- utter_divorce_certificate_documents
 - utter_divorce_certificate_documents_romanized
 - utter_divorce_certificate_steps
 - utter_divorce_certificate_steps_romanized
 - utter_migration_certificate_documents
-- utter_migration_certificate_documents_romanized
 - utter_migration_certificate_steps
 - utter_migration_certificate_steps_romanized
 - utter_certificate_query
-- utter_certificate_query_romanized
 responses:
-  
   utter_greet1:
   - text: Hello !! I'm Samadhan.
   utter_greet2:
@@ -121,21 +93,19 @@ responses:
   utter_certificate_query:
   - text: Please specify the certificate name.
   utter_citizenship:
-  - text: |-
-      What type of citizenship are you seeking?
+  - text: What type of citizenship are you seeking?
     buttons:
-      - title: Citizenship by birth
-        payload: '/citizenship_query{{"citizenship_type":"citizenship by birth"}}'
-      - title: Citizenship by descent
-        payload: '/citizenship_query{{"citizenship_type":"citizenship by descent"}}'
+    - title: Citizenship by birth
+      payload: /citizenship_query{{"type":"citizenship by birth"}}
+    - title: Citizenship by descent
+      payload: /citizenship_query{{"type":"citizenship by descent"}}
   utter_citizenship_romanized:
-  - text: |-
-      Tapai lai kun prakar ko nagarikta banaunu chha?
+  - text: Tapai lai kun prakar ko nagarikta banaunu chha?
     buttons:
-      - title: bamsaj
-        payload: '/citizenship_query_romanized{{"citizenship_type":"bamsaj"}}'
-      - title: janma
-        payload: '/citizenship_query_romanized{{"citizenship_type":"janma"}}'
+    - title: bamsaj
+      payload: /citizenship_query_romanized{{"type":"bamsaj"}}
+    - title: janma
+      payload: /citizenship_query_romanized{{"type":"janma"}}
   utter_citizenship_by_descent_eligibility_criteria:
   - text: |-
       Eligibility criteria:
@@ -396,14 +366,19 @@ response_selector:
     - utter_citizenship_by_descent_steps
     certificate_query_romanized:
     - utter_certificate_query_romanized
+    certificate_query_romanized{"type":"birth"}:
     - utter_birth_certificate_documents_romanized
     - utter_birth_certificate_steps_romanized
+    certificate_query_romanized{"type":"death"}:
     - utter_death_certificate_documents_romanized
     - utter_death_certificate_steps_romanized
+    certificate_query_romanized{"type":"marriage"}:
     - utter_marriage_certificate_documents_romanized
     - utter_marriage_certificate_steps_romanized
+    certificate_query_romanized{"type":"divorce"}:
     - utter_divorce_certificate_documents_romanized
     - utter_divorce_certificate_steps_romanized
+    certificate_query_romanized{"type":"migration"}:
     - utter_migration_certificate_documents_romanized
     - utter_migration_certificate_steps_romanized
     citizenship_query_romanized:
