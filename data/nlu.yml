@@ -1,18 +1,19 @@
 version: "3.1"
 nlu:
+##########################citizenship english#######################
 - intent: citizenship_query
   examples: |
     - I want information about citizenship.
-    - How to apply for citizenship?
-    - Tell me about citizenship.
-    - What are the requirements for citizenship?
+    - how to apply for citizenship?
+    - tell me about citizenship.
+    - what are the requirements for citizenship?
     - help me with citizenship
-    - Can you help me with citizenship?
+    - can you help me with citizenship?
     - How to get citizenship?
     - complete process to obtain citizenship?
     - what is the process to make citizenship?
     - procedure to make citizenship?
-    - can you help me with citizenship
+################## citizenship by birth#####################
 - intent: citizenship_by_birth_query
   examples: |
     - I want information about citizenship by birth.
@@ -20,12 +21,6 @@ nlu:
     - Tell me about citizenship by birth.
     - What are the requirements for citizenship?
     - help me with citizenship by birth
-    - Can you help me with citizenship by birth?
-    - How to get citizenship by birth?
-    - complete process to obtain citizenship by birth?
-    - what is the process to make citizenship by birth?
-    - procedure to make citizenship by birth?
-    - how to make citizenship by birth
 - intent: citizenship_by_birth_eligibility_query
   examples: |
     - what are the [eligibility](specification) required to make [citizenship by birth](citizenship_type)?
@@ -41,7 +36,7 @@ nlu:
     - what are the [steps](specification) required to make [citizenship by birth](citizenship_type)?
     - tell [steps](specification) required to make [citizenship by birth](citizenship_type)?
     - [steps](specification) to make [citizenship by birth](citizenship_type)?
-    
+###########################citizenship vr descent
 - intent: citizenship_by_descent_query
   examples: |
     - I want information about citizenship by descent.
@@ -49,11 +44,7 @@ nlu:
     - Tell me about citizenship by descent.
     - What are the requirements for citizenship?
     - help me with citizenship by descent
-    - Can you help me with citizenship by descent?
-    - How to get citizenship by descent?
-    - complete process to obtain citizenship by descent?
-    - what is the process to make citizenship by descent?
-    - procedure to make citizenship by descent?
+
 - intent: citizenship_by_descent_eligibility_query
   examples: |
     - what are the [eligibility](specification) required to make citizenship by descent?
@@ -69,18 +60,73 @@ nlu:
     - what are the [steps](specification) required to make [citizenship by descent](citizenship_type)?
     - tell [steps](specification) required to make [citizenship by descent](citizenship_type)?
     - [steps](specification) to make [citizenship by descent](citizenship_type)?
-- intent: certificate_query
+  #####################################################################################################################
+################################## citizenship Roman###############
+- intent: citizenship_query_romanized
   examples: |
-    - how to apply for [descent certificate](certificate_type)?
-    - help me with [death certificate](certificate_type)
-    - i want to make [marriage certificate](certificate_type)
-    - process to make [divorce certificate](certificate_type)
-    - how to make [migration certificate](certificate_type)
-    - what are the [documents](specification) required to make [birth certificate](certificate_type)?
-    - what are the [steps](specification) required to make [death certificate](certificate_type)?
-    - how to apply for [birth certificate](certificate_type)
-    - how can i get [birth certificate](citizenship_type) in nepal
-    - what are the required [documents](specification) to get [birth certificate](citizenship_type) in nepal
+    - Ma [nagrikta](type) sambandhi janakari chaahanchu.
+    - [nagrikta](type) kasari banaune?
+    - Malai [nagrikta](type) barema bhannuhos.
+    - [nagrikta](type) praapt garnakaa laagi aavedan kasari garne?
+    - Malai [nagrikta](type) banaaunma sahayog garnuhos.
+    
+############################
+- intent: citizenship_by_birth_query_romanized
+  examples: |
+    - [janma](type) dwara [nagrikta](type) kasari banaune.
+
+- intent: citizenship_by_birth_eligibility_query_romanized
+  examples: |
+    - [janma](type) dwara [nagrikta](type) banauna k k [yogyata](spectification) chainxa.
+    - [janma](type) bata [nagrikta](type) banaune [mapdanda](specification)k ho?
+
+- intent: citizenship_by_birth_documents_query_romanized
+  examples: |
+    - [janma](type) bata [nagrikta](type) banaune kun kun [kagajaat] chinxa?
+
+- intent: citizenship_by_birth_steps_query_romanized
+  examples: |
+    - [janma](type) bata [nagrikta](type) banaune [prakriya] k ho?
+###########################################
+- intent: citizenship_by_descent_query_romanized
+  examples: |
+    - [bamsaj](type) dwara [nagrikta](type) kasari banaune.
+
+- intent: citizenship_by_descent_eligibility_query_romanized
+  examples: |
+    - [bamsaj](type) dwara [nagrikta](type) banauna k k [yogyata](spectification) chainxa.
+    - [bamsaj](type) bata [nagrikta](type) banaune [mapdanda](specification)k ho?
+
+- intent: citizenship_by_descent_documents_query_romanized
+  examples: |
+    - [bamsaj](type) bata [nagrikta](type) banaune kun kun [kagajaat] chinxa?
+
+- intent: citizenship_by_descent_steps_query_romanized
+  examples: |
+    - [bamsaj](type) bata [nagrikta](type) banaune [prakriya] k ho?
+#########################################################
+# - intent: certificate_query
+#   examples: |
+#     - how to apply for [birth certificate](type)?
+#     - help me with [death certificate](type)
+#     - i want to make [marriage certificate](type)
+#     - process to make [divorce certificate](type)
+#     - how to make [migration certificate](type)
+#     - what are the [documents](specification) required to make [birth certificate](type)?
+#     - what are the [steps](specification) required to make [death certificate](type)?
+#     - how to apply for [birth certificate](type)
+#     - how can i get [birth certificate](type) in nepal
+#     - what are the required [documents](specification) to get [birth certificate](type) in nepal
+# - intent: certificate_query_romanized
+#   examples: |
+#     - [janma](type) darta ko lagi kasari apply garna sakincha?
+#     - [mrityu](type) darta ma madad garnu hola.
+#     - malai [bibah](type) darta banaunu chha.
+#     - [bibah](type) darta banauna ko lagi k ho process?
+#     - [sambandha bichhed](type) kasari banaune?
+#     - [janma](type) darta banauna ko lagi kun kun [documents](specification) chahincha?
+    
+###########################################################################################################################################
 - intent: greet
   examples: |
     - hey
@@ -100,13 +146,17 @@ nlu:
     - hi samadhan
     - samadhan hello
     - samadhan what's up
-    - Subha Pravat
-    - Subha din
+- intent: greet_romanized
+  examples: |
+    - hello bhai
+    - tapai ko ho?
+    - subha Pravat
+    - subha din
     - Helloo samadhan bot
     - Hello querybot
     - Hello chatbot
     - Hello bot
-    - Samadhan
+    - samadhan bhai
 - intent: goodbye
   examples: |
     - good bye
@@ -124,6 +174,7 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - y
 - intent: deny
   examples: |
     - no
@@ -138,3 +189,64 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+- intent: halkhabar
+  examples: |
+    - halkhabar
+    - khabar
+    - khabar cha
+    - khabar k cha
+    - k chha kancha
+    - samadhan k cha khabar?
+    - k chha halkhabar?
+    - k cha khabar?
+    - k chha halkhabar
+- intent: provide_type
+  examples: |
+    - [janma](type)
+    - [basai sarai](type)
+    - [bibah](type)
+    - [mrityu](type)
+    - [sambandha bichhed](type)
+    - [citizenship by birth](type)
+    - [bamsaj](type)
+    - [citizenship by descent](type)
+
+################################synonym mapping ############################
+- synonym: death
+  examples: |
+    - mrityu
+- synonym: migration
+  examples: |
+    - basai sarai
+- synonym: descent
+  examples: |
+    - bamsaj
+- synonym: birth
+  examples: |
+    - janma
+- synonym: documents
+  examples: |
+    - kagajaat
+    - kagajpatra
+    - kagaj
+- synonym: eligibility
+  examples: |
+    - yogyata
+    - mapdanda
+- synonym: steps
+  examples: |
+    - charand
+    - garnu parne bidhi
+    - bidhi
+- synonym: divorce
+  examples: |
+    - samandha biched
+    - sambandha bichhed
+- synonym: marriage
+  examples: |
+    - bibah
+- synonym: certificate
+  examples: |
+    - pramand patra
+    - pramand
+    - darta

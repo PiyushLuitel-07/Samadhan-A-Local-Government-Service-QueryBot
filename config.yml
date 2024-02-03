@@ -1,3 +1,4 @@
+
 # The config recipe.
 # https://rasa.com/docs/rasa/model-configuration/
 recipe: default.v1
@@ -8,41 +9,129 @@ assistant_id: 20240113-165019-weary-plaster
 
 # Configuration for Rasa NLU.
 # https://rasa.com/docs/rasa/nlu/components/
-language: en
+# language: en
 
-pipeline: 
+# pipeline: 
+# # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
+# # # If you'd like to customize it, uncomment and adjust the pipeline.
+# # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
+  # - name: SpacyNLP
+  #   model: en_core_web_md
+  # - name: SpacyTokenizer
+  # - name: SpacyFeaturizer
+  # - name: RegexFeaturizer
+  # - name: LexicalSyntacticFeaturizer
+  # - name: CountVectorsFeaturizer
+  # - name: CountVectorsFeaturizer
+  #   analyzer: "char_wb"
+  #   min_ngram: 1
+  #   max_ngram: 4
+  # - name: DIETClassifier
+  #   epochs: 50
+  #   constrain_similarities: true
+  # - name: EntitySynonymMapper
+
+
+# # Configuration for Rasa Core.
+# # https://rasa.com/docs/rasa/core/policies/
+# policies:
+# # # No configuration for policies was provided. The following default policies were used to train your model.
+# # # If you'd like to customize them, uncomment and adjust the policies.
+# # # See https://rasa.com/docs/rasa/policies for more information.
+#   - name: MemoizationPolicy   #remembers the stories from stories.yml file
+#   - name: RulePolicy   #remenbres the rules from rules.yml file
+#   # - name: UnexpecTEDIntentPolicy
+#   #   max_history: 5
+#   #   epochs: 50
+#   - name: TEDPolicy
+#     max_history: 5  # how many conversational steps your assistant keeps in the memory when making the prediction
+#     epochs: 50
+#     constrain_similarities: true
+language: "en"
+
+# pipeline:
 # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
 # # If you'd like to customize it, uncomment and adjust the pipeline.
 # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
-  - name: SpacyNLP
-    model: en_core_web_md
-  - name: SpacyTokenizer
-  - name: SpacyFeaturizer
+  # - name: SpacyNLP
+  #   model: en_core_web_md
+  # - name: SpacyTokenizer
+  # - name: SpacyFeaturizer
+  # - name: RegexFeaturizer
+  # - name: LexicalSyntacticFeaturizer
+  # - name: CountVectorsFeaturizer
+  # - name: CountVectorsFeaturizer
+  #   analyzer: "char_wb"
+  #   min_ngram: 1
+  #   max_ngram: 4
+  # - name: DIETClassifier
+  #   epochs: 100
+  #   constrain_similarities: true
+  # - name: EntitySynonymMapper
+  # - name: ResponseSelector
+  #   epochs: 100
+  # - name: WhitespaceTokenizer
+  # - name: RegexFeaturizer
+  # - name: LexicalSyntacticFeaturizer
+  # - name: CountVectorsFeaturizer
+  # - name: CountVectorsFeaturizer
+  #   analyzer: char_wb
+  #   min_ngram: 1
+  #   max_ngram: 4
+  # - name: DIETClassifier
+  #   epochs: 100
+  #   constrain_similarities: true
+  # - name: EntitySynonymMapper
+  # - name: ResponseSelector
+  #   epochs: 100
+  #   constrain_similarities: true
+  # - name: FallbackClassifier
+  #   threshold: 0.3
+  #   ambiguity_threshold: 0.1
+  # - name: "WhitespaceTokenizer"
+  # - name: "LanguageModelFeaturizer"
+  #   model_name: "bert"
+  #   model_weights: "bert-base-multilingual-cased"
+  # - name: "CountVectorsFeaturizer"
+
+  # - name: "DIETClassifier"
+  #   epochs: 100
+  # - name: EntitySynonymMapper
+  # - name: ResponseSelector
+  #   epochs: 100
+
+pipeline:
+# # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
+# # If you'd like to customize it, uncomment and adjust the pipeline.
+# # See https://rasa.com/docs/rasa/tuning-your-model for more information.
+  - name: WhitespaceTokenizer
   - name: RegexFeaturizer
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
-    analyzer: "char_wb"
+    analyzer: char_wb
     min_ngram: 1
     max_ngram: 4
   - name: DIETClassifier
-    epochs: 50
+    epochs: 100
     constrain_similarities: true
   - name: EntitySynonymMapper
   - name: ResponseSelector
     learning_rate: 0.1
     epochs: 100
-
-
-# Configuration for Rasa Core.
-# https://rasa.com/docs/rasa/core/policies/
+    constrain_similarities: true
+  - name: FallbackClassifier
+    threshold: 0.3
+    ambiguity_threshold: 0.1
+    
 policies:
+
   - name: MemoizationPolicy
-  - name: RulePolicy   
-  # - name: UnexpecTEDIntentPolicy
-  #   max_history: 5
-  #   epochs: 50
-  # - name: TEDPolicy
-  #   max_history: 5  # how many conversational steps your assistant keeps in the memory when making the prediction
-  #   epochs: 50
-  #   constrain_similarities: true
+  - name: RulePolicy  
+#   - name: UnexpecTEDIntentPolicy
+#     max_history: 5
+#     epochs: 100
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100
+    constrain_similarities: true

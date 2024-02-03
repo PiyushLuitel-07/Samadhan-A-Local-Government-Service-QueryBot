@@ -9,7 +9,7 @@ body {
 
 .widget {
   display: none;
-  width: 450px;
+  width: 900px;
   right: 555px;
   height: 600px;  
   bottom: 8%;
@@ -17,22 +17,30 @@ body {
   background: #fff;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 5px 0 #00000096;
+
+  /* Centering */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .chat_header {
-  height: 80px;
-  background: #002244;
+  height: 10%;
+  background: #380654;
   border-radius: 10px 10px 0px 0px;
   padding: 5px;
   font-size: 20px;
+
+  top: 50%;
+  left: 50%;
 }
 
 .chat_header_title {
   color: white;
   float: left;
-  margin-top: 6%;
-  margin-left: 35%;
-}
+  margin-top: 1.5%;
+  margin-left: 42%;
+  }
  
 .chats {
   /* display: none; */
@@ -69,15 +77,15 @@ div.chats::-webkit-scrollbar {
 .botMsg {
   float: left;
   margin-top: 5px;
-  background: #002244;
-  color: white;
+  background: #e3e7ee;
+  color: rgb(5, 5, 5);
   /* box-shadow: 2px 3px 9px 0px #9a82842e; */
   margin-left: 0.5em;
   padding: 10px;
   border-radius: 1.5em;
   max-width: 60%;
   min-width: 25%;
-  font-size: 13px;
+  font-size: 16px;
   word-wrap: break-word;
   border-radius: 5px 20px 20px 20px;
 }
@@ -109,6 +117,7 @@ textarea {
 
 textarea::-webkit-input-placeholder {
   font-family: Lato;
+  font-size: 16px;
 }
 
 textarea-webkit-scrollbar {
@@ -123,10 +132,10 @@ textarea-webkit-scrollbar {
   padding: 10px;
   float: right;
   margin-right: 0.5em;
-  background: #002244;
+  background: #380654;
   color: white;
   margin-bottom: 0.15em;
-  font-size: 13px;
+  font-size: 16px;
   max-width: 65%;
   min-width: 15%;
   border-radius: 20px 5px 20px 20px;
@@ -160,13 +169,14 @@ blockquote {
   margin-left: 4%;
   border: 0;
   padding-left: 15px;
-  height: 40px;
+  height: 55px;
+  font-size: 16px;
 }
 
 .keypad {
   /* display: none;  */
   background: white;
-  height: 50px;
+  height: 60px;
   position: absolute;
   bottom: 0px;
   width: 100%;
@@ -176,17 +186,18 @@ blockquote {
 }
 
 #sendButton {
-  height: 20px;
-  width: 20px;
+  height: 23px;
+  width: 23px;
   border-radius: 50%;
   display: inline-block;
   float: right;
+  margin-top: 0.5%;
   margin-right: 30px;
   text-align: center;
   padding: 5px;
   font-size: 20px;
   cursor: pointer;
-  color: #002244;
+  color: #380654;
 }
 
 .imgProfile {
@@ -218,7 +229,7 @@ blockquote {
   color: white;
   margin-right: 5px;
   float: right;
-  margin-top: 3%;
+  margin-top: 1.5%;
 }
 
 .dropdown-content li > a,
@@ -394,7 +405,7 @@ div.content_data::-webkit-scrollbar {
 /* css for single card */
 
 .singleCard {
-  padding-left: 10%;
+  padding-left: 3%;
   padding-right: 10px;
 }
 
@@ -424,6 +435,8 @@ div.content_data::-webkit-scrollbar {
   border-radius: 10px;
   background: #ffffff;
   box-shadow: 2px 5px 5px 1px #dbdade;
+
+  margin-left: 0.25%;
 }
 
 .menuTitle {
@@ -438,9 +451,9 @@ div.content_data::-webkit-scrollbar {
 
 .menuChips {
   display: block;
-  background: #060dcfc7;
-  color: #fff;
-  text-align: center;
+  background: #380654;
+  color: #ffffffa7;
+  text-align: left;
   padding: 5px;
   margin-bottom: 5px;
   cursor: pointer;

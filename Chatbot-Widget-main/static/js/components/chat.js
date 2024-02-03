@@ -21,6 +21,25 @@ function setUserResponse(message) {
   $(".suggestions").remove();
 }
 
+function displayInitialUserMessage() {
+  welcomeMessage = "Hello!! Mero naam Samadhan ho.";
+  BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
+  $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
+  scrollToBottomOfResults();
+  welcomeMessage = "Ma sthaniya sarkari seva sodhpuch bot ho.";
+  BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
+  $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
+  scrollToBottomOfResults();
+  welcomeMessage = "Tapailai nagarikta, janma, mrityu, bibah sambandhi prashna haru garna saknu hunchha.";
+  BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
+  $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
+  scrollToBottomOfResults();
+  welcomeMessage = "Ma ek bot ho, PAPA dwara nirmit.";
+  BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
+  $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
+  scrollToBottomOfResults();
+}
+
 /**
  * returns formatted bot response
  * @param {String} text bot message response's text
@@ -37,13 +56,14 @@ function getBotResponse(text) {
  *
  * for more info: `https://rasa.com/docs/rasa/connectors/your-own-website#request-and-response-format`
  */
+
 function setBotResponse(response) {
   // renders bot response after 500 milliseconds
   setTimeout(() => {
     hideBotTyping();
     if (response.length < 1) {
       // if there is no response from Rasa, send  fallback message to the user
-      const fallbackMsg = "I am facing some issues, please try again later!!!";
+      const fallbackMsg = "Tapai le samparka garna khojnu vayeko bot ahile offline xa kripaya kei samaya paxi purna paryas garnu hola, dhanyabad!!!";
 
       const BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${fallbackMsg}</p><div class="clearfix"></div>`;
 
@@ -304,6 +324,7 @@ function actionTrigger() {
  */
 // eslint-disable-next-line no-unused-vars
 function customActionTrigger() {
+  displayWelcomeMessage();
   $.ajax({
     url: "http://localhost:5055/webhook/",
     type: "POST",

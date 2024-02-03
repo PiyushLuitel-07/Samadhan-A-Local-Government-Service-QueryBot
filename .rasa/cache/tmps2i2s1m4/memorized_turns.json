@@ -1,8 +1,0 @@
-{
-  "lookup": {
-    "eJyLrq6NBQAEOAGx": "action_listen",
-    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohObMksyo1rzgjsyC+sDS1qLK2NhYAVPAgrQ==": "action_handle_citizenship_query",
-    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohObMksyo1rzgjsyC+sDS1qLKWOPMyEvNSclLjMbXrKBTn5JcUA7Uhy5VUFgD1RhvqGcQS5YZYAE04U2M=": "utter_citizenship",
-    "eJytjsEKhDAMRH8lHyDiXvsrIqW4AQM11iZdcIv/bkAPwl724G2GmZdJX/cGasr48WFUWthBPYXnMKODy0QSRbZuEczWITarDkZS+iLLRMmvBfO2/3dvCvyO6H/xBiQuKobdM92Ssf2r7YYHfiiqmO/bD60OByV6gG8=": "action_listen"
-  }
-}

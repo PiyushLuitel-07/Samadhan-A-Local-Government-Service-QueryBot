@@ -1,63 +1,82 @@
 version: '3.1'
 entities:
-- citizenship_type:
-    values:
-    - citizenship by birth
-    - citizenship by descent
-    - citizenship by naturalization
-    - citizenship
-- specification:
-    values:
-    - documents
-    - steps
-    - eligibility
-- certificate_type:
-    values:
-    - birth certificate
-    - death certificate
-    - marriage certificate
-    - migration certificate
-    - divorce certificate
+- type
+- specification
 intents:
-- affirm
-- bot_challenge
-- certificate_query
-- citizenship_by_birth_documents_query
-- citizenship_by_birth_eligibility_query
-- citizenship_by_birth_query
-- citizenship_by_birth_steps_query
-- citizenship_by_descent_documents_query
-- citizenship_by_descent_eligibility_query
-- citizenship_by_descent_query
-- citizenship_by_descent_steps_query
 - citizenship_query
+- citizenship_query_romanized
+- citizenship_by_birth_query
+- citizenship_by_birth_query_romanized
+- citizenship_by_descent_query
+- citizenship_by_descent_query_romanized
+- citizenship_by_birth_eligibility_query
+- citizenship_by_birth_eligibility_query_romanized
+- citizenship_by_descent_eligibility_query
+- citizenship_by_descent_eligibility_query_romanized
+- citizenship_by_birth_documents_query
+- citizenship_by_birth_documents_query_romanized
+- citizenship_by_descent_documents_query
+- citizenship_by_descent_documents_query_romanized
+- citizenship_by_birth_steps_query
+- citizenship_by_birth_steps_query_romanized
+- citizenship_by_descent_steps_query
+- citizenship_by_descent_steps_query_romanized
 - deny
 - goodbye
 - greet
+- greet_romanized
+- halkhabar
+- provide_type
+- affirm
+- bot_challenge
 actions:
-- utter_citizenship
-- utter_citizenship_by_birth_eligibility_criteria
-- utter_citizenship_by_birth_steps
-- utter_citizenship_by_birth_documents_required
-- utter_greet1
-- utter_greet2
-- utter_greet3
-- utter_citizenship_by_descent_eligibility_criteria
-- utter_citizenship_by_descent_documents_required
-- utter_citizenship_by_descent_steps
-- utter_citizenship_by_naturalization_eligibility_criteria
-- utter_citizenship_by_naturalization_documents_required
-- utter_citizenship_by_naturalization_steps
-- utter_birth_certificate_documents
-- utter_birth_certificate_steps
-- utter_death_certificate_documents
-- utter_death_certificate_steps
-- utter_marriage_certificate_documents
-- utter_marriage_certificate_steps
+- utter_certificate_query_romanized
+- action_handle_certificate_query_romanized
 - utter_divorce_certificate_documents
+- utter_migration_certificate_documents_romanized
+- action_handle_citizenship_query_romanized
+- utter_greet3
+- utter_halkhabar
+- utter_greet1
+- action_handle_citizenship_query
+- utter_greet2
+- action_handle_certificate_query
+- utter_citizenship
+- utter_citizenship_romanized
+- utter_citizenship_by_birth_eligibility
+- utter_citizenship_by_birth_eligibility_romanized
+- utter_citizenship_by_birth_steps
+- utter_citizenship_by_birth_steps_romanized
+- utter_citizenship_by_birth_documents
+- utter_citizenship_by_birth_documents_romanized
+- utter_greet1_romanized
+- utter_greet2_romanized
+- utter_greet3_romanized
+- utter_citizenship_by_descent_eligibility
+- utter_citizenship_by_descent_eligibility_romanized
+- utter_citizenship_by_descent_documents
+- utter_citizenship_by_descent_documents_romanized
+- utter_citizenship_by_descent_steps
+- utter_citizenship_by_descent_steps_romanized
+- utter_birth_certificate_documents
+- utter_birth_certificate_documents_romanized
+- utter_birth_certificate_steps
+- utter_birth_certificate_steps_romanized
+- utter_death_certificate_documents
+- utter_death_certificate_documents_romanized
+- utter_death_certificate_steps
+- utter_death_certificate_steps_romanized
+- utter_marriage_certificate_documents
+- utter_marriage_certificate_documents_romanized
+- utter_marriage_certificate_steps
+- utter_marriage_certificate_steps_romanized
+- utter_divorce_certificate_documents_romanized
 - utter_divorce_certificate_steps
+- utter_divorce_certificate_steps_romanized
 - utter_migration_certificate_documents
 - utter_migration_certificate_steps
+- utter_migration_certificate_steps_romanized
+- utter_certificate_query
 responses:
   utter_greet1:
   - text: Hello !! I'm Samadhan.
@@ -69,18 +88,33 @@ responses:
   - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+  utter_certificate_query:
+  - text: Please specify the certificate name.
   utter_citizenship:
-  - text: |-
-      What type of citizenship are you seeking?
-      1. Citizenship by descent
-      2. Citizenship by birth
-      3. Citizenship by naturalization
-  utter_citizenship_by_descent_eligibility_criteria:
+  - text: What type of citizenship are you seeking?
+    buttons:
+    - title: Citizenship by birth
+      payload: /citizenship_query{{"type":"citizenship by birth"}}
+    - title: Citizenship by descent
+      payload: /citizenship_query{{"type":"citizenship by descent"}}
+  utter_citizenship_romanized:
+  - text: Tapai lai kun prakar ko nagarikta banaunu chha?
+    buttons:
+    - title: bamsaj
+      payload: /citizenship_query_romanized{{"type":"bamsaj"}}
+    - title: janma
+      payload: /citizenship_query_romanized{{"type":"janma"}}
+  utter_citizenship_by_descent_eligibility:
   - text: |-
       Eligibility criteria:
       1. At least one parent must be Nepali.
       2. Age must be 16 or above.
-  utter_citizenship_by_descent_documents_required:
+  utter_citizenship_by_descent_eligibility_romanized:
+  - text: |-
+      Yogyata Maapdanda:
+      1. Kamti ma ek jana abhibhavak Nepali nagarik hunu parchha.
+      2. Tapai ko umer 16 barsa mathi hunu parchha.
+  utter_citizenship_by_descent_documents:
   - text: |-
       Required documents:
       1. Seven photos (passport or auto-sized)
@@ -88,32 +122,48 @@ responses:
       3. Ward recommendation letter
       4. School or college's certificate (mark sheet/character)
       5. Migration certificate (if migrated from another place)
+  utter_citizenship_by_descent_documents_romanized:
+  - text: |-
+      Aawashyak Kagajaat haru:
+      1. 7 photos (passport or auto-sized)
+      2. Buwa aama ko sakkali nagarikta
+      3. Woda ko sifaris
+      4. School/college certificate (mark sheet/character)
+      5. Basai Sarai (kunai thau bata sareko bhaye)
   utter_citizenship_by_descent_steps:
   - text: |-
       Steps:
       1. Visit the ward office to obtain a recommendation letter.
       2. Go to the District Administration Office with your parent and required documents.
-  utter_citizenship_by_birth_eligibility_criteria:
+  utter_citizenship_by_descent_steps_romanized:
+  - text: |-
+      Prakriya:
+      1. Woda ma gayera woda ko sifaris banaunu hola.
+      2. Aafno buwa/aama sanga prasasan karyalaya aawasyak kagajat liyera jaanu hola.
+  utter_citizenship_by_birth_eligibility:
   - text: |-
       Eligibility criteria:
       1. At least one parent must be Nepali.
       2. Age must be 16 or above.
-  utter_citizenship_by_birth_documents_required:
+  utter_citizenship_by_birth_eligibility_romanized:
+  - text: |-
+      Yogyata maapdanda:
+      1. At least one parent must be Nepali.
+      2. Age must be 16 or above.
+  utter_citizenship_by_birth_documents:
   - text: Documents required...
+  utter_citizenship_by_birth_documents_romanized:
+  - text: Aawashyak kagajaat haru...
   utter_citizenship_by_birth_steps:
   - text: |-
       Steps:
       1. Visit the ward office to obtain a recommendation letter.
       2. Go to the District Administration Office with your parent and required documents.
-  utter_citizenship_by_naturalization_eligibility_criteria:
+  utter_citizenship_by_birth_steps_romanized:
   - text: |-
-      Eligibility criteria:
-      1. At least one parent must be Nepali.
-      2. Age must be 16 or above.
-  utter_citizenship_by_naturalization_documents_required:
-  - text: Documents required...
-  utter_citizenship_by_naturalization_steps:
-  - text: Steps involved...
+      Prakriya:
+      1. Visit the ward office to obtain a recommendation letter.
+      2. Go to the District Administration Office with your parent and required documents.
   utter_birth_certificate_documents:
   - text: |-
       Required documents:
@@ -121,6 +171,13 @@ responses:
       2. If the child is born in a hospital, provide the hospital certificate.
       3. Copy of the tax clearance receipt for the current fiscal year.
       4. Marriage certificates of the parents.
+  utter_birth_certificate_documents_romanized:
+  - text: |-
+      Aawasyak Kagajaat haru:
+      1. Buwa Aama ko sakkali nagarikta (Ekjana abhibhavak bhautik rup ma upasthit hunu parchha).
+      2. Yedi bachha aspatal ma janmeko bhaye, aspatal ko kagajat haru.
+      3. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
+      4. Buwa Aama ko bibah darta.
   utter_birth_certificate_steps:
   - text: |-
       Steps:
@@ -128,6 +185,13 @@ responses:
       2. Submit the obtained token number at the ward office.
       3. The ward office will verify all provided details.
       4. Once verified, the birth certificate can be collected from the ward office.
+  utter_birth_certificate_steps_romanized:
+  - text: |-
+      Prakriya:
+      1. [Yaha](https://public.donidcr.gov.np) diyeko online form bharera token number linu hos.
+      2. Paayeko token number woda ma bujhaunu hola.
+      3. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
+      4. Diyeko bibaran pusti bhayema, woda karyalaya bata janma darta paunu hunchha.
   utter_marriage_certificate_documents:
   - text: |-
       Necessary documents:
@@ -135,13 +199,27 @@ responses:
       2. Original citizenship documents for the parents of both the bride and groom.
       3. Evidence of the marriage, such as a swayambar card or marriage photos.
       4. A copy of the tax clearance receipt for the current fiscal year.
+  utter_marriage_certificate_documents_romanized:
+  - text: |-
+      Aawasyak Kagajaat haru:
+      1. Dulaha ra Dulahi ko sakkali nagarikta.
+      2. Dubai pakshya ko buwa aama ko sakkali nagarikta.
+      3. Bibah ko praman, swayambar card ya bibah ko tasbir haru.
+      4. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
   utter_marriage_certificate_steps:
   - text: |-
       Steps:
-      1. Both the husband and wife should complete the online form [here](https://public.donidcr.gov.np) to obtain separate token numbers.
-      2. Submit the obtained token numbers at the ward office.
-      3. The ward office will verify all provided details.
-      4. Once verified, the marriage certificate can be collected from the ward office.
+        1. Both the husband and wife should complete the online form [here](https://public.donidcr.gov.np) to obtain separate token numbers.
+        2. Submit the obtained token numbers at the ward office.
+        3. The ward office will verify all provided details.
+        4. Once verified, the marriage certificate can be collected from the ward office.
+  utter_marriage_certificate_steps_romanized:
+  - text: |-
+      Prakriya:
+      1. Dubai dulaha dulahi le [yaha](https://public.donidcr.gov.np) diyeko ko form bharera token number linu hola.
+      2. Paayeko token number woda ma bujhaunu hola.
+      3. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
+      4. Diyeko bibaran pusti bhayema, woda karyalaya bata Bibah Darta paunu hunchha.
   utter_divorce_certificate_documents:
   - text: |-
       Necessary documents:
@@ -149,6 +227,13 @@ responses:
       2. A copy of the court decision.
       3. A copy of the marriage certificate.
       4. A copy of the tax clearance receipt for the current fiscal year.
+  utter_divorce_certificate_documents_romanized:
+  - text: |-
+      Aawasyak Kagajaat haru:
+      1. Dulaha Dulahi ko nagaritka ko photocopy.
+      2. Adalat ko nirnaya ko pratilipi.
+      3. Bibah Darta ko pratilipi.
+      4. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
   utter_divorce_certificate_steps:
   - text: |-
       Procedure:
@@ -157,6 +242,14 @@ responses:
       3. Submit the two obtained token numbers at the ward office.
       4. The ward office will verify all the provided details.
       5. Once verified, collect the divorce certificate from the ward office.
+  utter_divorce_certificate_steps_romanized:
+  - text: |-
+      Prakriya:
+      1. Dulaha athawa dulahi woda ma upasthit hunu parchha.
+      2. Dubai dulaha dulahi le [yaha](https://public.donidcr.gov.np) diyeko ko form bharera token number linu hola.
+      3. Paayeko dubai token number woda ma bujhaunu hola.
+      4. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
+      5. Diyeko bibaran pusti bhayema, woda karyalaya bata Sambandha Bichhed praman patra paunu hunchha.
   utter_death_certificate_documents:
   - text: |-
       Required documentation:
@@ -165,6 +258,14 @@ responses:
       3. If the death occurred in a hospital, provide the hospital certificate.
       4. In case of a home death, submit relevant documents related to crematorium administration.
       5. A copy of the tax clearance receipt for the current fiscal year.
+  utter_death_certificate_documents_romanized:
+  - text: |-
+      Aawasyak Kagajaat haru:
+      1. Mrityu hune ko sakkali nagarikta.
+      2. Suchak (Srimati/Chhora/Chhori) ko sakkali nagarikta.
+      3. Mrityu aspatal ma bhayeko bhaye, aspatal le diyeka kagajaat haru.
+      4. Aafnai niwas ma bhayeko bhaye, ghaat bewasthapan sambandhi kagajaat haru.
+      5. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
   utter_death_certificate_steps:
   - text: |-
       Steps to follow:
@@ -172,6 +273,13 @@ responses:
       2. Submit the issued token number at the ward office.
       3. The ward office will verify the provided information.
       4. Once verified, collect the death certificate from the ward office.
+  utter_death_certificate_steps_romanized:
+  - text: |-
+      Prakriya:
+      1. [Yaha](https://public.donidcr.gov.np) diyeko online form bharera token number linu hos.
+      2. Paayeko token number woda ma bujhaunu hos.
+      3. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
+      4. Diyeko bibaran pusti bhayema, woda karyalaya bata Mrityu darta paunu hunchha.
   utter_migration_certificate_documents:
   - text: |-
       Necessary documents at the ward office of departure:
@@ -183,6 +291,17 @@ responses:
       1. Transfer form provided by the previous ward office.
       2. Copies of citizenship documents and birth certificates (for minors).
       3. A copy of the tax clearance receipt for the current fiscal year.
+  utter_migration_certificate_documents_romanized:
+  - text: |-
+      Prasthan garne woda karyalaya ma aawashyak kagajaat haru:
+      1. Basai Sarai garne sabai ko sakkali nagarikta, nabalik bhayema sakkali janma darta.
+      2. Basai Sarai garne thau ko Laal purja ko photocopy.
+      3. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
+
+      Aagaman hune woda karyalaya ma aawashyak kagajaat haru:
+      1. Prasthan garne woda karyalaya bata diyeko hastantaran form.
+      2. Basai Sarai garne sabai nagarikta ra nabalik bhayema janma darta ko photocopy.
+      3. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
   utter_migration_certificate_steps:
   - text: |-
       Steps at the ward office of departure:
@@ -196,9 +315,35 @@ responses:
       1. Submit the transfer form and other required documents at the ward office.
       2. The ward office will verify the submitted documents.
       3. Once verified, collect the migration certificate from the ward office.
+  utter_migration_certificate_steps_romanized:
+  - text: |-
+      Prasthan garne woda karyalaya ka prakriya haru:
+      1. [Yaha](https://public.donidcr.gov.np) diyeko online form bharera token number linu hos.
+      2. Paayeko token number woda karyalaya ma bujhaunu hos.
+      3. Basai Sarai garne ghar ko mul vyakti woda karyalaya ma upasthit hunu parne chha.
+      4. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
+      5. Diyeko bibaran pusti bhayema, hastantaran form woda karyalaya bata paunu hunchha.
+
+      Aagaman hune woda karyalaya ka prakriya haru:
+      1. Hastantaran form woda karyalaya ma bujhaunu hos.
+      2. Woda karyalaya ma diyeko kagajaat ko pusti garine chha.
+      3. Diyeko kagajaat pusti bhayema, Basai Sarai praman patra woda karyalaya bata prapta garna saknu hunchha.
+  utter_greet1_romanized:
+  - text: Hello!! Mero naam Samadhan ho.
+  utter_greet2_romanized:
+  - text: Ma sthaniya sarkari seva sodhpuch bot ho.
+  utter_greet3_romanized:
+  - text: Tapailai nagarikta, janma, mrityu, bibah sambandhi prashna haru garna saknu hunchha.
+  utter_iamabot_romanized:
+  - text: Ma ek bot ho, PAPA dwara nirmit.
+  utter_certificate_query_romanized:
+  - text: Tapai lai kun chai ghatna darta garna chahanu hunchha?
+  utter_halkhabar:
+  - text: Sab thik chha daju. Tapailai k sahayog garna sakchu?
 response_selector:
   retrieve_responses:
     certificate_query:
+    - utter_certificate_query
     - utter_birth_certificate_documents
     - utter_birth_certificate_steps
     - utter_death_certificate_documents
@@ -211,18 +356,39 @@ response_selector:
     - utter_migration_certificate_steps
     citizenship_query:
     - utter_citizenship
-    citizenship_by_birth_eligibility_query:
-    - utter_citizenship_by_birth_eligibility_criteria
-    citizenship_by_birth_documents_query:
-    - utter_citizenship_by_birth_documents_required
-    citizenship_by_birth_steps_query:
+    - utter_citizenship_by_birth_eligibility
+    - utter_citizenship_by_birth_documents
     - utter_citizenship_by_birth_steps
-    citizenship_by_descent_eligibility_query:
-    - utter_citizenship_by_descent_eligibility_criteria
-    citizenship_by_descent_documents_query:
-    - utter_citizenship_by_descent_documents_required
-    citizenship_by_descent_steps_query:
+    - utter_citizenship_by_descent_eligibility
+    - utter_citizenship_by_descent_documents
     - utter_citizenship_by_descent_steps
-# session_config:
-#   session_expiration_time: 60
-#   carry_over_slots_to_new_session: true
+    certificate_query_romanized:
+    - utter_certificate_query_romanized
+    certificate_query_romanized{"type":"birth"}:
+    - utter_birth_certificate_documents_romanized
+    - utter_birth_certificate_steps_romanized
+    certificate_query_romanized{"type":"death"}:
+    - utter_death_certificate_documents_romanized
+    - utter_death_certificate_steps_romanized
+    certificate_query_romanized{"type":"marriage"}:
+    - utter_marriage_certificate_documents_romanized
+    - utter_marriage_certificate_steps_romanized
+    certificate_query_romanized{"type":"divorce"}:
+    - utter_divorce_certificate_documents_romanized
+    - utter_divorce_certificate_steps_romanized
+    certificate_query_romanized{"type":"migration"}:
+    - utter_migration_certificate_documents_romanized
+    - utter_migration_certificate_steps_romanized
+    citizenship_query_romanized:
+    - utter_citizenship_romanized
+    - utter_citizenship_by_birth_eligibility_romanized
+    - utter_citizenship_by_birth_documents_romanized
+    - utter_citizenship_by_birth_steps_romanized
+    - utter_citizenship_by_descent_eligibility_romanized
+    - utter_citizenship_by_descent_documents_romanized
+    - utter_citizenship_by_descent_steps_romanized
+    halkhabar:
+    - utter_halkhabar
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
