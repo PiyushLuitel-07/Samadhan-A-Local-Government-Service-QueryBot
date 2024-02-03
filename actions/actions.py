@@ -18,34 +18,16 @@ class ActionHandleCitizenshipQuery(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         # Extract entities from the user's message
-        entities = tracker.latest_message['entities']
-
-        if entities:
-            entity_values = [entity['value'] for entity in entities]
-            
-            if 'citizenship by descent' in entity_values:
-                if 'eligibility' in entity_values:
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility")
-                elif 'documents' in entity_values: 
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_documents")
-                elif 'steps' in entity_values: 
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_steps")
-                else: 
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility")
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_documents")
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_steps")
-            elif 'citizenship by birth' in entity_values:
-                if 'eligibility' in entity_values:
-                    dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility")
-                elif 'documents' in entity_values: 
-                    dispatcher.utter_message(response="utter_citizenship_by_birth_documents")
-                elif 'steps' in entity_values: 
+        entity_values = next(tracker.get_latest_entity_values('type'),None)
+        if  entity_values == 'citizenship by descent': 
+                dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_criteria")
+                dispatcher.utter_message(response="utter_citizenship_by_descent_documents_required")
+                dispatcher.utter_message(response="utter_citizenship_by_descent_steps")
+        elif  entity_values == 'citizenship by birth':
+                    dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility_criteria")
+                    dispatcher.utter_message(response="utter_citizenship_by_birth_documents_required")
                     dispatcher.utter_message(response="utter_citizenship_by_birth_steps")
-                else: 
-                    dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility")
-                    dispatcher.utter_message(response="utter_citizenship_by_birth_documents")
-                    dispatcher.utter_message(response="utter_citizenship_by_birth_steps")
-            else:
+        else:
                 dispatcher.utter_message(response="utter_citizenship")
         return []
 
@@ -110,35 +92,17 @@ class ActionHandleCitizenshipQueryRomanized(Action):
 
     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         # Extract entities from the user's message
-        entities = tracker.latest_message['entities']
-
-        if entities:
-            entity_values = [entity['value'] for entity in entities]
-            
-            if 'descent' in entity_values:
-                if 'eligibility' in entity_values:
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_romanized")
-                elif 'documents' in entity_values: 
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_documents_romanized")
-                elif 'steps' in entity_values: 
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_steps_romanized")
-                else: 
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_romanized")
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_documents_romanized")
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_steps_romanized")
-            elif 'birth' in entity_values:
-                if 'eligibility' in entity_values:
-                    dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility_romanized")
-                elif 'documents' in entity_values: 
-                    dispatcher.utter_message(response="utter_citizenship_by_birth_documents_romanized")
-                elif 'steps' in entity_values: 
-                    dispatcher.utter_message(response="utter_citizenship_by_birth_steps_romanized")
-                else: 
+        entity_values = next(tracker.get_latest_entity_values('type'),None)
+        if  entity_values == 'descent': 
+                dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_romanized")
+                dispatcher.utter_message(response="utter_citizenship_by_descent_documents_romanized")
+                dispatcher.utter_message(response="utter_citizenship_by_descent_steps")
+        elif  entity_values == 'birth':
                     dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility_romanized")
                     dispatcher.utter_message(response="utter_citizenship_by_birth_documents_romanized")
                     dispatcher.utter_message(response="utter_citizenship_by_birth_steps_romanized")
-            else:
-                dispatcher.utter_message(response="utter_citizenship_romanized")
+        else:
+                dispatcher.utter_message(response="utter_citizenship")
         return []
 
 class ActionHandleCertificateQueryRomanized(Action):

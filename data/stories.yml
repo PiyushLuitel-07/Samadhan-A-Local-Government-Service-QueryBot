@@ -1,64 +1,108 @@
 version: "3.1"
 stories:
-##############################certificate
-
-- story: birth certificate story
-  steps: 
-  - intent: certificate_query_romanized{"type":"","specification":""}
-  - action: utter_certificate_query_romanized
+##############################citizenship stories#############################################
+- story: User interaction for citizenship
+  steps:
+  - intent: citizenship_query
+  - action: utter_citizenship
   - intent: provide_type
-  - action: action_handle_certificate_query_romanized
+  - action: action_handle_citizenship_query
 
-- story: birth certificate documents story
-  steps: 
-  - intent: certificate_query_romanized{"type":"birth","specification":"documents"}
-  - action: utter_birth_certificate_documents_romanized
-- story: birth certificate steps story
+- story: User interaction for citizenship
   steps:
-  - intent: certificate_query_romanized{"type":"birth","specification":"steps"} 
-  - action: utter_birth_certificate_steps_romanized
-
-- story: death certificate documents story
-  steps: 
-  - intent: certificate_query_romanized{"type":"death","specification":"documents"}
-  - action: utter_death_certificate_documents_romanized
-- story: death certificate steps story
+  - intent: citizenship_query_romanized
+  - action: utter_citizenship_romanized
+  - intent: provide_type
+  - action: action_handle_citizenship_query_romanized
+  
+#############3eligibility
+- story: User interaction for citizenship
   steps:
-  - intent: certificate_query_romanized{"type":"death","specification":"steps"} 
-  - action: utter_death_certificate_steps_romanized
+  - intent: citizenship_by_birth_eligibility_query
+  - action: utter_citizenship_by_birth_eligibility
 
-- story: marriage certificate documents story
-  steps: 
-  - intent: certificate_query_romanized{"type":"marriage","specification":"documents"}
-  - action: utter_marriage_certificate_documents_romanized
-- story: marriage certificate steps story
+- story: User interaction for citizenship
   steps:
-  - intent: certificate_query_romanized{"type":"marriage","specification":"steps"} 
-  - action: utter_marriage_certificate_steps_romanized
+  - intent: citizenship_by_birth_eligibility_query_romanized
+  - action: utter_citizenship_by_birth_eligibility_romanized
 
-- story: divorce certificate documents story
-  steps: 
-  - intent: certificate_query_romanized{"type":"divorce","specification":"documents"}
-  - action: utter_divorce_certificate_documents_romanized
-- story: divorce certificate steps story
+- story: User interaction for citizenship
   steps:
-  - intent: certificate_query_romanized{"type":"divorce","specification":"steps"} 
-  - action: utter_divorce_certificate_steps_romanized
+  - intent: citizenship_by_descent_eligibility_query
+  - action: utter_citizenship_by_descent_eligibility
 
-- story: migration certificate documents story
-  steps: 
-  - intent: certificate_query_romanized{"type":"migration","specification":"documents"}
-  - action: utter_migration_certificate_documents_romanized
-
-- story: migration certificate steps story
+- story: User interaction for citizenship
   steps:
-  - intent: certificate_query_romanized{"type":"migration","specification":"steps"} 
-  - action: utter_migration_certificate_steps_romanized
+  - intent: citizenship_by_descent_eligibility_query_romanized
+  - action: utter_citizenship_by_descent_eligibility_romanized
 
-- story: User inquires about certificate in roman
+#############documents
+- story: User interaction for citizenship
   steps:
-  - intent: certificate_query_romanized
-  - action: action_handle_certificate_query_romanized
+  - intent: citizenship_by_birth_documents_query
+  - action: utter_citizenship_by_birth_documents
 
-##########################################################
+- story: User interaction for citizenship
+  steps:
+  - intent: citizenship_by_birth_documents_query_romanized
+  - action: utter_citizenship_by_birth_documents_romanized
 
+- story: User interaction for citizenship
+  steps:
+  - intent: citizenship_by_descent_documents_query
+  - action: utter_citizenship_by_descent_documents
+
+- story: User interaction for citizenship
+  steps:
+  - intent: citizenship_by_descent_documents_query_romanized
+  - action: utter_citizenship_by_descent_documents_romanized
+
+#############steps
+- story: User interaction for citizenship
+  steps:
+  - intent: citizenship_by_birth_steps_query
+  - action: utter_citizenship_by_birth_steps
+
+- story: User interaction for citizenship
+  steps:
+  - intent: citizenship_by_birth_steps_query_romanized
+  - action: utter_citizenship_by_birth_steps_romanized
+
+- story: User interaction for citizenship
+  steps:
+  - intent: citizenship_by_descent_steps_query
+  - action: utter_citizenship_by_descent_steps
+
+- story: User interaction for citizenship
+  steps:
+  - intent: citizenship_by_descent_steps_query_romanized
+  - action: utter_citizenship_by_descent_steps_romanized
+
+########### direct#####################
+- story: User interaction for citizenship
+  steps:
+  - intent: citizenship_by_birth_query
+  - action: utter_citizenship_by_birth_eligibility
+  - action: utter_citizenship_by_birth_documents
+  - action: utter_citizenship_by_birth_steps
+
+- story: User interaction for citizenship
+  steps:
+  - intent: citizenship_by_descent_query
+  - action: utter_citizenship_by_descent_eligibility
+  - action: utter_citizenship_by_descent_documents
+  - action: utter_citizenship_by_descent_steps
+
+- story: User interaction for citizenship
+  steps:
+  - intent: citizenship_by_birth_query_romanized
+  - action: utter_citizenship_by_birth_eligibility_romanized
+  - action: utter_citizenship_by_birth_documents_romanized
+  - action: utter_citizenship_by_birth_steps_romanized
+
+- story: User interaction for citizenship
+  steps:
+  - intent: citizenship_by_descent_query_romanized
+  - action: utter_citizenship_by_descent_eligibility_romanized
+  - action: utter_citizenship_by_descent_documents_romanized
+  - action: utter_citizenship_by_descent_steps_romanized

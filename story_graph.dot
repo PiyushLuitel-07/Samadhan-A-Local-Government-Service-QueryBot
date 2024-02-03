@@ -2,6 +2,7 @@ digraph  {
 0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
 "-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
 1 [class=active, fontsize=12, label=action_session_start];
+<<<<<<< HEAD
 2 [class=active, fontsize=12, label=action_handle_certificate_query_romanized];
 3 [class=active, fontsize=12, label=utter_death_certificate_documents_romanized];
 4 [class="intent dashed active", label="  ?  ", shape=rect];
@@ -14,4 +15,14 @@ digraph  {
 3 -> 4  [class=active, key=NONE, label=""];
 5 -> 2  [class=active, key=0];
 6 -> 3  [class=active, key=0];
+=======
+2 [class=active, fontsize=12, label=utter_citizenship_by_descent_eligibility_romanized];
+3 [class="intent dashed active", label="  ?  ", shape=rect];
+4 [class="intent active", fillcolor=lightblue, label="/citizenship_by_descent_eligibility_query_romanized", shape=rect, style=filled];
+0 -> "-1"  [class="", key=NONE, label=""];
+0 -> 1  [class=active, key=NONE, label=""];
+1 -> 4  [class=active, key=0];
+2 -> 3  [class=active, key=NONE, label=""];
+4 -> 2  [class=active, key=0];
+>>>>>>> branch_34
 }

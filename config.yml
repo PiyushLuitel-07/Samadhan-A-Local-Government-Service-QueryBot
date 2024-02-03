@@ -117,6 +117,7 @@ pipeline:
     constrain_similarities: true
   - name: EntitySynonymMapper
   - name: ResponseSelector
+    learning_rate: 0.1
     epochs: 100
     constrain_similarities: true
   - name: FallbackClassifier
