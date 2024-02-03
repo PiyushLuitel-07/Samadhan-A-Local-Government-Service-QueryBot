@@ -25,25 +25,25 @@ class ActionHandleCitizenshipQuery(Action):
             
             if 'citizenship by descent' in entity_values:
                 if 'eligibility' in entity_values:
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_criteria")
+                    dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility")
                 elif 'documents' in entity_values: 
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_documents_required")
+                    dispatcher.utter_message(response="utter_citizenship_by_descent_documents")
                 elif 'steps' in entity_values: 
                     dispatcher.utter_message(response="utter_citizenship_by_descent_steps")
                 else: 
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_criteria")
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_documents_required")
+                    dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility")
+                    dispatcher.utter_message(response="utter_citizenship_by_descent_documents")
                     dispatcher.utter_message(response="utter_citizenship_by_descent_steps")
             elif 'citizenship by birth' in entity_values:
                 if 'eligibility' in entity_values:
-                    dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility_criteria")
+                    dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility")
                 elif 'documents' in entity_values: 
-                    dispatcher.utter_message(response="utter_citizenship_by_birth_documents_required")
+                    dispatcher.utter_message(response="utter_citizenship_by_birth_documents")
                 elif 'steps' in entity_values: 
                     dispatcher.utter_message(response="utter_citizenship_by_birth_steps")
                 else: 
-                    dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility_criteria")
-                    dispatcher.utter_message(response="utter_citizenship_by_birth_documents_required")
+                    dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility")
+                    dispatcher.utter_message(response="utter_citizenship_by_birth_documents")
                     dispatcher.utter_message(response="utter_citizenship_by_birth_steps")
             else:
                 dispatcher.utter_message(response="utter_citizenship")
@@ -117,25 +117,25 @@ class ActionHandleCitizenshipQueryRomanized(Action):
             
             if 'descent' in entity_values:
                 if 'eligibility' in entity_values:
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_criteria_romanized")
+                    dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_romanized")
                 elif 'documents' in entity_values: 
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_documents_required_romanized")
+                    dispatcher.utter_message(response="utter_citizenship_by_descent_documents_romanized")
                 elif 'steps' in entity_values: 
                     dispatcher.utter_message(response="utter_citizenship_by_descent_steps_romanized")
                 else: 
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_criteria_romanized")
-                    dispatcher.utter_message(response="utter_citizenship_by_descent_documents_required_romanized")
+                    dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_romanized")
+                    dispatcher.utter_message(response="utter_citizenship_by_descent_documents_romanized")
                     dispatcher.utter_message(response="utter_citizenship_by_descent_steps_romanized")
             elif 'birth' in entity_values:
                 if 'eligibility' in entity_values:
-                    dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility_criteria_romanized")
+                    dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility_romanized")
                 elif 'documents' in entity_values: 
-                    dispatcher.utter_message(response="utter_citizenship_by_birth_documents_required_romanized")
+                    dispatcher.utter_message(response="utter_citizenship_by_birth_documents_romanized")
                 elif 'steps' in entity_values: 
                     dispatcher.utter_message(response="utter_citizenship_by_birth_steps_romanized")
                 else: 
-                    dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility_criteria_romanized")
-                    dispatcher.utter_message(response="utter_citizenship_by_birth_documents_required_romanized")
+                    dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility_romanized")
+                    dispatcher.utter_message(response="utter_citizenship_by_birth_documents_romanized")
                     dispatcher.utter_message(response="utter_citizenship_by_birth_steps_romanized")
             else:
                 dispatcher.utter_message(response="utter_citizenship_romanized")

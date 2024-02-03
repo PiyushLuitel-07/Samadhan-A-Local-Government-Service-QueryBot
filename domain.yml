@@ -45,19 +45,19 @@ actions:
 - action_handle_certificate_query
 - utter_citizenship
 - utter_citizenship_romanized
-- utter_citizenship_by_birth_eligibility_criteria
-- utter_citizenship_by_birth_eligibility_criteria_romanized
+- utter_citizenship_by_birth_eligibility
+- utter_citizenship_by_birth_eligibility_romanized
 - utter_citizenship_by_birth_steps
 - utter_citizenship_by_birth_steps_romanized
-- utter_citizenship_by_birth_documents_required
-- utter_citizenship_by_birth_documents_required_romanized
+- utter_citizenship_by_birth_documents
+- utter_citizenship_by_birth_documents_romanized
 - utter_greet1_romanized
 - utter_greet2_romanized
 - utter_greet3_romanized
-- utter_citizenship_by_descent_eligibility_criteria
-- utter_citizenship_by_descent_eligibility_criteria_romanized
-- utter_citizenship_by_descent_documents_required
-- utter_citizenship_by_descent_documents_required_romanized
+- utter_citizenship_by_descent_eligibility
+- utter_citizenship_by_descent_eligibility_romanized
+- utter_citizenship_by_descent_documents
+- utter_citizenship_by_descent_documents_romanized
 - utter_citizenship_by_descent_steps
 - utter_citizenship_by_descent_steps_romanized
 - utter_birth_certificate_documents
@@ -106,17 +106,17 @@ responses:
       payload: /citizenship_query_romanized{{"type":"bamsaj"}}
     - title: janma
       payload: /citizenship_query_romanized{{"type":"janma"}}
-  utter_citizenship_by_descent_eligibility_criteria:
+  utter_citizenship_by_descent_eligibility:
   - text: |-
       Eligibility criteria:
       1. At least one parent must be Nepali.
       2. Age must be 16 or above.
-  utter_citizenship_by_descent_eligibility_criteria_romanized:
+  utter_citizenship_by_descent_eligibility_romanized:
   - text: |-
       Yogyata Maapdanda:
       1. Kamti ma ek jana abhibhavak Nepali nagarik hunu parchha.
       2. Tapai ko umer 16 barsa mathi hunu parchha.
-  utter_citizenship_by_descent_documents_required:
+  utter_citizenship_by_descent_documents:
   - text: |-
       Required documents:
       1. Seven photos (passport or auto-sized)
@@ -124,7 +124,7 @@ responses:
       3. Ward recommendation letter
       4. School or college's certificate (mark sheet/character)
       5. Migration certificate (if migrated from another place)
-  utter_citizenship_by_descent_documents_required_romanized:
+  utter_citizenship_by_descent_documents_romanized:
   - text: |-
       Aawashyak Kagajaat haru:
       1. 7 photos (passport or auto-sized)
@@ -142,19 +142,19 @@ responses:
       Prakriya:
       1. Woda ma gayera woda ko sifaris banaunu hola.
       2. Aafno buwa/aama sanga prasasan karyalaya aawasyak kagajat liyera jaanu hola.
-  utter_citizenship_by_birth_eligibility_criteria:
+  utter_citizenship_by_birth_eligibility:
   - text: |-
       Eligibility criteria:
       1. At least one parent must be Nepali.
       2. Age must be 16 or above.
-  utter_citizenship_by_birth_eligibility_criteria_romanized:
+  utter_citizenship_by_birth_eligibility_romanized:
   - text: |-
       Yogyata maapdanda:
       1. At least one parent must be Nepali.
       2. Age must be 16 or above.
-  utter_citizenship_by_birth_documents_required:
+  utter_citizenship_by_birth_documents:
   - text: Documents required...
-  utter_citizenship_by_birth_documents_required_romanized:
+  utter_citizenship_by_birth_documents_romanized:
   - text: Aawashyak kagajaat haru...
   utter_citizenship_by_birth_steps:
   - text: |-
@@ -358,11 +358,11 @@ response_selector:
     - utter_migration_certificate_steps
     citizenship_query:
     - utter_citizenship
-    - utter_citizenship_by_birth_eligibility_criteria
-    - utter_citizenship_by_birth_documents_required
+    - utter_citizenship_by_birth_eligibility
+    - utter_citizenship_by_birth_documents
     - utter_citizenship_by_birth_steps
-    - utter_citizenship_by_descent_eligibility_criteria
-    - utter_citizenship_by_descent_documents_required
+    - utter_citizenship_by_descent_eligibility
+    - utter_citizenship_by_descent_documents
     - utter_citizenship_by_descent_steps
     certificate_query_romanized:
     - utter_certificate_query_romanized
@@ -383,11 +383,11 @@ response_selector:
     - utter_migration_certificate_steps_romanized
     citizenship_query_romanized:
     - utter_citizenship_romanized
-    - utter_citizenship_by_birth_eligibility_criteria_romanized
-    - utter_citizenship_by_birth_documents_required_romanized
+    - utter_citizenship_by_birth_eligibility_romanized
+    - utter_citizenship_by_birth_documents_romanized
     - utter_citizenship_by_birth_steps_romanized
-    - utter_citizenship_by_descent_eligibility_criteria_romanized
-    - utter_citizenship_by_descent_documents_required_romanized
+    - utter_citizenship_by_descent_eligibility_romanized
+    - utter_citizenship_by_descent_documents_romanized
     - utter_citizenship_by_descent_steps_romanized
     halkhabar:
     - utter_halkhabar
