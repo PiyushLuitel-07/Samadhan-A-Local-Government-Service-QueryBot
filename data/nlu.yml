@@ -147,7 +147,7 @@ nlu:
 - intent: birth_documents_certificate_query_romanized
   examples: |
     - [janma darta](type) banauna kun kun [kagajaat](specification) chainxa?
-    - [janma](type)darta ko lagi chaina [kagajaat] k k hun?
+    - [janma](type)darta ko lagi chaina [kagajaat](specification) k k hun?
     - k k [kagajaat](specification) liyera [janma darta](type) banauna jane
     - [janma darta](type) banaune kun kun [kagajaat](specification) chainxa.
     - [janma darta](type) banaune [kagajaat](specification) k ho?
@@ -175,41 +175,123 @@ nlu:
 ######################################################### death certificate
 - intent: death_certificate_query
   examples: |
+    - how to make [death](type) certificate?
+    - [death](type) certificate
+    - how to obtain [death](type) certificate?
+    - [death](type) certificate process
+    - explain the complete process to make [death](type) certificate.
+    - process to make [death](type) certificate.
+    - how to get a death certificate in nepal?
+    - what is the procedure to make [death](type) certificate.
+    - how can I process for [death](type) certificate.
 
 - intent: death_certificate_query_romanized
   examples: |
+    - Ma [mrityu darta](type) sambandhi janakari chaahanchu.
+    - [mrityu](type) darta kasari banaune?
+    - Malai [mrityu darta](type) barema bhannuhos.
+    - [mrityu](type) darta praapta garnakaa laagi aavedan kasari garne?
+    - Malai [mrityu darta](type) banaauna sahayog garnuhos.
+    - [mrityu](type) darta kasari banaune.
+    - [mrityu darta](type) banaune process k hola ?
 
 - intent: death_documents_certificate_query
   examples: |
+    - what are the [documents](specification) required to make [death](type) certificate?
+    - tell [documents](specification) required to make [death](type) certificate?
+    - [document](specification) to make [death](type) certificate?
+    - [documents](specification) required for [death](type) certificate?
+    - [documents](specification) for [death](type) certificate?
+    - [documents](specification) to make [death](type) certificate?
+    - list down the [documents](specification) required for making [death](type) certificate.
 
 - intent: death_documents_certificate_query_romanized
   examples: |
+    - [janma darta](type) banauna kun kun [kagajaat](specification) chainxa?
+    - [janma](type)darta ko lagi chaine [kagajaat](specification) k k hun?
+    - k k [kagaj](specification) liyera [janma darta](type) banauna jane
+    - [janma](type) darta banaune kun kun [kagajaat](specification) chainxa.
+    - [janma darta](type) banaune [kagajaat](specification) k ho?
 
 - intent: death_steps_certificate_query
   examples: |
+    - what are the [steps](specification) required to make [death](type) certificate?
+    - tell [steps](specification) required to make [death](type) certificate?
+    - [steps](specification) to make [death](type) certificate?
+    - explain the [steps](specification) to make [death](type) certificate.
+    - [steps](specification) for [death](type) certificate?
+    - [death](type) certificate [steps](specification) please.
+    - can you tell me the [steps](specification) to make [death](type) certificate?
+    - please explain the [steps](specification) to obtain [death](type) certificate.
+    - [steps](specification) to obtain [death](type) certificate.
 
 - intent: death_steps_certificate_query_romanized
   examples: |
+    - [mrityu darta](type) banauna kk [prakriya](specification) huncha?
+    - [mrityu](type) darta banaune [prakriya](specification) k ho?
+    - [mrityu darta](type) banaune [charand] k ho?
+    - [mrityu](type) darta banaune [bidhi] k ho?
       
 ###########################################################################################################################################
 ######################################################### marriage certificate
 - intent: marriage_certificate_query
   examples: |
+    - how to make [marriage](type) certificate in nepal?
+    - [marriage](type) certificate
+    - how to obtain [marriage](type) certificate?
+    - [marriage](type) certificate process
+    - explain the complete process to make [marriage](type) certificate.
+    - process to make [marriage](type) certificate.
+    - how to get a marriage certificate in nepal?
+    - what is the procedure to make [marriage](type) certificate.
+    - how can I process for [marriage](type) certificate.
 
 - intent: marriage_certificate_query_romanized
   examples: |
+    - Ma [bibah darta](type) sambandhi janakari chaahanchu.
+    - [bibah](type) darta kasari banaune?
+    - Malai [bibah darta](type) barema bhannuhos.
+    - [bibah](type) darta praapta garnakaa laagi aavedan kasari garne?
+    - Malai [bibah darta](type) banaauna sahayog garnuhos.
+    - [bibah](type) darta kasari banaune.
+    - [bibah darta](type) banaune process k hola ?
 
 - intent: marriage_documents_certificate_query
   examples: |
+    - what are the [documents](specification) required to make [marriage](type) certificate?
+    - tell [documents](specification) required to make [marriage](type) certificate?
+    - [document](specification) to make [marriage](type) certificate?
+    - [documents](specification) required for [marriage](type) certificate?
+    - [documents](specification) for [marriage](type) certificate?
+    - [documents](specification) to make [marriage](type) certificate?
+    - list down the [documents](specification) required for making [marriage](type) certificate.
 
 - intent: marriage_documents_certificate_query_romanized
   examples: |
+    - [janma darta](type) banauna kun kun [kagajaat](specification) chainxa?
+    - [janma](type)darta ko lagi chaine [kagajaat](specification) k k hun?
+    - k k [kagaj](specification) liyera [janma darta](type) banauna jane
+    - [janma](type) darta banaune kun kun [kagajaat](specification) chainxa.
+    - [janma darta](type) banaune [kagajaat](specification) k ho?
 
 - intent: marriage_steps_certificate_query
   examples: |
+    - what are the [steps](specification) required to make [marriage](type) certificate?
+    - tell [steps](specification) required to make [marriage](type) certificate?
+    - [steps](specification) to make [marriage](type) certificate?
+    - explain the [steps](specification) to make [marriage](type) certificate.
+    - [steps](specification) for [marriage](type) certificate?
+    - [marriage](type) certificate [steps](specification) please.
+    - can you tell me the [steps](specification) to make [marriage](type) certificate?
+    - please explain the [steps](specification) to obtain [marriage](type) certificate.
+    - [steps](specification) to obtain [marriage](type) certificate.
 
 - intent: marriage_steps_certificate_query_romanized
   examples: |
+    - [bibah darta](type) banauna kk [prakriya](specification) huncha?
+    - [bibah](type) darta banaune [prakriya](specification) k ho?
+    - [bibah darta](type) banaune [charand] k ho?
+    - [bibah](type) darta banaune [bidhi] k ho?
       
 ###########################################################################################################################################
 ######################################################### divorce certificate
