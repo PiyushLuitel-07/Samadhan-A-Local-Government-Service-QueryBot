@@ -113,29 +113,108 @@ nlu:
   examples: |
     - [bamsaj](type) bata [nagrikta](type) banaune [prakriya] k ho?
     - bamsaj dwara nagrikta banaune process k ho.
-#########################################################
-# - intent: certificate_query
-#   examples: |
-#     - how to apply for [birth certificate](type)?
-#     - help me with [death certificate](type)
-#     - i want to make [marriage certificate](type)
-#     - process to make [divorce certificate](type)
-#     - how to make [migration certificate](type)
-#     - what are the [documents](specification) required to make [birth certificate](type)?
-#     - what are the [steps](specification) required to make [death certificate](type)?
-#     - how to apply for [birth certificate](type)
-#     - how can i get [birth certificate](type) in nepal
-#     - what are the required [documents](specification) to get [birth certificate](type) in nepal
-# - intent: certificate_query_romanized
-#   examples: |
-#     - [janma](type) darta ko lagi kasari apply garna sakincha?
-#     - [mrityu](type) darta ma madad garnu hola.
-#     - malai [bibah](type) darta banaunu chha.
-#     - [bibah](type) darta banauna ko lagi k ho process?
-#     - [sambandha bichhed](type) kasari banaune?
-#     - [janma](type) darta banauna ko lagi kun kun [documents](specification) chahincha?
-    
+######################################################### birth certificate
+- intent: birth_certificate_query
+  examples: |
+    - how to make [birth](type) certificate.
+
+- intent: birth_certificate_query_romanized
+  examples: |
+
+- intent: birth_documents_certificate_query
+  examples: |
+
+- intent: birth_documents_certificate_query_romanized
+  examples: |
+
+- intent: birth_steps_certificate_query
+  examples: |
+
+- intent: birth_steps_certificate_query_romanized
+  examples: |
+      
 ###########################################################################################################################################
+######################################################### death certificate
+- intent: death_certificate_query
+  examples: |
+
+- intent: death_certificate_query_romanized
+  examples: |
+
+- intent: death_documents_certificate_query
+  examples: |
+
+- intent: death_documents_certificate_query_romanized
+  examples: |
+
+- intent: death_steps_certificate_query
+  examples: |
+
+- intent: death_steps_certificate_query_romanized
+  examples: |
+      
+###########################################################################################################################################
+######################################################### marriage certificate
+- intent: marriage_certificate_query
+  examples: |
+
+- intent: marriage_certificate_query_romanized
+  examples: |
+
+- intent: marriage_documents_certificate_query
+  examples: |
+
+- intent: marriage_documents_certificate_query_romanized
+  examples: |
+
+- intent: marriage_steps_certificate_query
+  examples: |
+
+- intent: marriage_steps_certificate_query_romanized
+  examples: |
+      
+###########################################################################################################################################
+######################################################### divorce certificate
+- intent: divorce_certificate_query
+  examples: |
+
+- intent: divorce_certificate_query_romanized
+  examples: |
+
+- intent: divorce_documents_certificate_query
+  examples: |
+
+- intent: divorce_documents_certificate_query_romanized
+  examples: |
+
+- intent: divorce_steps_certificate_query
+  examples: |
+
+- intent: divorce_steps_certificate_query_romanized
+  examples: |
+      
+###########################################################################################################################################
+######################################################### migration certificate
+- intent: migration_certificate_query
+  examples: |
+
+- intent: migration_certificate_query_romanized
+  examples: |
+
+- intent: migration_documents_certificate_query
+  examples: |
+
+- intent: migration_documents_certificate_query_romanized
+  examples: |
+
+- intent: migration_steps_certificate_query
+  examples: |
+
+- intent: migration_steps_certificate_query_romanized
+  examples: |
+      
+###########################################################################################################################################
+
 - intent: greet
   examples: |
     - hey
