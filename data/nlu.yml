@@ -74,6 +74,8 @@ nlu:
 - intent: citizenship_by_birth_query_romanized
   examples: |
     - [janma](type) dwara [nagrikta](type) kasari banaune.
+    - [janma](type) siddi [nagrikta](type) kasari banaune
+    - [birth](type) nagrikta banauna k garne.
 
 - intent: citizenship_by_birth_eligibility_query_romanized
   examples: |
@@ -82,15 +84,20 @@ nlu:
 
 - intent: citizenship_by_birth_documents_query_romanized
   examples: |
-    - [janma](type) bata [nagrikta](type) banaune kun kun [kagajaat] chinxa?
+    - [janma](type) bata [nagrikta](type) banaune kun kun [kagajaat](specification) chinxa?
+    - [janma](type) bata [nagrikta](type) chaina kagajaat k hun.
+    - k k kagajaat liyera nagrikta banauna jane
 
 - intent: citizenship_by_birth_steps_query_romanized
   examples: |
     - [janma](type) bata [nagrikta](type) banaune [prakriya] k ho?
+    - janma siddi nagrikta banaune process k ho
+
 ###########################################
 - intent: citizenship_by_descent_query_romanized
   examples: |
     - [bamsaj](type) dwara [nagrikta](type) kasari banaune.
+    - bamsaj nagrikta banauna k garne
 
 - intent: citizenship_by_descent_eligibility_query_romanized
   examples: |
@@ -100,10 +107,12 @@ nlu:
 - intent: citizenship_by_descent_documents_query_romanized
   examples: |
     - [bamsaj](type) bata [nagrikta](type) banaune kun kun [kagajaat] chinxa?
+    - bamsaj dwara nagrikta pauna k garnu parxa
 
 - intent: citizenship_by_descent_steps_query_romanized
   examples: |
     - [bamsaj](type) bata [nagrikta](type) banaune [prakriya] k ho?
+    - bamsaj dwara nagrikta banaune process k ho.
 #########################################################
 # - intent: certificate_query
 #   examples: |
