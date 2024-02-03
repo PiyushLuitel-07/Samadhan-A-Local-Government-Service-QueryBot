@@ -23,19 +23,19 @@ nlu:
     - help me with citizenship by birth
 - intent: citizenship_by_birth_eligibility_query
   examples: |
-    - what are the [eligibility](specification) required to make [citizenship by birth](citizenship_type)?
-    - tell [eligibility](specification) required to make [citizenship by birth](citizenship_type)?
-    - [eligibility](specification) to make [citizenship by birth](citizenship_type)?
+    - what are the [eligibility](specification) required to make [citizenship by birth](type)?
+    - tell [eligibility](specification) required to make [citizenship by birth](type)?
+    - [eligibility](specification) to make [citizenship by birth](type)?
 - intent: citizenship_by_birth_documents_query
   examples: |
-    - what are the [documents](specification) required to make [citizenship by birth](citizenship_type)?
-    - tell [documents](specification) required to make [citizenship by birth](citizenship_type)?
-    - [documents](specification) to make [citizenship by birth](citizenship_type)?
+    - what are the [documents](specification) required to make [citizenship by birth](type)?
+    - tell [documents](specification) required to make [citizenship by birth](type)?
+    - [documents](specification) to make [citizenship by birth](type)?
 - intent: citizenship_by_birth_steps_query
   examples: |
-    - what are the [steps](specification) required to make [citizenship by birth](citizenship_type)?
-    - tell [steps](specification) required to make [citizenship by birth](citizenship_type)?
-    - [steps](specification) to make [citizenship by birth](citizenship_type)?
+    - what are the [steps](specification) required to make [citizenship by birth](type)?
+    - tell [steps](specification) required to make [citizenship by birth](type)?
+    - [steps](specification) to make [citizenship by birth](type)?
 ###########################citizenship vr descent
 - intent: citizenship_by_descent_query
   examples: |
@@ -48,18 +48,18 @@ nlu:
 - intent: citizenship_by_descent_eligibility_query
   examples: |
     - what are the [eligibility](specification) required to make citizenship by descent?
-    - tell [eligibility](specification) required to make [citizenship by descent](citizenship_type)?
-    - [eligibility](specification) to make [citizenship by descent](citizenship_type)?
+    - tell [eligibility](specification) required to make [citizenship by descent](type)?
+    - [eligibility](specification) to make [citizenship by descent](type)?
 - intent: citizenship_by_descent_documents_query
   examples: |
-    - what are the [documents](specification) required to make [citizenship by descent](citizenship_type)?
-    - tell [documents](specification) required to make [citizenship by descent](citizenship_type)?
-    - [documents](specification) to make [citizenship by descent](citizenship_type)?
+    - what are the [documents](specification) required to make [citizenship by descent](type)?
+    - tell [documents](specification) required to make [citizenship by descent](type)?
+    - [documents](specification) to make [citizenship by descent](type)?
 - intent: citizenship_by_descent_steps_query
   examples: |
-    - what are the [steps](specification) required to make [citizenship by descent](citizenship_type)?
-    - tell [steps](specification) required to make [citizenship by descent](citizenship_type)?
-    - [steps](specification) to make [citizenship by descent](citizenship_type)?
+    - what are the [steps](specification) required to make [citizenship by descent](type)?
+    - tell [steps](specification) required to make [citizenship by descent](type)?
+    - [steps](specification) to make [citizenship by descent](type)?
   #####################################################################################################################
 ################################## citizenship Roman###############
 - intent: citizenship_query_romanized
@@ -75,7 +75,7 @@ nlu:
   examples: |
     - [janma](type) dwara [nagrikta](type) kasari banaune.
     - [janma](type) siddi [nagrikta](type) kasari banaune
-    - [birth](type) nagrikta banauna k garne.
+    - [janma](type) nagrikta banauna k garne.
 
 - intent: citizenship_by_birth_eligibility_query_romanized
   examples: |
@@ -84,7 +84,7 @@ nlu:
 
 - intent: citizenship_by_birth_documents_query_romanized
   examples: |
-    - [janma](type) bata [nagrikta](type) banaune kun kun [kagajaat](specification) chinxa?
+    - [janma](type) bata [nagrikta](type) banauna kun kun [kagajaat](specification) chinxa?
     - [janma](type) bata [nagrikta](type) chaina kagajaat k hun.
     - k k kagajaat liyera nagrikta banauna jane
 
@@ -116,28 +116,60 @@ nlu:
 ######################################################### birth certificate
 - intent: birth_certificate_query
   examples: |
-    - how to make [birth](type) certificate.
+    - how to make [birth](type) certificate?
     - [birth](type) certificate
-    - how to obtain [birth](type) certificate.
+    - how to obtain [birth](type) certificate?
     - [birth](type) certificate process
     - process to make [birth](type) certificate.
+    - how to get a birth certificate in nepal?
     - what is the procedure to make [birth](type) certificate.
-    - how can I make [birth](type) certificate.
+    - how can I process for [birth](type) certificate.
 
 - intent: birth_certificate_query_romanized
   examples: |
+    - Ma [janma darta](type) sambandhi janakari chaahanchu.
+    - [janma](type) darta kasari banaune?
+    - Malai [janma darta](type) barema bhannuhos.
+    - [janma](type) darta praapta garnakaa laagi aavedan kasari garne?
+    - Malai [janma darta](type) banaauna sahayog garnuhos.
+    - [janma](type) darta kasari banaune.
+    - [janma darta](type) banaune process k hola ?
 
 - intent: birth_documents_certificate_query
   examples: |
+    - what are the [documents](specification) required to make [birth](type) certificate?
+    - tell [documents](specification) required to make [birth](type) certificate?
+    - [documents](specification) to make [birth](type) certificate?
+    - [documents](specification) required for [birth](type) certificate?
+    - [documents](specification) for [birth](type) certificate?
+    - [documents](specification) to make [birth](type) certificate?
 
 - intent: birth_documents_certificate_query_romanized
   examples: |
+    - [janma darta](type) banauna kun kun [kagajaat](specification) chainxa?
+    - [janma](type)darta ko lagi chaina [kagajaat] k k hun?
+    - k k [kagajaat](specification) liyera [janma darta](type) banauna jane
+    - [janma darta](type) banaune kun kun [kagajaat](specification) chainxa.
+    - [janma darta](type) banaune [kagajaat](specification) k ho?
 
 - intent: birth_steps_certificate_query
   examples: |
+    - what are the [steps](specification) required to make [birth](type) certificate?
+    - tell [steps](specification) required to make [birth](type) certificate?
+    - [steps](specification) to make [birth](type) certificate?
+    - explain the [steps](specification) to make [birth](type) certificate.
+    - [steps](specification) for [birth](type) certificate?
+    - [birth](type) certificate [steps](specification) please.
+    - can you tell me the [steps](specification) to make [birth](type) certificate?
+    - please explain the [steps](specification) to obtain [birth](type) certificate.
+    - [steps](specification) to obtain [birth](type) certificate.
 
 - intent: birth_steps_certificate_query_romanized
   examples: |
+    - [janma darta](type) banauna kk [prakriya](specification) huncha?
+    - [janma](type) darta banaune [prakriya](specification) k ho?
+    - [janma darta](type) banaune [charand] k ho?
+    - [janma](type) darta banaune [bidhi] k ho?
       
 ###########################################################################################################################################
 ######################################################### death certificate
@@ -297,6 +329,7 @@ nlu:
 - intent: provide_type
   examples: |
     - [janma](type)
+    - [janma darta](type)
     - [basai sarai](type)
     - [bibah](type)
     - [mrityu](type)
