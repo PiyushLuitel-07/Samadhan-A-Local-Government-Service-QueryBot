@@ -79,7 +79,7 @@ nlu:
 
 - intent: citizenship_by_birth_eligibility_query_romanized
   examples: |
-    - [janma](type) dwara [nagrikta](type) banauna k k [yogyata](spectification) chainxa.
+    - [janma](type) dwara [nagrikta](type) banauna k k [yogyata](specification) chainxa.
     - [janma](type) bata [nagrikta](type) banaune [mapdanda](specification)k ho?
 
 - intent: citizenship_by_birth_documents_query_romanized
@@ -101,7 +101,7 @@ nlu:
 
 - intent: citizenship_by_descent_eligibility_query_romanized
   examples: |
-    - [bamsaj](type) dwara [nagrikta](type) banauna k k [yogyata](spectification) chainxa.
+    - [bamsaj](type) dwara [nagrikta](type) banauna k k [yogyata](specification) chainxa.
     - [bamsaj](type) bata [nagrikta](type) banaune [mapdanda](specification)k ho?
 
 - intent: citizenship_by_descent_documents_query_romanized
@@ -117,6 +117,12 @@ nlu:
 - intent: birth_certificate_query
   examples: |
     - how to make [birth](type) certificate.
+    - [birth](type) certificate
+    - how to obtain [birth](type) certificate.
+    - [birth](type) certificate process
+    - process to make [birth](type) certificate.
+    - what is the procedure to make [birth](type) certificate.
+    - how can I make [birth](type) certificate.
 
 - intent: birth_certificate_query_romanized
   examples: |
