@@ -26,7 +26,7 @@ body {
 
 .chat_header {
   height: 10%;
-  background: #380654;
+  background: #060dcfc7;
   border-radius: 10px 10px 0px 0px;
   padding: 5px;
   font-size: 20px;
@@ -132,7 +132,7 @@ textarea-webkit-scrollbar {
   padding: 10px;
   float: right;
   margin-right: 0.5em;
-  background: #380654;
+  background: #060dcfc7;
   color: white;
   margin-bottom: 0.15em;
   font-size: 16px;
@@ -197,13 +197,14 @@ blockquote {
   padding: 5px;
   font-size: 20px;
   cursor: pointer;
-  color: #380654;
+  color: #060dcfc7;
 }
 
 .imgProfile {
   box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 #00000096;
   border-radius: 50px;
   width: 60%;
+  margin-bottom: 20px; /* Adjust the value as needed */
 }
 
 .profile_div {
@@ -431,9 +432,9 @@ div.content_data::-webkit-scrollbar {
 
 .suggestions {
   padding: 5px;
-  width: 80%;
+  width: 40%;
   border-radius: 10px;
-  background: #ffffff;
+  background: #EBF5F0;
   box-shadow: 2px 5px 5px 1px #dbdade;
 
   margin-left: 0.25%;
@@ -446,19 +447,19 @@ div.content_data::-webkit-scrollbar {
 }
 
 .menu {
-  padding: 5px;
+  padding: 10px;
 }
 
 .menuChips {
   display: block;
-  background: #380654;
-  color: #ffffffa7;
+  background: #e3e7ee;
+  color: black;
   text-align: left;
-  padding: 5px;
+  padding: 6px;
   margin-bottom: 5px;
   cursor: pointer;
-  border-radius: 15px;
-  font-size: 14px;
+  border-radius: 25px;
+  font-size: 16px;
   word-wrap: break-word;
 }
 
@@ -775,7 +776,7 @@ ul.collapsible > li:last-child .collapsible-body {
 .botTyping > div {
   width: 10px;
   height: 10px;
-  background-color: #002244;
+  background-color:  #060dcfc7;
   border-radius: 100%;
   display: inline-block;
   -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
