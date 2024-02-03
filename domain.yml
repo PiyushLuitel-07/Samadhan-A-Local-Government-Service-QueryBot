@@ -3,8 +3,10 @@ entities:
 - type
 - specification
 intents:
+- provide_eligibility_type
 - citizenship_query
 - citizenship_query_romanized
+- citizenship_by_naturalization_query
 - citizenship_by_birth_query
 - citizenship_by_birth_query_romanized
 - citizenship_by_descent_query
@@ -61,7 +63,6 @@ intents:
 - bot_challenge
 actions:
 - utter_certificate_query_romanized
-- action_handle_certificate_query_romanized
 - utter_divorce_certificate_documents
 - utter_migration_certificate_documents_romanized
 - action_handle_citizenship_query_romanized
@@ -70,7 +71,6 @@ actions:
 - utter_greet1
 - action_handle_citizenship_query
 - utter_greet2
-- action_handle_certificate_query
 - utter_citizenship
 - utter_citizenship_romanized
 - utter_citizenship_by_birth_eligibility
@@ -107,6 +107,9 @@ actions:
 - utter_migration_certificate_steps
 - utter_migration_certificate_steps_romanized
 - utter_certificate_query
+- utter_citizenship_by_naturalization
+- utter_citizenship_by_naturalization_option1
+- utter_citizenship_by_naturalization_option2
 responses:
   utter_greet1:
   - text: Hello !! I'm Samadhan.
@@ -124,16 +127,42 @@ responses:
   - text: What type of citizenship are you seeking?
     buttons:
     - title: Citizenship by birth
-      payload: /citizenship_query{{"type":"citizenship by birth"}}
+      payload: birth
     - title: Citizenship by descent
-      payload: /citizenship_query{{"type":"citizenship by descent"}}
+      payload: descent
+    - title: Citizenship by naturalization
+      payload: I want information about citizenship by naturalization
+
   utter_citizenship_romanized:
   - text: Tapai lai kun prakar ko nagarikta banaunu chha?
     buttons:
     - title: bamsaj
-      payload: /citizenship_query_romanized{{"type":"bamsaj"}}
+      payload: descent
     - title: janma
-      payload: /citizenship_query_romanized{{"type":"janma"}}
+      payload: birth
+    - title: Citizenship by naturalization
+      payload: naturalization
+  utter_citizenship_by_naturalization:
+  - text: |-
+      Please choose the condition for application of citizenship:
+    buttons:
+    - title:  1. Foreign Women Married to a Nepali Citizen.
+      payload: option1
+    - title:  2. Child Born to a Nepali Female Citizen from Marriage with a Foreign Citizen.
+      payload: option2
+  utter_citizenship_by_naturalization_option1:
+  - text: |-
+      * Must submit an application in the prescribed form.
+      * Provide the marriage relationship document with the Nepali citizen.
+      * Show evidence of initiation of the procedure for renunciation of foreign citizenship 
+  utter_citizenship_by_naturalization_option2:
+  - text: |-
+      * Must have permanent domicile in Nepal.
+      * Should not have acquired foreign citizenship based on the father's citizenship.
+      * Application with specified documents including duplicate copy of the mother's citizenship certificate, recommendation by concerned Municipality or Village Development Committee, and evidence of not acquiring foreign citizenship based on the father's citizenship
+  utter_citizenship_by_naturalization_query:
+  - text: |-
+      Please choose the    
   utter_citizenship_by_descent_eligibility:
   - text: |-
       Eligibility criteria:
@@ -372,51 +401,6 @@ responses:
   - text: Sab thik chha daju. Tapailai k sahayog garna sakchu?
 response_selector:
   retrieve_responses:
-    certificate_query:
-    - utter_certificate_query
-    - utter_birth_certificate_documents
-    - utter_birth_certificate_steps
-    - utter_death_certificate_documents
-    - utter_death_certificate_steps
-    - utter_marriage_certificate_documents
-    - utter_marriage_certificate_steps
-    - utter_divorce_certificate_documents
-    - utter_divorce_certificate_steps
-    - utter_migration_certificate_documents
-    - utter_migration_certificate_steps
-    citizenship_query:
-    - utter_citizenship
-    - utter_citizenship_by_birth_eligibility
-    - utter_citizenship_by_birth_documents
-    - utter_citizenship_by_birth_steps
-    - utter_citizenship_by_descent_eligibility
-    - utter_citizenship_by_descent_documents
-    - utter_citizenship_by_descent_steps
-    certificate_query_romanized:
-    - utter_certificate_query_romanized
-    certificate_query_romanized{"type":"birth"}:
-    - utter_birth_certificate_documents_romanized
-    - utter_birth_certificate_steps_romanized
-    certificate_query_romanized{"type":"death"}:
-    - utter_death_certificate_documents_romanized
-    - utter_death_certificate_steps_romanized
-    certificate_query_romanized{"type":"marriage"}:
-    - utter_marriage_certificate_documents_romanized
-    - utter_marriage_certificate_steps_romanized
-    certificate_query_romanized{"type":"divorce"}:
-    - utter_divorce_certificate_documents_romanized
-    - utter_divorce_certificate_steps_romanized
-    certificate_query_romanized{"type":"migration"}:
-    - utter_migration_certificate_documents_romanized
-    - utter_migration_certificate_steps_romanized
-    citizenship_query_romanized:
-    - utter_citizenship_romanized
-    - utter_citizenship_by_birth_eligibility_romanized
-    - utter_citizenship_by_birth_documents_romanized
-    - utter_citizenship_by_birth_steps_romanized
-    - utter_citizenship_by_descent_eligibility_romanized
-    - utter_citizenship_by_descent_documents_romanized
-    - utter_citizenship_by_descent_steps_romanized
     halkhabar:
     - utter_halkhabar
 session_config:

@@ -1,226 +1,37 @@
 [
   {
-    "text": "What are the requirements for citizenship?",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "citizenship_type",
-        "start": 30,
-        "end": 41,
-        "confidence_entity": 0.49257317185401917,
-        "value": "citizenship",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "Can you help me with citizenship?",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "citizenship_type",
-        "start": 21,
-        "end": 32,
-        "confidence_entity": 0.5694009065628052,
-        "value": "citizenship",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "How to get citizenship?",
-    "entities": [],
-    "predicted_entities": [
-      {
-        "entity": "citizenship_type",
-        "start": 11,
-        "end": 22,
-        "confidence_entity": 0.4757480323314667,
-        "value": "citizenship",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "how can i get birth certificate in nepal",
-    "entities": [
-      {
-        "start": 14,
-        "end": 31,
-        "value": "birth certificate",
-        "entity": "citizenship_type"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "certificate_type",
-        "start": 14,
-        "end": 31,
-        "confidence_entity": 0.47451305389404297,
-        "value": "birth certificate",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "what are the required documents to get birth certificate in nepal",
-    "entities": [
-      {
-        "start": 22,
-        "end": 31,
-        "value": "documents",
-        "entity": "specification"
-      },
-      {
-        "start": 39,
-        "end": 56,
-        "value": "birth certificate",
-        "entity": "citizenship_type"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "specification",
-        "start": 22,
-        "end": 31,
-        "confidence_entity": 0.999518871307373,
-        "value": "documents",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      },
-      {
-        "entity": "certificate_type",
-        "start": 39,
-        "end": 56,
-        "confidence_entity": 0.508367121219635,
-        "value": "birth certificate",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "janma darta ko lagi kasari apply garna sakincha?",
+    "text": "mrityu darta banaune kun kun kagajaat chainxa.",
     "entities": [
       {
         "start": 0,
-        "end": 5,
-        "value": "janma",
-        "entity": "certificate_type"
+        "end": 6,
+        "value": "mrityu",
+        "entity": "type"
       },
       {
-        "start": 6,
-        "end": 11,
-        "value": "darta",
-        "entity": "certificate_type"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "citizenship_type",
-        "start": 0,
-        "end": 5,
-        "confidence_entity": 0.887628436088562,
-        "value": "birth",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "malai bibahdarta banaunu chha.",
-    "entities": [
-      {
-        "start": 6,
-        "end": 11,
-        "value": "bibah",
-        "entity": "certificate_type"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "bibahdarta banauna ko lagi k ho process?",
-    "entities": [
-      {
-        "start": 0,
-        "end": 5,
-        "value": "bibah",
-        "entity": "certificate_type"
-      }
-    ],
-    "predicted_entities": []
-  },
-  {
-    "text": "janmadarta banauna ko lagi kun kun documents chahincha?",
-    "entities": [
-      {
-        "start": 0,
-        "end": 5,
-        "value": "janma",
-        "entity": "certificate_type"
-      },
-      {
-        "start": 35,
-        "end": 44,
-        "value": "documents",
-        "entity": "specification"
-      }
-    ],
-    "predicted_entities": [
-      {
-        "entity": "specification",
-        "start": 35,
-        "end": 44,
-        "confidence_entity": 0.999529242515564,
-        "value": "documents",
-        "extractor": "DIETClassifier",
-        "processors": [
-          "EntitySynonymMapper"
-        ]
-      }
-    ]
-  },
-  {
-    "text": "janmadarta banauna ko lagi kun kun kagajaat chahincha?",
-    "entities": [
-      {
-        "start": 0,
-        "end": 5,
-        "value": "janma",
-        "entity": "certificate_type"
-      },
-      {
-        "start": 35,
-        "end": 43,
+        "start": 29,
+        "end": 37,
         "value": "kagajaat",
         "entity": "specification"
       }
     ],
     "predicted_entities": [
       {
+        "entity": "type",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.8837714195251465,
+        "value": "mrityu darta",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
         "entity": "specification",
-        "start": 35,
-        "end": 43,
-        "confidence_entity": 0.999248206615448,
+        "start": 29,
+        "end": 37,
+        "confidence_entity": 0.9997575879096985,
         "value": "documents",
         "extractor": "DIETClassifier",
         "processors": [
@@ -230,28 +41,46 @@
     ]
   },
   {
-    "text": "mrityudarta banauna ko lagi kun kun steps chahincha?",
+    "text": "how to make divorce certificate in nepal?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 19,
+        "value": "divorce",
+        "entity": "type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "how to make migration certificate in nepal?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 21,
+        "value": "migration",
+        "entity": "type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "basai sarai darta banaune [bidhi] k ho?",
     "entities": [
       {
         "start": 0,
-        "end": 6,
-        "value": "mrityu",
-        "entity": "certificate_type"
-      },
-      {
-        "start": 36,
-        "end": 41,
-        "value": "steps",
-        "entity": "specification"
+        "end": 11,
+        "value": "basai sarai",
+        "entity": "type"
       }
     ],
     "predicted_entities": [
       {
-        "entity": "specification",
-        "start": 36,
-        "end": 41,
-        "confidence_entity": 0.9994762539863586,
-        "value": "steps",
+        "entity": "type",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.5241739749908447,
+        "value": "basai sarai darta",
         "extractor": "DIETClassifier",
         "processors": [
           "EntitySynonymMapper"
@@ -260,32 +89,616 @@
     ]
   },
   {
-    "text": "bibahdarta pauna ko lagi kun kun documents chahincha?",
+    "text": "sambandha bichhed darta banauna kun kun kagajaat chainxa.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "sambandha bichhed",
+        "entity": "type"
+      },
+      {
+        "start": 40,
+        "end": 48,
+        "value": "kagajaat",
+        "entity": "specification"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 0,
+        "end": 23,
+        "confidence_entity": 0.7667882442474365,
+        "value": "sambandha bichhed darta",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "specification",
+        "start": 40,
+        "end": 48,
+        "confidence_entity": 0.9996480941772461,
+        "value": "documents",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "basai sarai darta banauna kun kun kagajaat chainxa?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "basai sarai darta",
+        "entity": "type"
+      },
+      {
+        "start": 34,
+        "end": 42,
+        "value": "kagajaat",
+        "entity": "specification"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.8957705497741699,
+        "value": "migration",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "specification",
+        "start": 34,
+        "end": 42,
+        "confidence_entity": 0.9996949434280396,
+        "value": "documents",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "basai sarai darta banaune kagajaat k ho?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "basai sarai darta",
+        "entity": "type"
+      },
+      {
+        "start": 26,
+        "end": 34,
+        "value": "kagajaat",
+        "entity": "specification"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.9064358472824097,
+        "value": "migration",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "specification",
+        "start": 26,
+        "end": 34,
+        "confidence_entity": 0.9996798038482666,
+        "value": "documents",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "citizenship by descent",
+    "entities": [
+      {
+        "start": 0,
+        "end": 22,
+        "value": "citizenship by descent",
+        "entity": "type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9899008870124817,
+        "value": "citizenship by",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "bibah darta banaune kun kun kagajaat chainxa.",
     "entities": [
       {
         "start": 0,
         "end": 5,
         "value": "bibah",
-        "entity": "certificate_type"
+        "entity": "type"
       },
       {
-        "start": 33,
-        "end": 42,
-        "value": "documents",
+        "start": 28,
+        "end": 36,
+        "value": "kagajaat",
         "entity": "specification"
       }
     ],
     "predicted_entities": [
       {
+        "entity": "type",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.8960652351379395,
+        "value": "bibah darta",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
         "entity": "specification",
-        "start": 33,
-        "end": 42,
-        "confidence_entity": 0.9995267391204834,
+        "start": 28,
+        "end": 36,
+        "confidence_entity": 0.9998553991317749,
         "value": "documents",
         "extractor": "DIETClassifier",
         "processors": [
           "EntitySynonymMapper"
         ]
+      }
+    ]
+  },
+  {
+    "text": "how to get a death certificate in nepal?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 13,
+        "end": 18,
+        "confidence_entity": 0.9995521903038025,
+        "value": "death",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "how to get a marriage certificate in nepal?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 13,
+        "end": 21,
+        "confidence_entity": 0.9997172951698303,
+        "value": "marriage",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "how to get a divorce certificate in nepal?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 13,
+        "end": 20,
+        "confidence_entity": 0.9996428489685059,
+        "value": "divorce",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "basai sarai darta banauna kun kun kagajaat chainxa.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "basai sarai",
+        "entity": "type"
+      },
+      {
+        "start": 34,
+        "end": 42,
+        "value": "kagajaat",
+        "entity": "specification"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.6376262903213501,
+        "value": "basai sarai darta",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "specification",
+        "start": 34,
+        "end": 42,
+        "confidence_entity": 0.9996826648712158,
+        "value": "documents",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "basai sarai darta banauna kk prakriya huncha?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "basai sarai darta",
+        "entity": "type"
+      },
+      {
+        "start": 29,
+        "end": 37,
+        "value": "prakriya",
+        "entity": "specification"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.985672116279602,
+        "value": "migration",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "specification",
+        "start": 29,
+        "end": 37,
+        "confidence_entity": 0.9882892370223999,
+        "value": "prakriya",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "janma darta ko lagi chaina kagajaat k k hun?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "janma",
+        "entity": "type"
+      },
+      {
+        "start": 27,
+        "end": 35,
+        "value": "kagajaat",
+        "entity": "specification"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.9793055653572083,
+        "value": "janma darta",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "specification",
+        "start": 27,
+        "end": 35,
+        "confidence_entity": 0.9992192983627319,
+        "value": "documents",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "mrityu darta ko lagi chaine kagajaat k k hun?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "mrityu",
+        "entity": "type"
+      },
+      {
+        "start": 28,
+        "end": 36,
+        "value": "kagajaat",
+        "entity": "specification"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.9320797920227051,
+        "value": "mrityu darta",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "specification",
+        "start": 28,
+        "end": 36,
+        "confidence_entity": 0.999305009841919,
+        "value": "documents",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "how to make marriage certificate in nepal?",
+    "entities": [
+      {
+        "start": 12,
+        "end": 20,
+        "value": "marriage",
+        "entity": "type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "bibah darta ko lagi chaine kagajaat k k hun?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "bibah",
+        "entity": "type"
+      },
+      {
+        "start": 27,
+        "end": 35,
+        "value": "kagajaat",
+        "entity": "specification"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 0,
+        "end": 11,
+        "confidence_entity": 0.9496691226959229,
+        "value": "bibah darta",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "specification",
+        "start": 27,
+        "end": 35,
+        "confidence_entity": 0.9992565512657166,
+        "value": "documents",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "sambandha bichhed darta ko lagi chaine kagajaat k k hun?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 17,
+        "value": "sambandha bichhed",
+        "entity": "type"
+      },
+      {
+        "start": 39,
+        "end": 47,
+        "value": "kagajaat",
+        "entity": "specification"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 0,
+        "end": 23,
+        "confidence_entity": 0.7545734643936157,
+        "value": "sambandha bichhed darta",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "specification",
+        "start": 39,
+        "end": 47,
+        "confidence_entity": 0.9993265867233276,
+        "value": "documents",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "how to get a migration certificate in nepal?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 13,
+        "end": 22,
+        "confidence_entity": 0.9750936627388,
+        "value": "migration",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "basai sarai darta ko lagi chaine kagajaat k k hun?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "basai sarai",
+        "entity": "type"
+      },
+      {
+        "start": 33,
+        "end": 41,
+        "value": "kagajaat",
+        "entity": "specification"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.5411484837532043,
+        "value": "basai sarai darta",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "specification",
+        "start": 33,
+        "end": 41,
+        "confidence_entity": 0.9993639588356018,
+        "value": "documents",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "basai sarai darta banaune prakriya k ho?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "basai sarai",
+        "entity": "type"
+      },
+      {
+        "start": 26,
+        "end": 34,
+        "value": "prakriya",
+        "entity": "specification"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.6569383144378662,
+        "value": "basai sarai darta",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "specification",
+        "start": 26,
+        "end": 34,
+        "confidence_entity": 0.9995113611221313,
+        "value": "prakriya",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "citizenship by naturalization",
+    "entities": [
+      {
+        "start": 0,
+        "end": 29,
+        "value": "citizenship by naturalization",
+        "entity": "type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "type",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.9597496390342712,
+        "value": "citizenship by",
+        "extractor": "DIETClassifier"
       }
     ]
   }

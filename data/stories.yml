@@ -1,6 +1,25 @@
 version: "3.1"
 stories:
 ##############################citizenship stories#############################################
+###################naturalization
+- story: User interaction for citizenship naturalization
+  steps:
+  - intent: citizenship_by_naturalization_query
+  - action: utter_citizenship_by_naturalization
+  - intent: provide_eligibility_type
+    entities:
+    - condition: option1
+  - action: utter_citizenship_by_naturalization_option1
+
+- story: User interaction for citizenship naturalization
+  steps:
+  - intent: citizenship_by_naturalization_query
+  - action: utter_citizenship_by_naturalization
+  - intent: provide_eligibility_type
+    entities:
+    - condition: option2
+  - action: utter_citizenship_by_naturalization_option2
+
 - story: User interaction for citizenship
   steps:
   - intent: citizenship_query
@@ -109,12 +128,7 @@ stories:
 
 ###
 ##############################certificate stories#############################################
-# - story: User interaction for certificate
-#   steps:
-#   - intent: certificate_query
-#   - action: utter_certificate
-#   - intent: provide_type
-#   - action: action_handle_certificate_query
+
 
 ##############################birth certificate stories#############################################
 - story: User interaction for birth certificate

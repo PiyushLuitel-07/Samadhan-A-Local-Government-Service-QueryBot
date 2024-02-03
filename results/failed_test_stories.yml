@@ -1,1 +1,25 @@
-# None of the test stories failed - all good!
+version: "3.1"
+stories:
+- story: User interaction for death certificate romanized (data\stories.yml)
+  steps:
+  - intent: death_certificate_query
+  - action: utter_death_certificate_documents_romanized  # predicted: utter_death_certificate_documents
+  - action: utter_death_certificate_steps_romanized
+- story: User interaction for marriage certificate romanized (data\stories.yml)
+  steps:
+  - intent: marriage_documents_certificate_query_romanized
+  - action: utter_marriage_certificate_documents_romanized
+  - action: utter_marriage_certificate_steps_romanized  # predicted: action_listen
+- story: User interaction for marriage certificate documents (data\stories.yml)
+  steps:
+  - intent: marriage_documents_certificate_query
+  - action: utter_marriage_certificate_documents
+  - action: action_listen  # predicted: utter_marriage_certificate_steps
+- story: User interaction for citizenship naturalization (data\stories.yml)
+  steps:
+  - intent: citizenship_by_naturalization_query
+  - action: utter_citizenship_by_naturalization
+  - intent: provide_eligibility_type
+    entities:
+    - condition: option2
+  - action: utter_citizenship_by_naturalization_option2  # predicted: utter_citizenship_by_naturalization_option1

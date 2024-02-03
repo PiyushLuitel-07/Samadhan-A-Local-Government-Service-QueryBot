@@ -19,7 +19,6 @@ nlu:
     - I want information about citizenship by birth.
     - How to apply for citizenship by birth?
     - Tell me about citizenship by birth.
-    - What are the requirements for citizenship?
     - help me with citizenship by birth
 - intent: citizenship_by_birth_eligibility_query
   examples: |
@@ -36,13 +35,12 @@ nlu:
     - what are the [steps](specification) required to make [citizenship by birth](type)?
     - tell [steps](specification) required to make [citizenship by birth](type)?
     - [steps](specification) to make [citizenship by birth](type)?
-###########################citizenship vr descent
+###########################citizenship by descent
 - intent: citizenship_by_descent_query
   examples: |
     - I want information about citizenship by descent.
     - How to apply for citizenship by descent?
     - Tell me about citizenship by descent.
-    - What are the requirements for citizenship?
     - help me with citizenship by descent
 
 - intent: citizenship_by_descent_eligibility_query
@@ -60,6 +58,18 @@ nlu:
     - what are the [steps](specification) required to make [citizenship by descent](type)?
     - tell [steps](specification) required to make [citizenship by descent](type)?
     - [steps](specification) to make [citizenship by descent](type)?
+
+#####################naturalization
+- intent: citizenship_by_naturalization_query
+  examples: |
+    - I want information about citizenship by naturalization.
+    - How to apply for citizenship by naturalization?
+    - Tell me about citizenship by naturalization.
+    - help me with citizenship by naturalization
+- intent: provide_eligibility_type
+  examples: |
+    - [option1](condition)
+    - [option2](condition)
   #####################################################################################################################
 ################################## citizenship Roman###############
 - intent: citizenship_query_romanized
@@ -506,6 +516,8 @@ nlu:
     - [citizenship by birth](type)
     - [bamsaj](type)
     - [citizenship by descent](type)
+    - [citizenship by naturalization](type)
+ 
 
 ################################synonym mapping ############################
 - synonym: death
