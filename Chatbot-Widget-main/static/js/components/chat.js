@@ -22,19 +22,23 @@ function setUserResponse(message) {
 }
 
 function displayInitialUserMessage() {
-  welcomeMessage = "Hello!! Mero naam Samadhan ho.";
+  welcomeMessage = "Namaskar! 🙏🙏";
   BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
   $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
   scrollToBottomOfResults();
-  welcomeMessage = "Ma sthaniya sarkari seva sodhpuch bot ho.";
+  welcomeMessage = "👋 Sthaniya Sarkari Seva Nagarik Sodhpuch Bot ma hajur lai swagat cha! 🏛️";
   BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
   $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
   scrollToBottomOfResults();
-  welcomeMessage = "Tapailai nagarikta, janma, mrityu, bibah sambandhi prashna haru garna saknu hunchha.";
+  welcomeMessage = "Nagarikta, Janma Darta, Bibah Darta, Basai Sarai Darta, Mrityu Darta ra Samdhanda Bichhed Darta ko barema jankari pauna saknu hunecha. 📋";
   BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
   $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
   scrollToBottomOfResults();
-  welcomeMessage = "Ma ek bot ho, PAPA dwara nirmit.";
+  welcomeMessage = "English wa roman nepali ma chat garna saknu hunecha. 🌐";
+  BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
+  $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
+  scrollToBottomOfResults();
+  welcomeMessage = "Hajur lai ma kasari sahayog garna sakchu? 🤔";
   BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
   $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
   scrollToBottomOfResults();
