@@ -18,7 +18,7 @@ stories:
   - intent: provide_eligibility_type
     entities:
     - condition: option2
-  - action: 
+  - action: utter_citizenship_by_naturalization_option2
 ###################naturalization romanized
 - story: User interaction for citizenship naturalization romanized
   steps:
@@ -37,14 +37,32 @@ stories:
     entities:
     - condition: option2
   - action: utter_citizenship_by_naturalization_option2_romanized
-
+####################################################################
 - story: User interaction for citizenship
   steps:
   - intent: citizenship_query
   - action: utter_citizenship
   - intent: provide_type
   - action: action_handle_citizenship_query
+##########################button###########################
+- story: User interaction for citizenship
+  steps:
+  - intent: citizenship_query
+  - action: utter_citizenship
+  - intent: citizenship_by_birth_query
+  - action: utter_citizenship_by_birth_eligibility
+  - action: utter_citizenship_by_birth_documents
+  - action: utter_citizenship_by_birth_steps
 
+- story: User interaction for citizenship
+  steps:
+  - intent: citizenship_query
+  - action: utter_citizenship
+  - intent: citizenship_by_descent_query
+  - action: utter_citizenship_by_descent_eligibility
+  - action: utter_citizenship_by_descent_documents
+  - action: utter_citizenship_by_descent_steps
+#######################################################################
 - story: User interaction for citizenship
   steps:
   - intent: citizenship_query_romanized

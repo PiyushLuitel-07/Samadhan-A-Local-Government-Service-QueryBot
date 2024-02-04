@@ -144,8 +144,8 @@ responses:
       payload: descent
     - title: janma
       payload: birth
-    - title: Citizenship by naturalization
-      payload: naturalization
+    - title: angikrit
+      payload: malai angikrit nagrikta bare jankari dinuhos
   utter_citizenship_by_naturalization:
   - text: |-
       Please choose the condition for application of citizenship:

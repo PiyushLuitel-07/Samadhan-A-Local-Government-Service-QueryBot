@@ -75,6 +75,7 @@ nlu:
     - [angikrit](type) dwara [nagrikta](type) kasari banaune.
     - [angikrit](type) [nagrikta](type) kasari banaune
     - [angikrit](type) nagrikta banauna k garne.
+    - malai agikrit nagrikta bare jankari dinuhos
   #####################################################################################################################
 ################################## citizenship Roman###############
 - intent: citizenship_query_romanized
