@@ -199,29 +199,35 @@ responses:
   utter_citizenship_by_descent_documents:
   - text: |-
       Required documents:
-      1. Seven photos (passport or auto-sized)
-      2. Original citizenship of parents
-      3. Ward recommendation letter
-      4. School or college's certificate (mark sheet/character)
-      5. Migration certificate (if migrated from another place)
+      1. Recommendation form from District Administration Office which costs Rs. 20
+      2. Birth certificate original and its 2 photocopies
+      3. Parents citizenship original and 2 photocopies
+      4. Migration certificate original and 2 photocopies (if migrated from any place).
+      5. School/College character certificate original and its 2 photocopies
+      6. 7 Photos (passport or auto-sized)
   utter_citizenship_by_descent_documents_romanized:
   - text: |-
       Aawashyak Kagajaat haru:
-      1. 7 photos (passport or auto-sized)
-      2. Buwa aama ko sakkali nagarikta
-      3. Woda ko sifaris
-      4. School/college certificate (mark sheet/character)
-      5. Basai Sarai (kunai thau bata sareko bhaye)
+      1. Jilla prasasan karyalaya bata woda ko sifaris form, jasko mulya Rs. 20.
+      2. Sakkali janma darta ra 2 prati photocopy
+      3. Abhibhavak ko sakkali nagarikta ra 2 prati photocopy
+      4. Basai sarai gareko bhaye, sakkali Basai Sarai ra 2 prati photocopy
+      5. School/College sakkali character certificate ra 2 prati photocopy
+      6. 7 Photos (passport or auto-sized)
   utter_citizenship_by_descent_steps:
   - text: |-
       Steps:
-      1. Visit the ward office to obtain a recommendation letter.
-      2. Go to the District Administration Office with your parent and required documents.
+      1. Go to DAO to collect recommendation form
+      2. Fill out the recommendation form and submit it to the ward office.
+      3. Ward office will verify the form and ward-chairperson will put the stamp and signature.
+      4. Submit verified recommendation form along with one of your parent and other documents at the DAO to get the citizenship.
   utter_citizenship_by_descent_steps_romanized:
   - text: |-
       Prakriya:
-      1. Woda ma gayera woda ko sifaris banaunu hola.
-      2. Aafno buwa/aama sanga prasasan karyalaya aawasyak kagajat liyera jaanu hola.
+      1. Jilla prasasan karyalaya gayera woda ko sifaris form linu hola.
+      2. Sifaris form ma bibaran bharera aafno woda karyalaya ma bujhaunu hola.
+      3. Woda karyalaya ma sifaris ma woda adyakshya ko sahi ra woda ko chaap lagaunu hola.
+      4. Aafno ek abhivabhak sahit Jilla Prasasan Karyalaya gayera woda ko sifaris ra anya kagajaat bujhayera nagarikta prapta garna saknu hunechha.
   utter_citizenship_by_birth_eligibility:
   - text: |-
       Eligibility criteria:
