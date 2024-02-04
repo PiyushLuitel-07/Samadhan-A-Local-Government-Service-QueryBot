@@ -3,6 +3,7 @@ entities:
 - type
 - specification
 intents:
+- citizenship_by_naturalization_query_romanized
 - provide_eligibility_type
 - citizenship_query
 - citizenship_query_romanized

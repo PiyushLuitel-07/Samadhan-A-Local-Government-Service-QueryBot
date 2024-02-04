@@ -18,7 +18,25 @@ stories:
   - intent: provide_eligibility_type
     entities:
     - condition: option2
-  - action: utter_citizenship_by_naturalization_option2
+  - action: 
+###################naturalization romanized
+- story: User interaction for citizenship naturalization romanized
+  steps:
+  - intent: citizenship_by_naturalization_query_romanized
+  - action: utter_citizenship_by_naturalization_romanized
+  - intent: provide_eligibility_type
+    entities:
+    - condition: option1
+  - action: utter_citizenship_by_naturalization_option1_romanized
+
+- story: User interaction for citizenship naturalization romanized
+  steps:
+  - intent: citizenship_by_naturalization_query_romanized
+  - action: utter_citizenship_by_naturalization_romanized
+  - intent: provide_eligibility_type
+    entities:
+    - condition: option2
+  - action: utter_citizenship_by_naturalization_option2_romanized
 
 - story: User interaction for citizenship
   steps:

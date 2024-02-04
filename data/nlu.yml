@@ -70,6 +70,11 @@ nlu:
   examples: |
     - [option1](condition)
     - [option2](condition)
+- intent: citizenship_by_naturalization_query_romanized
+  examples: |
+    - [angikrit](type) dwara [nagrikta](type) kasari banaune.
+    - [angikrit](type) [nagrikta](type) kasari banaune
+    - [angikrit](type) nagrikta banauna k garne.
   #####################################################################################################################
 ################################## citizenship Roman###############
 - intent: citizenship_query_romanized
@@ -558,3 +563,6 @@ nlu:
     - pramand patra
     - pramand
     - darta
+- synonym: naturalization
+  examples: |
+    - angikrit
