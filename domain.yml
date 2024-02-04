@@ -111,6 +111,9 @@ actions:
 - utter_citizenship_by_naturalization
 - utter_citizenship_by_naturalization_option1
 - utter_citizenship_by_naturalization_option2
+- utter_citizenship_by_naturalization_romanized
+- utter_citizenship_by_naturalization_option1_romanized
+- utter_citizenship_by_naturalization_option2_romanized
 responses:
   utter_greet1:
   - text: Hello !! I'm Samadhan.
@@ -151,6 +154,16 @@ responses:
       payload: option1
     - title:  2. Child Born to a Nepali Female Citizen from Marriage with a Foreign Citizen.
       payload: option2
+
+  utter_citizenship_by_naturalization_romanized:
+  - text: |
+      Kripaya nagarikta avedana ko avastha cayanu hola:
+    buttons:
+    - title: 1. Nepali Nagari Sanga Bivaha Gareko Phoren Mahila.
+      payload: option1
+    - title: 2. Phoren Nagarik Sanga Bivaha Bata Janma Bhayeko Nepali Mahilā Ko Santaan.
+      payload: option2
+
   utter_citizenship_by_naturalization_option1:
   - text: |-
       * Must submit an application in the prescribed form.
@@ -161,9 +174,18 @@ responses:
       * Must have permanent domicile in Nepal.
       * Should not have acquired foreign citizenship based on the father's citizenship.
       * Application with specified documents including duplicate copy of the mother's citizenship certificate, recommendation by concerned Municipality or Village Development Committee, and evidence of not acquiring foreign citizenship based on the father's citizenship
-  utter_citizenship_by_naturalization_query:
+  utter_citizenship_by_naturalization_option1_romanized:
   - text: |-
-      Please choose the    
+      * Aavedan patra niyukt rupma prastut garnu parne.
+      * Nepali nagarik sanga bivaha sambandhi dastāvej pradāna garnu parne.
+      * Bideshi nagarikta tyāgko prakriyā shuru garne sākshyadekhaunu parne.
+
+  utter_citizenship_by_naturalization_option2_romanized:
+  - text: |-
+      * Nepal māa sthāyī nivās rākhnā parne cha.
+      * Bābu ko nagarikta ko ādhar ma bideshi nagarikta upādhi pāyeko hudaina.
+      * Aavedan ma nirdharit dastāvej sātha mātā ko nagarikta pramāṇ patra ko pārimaṇika, saṅgītako Nagarpālikā vā Gāu Vikās Samiti ko sujhāv, ra bābu ko nagarikta ādhar ma bideshi nagarikta upādhi pāina ko sākshya sahit.
+    
   utter_citizenship_by_descent_eligibility:
   - text: |-
       Eligibility criteria:
