@@ -131,9 +131,9 @@ responses:
   - text: What type of citizenship are you seeking?
     buttons:
     - title: Citizenship by birth
-      payload: birth
+      payload: i want to make citizenship bu birth
     - title: Citizenship by descent
-      payload: descent
+      payload: I want to make citizenship by descent
     - title: Citizenship by naturalization
       payload: I want information about citizenship by naturalization
 
@@ -157,11 +157,11 @@ responses:
 
   utter_citizenship_by_naturalization_romanized:
   - text: |
-      Kripaya nagarikta avedana ko avastha cayanu hola:
+      Kripaya nagarikta aabedan ko awastha chayan garnu hola:
     buttons:
-    - title: 1. Nepali Nagari Sanga Bivaha Gareko Phoren Mahila.
+    - title: 1. Nepali Nagarik Sanga Bivaha Gareko Bideshi Mahila.
       payload: option1
-    - title: 2. Phoren Nagarik Sanga Bivaha Bata Janma Bhayeko Nepali Mahilā Ko Santaan.
+    - title: 2. Bideshi Nagarik Sanga Bivaha Bata Janma Bhayeko Nepali Mahila Ko Santaan.
       payload: option2
 
   utter_citizenship_by_naturalization_option1:
@@ -173,18 +173,20 @@ responses:
   - text: |-
       * Must have permanent domicile in Nepal.
       * Should not have acquired foreign citizenship based on the father's citizenship.
-      * Application with specified documents including duplicate copy of the mother's citizenship certificate, recommendation by concerned Municipality or Village Development Committee, and evidence of not acquiring foreign citizenship based on the father's citizenship
+      * Application with specified documents including duplicate copy of the mother's citizenship certificate.
+      * Recommendation by concerned Municipality or Village Development Committee.
   utter_citizenship_by_naturalization_option1_romanized:
   - text: |-
-      * Aavedan patra niyukt rupma prastut garnu parne.
-      * Nepali nagarik sanga bivaha sambandhi dastāvej pradāna garnu parne.
-      * Bideshi nagarikta tyāgko prakriyā shuru garne sākshyadekhaunu parne.
+      * Aabedan patra anibarya rupma prastut garnu parne.
+      * Nepali nagarik sanga bibaha sambandhi dastavej pradhan garnu parne.
+      * Bideshi nagarikta tyage ko  praman dekhaunu parne.
 
   utter_citizenship_by_naturalization_option2_romanized:
   - text: |-
-      * Nepal māa sthāyī nivās rākhnā parne cha.
-      * Bābu ko nagarikta ko ādhar ma bideshi nagarikta upādhi pāyeko hudaina.
-      * Aavedan ma nirdharit dastāvej sātha mātā ko nagarikta pramāṇ patra ko pārimaṇika, saṅgītako Nagarpālikā vā Gāu Vikās Samiti ko sujhāv, ra bābu ko nagarikta ādhar ma bideshi nagarikta upādhi pāina ko sākshya sahit.
+      * Nepal māa sthayi nivās hunu parne.
+      * Buba ko nagarikta ko ādhar ma bideshi nagarikta upādhi pāyeko hunu hudaina.
+      * Aabedan ma nirdharit dastāvej sāthma aama ko nagarikta pramāṇ patra ko photocopy.
+      * Nagarpālikā wa Gāu Vikās Samiti ko sifaris patra.
     
   utter_citizenship_by_descent_eligibility:
   - text: |-
@@ -269,14 +271,14 @@ responses:
   utter_birth_certificate_steps:
   - text: |-
       Steps:
-      1. Complete the online form available [here](https://public.donidcr.gov.np) to receive a token number.
+      1. Complete the online form available <a href='https://public.donidcr.gov.np' target='_blank'>here</a> to receive a token number.
       2. Submit the obtained token number at the ward office.
       3. The ward office will verify all provided details.
       4. Once verified, the birth certificate can be collected from the ward office.
   utter_birth_certificate_steps_romanized:
   - text: |-
       Prakriya:
-      1. [Yaha](https://public.donidcr.gov.np) diyeko online form bharera token number linu hos.
+      1. <a href='https://public.donidcr.gov.np' target='_blank'>Yaha</a> diyeko online form bharera token number linu hos.
       2. Paayeko token number woda ma bujhaunu hola.
       3. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
       4. Diyeko bibaran pusti bhayema, woda karyalaya bata janma darta paunu hunchha.
@@ -297,14 +299,14 @@ responses:
   utter_marriage_certificate_steps:
   - text: |-
       Steps:
-        1. Both the husband and wife should complete the online form [here](https://public.donidcr.gov.np) to obtain separate token numbers.
+        1. Both the husband and wife should complete the online form <a href='https://public.donidcr.gov.np' target='_blank'>here</a> to obtain separate token numbers.
         2. Submit the obtained token numbers at the ward office.
         3. The ward office will verify all provided details.
         4. Once verified, the marriage certificate can be collected from the ward office.
   utter_marriage_certificate_steps_romanized:
   - text: |-
       Prakriya:
-      1. Dubai dulaha dulahi le [yaha](https://public.donidcr.gov.np) diyeko ko form bharera token number linu hola.
+      1. Dubai dulaha dulahi le <a href='https://public.donidcr.gov.np' target='_blank'>yaha</a> diyeko ko form bharera token number linu hola.
       2. Paayeko token number woda ma bujhaunu hola.
       3. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
       4. Diyeko bibaran pusti bhayema, woda karyalaya bata Bibah Darta paunu hunchha.
@@ -326,7 +328,7 @@ responses:
   - text: |-
       Procedure:
       1. Either the husband or wife must be present at the ward office.
-      2. Both the husband and wife should complete the online form [here](https://public.donidcr.gov.np) to obtain separate token numbers.
+      2. Both the husband and wife should complete the online form <a href='https://public.donidcr.gov.np' target='_blank'>here</a> to obtain separate token numbers.
       3. Submit the two obtained token numbers at the ward office.
       4. The ward office will verify all the provided details.
       5. Once verified, collect the divorce certificate from the ward office.
@@ -334,7 +336,7 @@ responses:
   - text: |-
       Prakriya:
       1. Dulaha athawa dulahi woda ma upasthit hunu parchha.
-      2. Dubai dulaha dulahi le [yaha](https://public.donidcr.gov.np) diyeko ko form bharera token number linu hola.
+      2. Dubai dulaha dulahi le <a href='https://public.donidcr.gov.np' target='_blank'>yaha</a> diyeko ko form bharera token number linu hola.
       3. Paayeko dubai token number woda ma bujhaunu hola.
       4. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
       5. Diyeko bibaran pusti bhayema, woda karyalaya bata Sambandha Bichhed praman patra paunu hunchha.
@@ -357,14 +359,14 @@ responses:
   utter_death_certificate_steps:
   - text: |-
       Steps to follow:
-      1. Fill out the online form [here](https://public.donidcr.gov.np) to obtain a token number.
+      1. Fill out the online form <a href='https://public.donidcr.gov.np' target='_blank'>here</a> to obtain a token number.
       2. Submit the issued token number at the ward office.
       3. The ward office will verify the provided information.
       4. Once verified, collect the death certificate from the ward office.
   utter_death_certificate_steps_romanized:
   - text: |-
       Prakriya:
-      1. [Yaha](https://public.donidcr.gov.np) diyeko online form bharera token number linu hos.
+      1.<a href='https://public.donidcr.gov.np' target='_blank'>Yaha</a> diyeko online form bharera token number linu hos.
       2. Paayeko token number woda ma bujhaunu hos.
       3. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
       4. Diyeko bibaran pusti bhayema, woda karyalaya bata Mrityu darta paunu hunchha.
@@ -393,7 +395,7 @@ responses:
   utter_migration_certificate_steps:
   - text: |-
       Steps at the ward office of departure:
-      1. Complete the online form [here](https://public.donidcr.gov.np) to receive a token number.
+      1. Complete the online form <a href='https://public.donidcr.gov.np' target='_blank'>here</a> to receive a token number.
       2. Submit the issued token number at the ward office.
       3. Ensure that at least one person from the migrating group is present at the ward office.
       4. The ward office will verify the provided information.
@@ -406,7 +408,7 @@ responses:
   utter_migration_certificate_steps_romanized:
   - text: |-
       Prasthan garne woda karyalaya ka prakriya haru:
-      1. [Yaha](https://public.donidcr.gov.np) diyeko online form bharera token number linu hos.
+      1.<a href='https://public.donidcr.gov.np' target='_blank'>Yaha</a> diyeko online form bharera token number linu hos.
       2. Paayeko token number woda karyalaya ma bujhaunu hos.
       3. Basai Sarai garne ghar ko mul vyakti woda karyalaya ma upasthit hunu parne chha.
       4. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
