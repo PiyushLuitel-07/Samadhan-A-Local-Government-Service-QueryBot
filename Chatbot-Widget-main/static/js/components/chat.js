@@ -22,23 +22,23 @@ function setUserResponse(message) {
 }
 
 function displayInitialUserMessage() {
-  welcomeMessage = "Namaskar! 🙏🙏";
+  welcomeMessage = "Namaskar! 🙏";
   BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
   $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
   scrollToBottomOfResults();
-  welcomeMessage = "Sthaniya Sarkari Seva Nagarik Sodhpuch Bot ma hajur lai swagat cha!👋🏛️";
+  welcomeMessage = "Sthaniya Sarkari Seva Nagarik Sodhpuch Bot ma hajur lai swagat cha.";
   BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
   $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
   scrollToBottomOfResults();
-  welcomeMessage = "Nagarikta, Janma Darta, Bibah Darta, Basai Sarai Darta, Mrityu Darta ra Samdhanda Bichhed Darta ko barema jankari pauna saknu hunecha. 📋";
+  welcomeMessage = "Nagarikta, Janma Darta, Bibah Darta, Basai Sarai Darta, Mrityu Darta ra Samdhanda Bichhed Darta ko barema jankari pauna saknu hunecha.";
   BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
   $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
   scrollToBottomOfResults();
-  welcomeMessage = "English wa roman nepali ma chat garna saknu hunecha. 🌐";
-  BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
-  $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
-  scrollToBottomOfResults();
-  welcomeMessage = "Hajur lai ma kasari sahayog garna sakchu? 🤔";
+  // welcomeMessage = "English wa roman nepali ma chat garna saknu hunecha.";
+  // BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
+  // $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
+  // scrollToBottomOfResults();
+  welcomeMessage = "Hajur lai ma kasari sahayog garna sakchu?";
   BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
   $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
   scrollToBottomOfResults();
@@ -67,7 +67,8 @@ function setBotResponse(response) {
     hideBotTyping();
     if (response.length < 1) {
       // if there is no response from Rasa, send  fallback message to the user
-      const fallbackMsg = "Tapai le samparka garna khojnu vayeko bot ahile offline xa kripaya kei samaya paxi purna paryas garnu hola, dhanyabad!!! 😊😊";
+      // const fallbackMsg = "Tapai le samparka garna khojnu vayeko bot ahile offline xa kripaya kei samaya paxi purna paryas garnu hola, dhanyabad!!! 😊😊";
+      const fallbackMsg = "I'm unable to access the information you're requesting right now. Please try again later.";
 
       const BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${fallbackMsg}</p><div class="clearfix"></div>`;
 
