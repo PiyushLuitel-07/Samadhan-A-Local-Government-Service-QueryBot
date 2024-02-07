@@ -22,19 +22,19 @@ nlu:
     - help me with citizenship by birth
 - intent: citizenship_by_birth_eligibility_query
   examples: |
-    - what are the [eligibility](specification) required to make [citizenship by birth](type)?
-    - tell [eligibility](specification) required to make [citizenship by birth](type)?
-    - [eligibility](specification) to make [citizenship by birth](type)?
+    - what are the [eligibility](specification) required to make [citizenship by birth](type) ?
+    - tell [eligibility](specification) required to make [citizenship by birth](type) ?
+    - [eligibility](specification) to make [citizenship by birth](type) ?
 - intent: citizenship_by_birth_documents_query
   examples: |
-    - what are the [documents](specification) required to make [citizenship by birth](type)?
-    - tell [documents](specification) required to make [citizenship by birth](type)?
-    - [documents](specification) to make [citizenship by birth](type)?
+    - what are the [documents](specification) required to make [citizenship by birth](type) ?
+    - tell [documents](specification) required to make [citizenship by birth](type) ?
+    - [documents](specification) to make [citizenship by birth](type) ?
 - intent: citizenship_by_birth_steps_query
   examples: |
-    - what are the [steps](specification) required to make [citizenship by birth](type)?
-    - tell [steps](specification) required to make [citizenship by birth](type)?
-    - [steps](specification) to make [citizenship by birth](type)?
+    - what are the [steps](specification) required to make [citizenship by birth](type) ?
+    - tell [steps](specification) required to make [citizenship by birth](type) ?
+    - [steps](specification) to make [citizenship by birth](type) ?
 ###########################citizenship by descent
 - intent: citizenship_by_descent_query
   examples: |
@@ -92,6 +92,7 @@ nlu:
     - [janma](type) dwara [nagrikta](type) kasari banaune.
     - [janma](type) siddi [nagrikta](type) kasari banaune
     - [janma](type) nagrikta banauna k garne.
+    - janma dwara nagrikta kasari banaune
 
 - intent: citizenship_by_birth_eligibility_query_romanized
   examples: |
@@ -114,6 +115,7 @@ nlu:
   examples: |
     - [bamsaj](type) dwara [nagrikta](type) kasari banaune.
     - bamsaj nagrikta banauna k garne
+    - bamsaj dwara nagrikta pauna k garnu parxa
 
 - intent: citizenship_by_descent_eligibility_query_romanized
   examples: |
@@ -567,3 +569,7 @@ nlu:
 - synonym: naturalization
   examples: |
     - angikrit
+
+- synonym: citizenship
+  examples: |
+    - nagrikta

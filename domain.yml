@@ -141,9 +141,9 @@ responses:
   - text: Tapai lai kun prakar ko nagarikta banaunu chha?
     buttons:
     - title: bamsaj
-      payload: malai bamsaj nagrikta banauna sahayog garnu
+      payload: bamsaj dwara nagrikta pauna k garnu parxa
     - title: janma
-      payload: janma duara nagrikta kasari banaune
+      payload: janma dwara nagrikta kasari banaune
     - title: angikrit
       payload: malai angikrit nagrikta bare jankari dinuhos
   utter_citizenship_by_naturalization:

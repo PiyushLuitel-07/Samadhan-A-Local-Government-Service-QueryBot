@@ -1,6 +1,20 @@
 version: "3.1"
 stories:
 ##############################citizenship stories#############################################
+- story: User interaction for citizenship
+  steps:
+  - intent: citizenship_query
+    entities:
+    - type: citizenship
+  - action: utter_citizenship
+
+- story: User interaction for citizenship
+  steps:
+  - intent: citizenship_query_romanized
+    entities:
+    - type: citizenship
+  - action: utter_citizenship_romanized
+
 ###################naturalization
 - story: User interaction for citizenship naturalization
   steps:
