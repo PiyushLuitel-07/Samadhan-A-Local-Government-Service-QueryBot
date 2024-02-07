@@ -141,9 +141,9 @@ responses:
   - text: Tapai lai kun prakar ko nagarikta banaunu chha?
     buttons:
     - title: bamsaj
-      payload: descent
+      payload: malai bamsaj nagrikta banauna sahayog garnu
     - title: janma
-      payload: birth
+      payload: janma duara nagrikta kasari banaune
     - title: angikrit
       payload: malai angikrit nagrikta bare jankari dinuhos
   utter_citizenship_by_naturalization:
@@ -183,7 +183,7 @@ responses:
 
   utter_citizenship_by_naturalization_option2_romanized:
   - text: |-
-      * Nepal māa sthayi nivās hunu parne.
+      * Nepal maa sthayi nivas hunu parne.
       * Buba ko nagarikta ko ādhar ma bideshi nagarikta upādhi pāyeko hunu hudaina.
       * Aabedan ma nirdharit dastāvej sāthma aama ko nagarikta pramāṇ patra ko photocopy.
       * Nagarpālikā wa Gāu Vikās Samiti ko sifaris patra.

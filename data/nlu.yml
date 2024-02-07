@@ -1,6 +1,6 @@
 version: "3.1"
 nlu:
-##########################citizenship english#######################
+##########################citizenship english #######################
 - intent: citizenship_query
   examples: |
     - I want information about citizenship.
