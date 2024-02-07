@@ -141,7 +141,7 @@ responses:
   - text: Tapai lai kun prakar ko nagarikta banaunu chha?
     buttons:
     - title: bamsaj
-      payload: bamsaj dwara nagrikta pauna k garnu parxa
+      payload: bamsaj nagrikta banauna k garne
     - title: janma
       payload: janma dwara nagrikta kasari banaune
     - title: angikrit
