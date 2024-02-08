@@ -76,10 +76,6 @@ nlu:
     - Tell me about citizenship by naturalization.
     - help me with citizenship by naturalization
     - what can you tell about citizenship by naturalization
-- intent: provide_eligibility_type
-  examples: |
-    - [option1](condition)
-    - [option2](condition)
 - intent: citizenship_by_naturalization_query_romanized
   examples: |
     - [angikrit](type) dwara [nagrikta](type) kasari banaune.
@@ -87,6 +83,23 @@ nlu:
     - [angikrit](type) nagrikta banauna k garne.
     - malai agikrit nagrikta bare jankari dinuhos
     - [angikrit](type) [nagrikta](type) paune kasari
+
+- intent: option1_naturalization
+  examples: |
+    - foreign women married to a nepali citizen
+    - nepali citizen married to a foreig woman
+- intent: option2_naturalization
+  examples: |
+    - child born to a nepali Female Citizen from Marriage with a Foreign Citizen
+    - child of married nepali citizen and foreign citizen 
+- intent: option1_naturalization_romanized
+  examples: |
+    - Nepali Nagarik Sanga Bivaha Gareko Bideshi Mahila
+    - Bideshi Mahila Sanga Bivaha Gareko Nepali Nagarik
+- intent: option2_naturalization_romanized
+  examples: |
+    - Bideshi Nagarik Sanga Bivaha Bata Janma Bhayeko Nepali Mahila Ko Santaan
+    - santan jasko bdeshi nagarik ra nepali mahila ko bibaha bata janma bhayeko ho
   #####################################################################################################################
 ################################## citizenship Roman###############
 - intent: citizenship_query_romanized

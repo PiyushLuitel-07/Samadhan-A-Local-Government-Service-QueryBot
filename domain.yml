@@ -4,7 +4,6 @@ entities:
 - specification
 intents:
 - citizenship_by_naturalization_query_romanized
-- provide_eligibility_type
 - citizenship_query
 - citizenship_query_romanized
 - citizenship_by_naturalization_query
@@ -63,6 +62,10 @@ intents:
 - affirm
 - bot_challenge
 - random_queries
+- option1_naturalization
+- option2_naturalization
+- option1_naturalization_romanized
+- option2_naturalization_romanized
 actions:
 - utter_certificate_query_romanized
 - utter_divorce_certificate_documents
@@ -153,18 +156,18 @@ responses:
       Please choose the condition for application of citizenship:
     buttons:
     - title:  1. Foreign Women Married to a Nepali Citizen.
-      payload: option1
+      payload: foreign women married to a nepali citizen
     - title:  2. Child Born to a Nepali Female Citizen from Marriage with a Foreign Citizen.
-      payload: option2
+      payload: child born to a nepali Female Citizen from Marriage with a Foreign Citizen
 
   utter_citizenship_by_naturalization_romanized:
   - text: |
       Kripaya nagarikta aabedan ko awastha chayan garnu hola:
     buttons:
     - title: 1. Nepali Nagarik Sanga Bivaha Gareko Bideshi Mahila.
-      payload: option1
+      payload: Nepali Nagarik Sanga Bivaha Gareko Bideshi Mahila
     - title: 2. Bideshi Nagarik Sanga Bivaha Bata Janma Bhayeko Nepali Mahila Ko Santaan.
-      payload: option2
+      payload: Bideshi Nagarik Sanga Bivaha Bata Janma Bhayeko Nepali Mahila Ko Santaan
 
   utter_citizenship_by_naturalization_option1:
   - text: |-

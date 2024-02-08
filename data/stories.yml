@@ -6,36 +6,28 @@ stories:
   steps:
   - intent: citizenship_by_naturalization_query
   - action: utter_citizenship_by_naturalization
-  - intent: provide_eligibility_type
-    entities:
-    - condition: option1
+  - intent: option1_naturalization
   - action: utter_citizenship_by_naturalization_option1
 
 - story: User interaction for citizenship naturalization
   steps:
   - intent: citizenship_by_naturalization_query
   - action: utter_citizenship_by_naturalization
-  - intent: provide_eligibility_type
-    entities:
-    - condition: option2
+  - intent: option2_naturalization
   - action: utter_citizenship_by_naturalization_option2
 ###################naturalization romanized
 - story: User interaction for citizenship naturalization romanized
   steps:
   - intent: citizenship_by_naturalization_query_romanized
   - action: utter_citizenship_by_naturalization_romanized
-  - intent: provide_eligibility_type
-    entities:
-    - condition: option1
+  - intent: option1_naturalization_romanized
   - action: utter_citizenship_by_naturalization_option1_romanized
 
 - story: User interaction for citizenship naturalization romanized
   steps:
   - intent: citizenship_by_naturalization_query_romanized
   - action: utter_citizenship_by_naturalization_romanized
-  - intent: provide_eligibility_type
-    entities:
-    - condition: option2
+  - intent: option2_naturalization_romanized
   - action: utter_citizenship_by_naturalization_option2_romanized
 ####################################################################
 - story: User interaction for citizenship
