@@ -96,6 +96,7 @@ nlu:
     - Malai [nagrikta](type) barema bhannuhos.
     - [nagrikta](type) praapt garnakaa laagi aavedan kasari garne?
     - Malai [nagrikta](type) banaaunma sahayog garnuhos.
+    - nagarikta banauna thiyo
     
 ############################
 - intent: citizenship_by_birth_query_romanized
@@ -484,21 +485,20 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-    - hello samadhan
+    - Helloo samadhan bot
+    - Hello query bot
+    - Hello chat bot
     - hi samadhan
     - samadhan hello
     - samadhan what's up
 - intent: greet_romanized
   examples: |
     - hello bhai
-    - tapai ko ho?
     - subha Pravat
     - subha din
-    - Helloo samadhan bot
-    - Hello querybot
-    - Hello chatbot
-    - Hello bot
     - samadhan bhai
+    - Namaste Samadhan
+    - Namaskar
 - intent: goodbye
   examples: |
     - good bye
@@ -539,7 +539,6 @@ nlu:
     - khabar
     - khabar cha
     - khabar k cha
-    - k chha kancha
     - samadhan k cha khabar?
     - k chha halkhabar?
     - k cha khabar?

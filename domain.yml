@@ -122,7 +122,7 @@ responses:
   utter_greet2:
   - text: I am a local governmental service querybot.
   utter_greet3:
-  - text: You can ask me government-related questions on citizenship, birth, death, marriage.
+  - text: You can ask me government-related questions on citizenship, birth, death, marriage, migration and divorce.
   utter_goodbye:
   - text: Bye
   utter_iamabot:
@@ -132,8 +132,8 @@ responses:
   utter_citizenship:
   - text: What type of citizenship are you seeking?
     buttons:
-    - title: Citizenship by birth
-      payload: How to apply for citizenship by birth?
+    # - title: Citizenship by birth
+    #   payload: How to apply for citizenship by birth?
     - title: Citizenship by descent
       payload: I want to make citizenship by descent
     - title: Citizenship by naturalization
@@ -144,8 +144,8 @@ responses:
     buttons:
     - title: bamsaj
       payload: bamsaj nagrikta banauna k garne
-    - title: janma
-      payload: janma nagarikta kasari banaune
+    # - title: janma
+    #   payload: janma nagarikta kasari banaune
     - title: angikrit
       payload: malai angikrit nagrikta bare jankari dinuhos
   utter_citizenship_by_naturalization:
@@ -185,10 +185,10 @@ responses:
 
   utter_citizenship_by_naturalization_option2_romanized:
   - text: |-
-      * Nepal māa sthayi nivās hunu parne.
-      * Buba ko nagarikta ko ādhar ma bideshi nagarikta upādhi pāyeko hunu hudaina.
-      * Aabedan ma nirdharit dastāvej sāthma aama ko nagarikta pramāṇ patra ko photocopy.
-      * Nagarpālikā wa Gāu Vikās Samiti ko sifaris patra.
+      * Nepal maa sthayi nivas hunu parne.
+      * Buba ko nagarikta ko adhar ma bideshi nagarikta upadhi payeko hunu hudaina.
+      * Aabedan ma nirdharit dastavej sathma aama ko nagarikta praman patra ko photocopy.
+      * Nagarpalika wa Gau Vikas Samiti ko sifaris patra.
     
   utter_citizenship_by_descent_eligibility:
   - text: |-
