@@ -1,20 +1,6 @@
 version: "3.1"
 stories:
 ##############################citizenship stories#############################################
-- story: User interaction for citizenship
-  steps:
-  - intent: citizenship_query
-    entities:
-    - type: citizenship
-  - action: utter_citizenship
-
-- story: User interaction for citizenship
-  steps:
-  - intent: citizenship_query_romanized
-    entities:
-    - type: citizenship
-  - action: utter_citizenship_romanized
-
 ###################naturalization
 - story: User interaction for citizenship naturalization
   steps:
@@ -58,52 +44,6 @@ stories:
   - action: utter_citizenship
   - intent: provide_type
   - action: action_handle_citizenship_query
-  ############################ Citizenship With Entity################################
-- story: User interaction for citizenship
-  steps:
-  - intent: citizenship_query
-  - action: utter_citizenship
-  - intent: provide_type
-    entities:
-    - type: birth
-  - action: utter_citizenship_by_birth_eligibility
-  - action: utter_citizenship_by_birth_documents
-  - action: utter_citizenship_by_birth_steps
-
-- story: User interaction for citizenship
-  steps:
-  - intent: citizenship_query
-  - action: utter_citizenship
-  - intent: provide_type
-    entities:
-    - type: descent
-  - action: utter_citizenship_by_descent_eligibility
-  - action: utter_citizenship_by_descent_documents
-  - action: utter_citizenship_by_descent_steps
-
-################ romanized##########
-- story: User interaction for citizenship
-  steps:
-  - intent: citizenship_query_romanized
-  - action: utter_citizenship_romanized
-  - intent: provide_type
-    entities:
-    - type: birth
-  - action: utter_citizenship_by_birth_eligibility_romanized
-  - action: utter_citizenship_by_birth_documents_romanized
-  - action: utter_citizenship_by_birth_steps_romanized
-
-- story: User interaction for citizenship
-  steps:
-  - intent: citizenship_query_romanized
-  - action: utter_citizenship_romanized
-  - intent: provide_type
-    entities:
-    - type: descent
-  - action: utter_citizenship_by_descent_eligibility_romanized
-  - action: utter_citizenship_by_descent_documents_romanized
-  - action: utter_citizenship_by_descent_steps_romanized
-
 ##########################button###########################
 - story: User interaction for citizenship
   steps:
@@ -295,13 +235,13 @@ stories:
 ############################## marriage certificate stories#############################################
 - story: User interaction for marriage certificate
   steps:
-  - intent: marriage_documents_certificate_query
+  - intent: marriage_certificate_query
   - action: utter_marriage_certificate_documents
   - action: utter_marriage_certificate_steps
 
 - story: User interaction for marriage certificate romanized
   steps:
-  - intent: marriage_documents_certificate_query_romanized
+  - intent: marriage_certificate_query_romanized
   - action: utter_marriage_certificate_documents_romanized
   - action: utter_marriage_certificate_steps_romanized
 
@@ -390,3 +330,9 @@ stories:
   steps:
   - intent: migration_steps_certificate_query_romanized
   - action: utter_migration_certificate_steps_romanized
+
+##############################random queries#############################################
+- story: User interaction for random queries
+  steps:
+  - intent: random_queries
+  - action: utter_random_query

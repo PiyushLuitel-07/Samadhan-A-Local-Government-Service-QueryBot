@@ -62,6 +62,7 @@ intents:
 - provide_type
 - affirm
 - bot_challenge
+- random_queries
 actions:
 - utter_certificate_query_romanized
 - utter_divorce_certificate_documents
@@ -114,6 +115,7 @@ actions:
 - utter_citizenship_by_naturalization_romanized
 - utter_citizenship_by_naturalization_option1_romanized
 - utter_citizenship_by_naturalization_option2_romanized
+- utter_random_query
 responses:
   utter_greet1:
   - text: Hello !! I'm Samadhan.
@@ -124,14 +126,14 @@ responses:
   utter_goodbye:
   - text: Bye
   utter_iamabot:
-  - text: I am a bot, powered by Rasa.
+  - text: I am samadhan a query chatbot built for solving local government services related queries. Ask me anything related to citizenship, birth, death, marriage.
   utter_certificate_query:
   - text: Please specify the certificate name.
   utter_citizenship:
   - text: What type of citizenship are you seeking?
     buttons:
     - title: Citizenship by birth
-      payload: i want to make citizenship bu birth
+      payload: How to apply for citizenship by birth?
     - title: Citizenship by descent
       payload: I want to make citizenship by descent
     - title: Citizenship by naturalization
@@ -143,7 +145,7 @@ responses:
     - title: bamsaj
       payload: bamsaj nagrikta banauna k garne
     - title: janma
-      payload: janma dwara nagrikta kasari banaune
+      payload: janma nagarikta kasari banaune
     - title: angikrit
       payload: malai angikrit nagrikta bare jankari dinuhos
   utter_citizenship_by_naturalization:
@@ -183,7 +185,7 @@ responses:
 
   utter_citizenship_by_naturalization_option2_romanized:
   - text: |-
-      * Nepal maa sthayi nivas hunu parne.
+      * Nepal māa sthayi nivās hunu parne.
       * Buba ko nagarikta ko ādhar ma bideshi nagarikta upādhi pāyeko hunu hudaina.
       * Aabedan ma nirdharit dastāvej sāthma aama ko nagarikta pramāṇ patra ko photocopy.
       * Nagarpālikā wa Gāu Vikās Samiti ko sifaris patra.
@@ -425,11 +427,13 @@ responses:
   utter_greet3_romanized:
   - text: Tapailai nagarikta, janma, mrityu, bibah sambandhi prashna haru garna saknu hunchha.
   utter_iamabot_romanized:
-  - text: Ma ek bot ho, PAPA dwara nirmit.
+  - text: Ma ek bot ho ra mero naam samadhan ho.
   utter_certificate_query_romanized:
   - text: Tapai lai kun chai ghatna darta garna chahanu hunchha?
   utter_halkhabar:
   - text: Sab thik chha daju. Tapailai k sahayog garna sakchu?
+  utter_random_query:
+  - text: I am not sure what you are asking for. Can you please rephrase your question?
 response_selector:
   retrieve_responses:
     halkhabar:
