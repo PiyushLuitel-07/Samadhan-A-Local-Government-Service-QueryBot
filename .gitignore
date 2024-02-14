@@ -2,3 +2,5 @@ models/
 .rasa/
 tests/
 train_test_split/
+.rasa\cache/
+.actions\__pycache__/
