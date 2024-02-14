@@ -693,7 +693,116 @@ nlu:
 ################################################################### divorce certificate combination with other certificates ###################################################################
 ###  already done ###
 
-################################################################### citizenship combination with other certificates ###################################################################
+################################################################### citizenship combination with certificates ###################################################################
+- intent: citizenship_and_birthcertificate_query
+  examples: |
+    - how to make [citizenship](type) and [birth](type) certificate?
+    - [citizenship](type) certificate and [birth](type) certificate
+    - process to get [citizenship](type) certificate and [birth](type) certificate.
+    - how to obtain [birth](type) certificate and [citizenship](type)?
+    - how to make [birth](type) certificate and [citizenship](type)?
+    - tell the process to make [citizenship](type) certificate and [birth](type) certificate.
+    - process to make [birth](type) certificate and [citizenship](type) certificate.
+    - explain how can i get [birth](type) certificate and [citizenship](type).
+
+- intent: citizenship_and_birthcertificate_query_romanized
+  examples: |
+    - Ma [nagarikta](type) ra [janma](type) darta sambandhi janakari chaahanchu.
+    - [janma](type) darta ra [nagarikta](type) kasari banaune?
+    - Malai [nagarikta](type) ra [janma darta](type) barema bhannuhos.
+    - [janma darta](type) ra [nagrikta](type) praapta garnakaa laagi aavedan kasari garne?
+    - Malai [nagarikta](type) ra [janma darta](type) banaauna sahayog garnuhos.
+    - [janma](type) darta ra [nagrikta](type) kasari banauna sakincha ?
+    - [nagarikta](type) ra [janma darta](type) banaune process k hola ?
+    - [nagrikta](type) ra [janma](type) darta kasari banaune?
+
+- intent: citizenship_and_marriagecertificate_query
+  examples: |
+    - how to make [citizenship](type) and [marriage](type) certificate?
+    - [citizenship](type) certificate and [marriage](type) certificate
+    - process to get [citizenship](type) certificate and [marriage](type) certificate.
+    - how to obtain [marriage](type) certificate and [citizenship](type)?
+    - how to make [marriage](type) certificate and [citizenship](type)?
+    - tell the process to make [citizenship](type) certificate and [marriage](type) certificate.
+    - process to make [marriage](type) certificate and [citizenship](type) certificate.
+    - explain how can i get [marriage](type) certificate and [citizenship](type).
+
+- intent: citizenship_and_marriagecertificate_query_romanized
+  examples: |
+    - Ma [nagarikta](type) ra [bibah](type) darta sambandhi janakari chaahanchu.
+    - [bibah](type) darta ra [nagarikta](type) kasari banaune?
+    - Malai [nagarikta](type) ra [bibah darta](type) barema bhannuhos.
+    - [bibah darta](type) ra [nagrikta](type) praapta garnakaa laagi aavedan kasari garne?
+    - Malai [nagarikta](type) ra [bibah darta](type) banaauna sahayog garnuhos.
+    - [bibah](type) darta ra [nagrikta](type) kasari banauna sakincha ?
+    - [nagarikta](type) ra [bibah darta](type) banaune process k hola ?
+    - [nagrikta](type) ra [bibah](type) darta kasari banaune?
+
+- intent: citizenship_and_migrationcertificate_query
+  examples: |
+    - how to make [citizenship](type) and [migration](type) certificate?
+    - [citizenship](type) certificate and [migration](type) certificate
+    - process to get [citizenship](type) certificate and [migration](type) certificate.
+    - how to obtain [migration](type) certificate and [citizenship](type)?
+    - how to make [migration](type) certificate and [citizenship](type)?
+    - tell the process to make [citizenship](type) certificate and [migration](type) certificate.
+    - process to make [migration](type) certificate and [citizenship](type) certificate.
+    - explain how can i get [migration](type) certificate and [citizenship](type).
+
+- intent: citizenship_and_migrationcertificate_query_romanized
+  examples: |
+    - Ma [nagarikta](type) ra [basai sarai](type) darta sambandhi janakari chaahanchu.
+    - [basai sarai](type) darta ra [nagarikta](type) kasari banaune hola?
+    - Malai [nagarikta](type) ra [basai sarai darta](type) barema bhannuhos.
+    - [basai sarai darta](type) ra [nagrikta](type) praapta garnakaa laagi aavedan kasari garne?
+    - Malai [nagarikta](type) ra [basai sarai darta](type) banauna sahayog garnuhos.
+    - [basai sarai](type) darta ra [nagrikta](type) kasari banauna sakincha ?
+    - [nagarikta](type) ra [basai sarai darta](type) banaune process k hola ?
+    - [nagrikta](type) ra [basai sarai](type) darta kasari banaune?
+
+- intent: citizenship_and_deathcertificate_query
+  examples: |
+    - how to make [citizenship](type) and [death](type) certificate?
+    - [citizenship](type) certificate and [death](type) certificate
+    - process to get [citizenship](type) certificate and [death](type) certificate.
+    - how to obtain [death](type) certificate and [citizenship](type)?
+    - how to make [death](type) certificate and [citizenship](type)?
+    - tell the process to make [citizenship](type) certificate and [death](type) certificate.
+    - process to make [death](type) certificate and [citizenship](type) certificate.
+    - explain how can i get [death](type) certificate and [citizenship](type).
+
+- intent: citizenship_and_deathcertificate_query_romanized
+  examples: |
+    - Ma [nagarikta](type) ra [mrityu](type) darta sambandhi janakari chaahanchu.
+    - [mrityu](type) darta ra [nagarikta](type) kasari banaune hola?
+    - Malai [nagarikta](type) ra [mrityu darta](type) barema bhannuhos.
+    - [mrityu darta](type) ra [nagrikta](type) praapta garnakaa laagi aavedan kasari garne?
+    - Malai [nagarikta](type) ra [mrityu darta](type) banauna sahayog garnuhos.
+    - [mrityu](type) darta ra [nagrikta](type) kasari banauna sakincha ?
+    - [nagarikta](type) ra [mrityu darta](type) banaune process k hola ?
+    - [nagrikta](type) ra [mrityu](type) darta kasari banaune?
+
+- intent: citizenship_and_divorcecertificate_query
+  examples: |
+    - how to make [citizenship](type) and [divorce](type) certificate?
+    - [citizenship](type) certificate and [divorce](type) certificate
+    - process to get [citizenship](type) certificate and [divorce](type) certificate.
+    - how to obtain [divorce](type) certificate and [citizenship](type)?
+    - how to make [divorce](type) certificate and [citizenship](type)?
+    - tell the process to make [citizenship](type) certificate and [divorce](type) certificate.
+    - process to make [divorce](type) certificate and [citizenship](type) certificate.
+    - explain how can i get [divorce](type) certificate and [citizenship](type).
+
+- intent: citizenship_and_divorcecertificate_query_romanized
+  examples: |
+    - Ma [nagarikta](type) ra [sambandha bichhed](type) darta sambandhi janakari chaahanchu.
+    - [sambandha bichhed](type) darta ra [nagarikta](type) kasari banaune hola?
+    - Malai [nagarikta](type) ra [sambandha bichhed darta](type) barema bhannuhos.
+    - [sambandha bichhed darta](type) ra [nagrikta](type) praapta garnakaa laagi aavedan kasari garne?
+    - Malai [nagarikta](type) ra [sambandha bichhed darta](type) banauna sahayog garnuhos.
+    - [sambandha bichhed](type) darta ra [nagrikta](type) kasari banauna sakincha ?
+    - [nagarikta](type) ra [sambandha bichhed darta](type) banaune process k hola ?
+    - [nagrikta](type) ra [sambandha bichhed](type) darta kasari banaune?
 
 
 ###########################################################################################
