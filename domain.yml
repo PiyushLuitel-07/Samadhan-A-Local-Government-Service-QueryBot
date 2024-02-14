@@ -443,6 +443,27 @@ responses:
       1. Hastantaran form woda karyalaya ma bujhaunu hos.
       2. Woda karyalaya ma diyeko kagajaat ko pusti garine chha.
       3. Diyeko kagajaat pusti bhayema, Basai Sarai praman patra woda karyalaya bata prapta garna saknu hunchha.
+
+  utter_for_birthcertificate:
+  - text: For birth certificate,
+  utter_for_marriagecertificate:
+  - text: For marriage certificate,
+  utter_for_divorcecertificate:
+  - text: For divorce certificate,
+  utter_for_deathcertificate:
+  - text: For death certificate,
+  utter_for_migrationcertificate:
+  - text: For migration certificate,
+  utter_for_birthcertificate_romanized:
+  - text: Janma darta ko lagi,
+  utter_for_marriagecertificate_romanized:
+  - text: Bibah darta ko lagi,
+  utter_for_divorcecertificate_romanized:
+  - text: Sambandha bichhed darta ko lagi,
+  utter_for_deathcertificate_romanized:
+  - text: Mrityu darta ko lagi,
+  utter_for_migrationcertificate_romanized:
+  - text: Basai Sarai darta ko lagi,
   utter_greet1_romanized:
   - text: Hello!! Mero naam Samadhan ho.
   utter_greet2_romanized:

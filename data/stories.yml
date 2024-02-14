@@ -323,6 +323,213 @@ stories:
   - intent: migration_steps_certificate_query_romanized
   - action: utter_migration_certificate_steps_romanized
 
+
+##############################multiple intent stories#############################################
+############################## birth certificate and other certificate stories#############################################
+- story: User asks for birth certificate and marriage certificate
+  steps:
+  - intent: birthcertificate_and_marriagecertificate_query
+  - action: utter_for_birthcertificate
+  - action: utter_birth_certificate_documents
+  - action: utter_birth_certificate_steps
+  - action: utter_for_marriagecertificate
+  - action: utter_marriage_certificate_documents
+  - action: utter_marriage_certificate_steps
+
+- story: User asks for birth certificate and marriage certificate romanized
+  steps:
+  - intent: birthcertificate_and_marriagecertificate_query_romanized
+  - action: utter_for_birthcertificate_romanized
+  - action: utter_birth_certificate_documents_romanized
+  - action: utter_birth_certificate_steps_romanized
+  - action: utter_for_marriagecertificate_romanized
+  - action: utter_marriage_certificate_documents_romanized
+  - action: utter_marriage_certificate_steps_romanized
+  
+- story: User asks for birth certificate and migration certificate
+  steps:
+  - intent: birthcertificate_and_migrationcertificate_query
+  - action: utter_for_birthcertificate
+  - action: utter_birth_certificate_documents
+  - action: utter_birth_certificate_steps
+  - action: utter_for_migrationcertificate
+  - action: utter_migration_certificate_documents
+  - action: utter_migration_certificate_steps
+
+- story: User asks for birth certificate and migration certificate romanized
+  steps:
+  - intent: birthcertificate_and_migrationcertificate_query_romanized
+  - action: utter_for_birthcertificate_romanized
+  - action: utter_birth_certificate_documents_romanized
+  - action: utter_birth_certificate_steps_romanized
+  - action: utter_for_migrationcertificate_romanized
+  - action: utter_migration_certificate_documents_romanized
+  - action: utter_migration_certificate_steps_romanized
+  
+- story: User asks for birth certificate and death certificate
+  steps:
+  - intent: birthcertificate_and_deathcertificate_query
+  - action: utter_for_birthcertificate
+  - action: utter_birth_certificate_documents
+  - action: utter_birth_certificate_steps
+  - action: utter_for_deathcertificate
+  - action: utter_death_certificate_documents
+  - action: utter_death_certificate_steps
+
+- story: User asks for birth certificate and death certificate romanized
+  steps:
+  - intent: birthcertificate_and_deathcertificate_query_romanized
+  - action: utter_for_birthcertificate_romanized
+  - action: utter_birth_certificate_documents_romanized
+  - action: utter_birth_certificate_steps_romanized
+  - action: utter_for_deathcertificate_romanized
+  - action: utter_death_certificate_documents_romanized
+  - action: utter_death_certificate_steps_romanized
+
+- story: User asks for birth certificate and divorce certificate
+  steps:
+  - intent: birthcertificate_and_divorcecertificate_query
+  - action: utter_for_birthcertificate
+  - action: utter_birth_certificate_documents
+  - action: utter_birth_certificate_steps
+  - action: utter_for_divorcecertificate
+  - action: utter_divorce_certificate_documents
+  - action: utter_divorce_certificate_steps
+
+- story: User asks for birth certificate and divorce certificate romanized
+  steps:
+  - intent: birthcertificate_and_divorcecertificate_query_romanized
+  - action: utter_for_birthcertificate_romanized
+  - action: utter_birth_certificate_documents_romanized
+  - action: utter_birth_certificate_steps_romanized
+  - action: utter_for_divorcecertificate_romanized
+  - action: utter_divorce_certificate_documents_romanized
+  - action: utter_divorce_certificate_steps_romanized
+
+############################## marriage certificate and other certificate stories#############################################
+- story: User asks for marriage certificate and migration certificate
+  steps:
+  - intent: marriagecertificate_and_migrationcertificate_query
+  - action: utter_for_marriagecertificate
+  - action: utter_marriage_certificate_documents
+  - action: utter_marriage_certificate_steps
+  - action: utter_for_migrationcertificate
+  - action: utter_migration_certificate_documents
+  - action: utter_migration_certificate_steps
+
+- story: User asks for marriage certificate and migration certificate romanized
+  steps:
+  - intent: marriagecertificate_and_migrationcertificate_query_romanized
+  - action: utter_for_marriagecertificate_romanized
+  - action: utter_marriage_certificate_documents_romanized
+  - action: utter_marriage_certificate_steps_romanized
+  - action: utter_for_migrationcertificate_romanized
+  - action: utter_migration_certificate_documents_romanized
+  - action: utter_migration_certificate_steps_romanized
+
+- story: User asks for marriage certificate and death certificate
+  steps:
+  - intent: marriagecertificate_and_deathcertificate_query
+  - action: utter_for_marriagecertificate
+  - action: utter_marriage_certificate_documents
+  - action: utter_marriage_certificate_steps
+  - action: utter_for_deathcertificate
+  - action: utter_death_certificate_documents
+  - action: utter_death_certificate_steps
+
+- story: User asks for marriage certificate and death certificate romanized
+  steps:
+  - intent: marriagecertificate_and_deathcertificate_query_romanized
+  - action: utter_for_marriagecertificate_romanized
+  - action: utter_marriage_certificate_documents_romanized
+  - action: utter_marriage_certificate_steps_romanized
+  - action: utter_for_deathcertificate_romanized
+  - action: utter_death_certificate_documents_romanized
+  - action: utter_death_certificate_steps_romanized
+
+- story: User asks for marriage certificate and divorce certificate
+  steps:
+  - intent: marriagecertificate_and_divorcecertificate_query
+  - action: utter_for_marriagecertificate
+  - action: utter_marriage_certificate_documents
+  - action: utter_marriage_certificate_steps
+  - action: utter_for_divorcecertificate
+  - action: utter_divorce_certificate_documents
+  - action: utter_divorce_certificate_steps
+
+- story: User asks for marriage certificate and divorce certificate romanized
+  steps:
+  - intent: marriagecertificate_and_divorcecertificate_query_romanized
+  - action: utter_for_marriagecertificate_romanized
+  - action: utter_marriage_certificate_documents_romanized
+  - action: utter_marriage_certificate_steps_romanized
+  - action: utter_for_divorcecertificate_romanized
+  - action: utter_divorce_certificate_documents_romanized
+  - action: utter_divorce_certificate_steps_romanized
+
+############################## migration certificate and other certificate stories#############################################
+- story: User asks for migration certificate and death certificate
+  steps:
+  - intent: migrationcertificate_and_deathcertificate_query
+  - action: utter_for_migrationcertificate
+  - action: utter_migration_certificate_documents
+  - action: utter_migration_certificate_steps
+  - action: utter_for_deathcertificate
+  - action: utter_death_certificate_documents
+  - action: utter_death_certificate_steps
+
+- story: User asks for migration certificate and death certificate romanized
+  steps:
+  - intent: migrationcertificate_and_deathcertificate_query_romanized
+  - action: utter_for_migrationcertificate_romanized
+  - action: utter_migration_certificate_documents_romanized
+  - action: utter_migration_certificate_steps_romanized
+  - action: utter_for_deathcertificate_romanized
+  - action: utter_death_certificate_documents_romanized
+  - action: utter_death_certificate_steps_romanized
+  
+- story: User asks for migration certificate and divorce certificate
+  steps:
+  - intent: migrationcertificate_and_divorcecertificate_query
+  - action: utter_for_migrationcertificate
+  - action: utter_migration_certificate_documents
+  - action: utter_migration_certificate_steps
+  - action: utter_for_divorcecertificate
+  - action: utter_divorce_certificate_documents
+  - action: utter_divorce_certificate_steps
+
+- story: User asks for migration certificate and divorce certificate romanized
+  steps:
+  - intent: migrationcertificate_and_divorcecertificate_query_romanized
+  - action: utter_for_migrationcertificate_romanized
+  - action: utter_migration_certificate_documents_romanized
+  - action: utter_migration_certificate_steps_romanized
+  - action: utter_for_divorcecertificate_romanized
+  - action: utter_divorce_certificate_documents_romanized
+  - action: utter_divorce_certificate_steps_romanized
+
+############################## death certificate and other certificate stories#############################################
+- story: User asks for death certificate and divorce certificate
+  steps:
+  - intent: deathcertificate_and_divorcecertificate_query
+  - action: utter_for_deathcertificate
+  - action: utter_death_certificate_documents
+  - action: utter_death_certificate_steps
+  - action: utter_for_divorcecertificate
+  - action: utter_divorce_certificate_documents
+  - action: utter_divorce_certificate_steps
+
+- story: User asks for death certificate and divorce certificate romanized
+  steps:
+  - intent: deathcertificate_and_divorcecertificate_query_romanized
+  - action: utter_for_deathcertificate_romanized
+  - action: utter_death_certificate_documents_romanized
+  - action: utter_death_certificate_steps_romanized
+  - action: utter_for_divorcecertificate_romanized
+  - action: utter_divorce_certificate_documents_romanized
+  - action: utter_divorce_certificate_steps_romanized
+  
+
 ##############################random queries#############################################
 - story: User interaction for random queries
   steps:
