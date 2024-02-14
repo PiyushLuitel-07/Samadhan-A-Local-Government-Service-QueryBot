@@ -324,7 +324,7 @@ stories:
   - action: utter_migration_certificate_steps_romanized
 
 
-##############################multiple intent stories#############################################
+############################## multiple intent stories#############################################
 ############################## birth certificate and other certificate stories#############################################
 - story: User asks for birth certificate and marriage certificate
   steps:
@@ -650,6 +650,250 @@ stories:
   - action: utter_citizenship_by_descent_eligibility_romanized
   - action: utter_citizenship_by_descent_documents_romanized
   - action: utter_citizenship_by_descent_steps_romanized
+
+- story: User asks for citizenship and birth certificate and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_birthcertificate_query
+  - action: utter_for_birthcertificate
+  - action: utter_birth_certificate_documents
+  - action: utter_birth_certificate_steps
+  - action: utter_citizenship
+  - intent: citizenship_by_naturalization_query
+  - action: utter_citizenship_by_naturalization
+  - intent: option1_naturalization
+  - action: utter_citizenship_by_naturalization_option1
+
+- story: User asks for citizenship and birth certificate and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_birthcertificate_query
+  - action: utter_for_birthcertificate
+  - action: utter_birth_certificate_documents
+  - action: utter_birth_certificate_steps
+  - action: utter_citizenship
+  - intent: citizenship_by_naturalization_query
+  - action: utter_citizenship_by_naturalization
+  - intent: option2_naturalization
+  - action: utter_citizenship_by_naturalization_option2
+
+- story: User asks for citizenship and birth certificate romanized and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_birthcertificate_query_romanized
+  - action: utter_for_birthcertificate_romanized
+  - action: utter_birth_certificate_documents_romanized
+  - action: utter_birth_certificate_steps_romanized
+  - action: utter_citizenship_romanized
+  - intent: citizenship_by_naturalization_query_romanized
+  - action: utter_citizenship_by_naturalization_romanized
+  - intent: option1_naturalization_romanized
+  - action: utter_citizenship_by_naturalization_option1_romanized
+
+- story: User asks for citizenship and birth certificate and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_birthcertificate_query_romanized
+  - action: utter_for_birthcertificate_romanized
+  - action: utter_birth_certificate_documents_romanized
+  - action: utter_birth_certificate_steps_romanized
+  - action: utter_citizenship_romanized
+  - intent: citizenship_by_naturalization_query_romanized
+  - action: utter_citizenship_by_naturalization_romanized
+  - intent: option2_naturalization_romanized
+  - action: utter_citizenship_by_naturalization_option2_romanized
+
+
+- story: User asks for citizenship and marriage certificate and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_marriagecertificate_query
+  - action: utter_for_marriagecertificate
+  - action: utter_marriage_certificate_documents
+  - action: utter_marriage_certificate_steps
+  - action: utter_citizenship
+  - intent: citizenship_by_naturalization_query
+  - action: utter_citizenship_by_naturalization
+  - intent: option1_naturalization
+  - action: utter_citizenship_by_naturalization_option1
+
+- story: User asks for citizenship and marriage certificate and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_marriagecertificate_query
+  - action: utter_for_marriagecertificate
+  - action: utter_marriage_certificate_documents
+  - action: utter_marriage_certificate_steps
+  - action: utter_citizenship
+  - intent: citizenship_by_naturalization_query
+  - action: utter_citizenship_by_naturalization
+  - intent: option2_naturalization
+  - action: utter_citizenship_by_naturalization_option2
+
+- story: User asks for citizenship and marriage certificate romanized and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_marriagecertificate_query_romanized
+  - action: utter_for_marriagecertificate_romanized
+  - action: utter_marriage_certificate_documents_romanized
+  - action: utter_marriage_certificate_steps_romanized
+  - action: utter_citizenship_romanized
+  - intent: citizenship_by_naturalization_query_romanized
+  - action: utter_citizenship_by_naturalization_romanized
+  - intent: option1_naturalization_romanized
+  - action: utter_citizenship_by_naturalization_option1_romanized
+
+- story: User asks for citizenship and marriage certificate and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_marriagecertificate_query_romanized
+  - action: utter_for_marriagecertificate_romanized
+  - action: utter_marriage_certificate_documents_romanized
+  - action: utter_marriage_certificate_steps_romanized
+  - action: utter_citizenship_romanized
+  - intent: citizenship_by_naturalization_query_romanized
+  - action: utter_citizenship_by_naturalization_romanized
+  - intent: option2_naturalization_romanized
+  - action: utter_citizenship_by_naturalization_option2_romanized
+
+
+- story: User asks for citizenship and migration certificate and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_migrationcertificate_query
+  - action: utter_for_migrationcertificate
+  - action: utter_migration_certificate_documents
+  - action: utter_migration_certificate_steps
+  - action: utter_citizenship
+  - intent: citizenship_by_naturalization_query
+  - action: utter_citizenship_by_naturalization
+  - intent: option1_naturalization
+  - action: utter_citizenship_by_naturalization_option1
+
+- story: User asks for citizenship and migration certificate and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_migrationcertificate_query
+  - action: utter_for_migrationcertificate
+  - action: utter_migration_certificate_documents
+  - action: utter_migration_certificate_steps
+  - action: utter_citizenship
+  - intent: citizenship_by_naturalization_query
+  - action: utter_citizenship_by_naturalization
+  - intent: option2_naturalization
+  - action: utter_citizenship_by_naturalization_option2
+
+- story: User asks for citizenship and migration certificate romanized and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_migrationcertificate_query_romanized
+  - action: utter_for_migrationcertificate_romanized
+  - action: utter_migration_certificate_documents_romanized
+  - action: utter_migration_certificate_steps_romanized
+  - action: utter_citizenship_romanized
+  - intent: citizenship_by_naturalization_query_romanized
+  - action: utter_citizenship_by_naturalization_romanized
+  - intent: option1_naturalization_romanized
+  - action: utter_citizenship_by_naturalization_option1_romanized
+
+- story: User asks for citizenship and migration certificate and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_migrationcertificate_query_romanized
+  - action: utter_for_migrationcertificate_romanized
+  - action: utter_migration_certificate_documents_romanized
+  - action: utter_migration_certificate_steps_romanized
+  - action: utter_citizenship_romanized
+  - intent: citizenship_by_naturalization_query_romanized
+  - action: utter_citizenship_by_naturalization_romanized
+  - intent: option2_naturalization_romanized
+  - action: utter_citizenship_by_naturalization_option2_romanized
+
+
+- story: User asks for citizenship and death certificate and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_deathcertificate_query
+  - action: utter_for_deathcertificate
+  - action: utter_death_certificate_documents
+  - action: utter_death_certificate_steps
+  - action: utter_citizenship
+  - intent: citizenship_by_naturalization_query
+  - action: utter_citizenship_by_naturalization
+  - intent: option1_naturalization
+  - action: utter_citizenship_by_naturalization_option1
+
+- story: User asks for citizenship and death certificate and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_deathcertificate_query
+  - action: utter_for_deathcertificate
+  - action: utter_death_certificate_documents
+  - action: utter_death_certificate_steps
+  - action: utter_citizenship
+  - intent: citizenship_by_naturalization_query
+  - action: utter_citizenship_by_naturalization
+  - intent: option2_naturalization
+  - action: utter_citizenship_by_naturalization_option2
+
+- story: User asks for citizenship and death certificate romanized and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_deathcertificate_query_romanized
+  - action: utter_for_deathcertificate_romanized
+  - action: utter_death_certificate_documents_romanized
+  - action: utter_death_certificate_steps_romanized
+  - action: utter_citizenship_romanized
+  - intent: citizenship_by_naturalization_query_romanized
+  - action: utter_citizenship_by_naturalization_romanized
+  - intent: option1_naturalization_romanized
+  - action: utter_citizenship_by_naturalization_option1_romanized
+
+- story: User asks for citizenship and death certificate and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_deathcertificate_query_romanized
+  - action: utter_for_deathcertificate_romanized
+  - action: utter_death_certificate_documents_romanized
+  - action: utter_death_certificate_steps_romanized
+  - action: utter_citizenship_romanized
+  - intent: citizenship_by_naturalization_query_romanized
+  - action: utter_citizenship_by_naturalization_romanized
+  - intent: option2_naturalization_romanized
+  - action: utter_citizenship_by_naturalization_option2_romanized
+
+
+- story: User asks for citizenship and divorce certificate and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_divorcecertificate_query
+  - action: utter_for_divorcecertificate
+  - action: utter_divorce_certificate_documents
+  - action: utter_divorce_certificate_steps
+  - action: utter_citizenship
+  - intent: citizenship_by_naturalization_query
+  - action: utter_citizenship_by_naturalization
+  - intent: option1_naturalization
+  - action: utter_citizenship_by_naturalization_option1
+
+- story: User asks for citizenship and divorce certificate and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_divorcecertificate_query
+  - action: utter_for_divorcecertificate
+  - action: utter_divorce_certificate_documents
+  - action: utter_divorce_certificate_steps
+  - action: utter_citizenship
+  - intent: citizenship_by_naturalization_query
+  - action: utter_citizenship_by_naturalization
+  - intent: option2_naturalization
+  - action: utter_citizenship_by_naturalization_option2
+
+- story: User asks for citizenship and divorce certificate romanized and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_divorcecertificate_query_romanized
+  - action: utter_for_divorcecertificate_romanized
+  - action: utter_divorce_certificate_documents_romanized
+  - action: utter_divorce_certificate_steps_romanized
+  - action: utter_citizenship_romanized
+  - intent: citizenship_by_naturalization_query_romanized
+  - action: utter_citizenship_by_naturalization_romanized
+  - intent: option1_naturalization_romanized
+  - action: utter_citizenship_by_naturalization_option1_romanized
+
+- story: User asks for citizenship and divorce certificate and presses citizenship by naturalization button
+  steps:
+  - intent: citizenship_and_divorcecertificate_query_romanized
+  - action: utter_for_divorcecertificate_romanized
+  - action: utter_divorce_certificate_documents_romanized
+  - action: utter_divorce_certificate_steps_romanized
+  - action: utter_citizenship_romanized
+  - intent: citizenship_by_naturalization_query_romanized
+  - action: utter_citizenship_by_naturalization_romanized
+  - intent: option2_naturalization_romanized
+  - action: utter_citizenship_by_naturalization_option2_romanized
 
 
 ##############################random queries#############################################
