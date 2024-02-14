@@ -483,7 +483,7 @@ nlu:
       
 ################################################################### multiple intents ###################################################################
 
-################################################################### birth certificate combination ###################################################################
+################################################################### birth certificate combination with other certificates ###################################################################
 
 - intent: birthcertificate_and_marriagecertificate_query
   examples: |
@@ -563,7 +563,7 @@ nlu:
     - [janma darta](type) ra [mrityu darta ](type) banaune process k hola ?
 
 
-################################################################### marriage certificate combination ###################################################################
+################################################################### marriage certificate combination with other certificates ###################################################################
 
 
 - intent: marriagecertificate_and_migrationcertificate_query
@@ -624,6 +624,74 @@ nlu:
     - [bibah](type) darta ra [mrityu](type) darta kasari banauna sakincha ?
     - [bibah darta](type) ra [mrityu darta](type) banaune process k hola ?
 
+
+################################################################### migration certificate combination with other certificates ###################################################################
+
+- intent: migrationcertificate_and_divorcecertificate_query
+  examples: |
+    - how to make [migration](type) certificate and [divorce](type) certificate?
+    - [migration](type) certificate and [divorce](type) certificate
+    - how to obtain [divorce](type) certificate and [migration](type) certificate?
+    - tell the process to make [migration](type) certificate and [divorce](type) certificate.
+    - process to make [divorce](type) certificate and [migration](type) certificate.
+    - explain how can i get [divorce](type) certificate and [migration](type) certificate.
+
+- intent: migrationcertificate_and_divorcecertificate_query_romanized
+  examples: |
+    - Ma [basai sarai](type) ra [sambandha bichhed](type) darta sambandhi janakari chaahanchu.
+    - [janma](type) darta ra [sambandha bichhed](type) darta kasari banaune?
+    - Malai [basai sarai](type) ra [sambandha bichhed darta](type) barema bhannuhos.
+    - [janma](type) darta ra [sambandha bichhed](type) darta praapta garnakaa laagi aavedan kasari garne?
+    - Malai [basai sarai](type) ra [sambandha bichhed darta](type) banaauna sahayog garnuhos.
+    - [janma](type) darta ra [sambandha bichhed](type) darta kasari banauna sakincha ?
+    - [basai sarai](type) ra [sambandha bichhed darta](type) banaune process k hola ?
+
+
+- intent: migrationcertificate_and_deathcertificate_query
+  examples: |
+    - how to make [migration](type) certificate and [death](type) certificate?
+    - [migration](type) certificate and [death](type) certificate
+    - how to obtain [death](type) certificate and [migration](type) certificate?
+    - tell the process to make [migration](type) certificate and [death](type) certificate.
+    - process to make [death](type) certificate and [migration](type) certificate.
+    - explain how can i get [death](type) certificate and [migration](type) certificate.
+
+- intent: migrationcertificate_and_deathcertificate_query_romanized
+  examples: |
+    - Ma [basai sarai](type) ra [mrityu](type) darta sambandhi janakari chaahanchu.
+    - [janma](type) darta ra [mrityu](type) darta kasari banaune?
+    - Malai [basai sarai](type) ra [mrityu darta](type) barema bhannuhos.
+    - [janma](type) darta ra [mrityu](type) darta praapta garnakaa laagi aavedan kasari garne?
+    - Malai [basai sarai](type) ra [mrityu darta](type) banaauna sahayog garnuhos.
+    - [janma](type) darta ra [mrityu](type) darta kasari banauna sakincha ?
+    - [basai sarai](type) ra [mrityu darta ](type) banaune process k hola ?
+
+################################################################### death certificate combination with other certificates ###################################################################
+
+- intent: deathcertificate_and_divorcecertificate_query
+  examples: |
+    - how to make [death](type) certificate and [divorce](type) certificate?
+    - [death](type) certificate and [divorce](type) certificate
+    - how to obtain [divorce](type) certificate and [death](type) certificate?
+    - tell the process to make [death](type) certificate and [divorce](type) certificate.
+    - process to make [divorce](type) certificate and [death](type) certificate.
+    - explain how can i get [divorce](type) certificate and [death](type) certificate.
+
+- intent: deathcertificate_and_divorcecertificate_query_romanized
+  examples: |
+    - Ma [mrityu](type) darta ra [sambandha bichhed](type) darta sambandhi janakari chaahanchu.
+    - [mrityu](type) darta ra [sambandha bichhed](type) darta kasari banaune?
+    - Malai [mrityu](type) darta ra [sambandha bichhed darta](type) barema bhannuhos.
+    - [mrityu](type) darta ra [sambandha bichhed](type) darta praapta garnakaa laagi aavedan kasari garne?
+    - Malai [mrityu](type) darta ra [sambandha bichhed darta](type) banaauna sahayog garnuhos.
+    - [mrityu](type) darta ra [sambandha bichhed](type) darta kasari banauna sakincha ?
+    - [mrityu darta](type) ra [sambandha bichhed darta](type) banaune process k hola ?
+
+
+
+
+################################################################### divorce certificate combination with other certificates ###################################################################
+###  already done ###
 
 
 ###########################################################################################
