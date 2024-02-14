@@ -531,6 +531,125 @@ stories:
 
 
 ##############################citizenship and certificate stories#############################################
+- story: User asks for citizenship and birth certificate and presses citizenship by descent button
+  steps:
+  - intent: citizenship_and_birthcertificate_query
+  - action: utter_for_birthcertificate
+  - action: utter_birth_certificate_documents
+  - action: utter_birth_certificate_steps
+  - action: utter_citizenship
+  - intent: citizenship_by_descent_query
+  - action: utter_citizenship_by_descent_eligibility
+  - action: utter_citizenship_by_descent_documents
+  - action: utter_citizenship_by_descent_steps
+
+- story: User asks for citizenship and birth certificate romanized and presses citizenship by descent button
+  steps:
+  - intent: citizenship_and_birthcertificate_query_romanized
+  - action: utter_for_birthcertificate_romanized
+  - action: utter_birth_certificate_documents_romanized
+  - action: utter_birth_certificate_steps_romanized
+  - action: utter_citizenship_romanized
+  - intent: citizenship_by_descent_query_romanized
+  - action: utter_citizenship_by_descent_eligibility_romanized
+  - action: utter_citizenship_by_descent_documents_romanized
+  - action: utter_citizenship_by_descent_steps_romanized
+
+- story: User asks for citizenship and marriage certificate and presses citizenship by descent button
+  steps:
+  - intent: citizenship_and_marriagecertificate_query
+  - action: utter_for_marriagecertificate
+  - action: utter_marriage_certificate_documents
+  - action: utter_marriage_certificate_steps
+  - action: utter_citizenship
+  - intent: citizenship_by_descent_query
+  - action: utter_citizenship_by_descent_eligibility
+  - action: utter_citizenship_by_descent_documents
+  - action: utter_citizenship_by_descent_steps
+
+- story: User asks for citizenship and marriage certificate romanized and presses citizenship by descent button
+  steps:
+  - intent: citizenship_and_marriagecertificate_query_romanized
+  - action: utter_for_marriagecertificate_romanized
+  - action: utter_marriage_certificate_documents_romanized
+  - action: utter_marriage_certificate_steps_romanized
+  - action: utter_citizenship_romanized
+  - intent: citizenship_by_descent_query_romanized
+  - action: utter_citizenship_by_descent_eligibility_romanized
+  - action: utter_citizenship_by_descent_documents_romanized
+  - action: utter_citizenship_by_descent_steps_romanized
+
+- story: User asks for citizenship and migration certificate and presses citizenship by descent button
+  steps:
+  - intent: citizenship_and_migrationcertificate_query
+  - action: utter_for_migrationcertificate
+  - action: utter_migration_certificate_documents
+  - action: utter_migration_certificate_steps
+  - action: utter_citizenship
+  - intent: citizenship_by_descent_query
+  - action: utter_citizenship_by_descent_eligibility
+  - action: utter_citizenship_by_descent_documents
+  - action: utter_citizenship_by_descent_steps
+
+- story: User asks for citizenship and migration certificate romanized and presses citizenship by descent button
+  steps:
+  - intent: citizenship_and_migrationcertificate_query_romanized
+  - action: utter_for_migrationcertificate_romanized
+  - action: utter_migration_certificate_documents_romanized
+  - action: utter_migration_certificate_steps_romanized
+  - action: utter_citizenship_romanized
+  - intent: citizenship_by_descent_query_romanized
+  - action: utter_citizenship_by_descent_eligibility_romanized
+  - action: utter_citizenship_by_descent_documents_romanized
+  - action: utter_citizenship_by_descent_steps_romanized
+
+- story: User asks for citizenship and death certificate and presses citizenship by descent button
+  steps:
+  - intent: citizenship_and_deathcertificate_query
+  - action: utter_for_deathcertificate
+  - action: utter_death_certificate_documents
+  - action: utter_death_certificate_steps
+  - action: utter_citizenship
+  - intent: citizenship_by_descent_query
+  - action: utter_citizenship_by_descent_eligibility
+  - action: utter_citizenship_by_descent_documents
+  - action: utter_citizenship_by_descent_steps
+
+- story: User asks for citizenship and death certificate romanized and presses citizenship by descent button
+  steps:
+  - intent: citizenship_and_deathcertificate_query_romanized
+  - action: utter_for_deathcertificate_romanized
+  - action: utter_death_certificate_documents_romanized
+  - action: utter_death_certificate_steps_romanized
+  - action: utter_citizenship_romanized
+  - intent: citizenship_by_descent_query_romanized
+  - action: utter_citizenship_by_descent_eligibility_romanized
+  - action: utter_citizenship_by_descent_documents_romanized
+  - action: utter_citizenship_by_descent_steps_romanized
+
+- story: User asks for citizenship and divorce certificate and presses citizenship by descent button
+  steps:
+  - intent: divorcecertificate_query
+  - action: divorcecertificate
+  - action: divorce_certificate_documents
+  - action: divorce_certificate_steps
+  - action: utter_citizenship
+  - intent: citizenship_by_descent_query
+  - action: utter_citizenship_by_descent_eligibility
+  - action: utter_citizenship_by_descent_documents
+  - action: utter_citizenship_by_descent_steps
+
+- story: User asks for citizenship and divorce certificate romanized and presses citizenship by descent button
+  steps:
+  - intent: divorcecertificate_query_romanized
+  - action: divorcecertificate_romanized
+  - action: divorce_certificate_documents_romanized
+  - action: divorce_certificate_steps_romanized
+  - action: utter_citizenship_romanized
+  - intent: citizenship_by_descent_query_romanized
+  - action: utter_citizenship_by_descent_eligibility_romanized
+  - action: utter_citizenship_by_descent_documents_romanized
+  - action: utter_citizenship_by_descent_steps_romanized
 
 
 ##############################random queries#############################################
