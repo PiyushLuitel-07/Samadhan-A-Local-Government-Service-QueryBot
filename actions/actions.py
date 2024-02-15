@@ -51,14 +51,13 @@
 #                 dispatcher.utter_message(response="utter_citizenship")
 #         return []
 
-
+from .config import getkey
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.interfaces import Action
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import UserUtteranceReverted
 import google.generativeai as genai
-from config import apikey
 # from rasa.engine.recipes.default_recipe import DefaultV1Recipe, GraphComponent
 
 # @DefaultV1Recipe.register(
@@ -75,8 +74,8 @@ class RephraseFallbackAction(Action):
         # action = tracker.latest_action_name
         user_message = tracker.latest_message.get('text')
         # Configure Generative AI model
-
-        genai.configure(api_key=apikey)
+    
+        genai.configure(getkey())
 
         # Set up the model
         generation_config = {
@@ -114,6 +113,7 @@ class RephraseFallbackAction(Action):
             'You are an AI assistant for the citizens of nepal. '
             'You help to solve user queries related to government services like citizenship,birth certificate, marriage certificate,migration, divorce,death certificate. '
             'Here is the user message answer it in context of nepal '
+            
             # f"User intent: {intent}\n"
             # f"informations: {action}\n"
             f'You: {user_message}'
@@ -121,6 +121,5 @@ class RephraseFallbackAction(Action):
 
         # Generate content
         response = model.generate_content(prompt)
-        dispatcher.utter_message(text=response)
-        print(response.text)
+        dispatcher.utter_message(response.text)
         return []  
