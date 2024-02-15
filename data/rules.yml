@@ -29,6 +29,11 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: User interaction for random queries
+  steps:
+  - intent: random_queries
+  - action: action_default_fallback
 #########################################################################
 
 

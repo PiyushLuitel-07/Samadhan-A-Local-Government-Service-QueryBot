@@ -34,13 +34,15 @@ pipeline:
     epochs: 100
     constrain_similarities: true
   - name: FallbackClassifier # Handles fallback scenarios when confidence is less then threshold
-    threshold: 0.3
-    ambiguity_threshold: 0.1
-    
+    threshold: 0.5
+
 policies:
 #  how the assistant selects actions based on the current conversation state
   - name: MemoizationPolicy #Memorizes and predicts actions based on historical conversation patterns.
-  - name: RulePolicy  # Allows defining rules for mapping specific user inputs to actions
+  - name: RulePolicy # Allows defining rules for mapping specific user inputs to actions
+    core_fallback_threshold: 0.4
+    core_fallback_action_name: "action_default_fallback"
+    enable_fallback_prediction: True
   - name: UnexpecTEDIntentPolicy #Handles unexpected user intents that were not seen during training.
     max_history: 5
     epochs: 100

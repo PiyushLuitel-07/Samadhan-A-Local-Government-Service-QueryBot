@@ -900,4 +900,4 @@ stories:
 - story: User interaction for random queries
   steps:
   - intent: random_queries
-  - action: utter_random_query
+  - action: action_default_fallback

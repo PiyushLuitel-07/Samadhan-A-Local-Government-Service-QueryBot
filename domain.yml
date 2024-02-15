@@ -99,6 +99,7 @@ intents:
 - divorcecertificate_query
 
 actions:
+- action_default_fallback
 - utter_certificate_query_romanized
 - utter_divorce_certificate_documents
 - utter_migration_certificate_documents_romanized
