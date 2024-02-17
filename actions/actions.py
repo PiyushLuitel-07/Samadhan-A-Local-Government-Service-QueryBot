@@ -51,13 +51,14 @@
 #                 dispatcher.utter_message(response="utter_citizenship")
 #         return []
 
-from .config import getkey
+
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.interfaces import Action
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import UserUtteranceReverted
 import google.generativeai as genai
+#import config
 # from rasa.engine.recipes.default_recipe import DefaultV1Recipe, GraphComponent
 
 # @DefaultV1Recipe.register(
@@ -74,8 +75,7 @@ class RephraseFallbackAction(Action):
         # action = tracker.latest_action_name
         user_message = tracker.latest_message.get('text')
         # Configure Generative AI model
-    
-        genai.configure(getkey())
+        genai.configure(api_key="AIzaSyDvP-cU5448zOZKZ4Bv2KIh4Rpe5WQ-_kk")
 
         # Set up the model
         generation_config = {
@@ -122,4 +122,21 @@ class RephraseFallbackAction(Action):
         # Generate content
         response = model.generate_content(prompt)
         dispatcher.utter_message(response.text)
-        return []  
+
+        for event in reversed(tracker.events):
+            if event.get("event") == "user":
+                # Get the entities from the previous user message
+                previous_entities = event.get("entities", [])
+                break
+            
+        if previous_entities:
+            # Do something with the previous entities
+            for entity in previous_entities:
+                entity_name = entity.get('entity')
+                resp_text = "Do you want any further assistance with " + entity_name
+                dispatcher.utter_message(resp_text)
+        else:
+            print("No entities found in the previous message one step back")
+
+
+        return [UserUtteranceReverted]  

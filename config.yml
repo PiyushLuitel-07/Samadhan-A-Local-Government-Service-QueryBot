@@ -19,15 +19,17 @@ language: "en"
 pipeline:
 # defines the sequence of components
   - name: WhitespaceTokenizer  # Splits the input text into tokens based on whitespace.
-  - name: LexicalSyntacticFeaturizer #Extracts features based on the lexical and syntactic properties of the input text.
+  #- name: LexicalSyntacticFeaturizer #Extracts features based on the lexical and syntactic properties of the input text.
   - name: CountVectorsFeaturizer # Converts the text into a bag-of-words representation by counting the occurrences of words.
   - name: CountVectorsFeaturizer
     analyzer: char_wb # helps in capturing character-level information within words while respecting word boundaries
     min_ngram: 1
     max_ngram: 4
+  # - name: actions.custom_preprocessor.CustomPreprocessor
   - name: DIETClassifier # intent classification and entity recognition.
     epochs: 100 # trained for 100 epochs with constrain similarities
     constrain_similarities: true
+  # - name: actions.custom_postprocessor.CustomPostprocessor
   - name: EntitySynonymMapper #Maps synonyms of entities to canonical forms.
   - name: ResponseSelector # Selects a predefined response for the assistant.
     learning_rate: 0.1
