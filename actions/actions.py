@@ -110,9 +110,12 @@ class RephraseFallbackAction(Action):
 
         # Construct prompt as a single string
         prompt = (
+            
             'You are an AI assistant for the citizens of nepal. '
             'You help to solve user queries related to government services like citizenship,birth certificate, marriage certificate,migration, divorce,death certificate. '
+            'if you receive the queries in roman nepali(for example: English: what is your name?, Roman: timro nam k ho?) you must give the reponse in roman nepali '
             'Here is the user message answer it in context of nepal '
+            
             
             # f"User intent: {intent}\n"
             # f"informations: {action}\n"
@@ -121,6 +124,7 @@ class RephraseFallbackAction(Action):
 
         # Generate content
         response = model.generate_content(prompt)
+        print(response)
         dispatcher.utter_message(response.text)
 
         prev_action_name = None
