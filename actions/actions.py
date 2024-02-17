@@ -123,20 +123,34 @@ class RephraseFallbackAction(Action):
         response = model.generate_content(prompt)
         dispatcher.utter_message(response.text)
 
+        prev_action_name = None
+
+# Iterate through the events to find the previous action
         for event in reversed(tracker.events):
-            if event.get("event") == "user":
-                # Get the entities from the previous user message
-                previous_entities = event.get("entities", [])
+            if event.get("event") == "action" and event.get("name") != "action_listen":
+                prev_action_name = event.get("name")
                 break
-            
-        if previous_entities:
-            # Do something with the previous entities
-            for entity in previous_entities:
-                entity_name = entity.get('entity')
-                resp_text = "Do you want any further assistance with " + entity_name
-                dispatcher.utter_message(resp_text)
-        else:
-            print("No entities found in the previous message one step back")
+        print(prev_action_name)
+# Determine the appropriate response based on the previous action
+        if prev_action_name == "utter_citizenship":
+            dispatcher.utter_message("let's continue from where we left off.")
+            dispatcher.utter_message(response="utter_citizenship")
+       
+        elif prev_action_name == "utter_citizenship_by_naturalization":
+            # If the previous action was asking for the user's name, prompt for their email
+            dispatcher.utter_message("let's continue from where we left off.")
+            dispatcher.utter_message(response="utter_citizenship_by_naturalization")
+        elif prev_action_name == "utter_citizenship_romanized":
+            dispatcher.utter_message("let's continue from where we left off.")
+            dispatcher.utter_message(response="utter_citizenship")
+       
+        elif prev_action_name == "utter_citizenship_by_naturalization_romanized":
+            # If the previous action was asking for the user's name, prompt for their email
+            dispatcher.utter_message("let's continue from where we left off.")
+            dispatcher.utter_message(response="utter_citizenship_by_naturalization")
+        # else:
+        #     # If the previous action doesn't match any known context, handle appropriately
+        #     dispatcher.utter_message("I'm not sure what to do next. Let's start over.")
 
 
         return [UserUtteranceReverted]  
