@@ -83,6 +83,7 @@ nlu:
     - [angikrit](type) nagrikta banauna k garne.
     - malai agikrit nagrikta bare jankari dinuhos
     - [angikrit](type) [nagrikta](type) paune kasari
+    - citizenship by naturalization kasari banaune hola.
 
 - intent: option1_naturalization
   examples: |
@@ -110,7 +111,7 @@ nlu:
     - [nagrikta](type) praapt garnakaa laagi aavedan kasari garne?
     - Malai [nagrikta](type) banaaunma sahayog garnuhos.
     - nagarikta banauna thiyo
-    
+    - citizenship kasari banaune
 ############################
 - intent: citizenship_by_birth_query_romanized
   examples: |
@@ -119,12 +120,15 @@ nlu:
     - [janma](type) nagrikta banauna k garne.
     - janma nagarikta kasari banaune
     - malai [janma](type) bata [nagrikta](type) bare jankari dinuhos
+    - citizenship by birth kasari banaune.
+    - citizenship by birth banauna k garnu parcha.
 
 - intent: citizenship_by_birth_eligibility_query_romanized
   examples: |
     - [janma](type) dwara [nagrikta](type) banauna k k [yogyata](specification) chainxa.
     - [janma](type) bata [nagrikta](type) banaune [mapdanda](specification) k ho?
     - k ma [janma](type) bata [nagrikta](type) banauna yogya chhu
+    - citizenship by birth banauna ko lagi eligibility k ho.
 
 - intent: citizenship_by_birth_documents_query_romanized
   examples: |
@@ -132,37 +136,45 @@ nlu:
     - [janma](type) bata [nagrikta](type) chaina kagajaat k hun.
     - k k kagajaat liyera nagrikta banauna jane
     - [janma](type) bata [nagrikta](type) ko lagi chahine [kagajaat](specification)
+    - citizenship by birth banauna documents kun kun chaincha.
 
 - intent: citizenship_by_birth_steps_query_romanized
   examples: |
     - [janma](type) bata [nagrikta](type) banaune [prakriya] k ho?
     - janma siddi nagrikta banaune process k ho
     - [janma](type) bata [nagrikta](type) ka [charand] k hun
-
+    - citizenship by birth ko steps haru k k hun.
 ###########################################
 - intent: citizenship_by_descent_query_romanized
   examples: |
     - [bamsaj](type) dwara [nagrikta](type) kasari banaune.
     - bamsaj nagrikta banauna k garne
     - malai [bamsaj](type) bata [nagrikta](type) bare jankari dinuhos
+    - citizenship by descent kasari banaune paune.
+
 
 - intent: citizenship_by_descent_eligibility_query_romanized
   examples: |
     - [bamsaj](type) dwara [nagrikta](type) banauna k k [yogyata](specification) chainxa.
     - [bamsaj](type) bata [nagrikta](type) banaune [mapdanda](specification) k ho?
     - ma [bamsaj](type) bata [nagrikta](type) banauna yogya chhu ta
+    - [citizenship by descent] banuna ko lagi eligibility k k hun.
 
 - intent: citizenship_by_descent_documents_query_romanized
   examples: |
     - [bamsaj](type) bata [nagrikta](type) banaune kun kun [kagajaat] chinxa?
     - bamsaj dwara nagrikta pauna k garnu parxa
     - [bamsaj](type) bata [nagrikta](type) banaune [kagajaat] k ho
+    - [citizenship by descent] banuna ko lagi documents haru k k chaincha.
+
 
 - intent: citizenship_by_descent_steps_query_romanized
   examples: |
     - [bamsaj](type) bata [nagrikta](type) banaune [prakriya] k ho?
     - bamsaj dwara nagrikta banaune process k ho.
     - [bamsaj](type) bata [nagrikta](type) ka [charand] k hun
+    - [citizenship by descent] banuna ko lagi steps haru k  hun.
+
 ######################################################### birth certificate
 - intent: birth_certificate_query
   examples: |
@@ -186,6 +198,7 @@ nlu:
     - [janma](type) darta kasari banaune.
     - [janma darta](type) banaune process k hola ?
     - ma [janma darta](type) banauna chahanchu
+    - birth certificate kasari banaune hola.
 
 - intent: birth_documents_certificate_query
   examples: |
@@ -205,7 +218,7 @@ nlu:
     - [janma darta](type) banaune kun kun [kagajaat](specification) chainxa.
     - [janma darta](type) banaune [kagajaat](specification) k ho?
     - malai [janma darta](type) banauna chahine [kagajaat](specification) ko barema bhanuhos
-
+    - birth certificate banauna kun kun documents chaincha.
 - intent: birth_steps_certificate_query
   examples: |
     - what are the [steps](specification) required to make [birth](type) certificate?
@@ -226,6 +239,7 @@ nlu:
     - [janma darta](type) banaune [charand] k ho?
     - [janma](type) darta banaune [bidhi] k ho?
     - [janma darta](type) banaune [process] k ho?
+    - [birth certificate](type) banaune [steps] k ho?
       
 ###########################################################################################################################################
 ######################################################### death certificate
@@ -250,6 +264,7 @@ nlu:
     - Malai [mrityu darta](type) banaauna sahayog garnuhos.
     - [mrityu](type) darta kasari banaune.
     - [mrityu darta](type) banaune process k hola ?
+    - [death certificate] kasari banaune hola.
 
 - intent: death_documents_certificate_query
   examples: |
@@ -268,6 +283,7 @@ nlu:
     - k k [kagaj](specification) liyera [mrityu darta](type) banauna jane
     - [mrityu](type) darta banaune kun kun [kagajaat](specification) chainxa.
     - [mrityu darta](type) banaune [kagajaat](specification) k ho?
+    - death certificate banauna ko lagi k k documents haru chainchan.
 
 - intent: death_steps_certificate_query
   examples: |
@@ -287,6 +303,7 @@ nlu:
     - [mrityu](type) darta banaune [prakriya](specification) k ho?
     - [mrityu darta](type) banaune [charand] k ho?
     - [mrityu](type) darta banaune [bidhi] k ho?
+    - death certificate banauna ko lagi steps haru k hun.
       
 ###########################################################################################################################################
 ######################################################### marriage certificate
@@ -311,7 +328,7 @@ nlu:
     - Malai [bibah darta](type) banaauna sahayog garnuhos.
     - [bibah](type) darta kasari banaune.
     - [bibah darta](type) banaune process k hola ?
-
+    - marriage certificate kasari banaune.
 - intent: marriage_documents_certificate_query
   examples: |
     - what are the [documents](specification) required to make [marriage](type) certificate?
@@ -330,6 +347,7 @@ nlu:
     - [bibah](type) darta banaune kun kun [kagajaat](specification) chainxa.
     - [bibah darta](type) banaune [kagajaat](specification) k ho?
     - malai [bibah darta](type) banauna chahine [kagajaat](specification) ko barema bhanuhos
+    - marriage certificate banauna ko lagi kun kun documents haru chainchan.
 
 - intent: marriage_steps_certificate_query
   examples: |
@@ -350,7 +368,8 @@ nlu:
     - [bibah darta](type) banaune [charand] k ho?
     - [bibah](type) darta banaune [bidhi] k ho?
     - malai [bibah darta](type) banauna chahine [prakriya](specification) ko barema bhanuhos
-    - hamro [bibah darta](type) lai [charand] k hola      
+    - hamro [bibah darta](type) lai [charand] k hola 
+    - marriage certificate banauna ko lagi kun kun steps follow garne.     
 ###########################################################################################################################################
 ######################################################### divorce certificate
 - intent: divorce_certificate_query
@@ -374,6 +393,7 @@ nlu:
     - Malai [sambandha bichhed darta](type) banaauna sahayog garnuhos.
     - [sambandha bichhed](type) darta kasari banaune.
     - [sambandha bichhed darta](type) banaune process k hola ?
+    - divorce certificate kasari banuna sakincha.
 
 - intent: divorce_documents_certificate_query
   examples: |
@@ -393,6 +413,7 @@ nlu:
     - [sambandha bichhed](type) darta banauna kun kun [kagajaat](specification) chainxa.
     - [sambandha bichhed darta](type) banaune [kagajaat](specification) k ho?
     - malai [sambandha bichhed darta](type) banauna chahine [kagajaat](specification) k hola
+    - divorce certificate ko lagi k k documents haru chainchan.
 
 - intent: divorce_steps_certificate_query
   examples: |
@@ -405,13 +426,14 @@ nlu:
     - can you tell me the [steps](specification) to make [divorce](type) certificate?
     - please explain the [steps](specification) to obtain [divorce](type) certificate.
     - [steps](specification) to obtain [divorce](type) certificate.
-
+    
 - intent: divorce_steps_certificate_query_romanized
   examples: |
     - [sambandha bichhed darta](type) banauna kk [prakriya](specification) huncha?
     - [sambandha bichhed](type) darta banaune [prakriya](specification) k ho?
     - [sambandha bichhed darta](type) banaune [charand] k ho?
     - [sambandha bichhed](type) darta banaune [bidhi] k ho?
+    - divorce certificate banauna kun kun steps follow garne.
     - malai [sambandha bichhed darta](type) banauna chahine [prakriya](specification) chahiyo
 ###########################################################################################################################################
 ######################################################### migration certificate
@@ -431,7 +453,7 @@ nlu:
   examples: |
     - Ma [basai sarai darta](type) sambandhi janakari chaahanchu.
     - [basai sarai](type) darta kasari banaune?
-    - [basai sarai](type) kasari banaune?
+    - [migration certificate](type) kasari banaune?
     - Ma [basai sarai](type) sambandhi janakari chaahanchu.
     - Malai [basai sarai darta](type) barema bhannuhos.
     - [basai sarai](type) darta praapta garnakaa laagi aavedan kasari garne?
@@ -458,6 +480,7 @@ nlu:
     - [basai sarai](type) banaune [kagajaat](specification) k ho?
     - [basai sarai](type) darta banauna kun kun [kagajaat](specification) chainxa.
     - [basai sarai darta](type) banaune [kagajaat](specification) k ho?
+    - [migration certificate](type) banauna kun kun [documents](specification) chainxa?
 
 - intent: migration_steps_certificate_query
   examples: |
@@ -479,7 +502,7 @@ nlu:
     - [basai sarai](type) banaune [prakriya](specification) k ho?
     - [basai sarai](type) darta banaune [bidhi] k ho?
     - malai [basai sarai darta](type) banauna chahine [prakriya](specification) chahiyo
-
+    - migration certificate banauna ko lagi k k steps follow garnu parcha.
       
 ################################################################### multiple intents ###################################################################
 
@@ -503,6 +526,7 @@ nlu:
     - Malai [janma darta](type) ra [bibah darta](type) banaauna sahayog garnuhos.
     - [janma](type) darta ra [bibah](type) darta kasari banauna sakincha ?
     - [janma darta](type) ra [bibah](type) darta banaune process k hola ?
+    - [birth certificate](type) ra [marriage certificate](type) darta banaune process k hola ?
 
 - intent: birthcertificate_and_migrationcertificate_query
   examples: |
@@ -522,6 +546,7 @@ nlu:
     - Malai [janma darta](type) ra [basai sarai darta](type) banaauna sahayog garnuhos.
     - [janma](type) darta ra [basai sarai](type) darta kasari banauna sakincha ?
     - [janma darta](type) ra [basai sarai](type) darta banaune process k hola ?
+    - [birth certificate](type) ra [migration certificate](type) darta banaune process k hola ?
 
 - intent: birthcertificate_and_divorcecertificate_query
   examples: |
@@ -541,6 +566,7 @@ nlu:
     - Malai [janma darta](type) ra [sambandha bichhed darta](type) banaauna sahayog garnuhos.
     - [janma](type) darta ra [sambandha bichhed](type) darta kasari banauna sakincha ?
     - [janma darta](type) ra [sambandha bichhed darta](type) banaune process k hola ?
+    - [birth certificate](type) ra [divorce certificate](type) banaune process k hola ?
 
 
 - intent: birthcertificate_and_deathcertificate_query
@@ -561,6 +587,7 @@ nlu:
     - Malai [janma darta](type) ra [mrityu darta](type) banaauna sahayog garnuhos.
     - [janma](type) darta ra [mrityu](type) darta kasari banauna sakincha ?
     - [janma darta](type) ra [mrityu darta ](type) banaune process k hola ?
+    - [birth certificate](type) ra [death certificate ](type) banaune process k hola ?
 
 
 ################################################################### marriage certificate combination with other certificates ###################################################################
@@ -584,6 +611,7 @@ nlu:
     - Malai [bibah darta](type) ra [basai sarai darta](type) banaauna sahayog garnuhos.
     - [bibah](type) darta ra [basai sarai](type) darta kasari banauna sakincha ?
     - [bibah darta](type) ra [basai sarai](type) darta banaune process k hola ?
+    - [marriage certificate](type) ra [migration certificate](type) darta banaune process k hola ?
 
 - intent: marriagecertificate_and_divorcecertificate_query
   examples: |
@@ -603,6 +631,7 @@ nlu:
     - Malai [bibah darta](type) ra [sambandha bichhed darta](type) banaauna sahayog garnuhos.
     - [bibah](type) darta ra [sambandha bichhed](type) darta kasari banauna sakincha ?
     - [bibah darta](type) ra [sambandha bichhed darta](type) banaune process k hola ?
+    - [marriage certificate](type) ra [divorce certificate](type) banaune process k hola ?
 
 
 - intent: marriagecertificate_and_deathcertificate_query
@@ -623,6 +652,7 @@ nlu:
     - Malai [bibah darta](type) ra [mrityu darta](type) banaauna sahayog garnuhos.
     - [bibah](type) darta ra [mrityu](type) darta kasari banauna sakincha ?
     - [bibah darta](type) ra [mrityu darta](type) banaune process k hola ?
+    - [marriage certificate](type) ra [divorce certificate](type) banaune process k hola ?
 
 
 ################################################################### migration certificate combination with other certificates ###################################################################
@@ -645,6 +675,7 @@ nlu:
     - Malai [basai sarai](type) ra [sambandha bichhed darta](type) banaauna sahayog garnuhos.
     - [janma](type) darta ra [sambandha bichhed](type) darta kasari banauna sakincha ?
     - [basai sarai](type) ra [sambandha bichhed darta](type) banaune process k hola ?
+    - [migration certificate](type) ra [divorce certificate](type) banaune process k hola ?
 
 
 - intent: migrationcertificate_and_deathcertificate_query
@@ -665,6 +696,7 @@ nlu:
     - Malai [basai sarai](type) ra [mrityu darta](type) banaauna sahayog garnuhos.
     - [janma](type) darta ra [mrityu](type) darta kasari banauna sakincha ?
     - [basai sarai](type) ra [mrityu darta ](type) banaune process k hola ?
+    - [migration certificate](type) ra [death certificate](type) banaune process k hola ?
 
 ################################################################### death certificate combination with other certificates ###################################################################
 
@@ -686,6 +718,7 @@ nlu:
     - Malai [mrityu](type) darta ra [sambandha bichhed darta](type) banaauna sahayog garnuhos.
     - [mrityu](type) darta ra [sambandha bichhed](type) darta kasari banauna sakincha ?
     - [mrityu darta](type) ra [sambandha bichhed darta](type) banaune process k hola ?
+    - [death certificate](type) ra [divorce certificate](type) banaune process k hola ?
 
 
 
@@ -715,6 +748,8 @@ nlu:
     - [janma](type) darta ra [nagrikta](type) kasari banauna sakincha ?
     - [nagarikta](type) ra [janma darta](type) banaune process k hola ?
     - [nagrikta](type) ra [janma](type) darta kasari banaune?
+    - [citizenship](type) ra [birth certificate](type) darta kasari banaune?
+
 
 - intent: citizenship_and_marriagecertificate_query
   examples: |
@@ -726,6 +761,7 @@ nlu:
     - tell the process to make [citizenship](type) certificate and [marriage](type) certificate.
     - process to make [marriage](type) certificate and [citizenship](type) certificate.
     - explain how can i get [marriage](type) certificate and [citizenship](type).
+    - [citizenship](type) ra [marriage certificate](type) kasari banaune?
 
 - intent: citizenship_and_marriagecertificate_query_romanized
   examples: |
@@ -737,6 +773,7 @@ nlu:
     - [bibah](type) darta ra [nagrikta](type) kasari banauna sakincha ?
     - [nagarikta](type) ra [bibah darta](type) banaune process k hola ?
     - [nagrikta](type) ra [bibah](type) darta kasari banaune?
+    - [citizenship](type) ra [marriage certificate](type) kasari banaune?
 
 - intent: citizenship_and_migrationcertificate_query
   examples: |
@@ -759,6 +796,7 @@ nlu:
     - [basai sarai](type) darta ra [nagrikta](type) kasari banauna sakincha ?
     - [nagarikta](type) ra [basai sarai darta](type) banaune process k hola ?
     - [nagrikta](type) ra [basai sarai](type) darta kasari banaune?
+    - [citizenship](type) ra [migration certificate](type) kasari banaune?
 
 - intent: citizenship_and_deathcertificate_query
   examples: |
@@ -781,6 +819,7 @@ nlu:
     - [mrityu](type) darta ra [nagrikta](type) kasari banauna sakincha ?
     - [nagarikta](type) ra [mrityu darta](type) banaune process k hola ?
     - [nagrikta](type) ra [mrityu](type) darta kasari banaune?
+    - [citizenship](type) ra [death certificate](type) kasari banaune?
 
 - intent: citizenship_and_divorcecertificate_query
   examples: |
@@ -803,6 +842,7 @@ nlu:
     - [sambandha bichhed](type) darta ra [nagrikta](type) kasari banauna sakincha ?
     - [nagarikta](type) ra [sambandha bichhed darta](type) banaune process k hola ?
     - [nagrikta](type) ra [sambandha bichhed](type) darta kasari banaune?
+    - [citizenship](type) ra [divorce certificate](type) kasari banaune?
 
 
 ###########################################################################################

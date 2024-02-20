@@ -6,52 +6,6 @@
 
 
 
-# from typing import Text, List, Any, Dict
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
-# from rasa_sdk.events import SlotSet
-
-
-# class ActionHandleCitizenshipQuery(Action):
-#     def name(self) -> Text:
-#         return "action_handle_citizenship_query"
-
-#     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#         # Extract entities from the user's message
-#         entity_values = next(tracker.get_latest_entity_values('type'),None)
-#         if  entity_values == 'citizenship by descent': 
-#                 dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_criteria")
-#                 dispatcher.utter_message(response="utter_citizenship_by_descent_documents_required")
-#                 dispatcher.utter_message(response="utter_citizenship_by_descent_steps")
-#         elif  entity_values == 'citizenship by birth':
-#                     dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility_criteria")
-#                     dispatcher.utter_message(response="utter_citizenship_by_birth_documents_required")
-#                     dispatcher.utter_message(response="utter_citizenship_by_birth_steps")
-#         else:
-#                 dispatcher.utter_message(response="utter_citizenship")
-#         return []
-
- 
-# class ActionHandleCitizenshipQueryRomanized(Action):
-#     def name(self) -> Text:
-#         return "action_handle_citizenship_query_romanized"
-
-#     def run(self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#         # Extract entities from the user's message
-#         entity_values = next(tracker.get_latest_entity_values('type'),None)
-#         if  entity_values == 'descent': 
-#                 dispatcher.utter_message(response="utter_citizenship_by_descent_eligibility_romanized")
-#                 dispatcher.utter_message(response="utter_citizenship_by_descent_documents_romanized")
-#                 dispatcher.utter_message(response="utter_citizenship_by_descent_steps_romanized")
-#         elif  entity_values == 'birth':
-#                     dispatcher.utter_message(response="utter_citizenship_by_birth_eligibility_romanized")
-#                     dispatcher.utter_message(response="utter_citizenship_by_birth_documents_romanized")
-#                     dispatcher.utter_message(response="utter_citizenship_by_birth_steps_romanized")
-#         else:
-#                 dispatcher.utter_message(response="utter_citizenship")
-#         return []
-
-
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.interfaces import Action
@@ -113,18 +67,18 @@ class RephraseFallbackAction(Action):
             
             'You are an AI assistant for the citizens of nepal. '
             'You help to solve user queries related to government services like citizenship,birth certificate, marriage certificate,migration, divorce,death certificate. '
-            'if you receive the queries in roman nepali(for example: English: what is your name?, Roman: timro nam k ho?) you must give the reponse in roman nepali '
-            'Here is the user message answer it in context of nepal '
-            
-            
+            'if user message is in in roman nepali, you should give response in roman nepali.'
+            'if user message is in english give the response in english language.'
+            'nepal ko area kati ho. is the example of roman nepali message, which should be response with nepal ko area 1,47,181 ho'
+            'Here is the user message answer it in the context of nepal'
+                       
             # f"User intent: {intent}\n"
             # f"informations: {action}\n"
-            f'You: {user_message}'
+            f'user: {user_message}'
         )
 
         # Generate content
         response = model.generate_content(prompt)
-        print(response)
         dispatcher.utter_message(response.text)
 
         prev_action_name = None
@@ -156,5 +110,5 @@ class RephraseFallbackAction(Action):
         #     # If the previous action doesn't match any known context, handle appropriately
         #     dispatcher.utter_message("I'm not sure what to do next. Let's start over.")
 
-
+        print(tracker.events)
         return [UserUtteranceReverted]  
