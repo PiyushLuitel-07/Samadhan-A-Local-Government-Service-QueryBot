@@ -176,13 +176,13 @@ responses:
       payload: I want information about citizenship by naturalization
 
   utter_citizenship_romanized:
-  - text: Tapai lai kun prakar ko nagarikta banaunu chha?
+  - text: तपाईंलाइ कुन प्रकारको नागरिकता बनाउनु छ?
     buttons:
-    - title: bamsaj
+    - title: वंशज
       payload: bamsaj nagrikta banauna k garne
     # - title: janma
     #   payload: janma nagarikta kasari banaune
-    - title: angikrit
+    - title: अंगिकृत
       payload: malai angikrit nagrikta bare jankari dinuhos
   utter_citizenship_by_naturalization:
   - text: |-
@@ -195,36 +195,36 @@ responses:
 
   utter_citizenship_by_naturalization_romanized:
   - text: |
-      Kripaya nagarikta aabedan ko awastha chayan garnu hola:
+      कृपया नागरिकता आबेदनको अवस्था चयन गर्नु होला:
     buttons:
-    - title: 1. Nepali Nagarik Sanga Bivaha Gareko Bideshi Mahila.
+    - title: 1. नेपाली नागरिकसंग बिवाह गरेको बिदेशी महिला। 
       payload: Nepali Nagarik Sanga Bivaha Gareko Bideshi Mahila
-    - title: 2. Bideshi Nagarik Sanga Bivaha Bata Janma Bhayeko Nepali Mahila Ko Santaan.
+    - title: 2. बिदेशी नागरिकसंग बिवाहबाट जन्म भएको नेपाली महिलाको सन्तान। 
       payload: Bideshi Nagarik Sanga Bivaha Bata Janma Bhayeko Nepali Mahila Ko Santaan
 
   utter_citizenship_by_naturalization_option1:
   - text: |-
-      * Must submit an application in the prescribed form.
-      * Provide the marriage relationship document with the Nepali citizen.
-      * Show evidence of initiation of the procedure for renunciation of foreign citizenship 
+      1. Must submit an application in the prescribed form.
+      2. Provide the marriage relationship document with the Nepali citizen.
+      3. Show evidence of initiation of the procedure for renunciation of foreign citizenship 
   utter_citizenship_by_naturalization_option2:
   - text: |-
-      * Must have permanent domicile in Nepal.
-      * Should not have acquired foreign citizenship based on the father's citizenship.
-      * Application with specified documents including duplicate copy of the mother's citizenship certificate.
-      * Recommendation by concerned Municipality or Village Development Committee.
+      1. Must have permanent domicile in Nepal.
+      2. Should not have acquired foreign citizenship based on the father's citizenship.
+      3. Application with specified documents including duplicate copy of the mother's citizenship certificate.
+      4. Recommendation by concerned Municipality or Village Development Committee.
   utter_citizenship_by_naturalization_option1_romanized:
   - text: |-
-      * Aabedan patra anibarya rupma prastut garnu parne.
-      * Nepali nagarik sanga bibaha sambandhi dastavej pradhan garnu parne.
-      * Bideshi nagarikta tyage ko  praman dekhaunu parne.
+      1. आबेदन पत्र अनिवार्य रुपमा प्रस्तुत गर्नुपर्ने। 
+      2. नेपाली नागरिकसंग बिबाह सम्बन्धि दस्तावेज प्रधान गर्नुपर्ने । 
+      3. बिदेशी नागरिकता त्यागेको प्रमाण देखाउनु पर्ने। 
 
   utter_citizenship_by_naturalization_option2_romanized:
   - text: |-
-      * Nepal maa sthayi nivas hunu parne.
-      * Buba ko nagarikta ko adhar ma bideshi nagarikta upadhi payeko hunu hudaina.
-      * Aabedan ma nirdharit dastavej sathma aama ko nagarikta praman patra ko photocopy.
-      * Nagarpalika wa Gau Vikas Samiti ko sifaris patra.
+      1. नेपालमा स्थायी निवास हुनुपर्ने। 
+      2. बुबाको नागरिकताको आधारमा बिदेशी नागरिकता  उपाधि  पाएको  हुनु  हुदैन। 
+      3. आबेदनमा निर्धारित दस्तावेज साथमा आमाको नागरिकता प्रमाण पत्रको फोटोकपी। 
+      4. नगरपालिका वा गाउँ विकास समितिको सिफारिस पत्र। 
     
   utter_citizenship_by_descent_eligibility:
   - text: |-
@@ -232,10 +232,10 @@ responses:
       1. At least one parent must be Nepali.
       2. Age must be 16 or above.
   utter_citizenship_by_descent_eligibility_romanized:
-  - text: |-
-      Yogyata Maapdanda:
-      1. Kamti ma ek jana abhibhavak Nepali nagarik hunu parchha.
-      2. Tapai ko umer 16 barsa mathi hunu parchha.
+#   - text: |-
+#       Yogyata Maapdanda:
+#       1. Kamti ma ek jana abhibhavak Nepali nagarik hunu parchha.
+#       2. Tapai ko umer 16 barsa mathi hunu parchha.
   - text: |-
       योग्यता मापदण्ड :
       1. कम्तिमा एक जना अभिभावक नेपाली नागरिक हुनु पर्छ। 
@@ -250,14 +250,14 @@ responses:
       5. School/College character certificate original and its 2 photocopies
       6. 7 Photos (passport or auto-sized)
   utter_citizenship_by_descent_documents_romanized:
-  - text: |-
-      Aawashyak Kagajaat haru:
-      1. Jilla prasasan karyalaya bata woda ko sifaris form, jasko mulya Rs. 20.
-      2. Sakkali janma darta ra 2 prati photocopy
-      3. Abhibhavak ko sakkali nagarikta ra 2 prati photocopy
-      4. Basai sarai gareko bhaye, sakkali Basai Sarai ra 2 prati photocopy
-      5. School/College sakkali character certificate ra 2 prati photocopy
-      6. 7 Photos (passport or auto-sized)
+#   - text: |-
+#       Aawashyak Kagajaat haru:
+#       1. Jilla prasasan karyalaya bata woda ko sifaris form, jasko mulya Rs. 20.
+#       2. Sakkali janma darta ra 2 prati photocopy
+#       3. Abhibhavak ko sakkali nagarikta ra 2 prati photocopy
+#       4. Basai sarai gareko bhaye, sakkali Basai Sarai ra 2 prati photocopy
+#       5. School/College sakkali character certificate ra 2 prati photocopy
+#       6. 7 Photos (passport or auto-sized)
   - text: |-
       आवश्यक कागजात हरु :
       1. जिल्ला प्रसासन कार्यालयबाट वडाको सिफारिस फारम, जसको मूल्य २० रुपैया पर्छ। 
@@ -274,12 +274,12 @@ responses:
       3. Ward office will verify the form and ward-chairperson will put the stamp and signature.
       4. Submit verified recommendation form along with one of your parent and other documents at the DAO to get the citizenship.
   utter_citizenship_by_descent_steps_romanized:
-  - text: |-
-      Prakriya:
-      1. Jilla prasasan karyalaya gayera woda ko sifaris form linu hola.
-      2. Sifaris form ma bibaran bharera aafno woda karyalaya ma bujhaunu hola.
-      3. Woda karyalaya ma sifaris ma woda adyakshya ko sahi ra woda ko chaap lagaunu hola.
-      4. Aafno ek abhivabhak sahit Jilla Prasasan Karyalaya gayera woda ko sifaris ra anya kagajaat bujhayera nagarikta prapta garna saknu hunechha.
+#   - text: |-
+#       Prakriya:
+#       1. Jilla prasasan karyalaya gayera woda ko sifaris form linu hola.
+#       2. Sifaris form ma bibaran bharera aafno woda karyalaya ma bujhaunu hola.
+#       3. Woda karyalaya ma sifaris ma woda adyakshya ko sahi ra woda ko chaap lagaunu hola.
+#       4. Aafno ek abhivabhak sahit Jilla Prasasan Karyalaya gayera woda ko sifaris ra anya kagajaat bujhayera nagarikta prapta garna saknu hunechha.
   - text: |-
       प्रक्रिया:
       1. जिल्ला प्रसासन कार्यालय गएर वडाको सिफारिस फारम लिनु होला। 
@@ -318,12 +318,12 @@ responses:
       3. Copy of the tax clearance receipt for the current fiscal year.
       4. Marriage certificates of the parents.
   utter_birth_certificate_documents_romanized:
-  - text: |-
-      Aawasyak Kagajaat haru:
-      1. Buwa Aama ko sakkali nagarikta (Ekjana abhibhavak bhautik rup ma upasthit hunu parchha).
-      2. Yedi bachha aspatal ma janmeko bhaye, aspatal ko kagajat haru.
-      3. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
-      4. Buwa Aama ko bibah darta.
+#   - text: |-
+#       Aawasyak Kagajaat haru:
+#       1. Buwa Aama ko sakkali nagarikta (Ekjana abhibhavak bhautik rup ma upasthit hunu parchha).
+#       2. Yedi bachha aspatal ma janmeko bhaye, aspatal ko kagajat haru.
+#       3. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
+#       4. Buwa Aama ko bibah darta.
   - text: |-
       आवश्यक कागजातहरु :
       1. बुवा आमाको सक्कली नागरिकता (एकजना अभिभावक भौतिक रुपमा उपस्थित हुनु पर्छ । 
@@ -352,12 +352,12 @@ responses:
       3. Evidence of the marriage, such as a swayambar card or marriage photos.
       4. A copy of the tax clearance receipt for the current fiscal year.
   utter_marriage_certificate_documents_romanized:
-  - text: |-
-      Aawasyak Kagajaat haru:
-      1. Dulaha ra Dulahi ko sakkali nagarikta.
-      2. Dubai pakshya ko buwa aama ko sakkali nagarikta.
-      3. Bibah ko praman, swayambar card ya bibah ko tasbir haru.
-      4. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
+#   - text: |-
+#       Aawasyak Kagajaat haru:
+#       1. Dulaha ra Dulahi ko sakkali nagarikta.
+#       2. Dubai pakshya ko buwa aama ko sakkali nagarikta.
+#       3. Bibah ko praman, swayambar card ya bibah ko tasbir haru.
+#       4. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
   - text: |-
       आवश्यक कागजातहरु :
       1. दुलाहा र दुलहीको सक्कली नागरिकता। 
@@ -372,12 +372,12 @@ responses:
         3. The ward office will verify all provided details.
         4. Once verified, the marriage certificate can be collected from the ward office.
   utter_marriage_certificate_steps_romanized:
-  - text: |-
-      Prakriya:
-      1. Dubai dulaha dulahi le <a href='https://public.donidcr.gov.np' target='_blank'>yaha</a> diyeko ko form bharera token number linu hola.
-      2. Paayeko token number woda ma bujhaunu hola.
-      3. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
-      4. Diyeko bibaran pusti bhayema, woda karyalaya bata Bibah Darta paunu hunchha.
+#   - text: |-
+#       Prakriya:
+#       1. Dubai dulaha dulahi le <a href='https://public.donidcr.gov.np' target='_blank'>yaha</a> diyeko ko form bharera token number linu hola.
+#       2. Paayeko token number woda ma bujhaunu hola.
+#       3. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
+#       4. Diyeko bibaran pusti bhayema, woda karyalaya bata Bibah Darta paunu hunchha.
   - text: |-
       प्रक्रिया:
       1. दुवै दुलाहा दुलहीले  <a href='https://public.donidcr.gov.np' target='_blank'>यहाँ</a> दिएको फारम भरेर टोकन नम्बर लिनु होला। 
@@ -392,12 +392,12 @@ responses:
       3. A copy of the marriage certificate.
       4. A copy of the tax clearance receipt for the current fiscal year.
   utter_divorce_certificate_documents_romanized:
-  - text: |-
-      Aawasyak Kagajaat haru:
-      1. Dulaha Dulahi ko nagaritka ko photocopy.
-      2. Adalat ko nirnaya ko pratilipi.
-      3. Bibah Darta ko pratilipi.
-      4. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
+#   - text: |-
+#       Aawasyak Kagajaat haru:
+#       1. Dulaha Dulahi ko nagaritka ko photocopy.
+#       2. Adalat ko nirnaya ko pratilipi.
+#       3. Bibah Darta ko pratilipi.
+#       4. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
   - text: |-
       आवश्यक कागजातहरु :
       1. दुलाहा दुलहीको नागरिकताको फोटोकपी। 
@@ -414,13 +414,13 @@ responses:
       4. The ward office will verify all the provided details.
       5. Once verified, collect the divorce certificate from the ward office.
   utter_divorce_certificate_steps_romanized:
-  - text: |-
-      Prakriya:
-      1. Dulaha athawa dulahi woda ma upasthit hunu parchha.
-      2. Dubai dulaha dulahi le <a href='https://public.donidcr.gov.np' target='_blank'>yaha</a> diyeko ko form bharera token number linu hola.
-      3. Paayeko dubai token number woda ma bujhaunu hola.
-      4. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
-      5. Diyeko bibaran pusti bhayema, woda karyalaya bata Sambandha Bichhed praman patra paunu hunchha.
+#   - text: |-
+#       Prakriya:
+#       1. Dulaha athawa dulahi woda ma upasthit hunu parchha.
+#       2. Dubai dulaha dulahi le <a href='https://public.donidcr.gov.np' target='_blank'>yaha</a> diyeko ko form bharera token number linu hola.
+#       3. Paayeko dubai token number woda ma bujhaunu hola.
+#       4. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
+#       5. Diyeko bibaran pusti bhayema, woda karyalaya bata Sambandha Bichhed praman patra paunu hunchha.
   - text: |-
       प्रक्रिया:
       1. दुलाहा अथवा दुलही वडामा उपस्थित हुनुपर्छ। 
@@ -459,12 +459,12 @@ responses:
       3. The ward office will verify the provided information.
       4. Once verified, collect the death certificate from the ward office.
   utter_death_certificate_steps_romanized:
-  - text: |-
-      Prakriya:
-      1.<a href='https://public.donidcr.gov.np' target='_blank'>Yaha</a> diyeko online form bharera token number linu hos.
-      2. Paayeko token number woda ma bujhaunu hos.
-      3. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
-      4. Diyeko bibaran pusti bhayema, woda karyalaya bata Mrityu darta paunu hunchha.
+#   - text: |-
+#       Prakriya:
+#       1.<a href='https://public.donidcr.gov.np' target='_blank'>Yaha</a> diyeko online form bharera token number linu hos.
+#       2. Paayeko token number woda ma bujhaunu hos.
+#       3. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
+#       4. Diyeko bibaran pusti bhayema, woda karyalaya bata Mrityu darta paunu hunchha.
   - text: |-
       प्रक्रिया:
       1. <a href='https://public.donidcr.gov.np' target='_blank'>यहाँ</a> दिएको अनलाइन फारम भरेर टोकन नम्बर लिनुहोस्। 
@@ -483,16 +483,16 @@ responses:
       2. Copies of citizenship documents and birth certificates (for minors).
       3. A copy of the tax clearance receipt for the current fiscal year.
   utter_migration_certificate_documents_romanized:
-  - text: |-
-      Prasthan garne woda karyalaya ma aawashyak kagajaat haru:
-      1. Basai Sarai garne sabai ko sakkali nagarikta, nabalik bhayema sakkali janma darta.
-      2. Basai Sarai garne thau ko Laal purja ko photocopy.
-      3. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
+#   - text: |-
+#     #   Prasthan garne woda karyalaya ma aawashyak kagajaat haru:
+#     #   1. Basai Sarai garne sabai ko sakkali nagarikta, nabalik bhayema sakkali janma darta.
+#     #   2. Basai Sarai garne thau ko Laal purja ko photocopy.
+#     #   3. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
 
-      Aagaman hune woda karyalaya ma aawashyak kagajaat haru:
-      1. Prasthan garne woda karyalaya bata diyeko hastantaran form.
-      2. Basai Sarai garne sabai nagarikta ra nabalik bhayema janma darta ko photocopy.
-      3. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
+#     #   Aagaman hune woda karyalaya ma aawashyak kagajaat haru:
+#     #   1. Prasthan garne woda karyalaya bata diyeko hastantaran form.
+#     #   2. Basai Sarai garne sabai nagarikta ra nabalik bhayema janma darta ko photocopy.
+#     #   3. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
   - text: |-
       प्रस्थान गर्ने वडा कार्यालयमा आवश्यक कागजातहरु:
       1. बसाइ सराइ गर्ने  सबैको सक्कली नागरिकता, नाबालिक भएमा सक्कली जन्मदर्ता। 
@@ -517,18 +517,18 @@ responses:
       2. The ward office will verify the submitted documents.
       3. Once verified, collect the migration certificate from the ward office.
   utter_migration_certificate_steps_romanized:
-  - text: |-
-      Prasthan garne woda karyalaya ka prakriya haru:
-      1.<a href='https://public.donidcr.gov.np' target='_blank'>Yaha</a> diyeko online form bharera token number linu hos.
-      2. Paayeko token number woda karyalaya ma bujhaunu hos.
-      3. Basai Sarai garne ghar ko mul vyakti woda karyalaya ma upasthit hunu parne chha.
-      4. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
-      5. Diyeko bibaran pusti bhayema, hastantaran form woda karyalaya bata paunu hunchha.
+#   - text: |-
+#       Prasthan garne woda karyalaya ka prakriya haru:
+#       1.<a href='https://public.donidcr.gov.np' target='_blank'>Yaha</a> diyeko online form bharera token number linu hos.
+#       2. Paayeko token number woda karyalaya ma bujhaunu hos.
+#       3. Basai Sarai garne ghar ko mul vyakti woda karyalaya ma upasthit hunu parne chha.
+#       4. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
+#       5. Diyeko bibaran pusti bhayema, hastantaran form woda karyalaya bata paunu hunchha.
 
-      Aagaman hune woda karyalaya ka prakriya haru:
-      1. Hastantaran form woda karyalaya ma bujhaunu hos.
-      2. Woda karyalaya ma diyeko kagajaat ko pusti garine chha.
-      3. Diyeko kagajaat pusti bhayema, Basai Sarai praman patra woda karyalaya bata prapta garna saknu hunchha.
+#       Aagaman hune woda karyalaya ka prakriya haru:
+#       1. Hastantaran form woda karyalaya ma bujhaunu hos.
+#       2. Woda karyalaya ma diyeko kagajaat ko pusti garine chha.
+#       3. Diyeko kagajaat pusti bhayema, Basai Sarai praman patra woda karyalaya bata prapta garna saknu hunchha.
   - text: |-
       प्रस्थान गर्ने वडा कार्यालयका प्रक्रियाहरु:
       1.<a href='https://public.donidcr.gov.np' target='_blank'>यहाँ</a> दिएको अनलाइन फारम भरेर टोकन नम्बर लिनु होस्। 
