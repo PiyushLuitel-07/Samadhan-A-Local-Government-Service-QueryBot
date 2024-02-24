@@ -236,6 +236,10 @@ responses:
       Yogyata Maapdanda:
       1. Kamti ma ek jana abhibhavak Nepali nagarik hunu parchha.
       2. Tapai ko umer 16 barsa mathi hunu parchha.
+  - text: |-
+      योग्यता मापदण्ड :
+      1. कम्तिमा एक जना अभिभावक नेपाली नागरिक हुनु पर्छ। 
+      2. तपाईको उमेर १६ वर्ष माथि हुनुपर्छ। 
   utter_citizenship_by_descent_documents:
   - text: |-
       Required documents:
@@ -254,6 +258,14 @@ responses:
       4. Basai sarai gareko bhaye, sakkali Basai Sarai ra 2 prati photocopy
       5. School/College sakkali character certificate ra 2 prati photocopy
       6. 7 Photos (passport or auto-sized)
+  - text: |-
+      आवश्यक कागजात हरु :
+      1. जिल्ला प्रसासन कार्यालयबाट वडाको सिफारिस फारम, जसको मूल्य २० रुपैया पर्छ। 
+      2. सक्कली जन्मदर्ता र २ प्रति फोटोकपी। 
+      3. अभिभावकको  सक्कली नागरिकता र २ प्रति फोटोकपी। 
+      4. बसाइ सराइ गरेको भए ,सक्कली बसाइ सराइ र २ प्रति फोटोकपी। 
+      5. स्कूल/कलेजको सक्कली क्यारेक्टर सर्टिफिकेट र  २ प्रति फोटोकपी। 
+      6. ७ फोटो (पस्स्पोर्ट अथवा अटो साइज )। 
   utter_citizenship_by_descent_steps:
   - text: |-
       Steps:
@@ -268,6 +280,12 @@ responses:
       2. Sifaris form ma bibaran bharera aafno woda karyalaya ma bujhaunu hola.
       3. Woda karyalaya ma sifaris ma woda adyakshya ko sahi ra woda ko chaap lagaunu hola.
       4. Aafno ek abhivabhak sahit Jilla Prasasan Karyalaya gayera woda ko sifaris ra anya kagajaat bujhayera nagarikta prapta garna saknu hunechha.
+  - text: |-
+      प्रक्रिया:
+      1. जिल्ला प्रसासन कार्यालय गएर वडाको सिफारिस फारम लिनु होला। 
+      2. सिफारिस फारममा  विवरण भरेर आफ्नो वडा कार्यालयमा बुझाउनु होला। 
+      3. वडा कार्यालयमा सिफारिसमा वडा अद्यक्ष्यको सहि र वडाको छाप लगाउनु होला 
+      4. आफ्नो एक अभिभावक सहित जिल्ला प्रसासन कार्यालय गएर वडाको सिफारिस र अन्य कागजात बुझाएर नागरिकता प्राप्त गर्न सक्नु हुनेछ। 
   utter_citizenship_by_birth_eligibility:
   - text: |-
       Eligibility criteria:
@@ -306,6 +324,12 @@ responses:
       2. Yedi bachha aspatal ma janmeko bhaye, aspatal ko kagajat haru.
       3. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
       4. Buwa Aama ko bibah darta.
+  - text: |-
+      आवश्यक कागजातहरु :
+      1. बुवा आमाको सक्कली नागरिकता (एकजना अभिभावक भौतिक रुपमा उपस्थित हुनु पर्छ । 
+      2. यदि बच्चा अस्पतालमा जन्मेको भए , अस्पतालको कागजातहर। 
+      3. चलिरहेको आर्थिक वर्षको राजस्व बुझाएको रशिद। 
+      4. बुवा आमाको विवाहदर्ता। 
   utter_birth_certificate_steps:
   - text: |-
       Steps:
@@ -315,11 +339,11 @@ responses:
       4. Once verified, the birth certificate can be collected from the ward office.
   utter_birth_certificate_steps_romanized:
   - text: |-
-      Prakriya:
-      1. <a href='https://public.donidcr.gov.np' target='_blank'>Yaha</a> diyeko online form bharera token number linu hos.
-      2. Paayeko token number woda ma bujhaunu hola.
-      3. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
-      4. Diyeko bibaran pusti bhayema, woda karyalaya bata janma darta paunu hunchha.
+      प्रक्रिया:
+      1. <a href='https://public.donidcr.gov.np' target='_blank'>यहाँ</a> दिएको अनलाइन फारम भरेर टोकन नम्बर लिनुहोस्। 
+      2. पाएको टोकन नम्बर वडामा बुझाउनु होला। 
+      3. वडा कार्यालयमा दिएको विवरणको पुष्टी गरिने छ। 
+      4. दिएको विवरण पुष्टी भएमा, वडा कार्यालयबाट जन्मदर्ता पाउनु हुन्छ। 
   utter_marriage_certificate_documents:
   - text: |-
       Necessary documents:
@@ -334,6 +358,12 @@ responses:
       2. Dubai pakshya ko buwa aama ko sakkali nagarikta.
       3. Bibah ko praman, swayambar card ya bibah ko tasbir haru.
       4. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
+  - text: |-
+      आवश्यक कागजातहरु :
+      1. दुलाहा र दुलहीको सक्कली नागरिकता। 
+      2. दुवै पक्ष्यको बुवा आमाको सक्कली नागरिकता। 
+      3. विवाहको प्रमाण, स्वयम्बर कार्ड वा विवाहको तस्बिरहरु। 
+      4. चलिरहेको आर्थिक वर्षको राजस्व बुझाएको रशिद। 
   utter_marriage_certificate_steps:
   - text: |-
       Steps:
@@ -348,6 +378,12 @@ responses:
       2. Paayeko token number woda ma bujhaunu hola.
       3. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
       4. Diyeko bibaran pusti bhayema, woda karyalaya bata Bibah Darta paunu hunchha.
+  - text: |-
+      प्रक्रिया:
+      1. दुवै दुलाहा दुलहीले  <a href='https://public.donidcr.gov.np' target='_blank'>यहाँ</a> दिएको फारम भरेर टोकन नम्बर लिनु होला। 
+      2. पाएको टोकन नम्बर वडामा बुझाउनु होला। 
+      3. वडा कार्यालयमा दिएको विवरणको पुष्टी गरिने छ। 
+      4. दिएको विवरण पुष्टी भएमा,वडा कार्यालयबाट विवाह दर्ता पाउनु हुन्छ। 
   utter_divorce_certificate_documents:
   - text: |-
       Necessary documents:
@@ -362,6 +398,13 @@ responses:
       2. Adalat ko nirnaya ko pratilipi.
       3. Bibah Darta ko pratilipi.
       4. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
+  - text: |-
+      आवश्यक कागजातहरु :
+      1. दुलाहा दुलहीको नागरिकताको फोटोकपी। 
+      2. अदालतको निर्णयको प्रतिलिपि। 
+      3. बिबाह दर्ताको प्रतिलिपि। 
+      4. चलिरहेको आर्थिक वर्षको राजस्व बुझाएको रशिद। 
+
   utter_divorce_certificate_steps:
   - text: |-
       Procedure:
@@ -378,6 +421,13 @@ responses:
       3. Paayeko dubai token number woda ma bujhaunu hola.
       4. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
       5. Diyeko bibaran pusti bhayema, woda karyalaya bata Sambandha Bichhed praman patra paunu hunchha.
+  - text: |-
+      प्रक्रिया:
+      1. दुलाहा अथवा दुलही वडामा उपस्थित हुनुपर्छ। 
+      2. दुवै दुलाहा दुलहीले  <a href='https://public.donidcr.gov.np' target='_blank'>यहाँ</a> दिएकोको फारम भरेर टोकन नम्बर लिनु होला। 
+      3. पाएको दुवै टोकन नम्बर वडामा बुझाउनु होला। 
+      4. वडा कार्यालयमा दिएको विवरणको पुष्टी गरिने छ। 
+      5. दिएको विवरण पुष्टी भएमा, वडा कार्यालयबाट सम्बन्ध बिच्छेद प्रमाण पत्र पाउनु हुन्छ। 
   utter_death_certificate_documents:
   - text: |-
       Required documentation:
@@ -394,6 +444,13 @@ responses:
       3. Mrityu aspatal ma bhayeko bhaye, aspatal le diyeka kagajaat haru.
       4. Aafnai niwas ma bhayeko bhaye, ghaat bewasthapan sambandhi kagajaat haru.
       5. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
+  - text: |-
+      आवश्यक कागजातहरु :
+      1. मृत्यु  हुनेको सक्कली नागरिकता। 
+      2. सूचक (श्रीमती/छोरा/छोरी) को सक्कली नागरिकता। 
+      3. मृत्यु अस्पतालमा भएको भए, अस्पतालले दिएका कागजातहरु। 
+      4. आफ्नै निवासमा भएको भए, घाट व्यवस्थापन सम्बन्धि कागजातहरु। 
+      5. चलिरहेको आर्थिक वर्षको राजस्व बुझाएको रशिद। 
   utter_death_certificate_steps:
   - text: |-
       Steps to follow:
@@ -408,6 +465,12 @@ responses:
       2. Paayeko token number woda ma bujhaunu hos.
       3. Woda karyalaya ma diyeko bibaran ko pusti garine chha.
       4. Diyeko bibaran pusti bhayema, woda karyalaya bata Mrityu darta paunu hunchha.
+  - text: |-
+      प्रक्रिया:
+      1. <a href='https://public.donidcr.gov.np' target='_blank'>यहाँ</a> दिएको अनलाइन फारम भरेर टोकन नम्बर लिनुहोस्। 
+      2. पाएको टोकन नम्बर वडामा बुझाउनु होला। 
+      3. वडा कार्यालयमा दिएको विवरणको पुष्टी गरिने छ। 
+      4. दिएको विवरण पुष्टी भएमा, वडा कार्यालयबाट मृत्यु दर्ता पाउनु हुन्छ। 
   utter_migration_certificate_documents:
   - text: |-
       Necessary documents at the ward office of departure:
@@ -430,6 +493,16 @@ responses:
       1. Prasthan garne woda karyalaya bata diyeko hastantaran form.
       2. Basai Sarai garne sabai nagarikta ra nabalik bhayema janma darta ko photocopy.
       3. Chaliraheko arthik barsa ko rajaswa bujhayeko rashid.
+  - text: |-
+      प्रस्थान गर्ने वडा कार्यालयमा आवश्यक कागजातहरु:
+      1. बसाइ सराइ गर्ने  सबैको सक्कली नागरिकता, नाबालिक भएमा सक्कली जन्मदर्ता। 
+      2. बसाइ सराइ गर्ने ठाउँको लालपुर्जाको फोटोकपी। 
+      3. चलिरहेको आर्थिक वर्षको राजस्व बुझाएको रशिद। 
+
+      आगमन हुने वडा कार्यालयमा आवश्यक कागजातहरु:
+      1. प्रस्थान गर्ने वडा कार्यालयबाट दिएको हस्तान्तरण फारम। 
+      2. बसाइ सराइ गर्ने सबैको सक्कली नागरिकता, नाबालिक भएमा जन्मदर्ताको फोटोकपी। 
+      3.  चलिरहेको आर्थिक वर्ष को राजस्व बुझाएको रशिद। 
   utter_migration_certificate_steps:
   - text: |-
       Steps at the ward office of departure:
@@ -456,6 +529,18 @@ responses:
       1. Hastantaran form woda karyalaya ma bujhaunu hos.
       2. Woda karyalaya ma diyeko kagajaat ko pusti garine chha.
       3. Diyeko kagajaat pusti bhayema, Basai Sarai praman patra woda karyalaya bata prapta garna saknu hunchha.
+  - text: |-
+      प्रस्थान गर्ने वडा कार्यालयका प्रक्रियाहरु:
+      1.<a href='https://public.donidcr.gov.np' target='_blank'>यहाँ</a> दिएको अनलाइन फारम भरेर टोकन नम्बर लिनु होस्। 
+      2. पाएको टोकन नम्बर वडा कार्यालयमा बुझाउनुहोस् । 
+      3.बसाइ सराइ गर्ने घरको मूल व्यक्ति वडा कार्यालयमा उपस्थित हुनुपर्ने छ। 
+      4. वडा कार्यालयमा दिएको विवरणको पुष्टी गरिने छ। 
+      5. दिएको विवरण पुष्टी भएमा, हस्तान्तरण फारम वडा कार्यालयबाट पाउनु हुन्छ। 
+
+      आगमन हुने वडा कार्यालयका प्रक्रियाहरु :
+      1. हस्तान्तरण फारम वडा कार्यालयमा बुझाउनुहोस्। 
+      2. वडा कार्यालयमा दिएको कागजातको पुष्टी गरिने छ। 
+      3. दिएको कागजात पुष्टी भएमा, बसाइ सराइ प्रमाण पत्र वडा कार्यालयबाट प्राप्त गर्न सक्नुहुन्छ। 
 
   utter_for_birthcertificate:
   - text: For birth certificate,

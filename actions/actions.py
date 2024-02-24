@@ -12,12 +12,15 @@ from rasa_sdk.interfaces import Action
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import UserUtteranceReverted
 import google.generativeai as genai
+
+import os
 #import config
 # from rasa.engine.recipes.default_recipe import DefaultV1Recipe, GraphComponent
 
 # @DefaultV1Recipe.register(
 #     DefaultV1Recipe.Component, is_trainable=True
 # )
+
 
 class RephraseFallbackAction(Action):
     def name(self) -> Text:
@@ -29,7 +32,7 @@ class RephraseFallbackAction(Action):
         # action = tracker.latest_action_name
         user_message = tracker.latest_message.get('text')
         # Configure Generative AI model
-        genai.configure(api_key="AIzaSyDvP-cU5448zOZKZ4Bv2KIh4Rpe5WQ-_kk")
+        genai.configure(api_key= os.getenv('gemini_api_key'))
 
         # Set up the model
         generation_config = {
