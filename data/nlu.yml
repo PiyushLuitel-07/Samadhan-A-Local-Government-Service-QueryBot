@@ -112,6 +112,7 @@ nlu:
     - Malai [nagrikta](type) banaaunma sahayog garnuhos.
     - nagarikta banauna thiyo
     - citizenship kasari banaune
+    - nagrita banauna document k k chaincha?
 ############################
 - intent: citizenship_by_birth_query_romanized
   examples: |
@@ -187,6 +188,7 @@ nlu:
     - what is the procedure to make [birth](type) certificate.
     - how can I process for [birth](type) certificate.
     - complete process to obtain [birth](type) certificate.
+    - procedure for birth registration
 
 - intent: birth_certificate_query_romanized
   examples: |
@@ -383,6 +385,7 @@ nlu:
     - how to get a divorce certificate in nepal?
     - what is the procedure to make [divorce](type) certificate.
     - how can I process for [divorce](type) certificate.
+    - what are the divorce procedure in nepal
 
 - intent: divorce_certificate_query_romanized
   examples: |
@@ -939,6 +942,19 @@ nlu:
     - what is your age
     - why so offended
     - my name is certificate
+    - stop process
+    - stop this
+    - who is authroized for citizenship distribution?
+    - can i get two citizenship at once?
+    - what can i do if i lost my citizenship?
+    - where can i get citizenship in lalitpur district?
+    - cost
+    - authorization
+    - [two](numbers)
+    - what is citizenship?
+    - what is certificate?
+    - what can you do.
+    
 
 ################################synonym mapping ############################
 - synonym: death

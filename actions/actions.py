@@ -70,9 +70,7 @@ class RephraseFallbackAction(Action):
             
             'You are an AI assistant for the citizens of nepal.'
             'You help to solve user queries related to government services like citizenship,birth certificate, marriage certificate,migration, divorce,death certificate. '
-            'if user message is in in roman nepali for example "Nepal ko area kati ho","pradhan mantri ko ho", then you should give response in roman nepali.'
-            'if user message is in english give the response in english language.'
-            'nepal ko area kati ho. is the example of roman nepali message, which should be response with nepal ko area 1,47,181 ho'
+            'the whole process for making these documents can be completed 1 single day'
             'You are required to provide the latest information.'
             'Here is the user message answer it in the context of nepal'
                        
