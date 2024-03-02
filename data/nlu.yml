@@ -81,7 +81,7 @@ nlu:
     - [angikrit](type) dwara [nagrikta](type) kasari banaune.
     - [angikrit](type) [nagrikta](type) kasari banaune
     - [angikrit](type) nagrikta banauna k garne.
-    - malai agikrit nagrikta bare jankari dinuhos
+    - malai angikrit nagrikta bare jankari dinuhos
     - [angikrit](type) [nagrikta](type) paune kasari
     - citizenship by naturalization kasari banaune hola.
 
@@ -111,6 +111,7 @@ nlu:
     - [nagrikta](type) praapt garnakaa laagi aavedan kasari garne?
     - Malai [nagrikta](type) banaaunma sahayog garnuhos.
     - nagarikta banauna thiyo
+    - nagarikta banauna k garne
     - citizenship kasari banaune
     - nagrita banauna document k k chaincha?
 ############################
@@ -938,23 +939,23 @@ nlu:
   examples: |
     - where are you from?
     - my name is citizenship
-    - you are citizenship
+    - you are bot
     - what is your age
     - why so offended
-    - my name is certificate
+    - my name is.
     - stop process
     - stop this
-    - who is authroized for citizenship distribution?
-    - can i get two citizenship at once?
+    - who is authroized for  distribution?
+    - can i get two [types] at once?
     - what can i do if i lost my citizenship?
-    - where can i get citizenship in lalitpur district?
+    - where can i get certificate in lalitpur district?
     - cost
     - authorization
     - [two](numbers)
-    - what is citizenship?
+    - what is ?
     - what is certificate?
     - what can you do.
-    
+
 
 ################################synonym mapping ############################
 - synonym: death
