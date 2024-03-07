@@ -8,9 +8,10 @@
 - [Piyush Luitel](https://www.github.com/PiyushLuitel-07)
 - [Prashant Bhusal](https://www.github.com/prashant72-git)
 
-## [Demo video link](https://www.youtube.com/watch?v=6Sh4Np_nWME)
+## Demo video
+[Click here for demo in youtube](https://www.youtube.com/watch?v=6Sh4Np_nWME)
 
-## Demo
+## This is how our chatbot looks like
 ![Hello Samadhan](https://github.com/PiyushLuitel-07/Samadhan-A-Local-Government-Service-QueryBot/blob/main/Chatbot-Widget-main/58dbdc32-8422-4af7-86cb-2bc46d12bab9.gif)
 
 ## Features
