@@ -238,8 +238,8 @@ responses:
 #       2. Tapai ko umer 16 barsa mathi hunu parchha.
   - text: |-
       योग्यता मापदण्ड :
-      1. कम्तिमा एक जना अभिभावक नेपाली नागरिक हुनु पर्छ। 
-      2. तपाईको उमेर १६ वर्ष माथि हुनुपर्छ। 
+      १. कम्तिमा एक जना अभिभावक नेपाली नागरिक हुनु पर्छ। 
+      २. उमेर १६ वर्ष माथि हुनुपर्छ। 
   utter_citizenship_by_descent_documents:
   - text: |-
       Required documents:
@@ -293,9 +293,9 @@ responses:
       2. Age must be 16 or above.
   utter_citizenship_by_birth_eligibility_romanized:
   - text: |-
-      Yogyata maapdanda:
-      1. At least one parent must be Nepali.
-      2. Age must be 16 or above.
+      योग्यता मापदण्ड :
+      १. कम्तिमा एक जना अभिभावक नेपाली नागरिक हुनु पर्छ। 
+      २. उमेर १६ वर्ष माथि हुनुपर्छ। 
   utter_citizenship_by_birth_documents:
   - text: Documents required...
   utter_citizenship_by_birth_documents_romanized:
@@ -553,29 +553,30 @@ responses:
   utter_for_migrationcertificate:
   - text: For migration certificate,
   utter_for_birthcertificate_romanized:
-  - text: Janma darta ko lagi,
+  - text: जन्म दर्ता को लागि,
   utter_for_marriagecertificate_romanized:
-  - text: Bibah darta ko lagi,
+  - text: विवाह दर्ता को लागि,
   utter_for_divorcecertificate_romanized:
-  - text: Sambandha bichhed darta ko lagi,
+  - text: सम्बन्ध विच्छेद दर्ता को लागि,
   utter_for_deathcertificate_romanized:
-  - text: Mrityu darta ko lagi,
+  - text: मृत्यु दर्ता को लागि,
   utter_for_migrationcertificate_romanized:
-  - text: Basai Sarai darta ko lagi,
+  - text: बसाइ सराइ दर्ता को लागि,
   utter_greet1_romanized:
-  - text: Hello!! Mero naam Samadhan ho.
+  - text: "नमस्ते!! मेरो नाम समाधान हो।"
   utter_greet2_romanized:
-  - text: Ma sthaniya sarkari seva sodhpuch bot ho.
+  - text: "म स्थानीय सरकारी सेवा सोधपुछ बोट हो।"
   utter_greet3_romanized:
-  - text: Tapailai nagarikta, janma, mrityu, bibah sambandhi prashna haru garna saknu hunchha.
+  - text: "तपाईंलाई नागरिकता, जन्म, मृत्यु, विवाह सम्बन्धी प्रश्नहरू गर्न सक्नु हुन्छ।"
   utter_iamabot_romanized:
-  - text: Ma ek bot ho ra mero naam samadhan ho.
+  - text: "म एक बोट हो र मेरो नाम समाधान हो।"
   utter_certificate_query_romanized:
-  - text: Tapai lai kun chai ghatna darta garna chahanu hunchha?
+  - text: "तपाईंलाई कुन छाई घटना दर्ता गर्न चाहनु हुन्छ?"
   utter_halkhabar:
-  - text: Sab thik chha daju. Tapailai k sahayog garna sakchu?
+  - text: "सब ठिक छ दाजु। तपाईंलाई कसैले कसैको सहयोग गर्न सक्छ?"
   utter_random_query:
   - text: I am not sure what you are asking for. Can you please rephrase your question?
+
 response_selector:
   retrieve_responses:
     halkhabar:

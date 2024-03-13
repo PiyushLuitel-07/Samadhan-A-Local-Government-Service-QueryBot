@@ -627,29 +627,29 @@ stories:
   - action: utter_citizenship_by_descent_documents_romanized
   - action: utter_citizenship_by_descent_steps_romanized
 
-- story: User asks for citizenship and divorce certificate and presses citizenship by descent button
-  steps:
-  - intent: divorce_certificate_query
-  - action: utter_for_divorcecertificate
-  - action: utter_divorce_certificate_documents
-  - action: utter_divorce_certificate_steps
-  - action: utter_citizenship
-  - intent: citizenship_by_descent_query
-  - action: utter_citizenship_by_descent_eligibility
-  - action: utter_citizenship_by_descent_documents
-  - action: utter_citizenship_by_descent_steps
+# - story: User asks for citizenship and divorce certificate and presses citizenship by descent button
+#   steps:
+#   - intent: divorce_certificate_query
+#   - action: utter_for_divorcecertificate
+#   - action: utter_divorce_certificate_documents
+#   - action: utter_divorce_certificate_steps
+#   - action: utter_citizenship
+#   - intent: citizenship_by_descent_query
+#   - action: utter_citizenship_by_descent_eligibility
+#   - action: utter_citizenship_by_descent_documents
+#   - action: utter_citizenship_by_descent_steps
 
-- story: User asks for citizenship and divorce certificate romanized and presses citizenship by descent button
-  steps:
-  - intent: divorce_certificate_query_romanized
-  - action: utter_for_divorcecertificate_romanized
-  - action: utter_divorce_certificate_documents_romanized
-  - action: utter_divorce_certificate_steps_romanized
-  - action: utter_citizenship_romanized
-  - intent: citizenship_by_descent_query_romanized
-  - action: utter_citizenship_by_descent_eligibility_romanized
-  - action: utter_citizenship_by_descent_documents_romanized
-  - action: utter_citizenship_by_descent_steps_romanized
+# - story: User asks for citizenship and divorce certificate romanized and presses citizenship by descent button
+#   steps:
+#   - intent: divorce_certificate_query_romanized
+#   - action: utter_for_divorcecertificate_romanized
+#   - action: utter_divorce_certificate_documents_romanized
+#   - action: utter_divorce_certificate_steps_romanized
+#   - action: utter_citizenship_romanized
+#   - intent: citizenship_by_descent_query_romanized
+#   - action: utter_citizenship_by_descent_eligibility_romanized
+#   - action: utter_citizenship_by_descent_documents_romanized
+#   - action: utter_citizenship_by_descent_steps_romanized
 
 - story: User asks for citizenship and birth certificate and presses citizenship by naturalization button
   steps:
@@ -894,7 +894,6 @@ stories:
   - action: utter_citizenship_by_naturalization_romanized
   - intent: option2_naturalization_romanized
   - action: utter_citizenship_by_naturalization_option2_romanized
-
 
 ##############################random queries#############################################
 - story: User interaction for random queries

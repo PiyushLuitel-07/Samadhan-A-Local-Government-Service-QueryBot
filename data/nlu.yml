@@ -48,6 +48,7 @@ nlu:
     - Tell me about citizenship by descent.
     - help me with citizenship by descent
     - what can you tell about citizenship by descent
+    - citizenship by descent
 
 - intent: citizenship_by_descent_eligibility_query
   examples: |
@@ -76,6 +77,9 @@ nlu:
     - Tell me about citizenship by naturalization.
     - help me with citizenship by naturalization
     - what can you tell about citizenship by naturalization
+    - i want to become citizen of nepal
+    - i am a foreigner and i want to a citizen of nepal
+
 - intent: citizenship_by_naturalization_query_romanized
   examples: |
     - [angikrit](type) dwara [nagrikta](type) kasari banaune.
@@ -84,6 +88,8 @@ nlu:
     - malai angikrit nagrikta bare jankari dinuhos
     - [angikrit](type) [nagrikta](type) paune kasari
     - citizenship by naturalization kasari banaune hola.
+    - nepali nagarik hune kasari
+    - angikrit nagarikta
 
 - intent: option1_naturalization
   examples: |
@@ -176,6 +182,7 @@ nlu:
     - bamsaj dwara nagrikta banaune process k ho.
     - [bamsaj](type) bata [nagrikta](type) ka [charand] k hun
     - [citizenship by descent] banuna ko lagi steps haru k  hun.
+    - [bamsaj nagarikta](type)
 
 ######################################################### birth certificate
 - intent: birth_certificate_query
@@ -190,6 +197,9 @@ nlu:
     - how can I process for [birth](type) certificate.
     - complete process to obtain [birth](type) certificate.
     - procedure for birth registration
+    - give me a list of ways to make a birth certificate
+    - ways to make birth certificate
+    - what are all the ways to make birth certificate in nepal
 
 - intent: birth_certificate_query_romanized
   examples: |
@@ -202,6 +212,7 @@ nlu:
     - [janma darta](type) banaune process k hola ?
     - ma [janma darta](type) banauna chahanchu
     - birth certificate kasari banaune hola.
+    - [janma darta](type)
 
 - intent: birth_documents_certificate_query
   examples: |
@@ -268,6 +279,7 @@ nlu:
     - [mrityu](type) darta kasari banaune.
     - [mrityu darta](type) banaune process k hola ?
     - [death certificate] kasari banaune hola.
+    - [mrityu darta](type)
 
 - intent: death_documents_certificate_query
   examples: |
@@ -332,6 +344,9 @@ nlu:
     - [bibah](type) darta kasari banaune.
     - [bibah darta](type) banaune process k hola ?
     - marriage certificate kasari banaune.
+    - [bibah](type) darta banauna paryo
+    - malai marriage certificate banaune full process bhanam na
+    - [bibaha darta](type)
 - intent: marriage_documents_certificate_query
   examples: |
     - what are the [documents](specification) required to make [marriage](type) certificate?
@@ -383,10 +398,14 @@ nlu:
     - [divorce](type) certificate process
     - explain the complete process to make [divorce](type) certificate.
     - process to make [divorce](type) certificate.
-    - how to get a divorce certificate in nepal?
+    - how to get a [divorce](type) certificate in nepal?
     - what is the procedure to make [divorce](type) certificate.
     - how can I process for [divorce](type) certificate.
-    - what are the divorce procedure in nepal
+    - what are the [divorce](type) procedure in nepal
+    - i want to get [divorced](type)
+    - i want to make divorce certificate
+    - what are all the ways to make divorce certificate in nepal
+    - divorce
 
 - intent: divorce_certificate_query_romanized
   examples: |
@@ -398,6 +417,7 @@ nlu:
     - [sambandha bichhed](type) darta kasari banaune.
     - [sambandha bichhed darta](type) banaune process k hola ?
     - divorce certificate kasari banuna sakincha.
+    - [sambandha bichhed](type)
 
 - intent: divorce_documents_certificate_query
   examples: |
@@ -452,6 +472,8 @@ nlu:
     - how to get a migration certificate in nepal?
     - what is the procedure to make [migration](type) certificate.
     - how can I process for [migration](type) certificate.
+    - i want to migrate from [pokhara](place) to [kathmandu](place)
+
 
 - intent: migration_certificate_query_romanized
   examples: |
@@ -465,6 +487,8 @@ nlu:
     - [basai sarai](type) banaune process k hola ?
     - [basai sarai](type) darta kasari banaune.
     - [basai sarai darta](type) banaune process k hola ?
+    - malai [pokhara](place) bata [kathmandu](place) migrate garnu parne chha
+    - [basai sarai](type)
 
 - intent: migration_documents_certificate_query
   examples: |
@@ -571,7 +595,6 @@ nlu:
     - [janma](type) darta ra [sambandha bichhed](type) darta kasari banauna sakincha ?
     - [janma darta](type) ra [sambandha bichhed darta](type) banaune process k hola ?
     - [birth certificate](type) ra [divorce certificate](type) banaune process k hola ?
-
 
 - intent: birthcertificate_and_deathcertificate_query
   examples: |
@@ -913,6 +936,7 @@ nlu:
     - am I talking to a human?
     - are you samadhan ?
     - what is your name?
+    - which bot are you
 - intent: halkhabar
   examples: |
     - halkhabar

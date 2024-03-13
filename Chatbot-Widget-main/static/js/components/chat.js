@@ -22,15 +22,15 @@ function setUserResponse(message) {
 }
 
 function displayInitialUserMessage() {
-  welcomeMessage = "Namaskar! 🙏";
+  welcomeMessage = "नमस्ते! 🙏";
   BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
   $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
   scrollToBottomOfResults();
-  welcomeMessage = "Sthaniya Sarkari Seva Nagarik Sodhpuch Bot ma hajur lai swagat cha.";
+  welcomeMessage = "स्थानीय सरकारी सेवा नागरिक सोधपुछ बोटमा हजुर लाई स्वागत छ";
   BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
   $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
   scrollToBottomOfResults();
-  welcomeMessage = "Nagarikta, Janma Darta, Bibah Darta, Basai Sarai Darta, Mrityu Darta ra Samdhanda Bichhed Darta ko barema jankari pauna saknu hunecha.";
+  welcomeMessage = "नागरिकता, जन्म दर्ता, विवाह दर्ता, बसै सराइ दर्ता, मृत्यु दर्ता र सम्बन्ध विच्छेद दर्ता को बारेमा जानकारी पाउन सक्नु हुनेछ।";
   BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
   $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
   scrollToBottomOfResults();
@@ -38,7 +38,7 @@ function displayInitialUserMessage() {
   // BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
   // $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
   // scrollToBottomOfResults();
-  welcomeMessage = "Hajur lai ma kasari sahayog garna sakchu?";
+  welcomeMessage = "हजुरलाई म कसरी सहयोग गर्न सक्छु?";
   BotResponse = `<img class="botAvatar" src="./static/img/sara_avatar.png"/><p class="botMsg">${welcomeMessage}</p><div class="clearfix"></div>`;
   $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
   scrollToBottomOfResults();
